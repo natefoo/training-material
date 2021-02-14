@@ -4,19 +4,51 @@
         <meta charset="utf-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        <title>Galaxy Training!</title>
+        <title>Calling variants in diploid systems</title>
+        
+            <script async defer data-domain="training.galaxyproject.org" src="https://plausible.galaxyproject.eu/js/plausible.js"></script>
+
+        
         <link rel="stylesheet" href="/training-material/assets/css/bootstrap.min.css?v=3">
+        <link rel="stylesheet" href="/training-material/assets/css/bootstrap-toc.min.css">
         <link rel="stylesheet" href="/training-material/assets/css/main.css?v=2">
-        <link rel="stylesheet" href="/training-material/assets/css/font-awesome.css">
+        <script src="https://kit.fontawesome.com/67b3f98409.js" crossorigin="anonymous"></script>
         <link rel="stylesheet" href="/training-material/assets/css/academicons.css">
         <link rel="stylesheet" href="/training-material/assets/css/syntax_highlighting.css">
         <link rel="shortcut icon" href="/training-material/favicon.ico" type="image/x-icon" />
+
+        
+        
+        
+        
+        
+        <meta name="description" content="Genetic differences (variants) between healthy and diseas..." />
+        <meta property="og:title" content="Galaxy Training: Calling variants in diploid systems" />
+        <meta property="og:description" content="Genetic differences (variants) between healthy and diseas..." />
+        <meta property="og:image" content="/training-material/assets/images/GTNLogo1000.png" />
     </head>
-    <body>
+    <body data-spy="scroll" data-target="#toc">
         
 
 
 
+
+
+
+
+
+
+
+
+<!-- Gitter -->
+
+
+<script>
+  ((window.gitter = {}).chat = {}).options = {
+  room: 'Galaxy-Training-Network/Lobby'
+  };
+</script>
+<script src="https://sidecar.gitter.im/dist/sidecar.v1.js" async defer></script>
 
 <header>
     <nav class="navbar navbar-expand-lg navbar-dark">
@@ -33,94 +65,95 @@
                 <ul class="navbar-nav">
                     <li class="nav-item">
                         <a class="nav-link" href="/training-material/topics/variant-analysis" title="Go back to list of tutorials">
-                            <i class="fa fa-folder-o" aria-hidden="true"></i> Variant Analysis
+                            <i class="far fa-folder" aria-hidden="true"></i><span class="visually-hidden">topic</span> Variant Analysis
                         </a>
                     </li>
 
-                    
-                        
-                        
-                        
-                            <li class="nav-item dropdown">
-                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-expanded="false" title="Introduction slides">
-                                    <i class="fa fa-slideshare" aria-hidden="true"></i> Introduction slides
-                                </a>
-                                <div class="dropdown-menu">
-                                    
-                                        
-                                            
-                                                <a class="dropdown-item" href="/training-material/topics/variant-analysis/slides/introduction.html">
-                                                    Introduction to Variant analysis
-                                                </a>
-                                            
-                                        
-                                    
-                                        
-                                    
-                                        
-                                            
-                                        
-                                    
-                                        
-                                            
-                                        
-                                    
-                                        
-                                            
-                                        
-                                    
-                                        
-                                            
-                                        
-                                    
-                                        
-                                            
-                                        
-                                    
-                                        
-                                            
-                                        
-                                    
-                                </div>
-                            </li>
-                        
-                    
-
-                    
-
-                    
-
-                    
-
-                    
-                    <li class="nav-item">
-                        <a class="nav-link" href="/training-material/topics/variant-analysis#references" title="References">
-                            <i class="fa fa-book" aria-hidden="true"></i> Literature
+                    <li class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-expanded="false" title="Language Selector">
+                            <i class="fas fa-language" aria-hidden="true"></i><span class="visually-hidden">language</span> Language
                         </a>
+                        <div class="dropdown-menu">
+                            
+                            <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=fr&u=https%3A%2F%2Ftraining.galaxyproject.org%2Ftopics%2Fvariant-analysis%2Ftutorials%2Fdip%2Ftutorial.html&edit-text=&act=url" title="">
+                                Français
+                            </a>
+                            
+                            <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=ja&u=https%3A%2F%2Ftraining.galaxyproject.org%2Ftopics%2Fvariant-analysis%2Ftutorials%2Fdip%2Ftutorial.html&edit-text=&act=url" title="">
+                                日本語
+                            </a>
+                            
+                            <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=es&u=https%3A%2F%2Ftraining.galaxyproject.org%2Ftopics%2Fvariant-analysis%2Ftutorials%2Fdip%2Ftutorial.html&edit-text=&act=url" title="">
+                                Español
+                            </a>
+                            
+                            <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=pt&u=https%3A%2F%2Ftraining.galaxyproject.org%2Ftopics%2Fvariant-analysis%2Ftutorials%2Fdip%2Ftutorial.html&edit-text=&act=url" title="">
+                                Português
+                            </a>
+                            
+                            <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=ar&u=https%3A%2F%2Ftraining.galaxyproject.org%2Ftopics%2Fvariant-analysis%2Ftutorials%2Fdip%2Ftutorial.html&edit-text=&act=url" title="">
+                                العربية
+                            </a>
+                            
+                            <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=&u=https%3A%2F%2Ftraining.galaxyproject.org%2Ftopics%2Fvariant-analysis%2Ftutorials%2Fdip%2Ftutorial.html&edit-text=&act=url" title="">
+                                And more!
+                            </a>
+                        </div>
                     </li>
-                    
 
                     <li class="nav-item dropdown">
     <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-expanded="false" title="Help">
-        <i class="fa fa-life-ring" aria-hidden="true"></i> Help
+        <i class="far fa-question-circle" aria-hidden="true"></i><span class="visually-hidden">help</span> Help
     </a>
-    <div class="dropdown-menu">
+    <div class="dropdown-menu dropdown-menu-right">
+        <form method="get" action="https://tess.elixir-europe.org/materials">
+            <input type="text" id="search" name="q" value="" style="margin-left: 0.5em;/*! border-radius: 0px; */">
+            <input type="hidden" value="Galaxy Training" name="content_provider">
+            <input type="submit" value="Search on TeSS" style="width: 92%;border-radius: 0px;margin: 0.5em;background: #f47d20;border: 0px;padding: 0.25em;" class="">
+        </form>
+
+        <div class="dropdown-divider"></div>
         <a class="dropdown-item" href="/training-material/faq" title="Check our FAQ">
             FAQ
         </a>
-        <a class="dropdown-item" href="https://gitter.im/Galaxy-Training-Network/Lobby" title="Chat on Gitter">
-            Gitter
+        <a class="dropdown-item" href="https://help.galaxyproject.org/" title="Discuss on Galaxy Help">
+            Discuss on Galaxy Help
         </a>
-        <a class="dropdown-item" href="https://biostar.usegalaxy.org/" title="Ask on Biostars">
-            Biostars
-        </a>
+
+        <div class="dropdown-item">
+            <div>
+                Theme
+            </div>
+
+            <div id="theme-selector" data-toggle="buttons">
+                <label data-value="default" class="btn btn-secondary">
+                    <input type="radio" name="options" id="default" autocomplete="off"> Default
+                </label>
+                <label data-value="night" class="btn btn-secondary">
+                    <input type="radio" name="options" id="night" autocomplete="off"> Night
+                </label>
+                <label data-value="midnight" class="btn btn-secondary">
+                    <input type="radio" name="options" id="midnight" autocomplete="off"> Midnight
+                </label>
+                <label data-value="rainbow" class="btn btn-secondary">
+                    <input type="radio" name="options" id="rainbow" autocomplete="off"> Rainbow
+                </label>
+                <label data-value="halloween" class="btn btn-secondary">
+                    <input type="radio" name="options" id="halloween" autocomplete="off"> 🎃
+                </label>
+                <label data-value="straya" class="btn btn-secondary">
+                    <input type="radio" name="options" id="downunder" autocomplete="off"> 🇦🇺
+                </label>
+            </div>
+
+        </div>
     </div>
 </li>
 
 
                     <li class="nav-item">
                         <a class="nav-link" href="https://github.com/galaxyproject/training-material/edit/master/topics/variant-analysis/tutorials/dip/tutorial.md">
-                            <i class="fa fa-github" aria-hidden="true"></i> Edit
+                            <i class="fab fa-github" aria-hidden="true"></i><span class="visually-hidden">github</span> Edit
                         </a>
                     </li>
                 </ul>
@@ -130,116 +163,584 @@
 </header>
 
 <div class="container main-content">
+    <script type="application/ld+json">
+        
+
+
+{
+  "@context": "http://schema.org",
+  "@type": "Course",
+  "accessMode": [
+    "textual",
+    "visual"
+  ],
+  "accessModeSufficient": [
+    "textual",
+    "visual"
+  ],
+  "accessibilityControl": [
+    "fullKeyboardControl",
+    "fullMouseControl"
+  ],
+  "accessibilityFeature": [
+    "alternativeText",
+    "tableOfContents"
+  ],
+  "accessibilitySummary": "Short descriptions are present but long descriptions will be needed for non-visual users",
+  "audience": {
+    "@type": "EducationalAudience",
+    "educationalRole": "students"
+  },
+  "citation": {
+    "@type": "CreativeWork",
+    "name": "Community-Driven Data Analysis Training for Biology",
+    "url": "https://doi.org/10.1016/j.cels.2018.05.012"
+  },
+  "copyrightHolder": {
+    "@type": "Organization",
+    "email": "galaxytrainingnetwork@gmail.com",
+    "name": "Galaxy Training Network",
+    "url": "https://galaxyproject.org/teach/gtn/"
+  },
+  "discussionUrl": "https://gitter.im/Galaxy-Training-Network/Lobby",
+  "headline": "Calling variants in diploid systems",
+  "inLanguage": {
+    "@type": "Language",
+    "name": "English",
+    "alternateName": "en"
+  },
+  "interactivityType": "mixed",
+  "isAccessibleForFree": true,
+  "license": "https://github.com/galaxyproject/training-material/blob/master/LICENSE.md",
+  "producer": {
+    "@type": "Organization",
+    "email": "galaxytrainingnetwork@gmail.com",
+    "name": "Galaxy Training Network",
+    "url": "https://galaxyproject.org/teach/gtn/"
+  },
+  "provider": {
+    "@type": "Organization",
+    "email": "galaxytrainingnetwork@gmail.com",
+    "name": "Galaxy Training Network",
+    "url": "https://galaxyproject.org/teach/gtn/"
+  },
+  "sourceOrganization": {
+    "@type": "Organization",
+    "email": "galaxytrainingnetwork@gmail.com",
+    "name": "Galaxy Training Network",
+    "url": "https://galaxyproject.org/teach/gtn/"
+  },
+  "isPartOf": {
+    "@type": "CreativeWork",
+    "name": "Variant Analysis",
+    "description": "Genetic differences (variants) between healthy and diseased tissue,\nbetween individuals of a population, or between strains of an organism\ncan provide mechanistic insight into disease processes and the natural\nfunction of affected genes.\n\nThe tutorials in this section show how to detect evidence for\ngenetic variants in next-generation sequencing data, a process termed\nvariant calling.\n\nOf equal importance, they also demonstrate how you can interpret, for\na range of different organisms, the resulting sets of variants by\npredicting their molecular effects on genes and proteins, by\nannotating previously observed variants with published knowledge, and\nby trying to link phenotypes of the sequenced samples to their variant\ngenotypes.\n",
+    "url": "https://training.galaxyproject.org//training-material/topics/variant-analysis/"
+  },
+  "courseCode": "variant-analysis / dip / hands-on",
+  "learningResourceType": "hands-on tutorial",
+  "name": "Hands-on for 'Calling variants in diploid systems' tutorial",
+  "url": "https://training.galaxyproject.org//training-material/topics/variant-analysis/tutorials/dip/tutorial.html",
+  "timeRequired": "PT3H",
+  "description": "The questions this  addresses are:\n - How to find variable sites in diploid genomes?\n\n\\nThe objectives are:\n - Identification of genetic variations using variant calling\n\n",
+  "coursePrerequisites": [
+    {
+      "@type": "CreativeWork",
+      "url": "https://training.galaxyproject.org//training-material/topics/introduction/",
+      "name": "Introduction to Galaxy Analyses",
+      "description": "Introduction to Galaxy Analyses",
+      "provider": {
+        "@type": "Organization",
+        "email": "galaxytrainingnetwork@gmail.com",
+        "name": "Galaxy Training Network",
+        "url": "https://galaxyproject.org/teach/gtn/"
+      }
+    },
+    {
+      "@type": "Course",
+      "url": "https://training.galaxyproject.org//training-material/topics/sequence-analysis/tutorials/quality-control/slides.html",
+      "name": "Quality Control",
+      "description": "Slides for 'Quality Control' tutorial",
+      "learningResourceType": "slides",
+      "interactivityType": "expositive",
+      "provider": {
+        "@type": "Organization",
+        "email": "galaxytrainingnetwork@gmail.com",
+        "name": "Galaxy Training Network",
+        "url": "https://galaxyproject.org/teach/gtn/"
+      }
+    },
+    {
+      "@type": "Course",
+      "url": "https://training.galaxyproject.org//training-material/topics/sequence-analysis/tutorials/quality-control/tutorial.html",
+      "name": "Quality Control",
+      "description": "Hands-on for 'Quality Control' tutorial",
+      "learningResourceType": "hands-on tutorial",
+      "interactivityType": "expositive",
+      "provider": {
+        "@type": "Organization",
+        "email": "galaxytrainingnetwork@gmail.com",
+        "name": "Galaxy Training Network",
+        "url": "https://galaxyproject.org/teach/gtn/"
+      }
+    },
+    {
+      "@type": "Course",
+      "url": "https://training.galaxyproject.org//training-material/topics/sequence-analysis/tutorials/mapping/slides.html",
+      "name": "Mapping",
+      "description": "Slides for 'Mapping' tutorial",
+      "learningResourceType": "slides",
+      "interactivityType": "expositive",
+      "provider": {
+        "@type": "Organization",
+        "email": "galaxytrainingnetwork@gmail.com",
+        "name": "Galaxy Training Network",
+        "url": "https://galaxyproject.org/teach/gtn/"
+      }
+    },
+    {
+      "@type": "Course",
+      "url": "https://training.galaxyproject.org//training-material/topics/sequence-analysis/tutorials/mapping/tutorial.html",
+      "name": "Mapping",
+      "description": "Hands-on for 'Mapping' tutorial",
+      "learningResourceType": "hands-on tutorial",
+      "interactivityType": "expositive",
+      "provider": {
+        "@type": "Organization",
+        "email": "galaxytrainingnetwork@gmail.com",
+        "name": "Galaxy Training Network",
+        "url": "https://galaxyproject.org/teach/gtn/"
+      }
+    }
+  ],
+  "hasPart": [
+
+  ],
+  "author": [
+    {
+      "@type": "Person",
+      "name": "Anton Nekrutenko"
+    },
+    {
+      "@type": "Person",
+      "name": "Nicola Soranzo"
+    }
+  ],
+  "contributor": [
+    {
+      "@type": "Person",
+      "name": "Anton Nekrutenko"
+    },
+    {
+      "@type": "Person",
+      "name": "Nicola Soranzo"
+    }
+  ],
+  "about": [
+    {
+      "@type": "CreativeWork",
+      "name": "Variant Analysis",
+      "description": "Genetic differences (variants) between healthy and diseased tissue,\nbetween individuals of a population, or between strains of an organism\ncan provide mechanistic insight into disease processes and the natural\nfunction of affected genes.\n\nThe tutorials in this section show how to detect evidence for\ngenetic variants in next-generation sequencing data, a process termed\nvariant calling.\n\nOf equal importance, they also demonstrate how you can interpret, for\na range of different organisms, the resulting sets of variants by\npredicting their molecular effects on genes and proteins, by\nannotating previously observed variants with published knowledge, and\nby trying to link phenotypes of the sequenced samples to their variant\ngenotypes.\n",
+      "url": "https://training.galaxyproject.org//training-material/topics/variant-analysis/"
+    },
+    {
+      "@type": "DefinedTerm",
+      "@id": "http://edamontology.org/topic_0199",
+      "inDefinedTermSet": "http://edamontology.org",
+      "termCode": "topic_0199",
+      "url": "https://bioportal.bioontology.org/ontologies/EDAM/?p=classes&conceptid=http%3A%2F%2Fedamontology.org%2Ftopic_0199"
+    }
+  ]
+}
+    </script>
+
     <section class="tutorial">
-        <h1>Calling variants in diploid systems</h1>
+        <h1 data-toc-skip>Calling variants in diploid systems</h1>
+        
+
+        <div class="contributors-line">By: 
+
+ <a href="/training-material/hall-of-fame/nekrut/" class="contributor-badge"><img src="https://avatars.githubusercontent.com/nekrut" alt="Anton Nekrutenko">Anton Nekrutenko</a> <a href="/training-material/hall-of-fame/nsoranzo/" class="contributor-badge"><img src="https://avatars.githubusercontent.com/nsoranzo" alt="Nicola Soranzo">Nicola Soranzo</a>
+
+</div>
 
         <blockquote class="overview">
             <h3>Overview</h3>
-
-            <strong><i class="fa fa-question-circle" aria-hidden="true"></i> Questions</strong>
+            <strong><i class="far fa-question-circle" aria-hidden="true"></i><span class="visually-hidden">question</span> Questions</strong>
             <ul>
             
-            <li>How to find variable sites in diploid genomes?</li>
+            <li><p>How to find variable sites in diploid genomes?</p>
+</li>
             
             </ul>
 
-            <strong><i class="fa fa-bullseye" aria-hidden="true"></i> Objectives</strong>
+            <strong><i class="fas fa-bullseye" aria-hidden="true"></i><span class="visually-hidden">objectives</span> Objectives</strong>
             <ul>
             
-            <li>Using Galaxy's main site we will see how to call variants in human genome.</li>
+            <li><p>Identification of genetic variations using variant calling</p>
+</li>
             
             </ul>
 
             
-            <strong><i class="fa fa-check-circle" aria-hidden="true"></i> Requirements</strong>
+            <strong><i class="fas fa-check-circle" aria-hidden="true"></i><span class="visually-hidden">requirements</span> Requirements</strong>
             <ul>
             
-                <li>
+    <li>
+    
+        
+        
+        <a href="/training-material/topics/introduction">Introduction to Galaxy Analyses</a>
+        
+    
+    </li>
+
+    <li>
+    
+        
+        
+        <a href="/training-material/topics/sequence-analysis">Sequence analysis</a>
+        
+            <ul>
+                
                     
-                    <a href="/training-material/topics//introduction/">Galaxy introduction</a>
+                        
                     
-                </li>
-            
-                <li>
+                        
+                            
+                            <li> Quality Control:
+                            
+                                <a href="/training-material/topics/sequence-analysis/tutorials/quality-control/slides.html"><i class="fab fa-slideshare" aria-hidden="true"></i><span class="visually-hidden">slides</span> slides</a>
+                                
+                            
+                            
+                                
+                                    - <a href="/training-material/topics/sequence-analysis/tutorials/quality-control/tutorial.html"><i class="fas fa-laptop" aria-hidden="true"></i><span class="visually-hidden">tutorial</span> hands-on</a>
+                                
+                            
+                            </li>
+                        
                     
-                    <a href="/training-material/topics//sequence-analysis/">Quality control</a>
+                
                     
-                </li>
-            
-                <li>
+                        
+                            
+                            <li> Mapping:
+                            
+                                <a href="/training-material/topics/sequence-analysis/tutorials/mapping/slides.html"><i class="fab fa-slideshare" aria-hidden="true"></i><span class="visually-hidden">slides</span> slides</a>
+                                
+                            
+                            
+                                
+                                    - <a href="/training-material/topics/sequence-analysis/tutorials/mapping/tutorial.html"><i class="fas fa-laptop" aria-hidden="true"></i><span class="visually-hidden">tutorial</span> hands-on</a>
+                                
+                            
+                            </li>
+                        
                     
-                    <a href="/training-material/topics//sequence-analysis/">Mapping</a>
+                        
                     
-                </li>
-            
+                
+            </ul>
+        
+    
+    </li>
+
             
             </ul>
             
 
-            <p><strong><i class="fa fa-hourglass-end" aria-hidden="true"></i> Time estimation:</strong> 1-1.5h</p>
+            
+            <p><strong><i class="fas fa-hourglass-half" aria-hidden="true"></i><span class="visually-hidden">time</span> Time estimation:</strong> 3 hours</p>
+            
+
+            
+
+            
+            
+
+            
+            <p id="supporting-materials"><strong><i class="fa fa-external-link" aria-hidden="true"></i> Supporting Materials</strong></p>
+            <ul>
+                <div class="supporting_material">
+                
+                    <li class="btn btn-default supporting_material"><a href="/training-material/topics/variant-analysis/slides/introduction.html" title="Topic Overview slides">
+                        <i class="fab fa-slideshare" aria-hidden="true"></i><span class="visually-hidden">slides</span> Topic Overview slides
+                    </a></li>
+                
+
+                
+                    <li class="btn btn-default supporting_material">
+<a class="topic-icon" href="https://doi.org/10.5281/zenodo.60520">
+    <i class="far fa-copy" aria-hidden="true"></i><span class="visually-hidden">zenodo_link</span> Datasets
+</a>
+
+</li>
+                
+
+                
+                    <li class="btn btn-default supporting_material">
+    <a class="topic-icon" href="/training-material/topics/variant-analysis/tutorials/dip/workflows/" title="Workflows" alt="Calling variants in diploid systems workflows">
+        <i class="fas fa-share-alt" aria-hidden="true"></i><span class="visually-hidden">workflow</span> Workflows
+    </a>
+
+</li>
+                
+
+                
+                    <li class="btn btn-default supporting_material">
+<a class="topic-icon" href="https://github.com/galaxyproject/training-material/tree/master/topics/variant-analysis/tutorials/dip/tours/">
+    <i class="fas fa-magic" aria-hidden="true"></i><span class="visually-hidden">interactive_tour</span> Tours
+</a>
+
+</li>
+                
+
+                
+                    <li class="btn btn-default supporting_material">
+
+    <a href="#" class="btn btn-default dropdown-toggle topic-icon" data-toggle="dropdown" aria-expanded="false" title="Where to run the tutorial">
+        <i class="fas fa-globe" aria-hidden="true"></i><span class="visually-hidden">instances</span> Available on these Galaxies
+    </a>
+    <ul class="dropdown-menu">
+    
+        <li>
+            <a class="dropdown-item" href="https://github.com/galaxyproject/training-material/tree/master/topics/variant-analysis/docker" title="Docker image for this tutorial">
+                <i class="fab fa-docker" aria-hidden="true"></i><span class="visually-hidden">docker_image</span> Docker image
+            </a>
+        </li>
+    
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+        <a class="dropdown-item" href="https://africa.usegalaxy.eu/" title="Galaxy Africa">
+            Galaxy Africa
+        </a>
+        
+    
+        
+    
+        
+        <a class="dropdown-item" href="https://test.galaxyproject.org/" title="Galaxy Test">
+            Galaxy Test
+        </a>
+        
+    
+        
+    
+        
+        <a class="dropdown-item" href="https://galaxy.genouest.org" title="Galaxy@GenOuest">
+            Galaxy@GenOuest
+        </a>
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+        <a class="dropdown-item" href="https://streetscience.usegalaxy.eu/" title="Street Science">
+            Street Science
+        </a>
+        
+    
+        
+    
+        
+        <a class="dropdown-item" href="https://usegalaxy.be/" title="UseGalaxy.be">
+            UseGalaxy.be
+        </a>
+        
+    
+        
+        <a class="dropdown-item" href="https://usegalaxy.eu" title="UseGalaxy.eu">
+            UseGalaxy.eu
+        </a>
+        
+    
+        
+    
+        
+        <a class="dropdown-item" href="https://usegalaxy.no/" title="UseGalaxy.no">
+            UseGalaxy.no
+        </a>
+        
+    
+        
+    
+        
+        <a class="dropdown-item" href="https://usegalaxy.org.au" title="UseGalaxy.org.au">
+            UseGalaxy.org.au
+        </a>
+        
+    
+        
+    
+        
+    
+    </ul>
+
+
+</li>
+                
+                </div>
+            </ul>
+            
+
+            <p><strong> <i class="far fa-calendar" aria-hidden="true"></i><span class="visually-hidden">last_modification</span> Last modification:</strong> Dec 30, 2020 </p>
         </blockquote>
 
-        <!-- Scripts below are necessary for rendering formulas used in this tutorial -->
+        <div class="container">
+            <div class="row">
+                <!-- sidebar, which will move to the top on a small screen -->
+                <div class="col-sm-2">
+                    <nav id="toc" data-toggle="toc" class="sticky-top"></nav>
+                </div>
+                <div class="col-sm-10">
+                    <p>Today we hear a lot about personalized medicine. Yet the <em>personalization</em> is defined by the genetic make up of the individual. In this tutorial we will discuss how this information can be uncovered from the genomic sequencing data.</p>
 
-<script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
-</script>
+<blockquote class="agenda">
+  <h3 id="agenda">Agenda</h3>
 
-<script type="text/x-mathjax-config">
-MathJax.Hub.Config({
-  tex2jax: {
-    inlineMath: [['$','$'], ['\\(','\\)']],
-    displayMath: [['$$','$$'], ['\[','\]']],
-    processEscapes: true,
-    processEnvironments: true,
-    skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
-    TeX: { equationNumbers: { autoNumber: "AMS" },
-         extensions: ["AMSmath.js", "AMSsymbols.js"] }
-  }
-});
-</script>
+  <p>In this tutorial, we will deal with:</p>
 
-<script type="text/x-mathjax-config">
-  MathJax.Hub.Queue(function() {
-    // Fix <code> tags after MathJax finishes running. This is a
-    // hack to overcome a shortcoming of Markdown. Discussion at
-    // https://github.com/mojombo/jekyll/issues/199
-    var all = MathJax.Hub.getAllJax(), i;
-    for(i = 0; i < all.length; i += 1) {
-        all[i].SourceElement().parentNode.className += ' has-jax';
-    }
-});
-</script>
+<ol id="markdown-toc">
+  <li><a href="#calling-variants" id="markdown-toc-calling-variants">Calling variants</a>    <ol>
+      <li><a href="#how-does-snp-calling-and-genotyping-work" id="markdown-toc-how-does-snp-calling-and-genotyping-work">How does SNP calling and genotyping work?</a></li>
+      <li><a href="#calling-with-freebayes" id="markdown-toc-calling-with-freebayes">Calling with FreeBayes</a></li>
+    </ol>
+  </li>
+  <li><a href="#annotating-variants-with-snpeff" id="markdown-toc-annotating-variants-with-snpeff">Annotating variants with SnpEff</a></li>
+  <li><a href="#manipulating-variation-data-with-gemini" id="markdown-toc-manipulating-variation-data-with-gemini">Manipulating variation data with GEMINI</a>    <ol>
+      <li><a href="#loading-data-into-gemini" id="markdown-toc-loading-data-into-gemini">Loading data into GEMINI</a></li>
+      <li><a href="#querying-the-gemini-database" id="markdown-toc-querying-the-gemini-database">Querying the GEMINI database</a></li>
+      <li><a href="#querying-genotypes" id="markdown-toc-querying-genotypes">Querying genotypes</a></li>
+      <li><a href="#using-wildcards" id="markdown-toc-using-wildcards">Using wildcards</a></li>
+      <li><a href="#going-further" id="markdown-toc-going-further">Going further</a></li>
+    </ol>
+  </li>
+</ol>
 
-<p>Today we hear a lot about personalized medicine. Yet the <em>personalization</em> is defined by the genetic make up of the individual. Today we will discuss how this information can be uncovered from the genomic sequencing data. The figure above shows distribution of rare and common variants in 1,092 human genomes described by the <a href="https://www.nature.com/nature/journal/v491/n7422/abs/nature11632.html">1000 Genome Consortium</a>.</p>
+</blockquote>
 
 <h1 id="calling-variants">Calling variants</h1>
 
-<p>Variant calling is a complex field that was significantly propelled by advances in DNA sequencing and efforts of large scientific consortia such as the <a href="http://www.1000genomes.org">1000 Genomes</a>. Here we summarize basic ideas central to Genotype and Variant calling. First, let’s contrast the two things although they often go together:</p>
+<p>Variant calling is a complex field that was significantly propelled by advances in <span class="notranslate">DNA</span> sequencing and efforts of large scientific consortia such as the <a href="http://www.1000genomes.org">1000 Genomes</a>. Here we summarize basic ideas central to Genotype and Variant calling. First, let’s contrast the two things although they often go together:</p>
 
 <ul>
-  <li><strong>Variant calling</strong> - identification of positions where the sequenced sample is different from the reference sequence (or <a href="https://github.com/vgteam/vg">reference genome graph</a>);</li>
+  <li><strong>Variant calling</strong> - identification of positions where the sequenced sample is different from the reference sequence (or <a href="https://github.com/vgteam/vg">reference genome graph</a>)</li>
   <li><strong>Genotype calling</strong> - identifying individual’s genotype at variable sites.</li>
 </ul>
 
-<p>A typical workflow for variation discovery involves the following steps (e.g., see Nielsen et al. <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3593722/">2011</a>):</p>
+<p>A typical <span class="notranslate">workflow</span> for variation discovery involves the following steps (e.g., see Nielsen et al. <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3593722/">2011</a>):</p>
 
 <ol>
-  <li>Mapping reads against the reference genome</li>
-  <li>Thresholding BAM datasets by, for example, retaining paired, properly mapped reads</li>
+  <li><span class="notranslate">Mapping</span> <span class="notranslate">reads</span> against the reference genome</li>
+  <li>Thresholding BAM datasets by, for example, retaining paired, properly mapped <span class="notranslate">reads</span></li>
   <li>Performing quality score recalibration</li>
   <li>Performing realignment</li>
   <li>Performing variant calling/genotype assignment</li>
   <li>Performing filtering and genotype quality score recalibration</li>
-  <li>Annotating variants and performing downstream analyses</li>
+  <li>Annotating variants and performing <span class="notranslate">downstream</span> analyses</li>
 </ol>
 
-<p>However, continuing evolution of variant detection methods has made some of these steps obsolete. For instance, omitting quality score recalibration and re-alignment (steps 3 and 4 above) when using haplotype-aware variant callers such as <a href="https://github.com/ekg/freebayes">FreeBayes</a> does not have an effect on the resulting calls (see Brad Chapman’s methodological comparisons at <a href="https://bit.ly/1S9kFJN">bcbio</a>). Before going forward with an actual genotype calling in Galaxy let’s take a look as some basic ideas behind modern variant callers.</p>
+<p>However, continuing evolution of variant detection methods has made some of these steps obsolete. For instance, omitting quality score recalibration and re-alignment (steps 3 and 4 above) when using haplotype-aware variant callers such as <a href="https://github.com/ekg/freebayes">FreeBayes</a> does not have an effect on the resulting calls (see Brad Chapman’s methodological comparisons at <a href="https://bit.ly/1S9kFJN">bcbio</a>). Before going forward with an actual genotype calling in <span class="notranslate">Galaxy</span> let’s take a look as some basic ideas behind modern variant callers.</p>
 
 <h2 id="how-does-snp-calling-and-genotyping-work">How does SNP calling and genotyping work?</h2>
 
-<p>Consider a set of sequencing reads derived from a diploid individual:</p>
+<p>Consider a set of sequencing <span class="notranslate">reads</span> derived from a diploid individual:</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>REFERENCE: atcatgacggcaGtagcatat
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>REFERENCE: atcatgacggcaGtagcatat
 --------------------------------
 READ1:     atcatgacggcaGtagcatat
 READ2:         tgacggcaGtagcatat
@@ -251,30 +752,29 @@ READ5:     atcatgacggcaGtagc
 <p>The capitalized position contains a G → A <a href="https://en.wikipedia.org/wiki/Transition_(genetics)">transition</a>. So, in principle this can be a heterozygous site with two alleles <strong>G</strong> and <strong>A</strong>. A commonly used naïve procedure would define a site as <em>heterozygous</em> if there is a non-reference allele with frequency between 20% and 80%. In this case <strong>A</strong> is present in 1/5 or 20% of the cases, so we can say that this is a heterozygous site. Yet it is only represented by a single read and thus is hardly reliable. Here are some of the possibilities that would explain this <em>variant</em>. It can be:</p>
 
 <ul>
-  <li>A true variant</li>
-  <li>Experimental artifact: A library preparation error (e.g., PCR-derived)</li>
-  <li>Base calling error</li>
-  <li>Analysis error: A misalignment (though unlikely in the above example)</li>
+  <li>a true variant</li>
+  <li>an experimental artifact, e.g. a library preparation error</li>
+  <li>a base calling error</li>
+  <li>an analysis error, e.g. a misalignment (though unlikely in the above example)</li>
 </ul>
 
 <p>The modern variant callers attempt to assign a reliability estimate for each genotype call. This is done using Bayes reasoning (for a great visual explanation see <a href="https://oscarbonilla.com/2009/05/visualizing-bayes-theorem/">blog</a> by Oscar Bonilla). Here we present a SNP-relevant “translation” on this explanation (with inspiration from <a href="https://github.com/ekg">Erik Garrison</a>).</p>
 
-<p>Suppose in a population you have $A$ individuals (not to be confused with nucleotide <strong>A</strong>; in this case $A$ is a number of individuals) with a variant. You are performing re-sequencing and observe a variant in $B$ (again, a number) of your sequencing reads. We want to estimate the probability of having the real polymorphism in the population given our observations in sequencing reads. The logic is as follows:</p>
+<p>Suppose in a population you have \(A\) individuals (not to be confused with nucleotide <strong>A</strong>; in this case \(A\) is a number of individuals) with a variant. You are performing re-sequencing and observe a variant in \(B\) (again, a number) of your sequencing <span class="notranslate">reads</span>. We want to estimate the probability of having the real polymorphism in the population given our observations in sequencing <span class="notranslate">reads</span>. The logic is as follows:</p>
 
-<div>
+<ul>
+  <li>The probability of having polymorphism <em>A</em> in the population is \(P(A) = \lvert A \rvert / \lvert U \rvert\)</li>
+  <li>The probability of seeing a variant given our identification approach (i.e., sequencing) is \(P(B) = \lvert B \rvert / \lvert U \rvert\)</li>
+</ul>
 
-The probability of having polymorphism <em>A</em> in the population is $P(A) = |A|/|U|$
-The probability of seeing a variant given our identification approach (i.e., sequencing) is $P(B) = |B|/|U|$
-Now, the probability of having a variant and it being observed in our sequencing data is the overlap between $A$ and $B$ sets $P(AB) = |AB|/|U|$. This is presented graphically below:
-
-</div>
+<p>Now, the probability of having a variant and it being observed in our sequencing data is the overlap between \(A\) and \(B\) sets: \(P(AB) = \lvert AB \rvert / \lvert U \rvert\). This is presented graphically below:</p>
 
 <table>
   <thead>
     <tr>
-      <th style="text-align: center"> </th>
-      <th style="text-align: center"> </th>
-      <th style="text-align: center"> </th>
+      <th style="text-align: center">Polymorphisms</th>
+      <th style="text-align: center">Variant Calls</th>
+      <th style="text-align: center">Polymorphisms and Variant Calls</th>
     </tr>
   </thead>
   <tbody>
@@ -284,57 +784,64 @@ Now, the probability of having a variant and it being observed in our sequencing
       <td style="text-align: center"><img src="../../images/pAB.png" alt="P(AB) polymorphism and variant calls" /></td>
     </tr>
     <tr>
-      <td style="text-align: center">$P(A)$ <br /> Polymorphisms</td>
-      <td style="text-align: center">$P(B)$ <br /> Variant calls</td>
-      <td style="text-align: center">$P(AB)$ <br /> Polymorphisms + Variant calls</td>
+      <td style="text-align: center">\(P(A)\)</td>
+      <td style="text-align: center">\(P(B)\)</td>
+      <td style="text-align: center">\(P(AB)\)</td>
     </tr>
   </tbody>
 </table>
 
-<p>Now we can ask the following question: <em>What is the probability of a having a real polymorphism</em> $A$ <em>given our observation of variants in reads</em> $B$? In other words <em>what is the probability of</em> $A$ <em>given</em> $B$? Or, as stated in the original <a href="https://oscarbonilla.com/2009/05/visualizing-bayes-theorem/">blog</a>: “<em>given that we are in region $B$ what is the probability that we are in the region $AB$</em>?”:</p>
+<p>Now we can ask the following question: <em>What is the probability of a having a real polymorphism \(A\) given our observation of variants in <span class="notranslate">reads</span> \(B\)?</em> In other words, <em>what is the probability of \(A\) given \(B\)?</em> Or, as stated in the original <a href="https://oscarbonilla.com/2009/05/visualizing-bayes-theorem/">blog</a>: “<em>given that we are in region \(B\), what is the probability that we are in the region \(AB\)?</em>”</p>
 
-<div>
-$P(A|B)=\frac{|AB|}{|B|}$
-<br />
-Dividing by $|U|$: $P(A|B)=\frac{\frac{|AB|}{|U|}}{\frac{|B|}{|U|}}$
-<br />
-Because we know that $P(AB)=\frac{|AB|}{|U|}$ and $P(B)=\frac{|B|}{|U|}$ we can rewrite the equation in the previous bullet point as
-<br />
-$P(A|B)=\frac{P(AB)}{P(B)}$
-</div>
+\[P(A \vert B) = \frac{\lvert AB \rvert}{\lvert B \rvert}\]
 
-<p>Now, let’s ask an opposite question. Given a true polymorphism $A$ what are the chances that we do detect it (i.e., find ourselves in $AB$)? It will be:</p>
+<p>Dividing both numerator and denominator by \(\lvert U \rvert\):</p>
 
-<div>
-$$P(B|A)=\frac{P(AB)}{P(A)}$$
-</div>
-<p>So, because we know that $P(A|B)=\frac{P(AB)}{P(B)}$ and we just reasoned that $P(B|A)=\frac{P(AB)}{P(A)}$, we can say that $P(A|B)P(B)=P(B|A)P(A)$ leading us to the Bayes formula:</p>
-<div>
-$$P(A|B)=\frac{P(B|A)P(A)}{P(B)}$$
-</div>
-<p>Translating this into “genomics terms” the probability of having a genotype $G$ given sequencing reads $S$ is: $P(G|S)=\frac{P(S|G)P(G)}{P(S)}$. Because in a given calculation of $P(G|S)$ reads are fixed we can re-write the Bayes formula in the following way:</p>
-<div>
-$$P(G|S)=P(S|G)P(G)$$
-</div>
-<p>with $P(S)$ becoming a constant. This leaves us with the need to estimate two things: $P(S|G)$ (the data likelihood) and $P(G)$ (the prior probability for the variant).</p>
+\[P(A \vert B) = \frac{\frac{\lvert AB \rvert}{\lvert U \rvert}}{\frac{\lvert B \rvert}{\lvert U \rvert}}\]
+
+<p>Because we know that \(P(AB) = \frac{\lvert AB \rvert}{\lvert U \rvert}\) and \(P(B) = \frac{\lvert B \rvert}{\lvert U \rvert}\), we can rewrite the equation above as:</p>
+
+\[P(A \vert B) = \frac{P(AB)}{P(B)}\]
+
+<p>Now, let’s ask an opposite question. Given a true polymorphism \(A\), what are the chances that we do detect it (i.e. find ourselves in \(AB\))? It will be:</p>
+
+\[P(B \vert A) = \frac{P(AB)}{P(A)}\]
+
+<p>So, because we know that \(P(A \vert B) = \frac{P(AB)}{P(B)}\) and we just reasoned that \(P(B \vert A) = \frac{P(AB)}{P(A)}\), we can say that \(P(A \vert B)P(B) = P(B \vert A)P(A)\), leading us to the Bayes formula:</p>
+
+\[P(A \vert B) = \frac{P(B \vert A)P(A)}{P(B)}\]
+
+<p>Translating this into “genomics terms”, the probability of having a genotype \(G\) given sequencing <span class="notranslate">reads</span> \(S\) is: \(P(G \vert S) = \frac{P(S \vert G)P(G)}{P(S)}\). Because in a given calculation of \(P(G \vert S)\) the <span class="notranslate">reads</span> are fixed, we can re-write the Bayes formula in the following way:</p>
+
+\[P(G \vert S) \sim P(S \vert G)P(G)\]
+
+<p>with \(P(S)\) becoming a constant. This leaves us with the need to estimate two things:</p>
+
+<ol>
+  <li>\(P(S \vert G)\), the data likelihood</li>
+  <li>\(P(G)\), the prior probability for the variant.</li>
+</ol>
 
 <p>In the simplest case we can estimate these as follows:</p>
 
-<h3 id="psg">$P(S|G)$</h3>
-<p>Suppose $S_i$ is a base in read $i$ corresponding to a genome position with genotype $G$. The probability of seeing $S_i$ given $G$, or $P(S_i|G)$, is given by the quality score of $S_i$ (the quality scores are given by base calling software and reported as <a href="https://en.wikipedia.org/wiki/Phred_quality_score">phred scores</a>). Thus the genotype likelihood $P(S|G)$ is the product of $P(S_i|G)$ over all $i$. In reality however there are many other sources of uncertainty (in addition to base qualities) that are incorporated in the calculation of data likelihoods including NGS technology-related issues, dependency of error rates on substitution type (e.g., transitions versus transversions), sequencing context etc…</p>
+<h3 id="ps-vert-g">\(P(S \vert G)\)</h3>
 
-<h3 id="pg---a-single-sample-case">$P(G)$ - a single sample case</h3>
+<p>Suppose \(S_i\) is a base in read \(i\) corresponding to a genome position with genotype \(G\). The probability of seeing \(S_i\) given \(G\), or \(P(S_i \vert G)\), is given by the quality score of \(S_i\) (the quality scores are given by base calling software and reported as <a href="https://en.wikipedia.org/wiki/Phred_quality_score">phred scores</a>). Thus the genotype likelihood \(P(S \vert G)\) is the product of \(P(S_i \vert G)\) over all \(i\). In reality however there are many other sources of uncertainty (in addition to base qualities) that are incorporated in the calculation of data likelihoods including NGS technology-related issues, dependency of error rates on substitution type (e.g., transitions versus transversions), sequencing context etc…</p>
+
+<h3 id="pg---a-single-sample-case">\(P(G)\) - a single sample case</h3>
+
 <p>One can assign an equal probability to all possible genotypes, or to source this information based on previously obtained knowledge containing in a database, such as <a href="https://www.ncbi.nlm.nih.gov/SNP/">dbSNP</a>. In this case (as exemplified in <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3593722/">Nielsen et al. 2011</a>) we may, for instance, have a site with a <strong>G/T</strong> polymorphism and genotypes <strong>GG</strong>, <strong>TT</strong>, and <strong>GT</strong> having frequencies of 0.45, 0.45, 0.09, respectively. We will use these values as priors.</p>
 
-<h3 id="pg---a-multi-sample-case">$P(G)$ - a multi-sample case</h3>
-<p>Genotype calling reliability can be significantly improved when analyzing multiple samples jointly. In this case genotype frequencies can be inferred from allele frequencies using Hardy-Weinberg equilibrium (<a href="https://en.wikipedia.org/wiki/Hardy%E2%80%93Weinberg_principle">HWE</a>). The following example (again from <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3593722/">Nielsen et al. 2011</a>) illustrates this idea: suppose you are calling genotypes for a single individual using a combination of multiple samples. There are two genotypes, <strong>AT</strong> and <strong>AA</strong>, with equally large genotype likelihoods. If, however, in our collection of multiple samples the frequency of <strong>A</strong> is 1% ($p = 0.01$; $q = 1 - p = 0.99$), then from the HWE we have:</p>
+<h3 id="pg---a-multi-sample-case">\(P(G)\) - a multi-sample case</h3>
+
+<p>Genotype calling reliability can be significantly improved when analyzing multiple samples jointly. In this case genotype frequencies can be inferred from allele frequencies using Hardy-Weinberg equilibrium (<a href="https://en.wikipedia.org/wiki/Hardy%E2%80%93Weinberg_principle">HWE</a>). The following example (again from <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3593722/">Nielsen et al. 2011</a>) illustrates this idea: suppose you are calling genotypes for a single individual using a combination of multiple samples. There are two genotypes, <strong>AT</strong> and <strong>AA</strong>, with equally large genotype likelihoods. If, however, in our collection of multiple samples the frequency of <strong>A</strong> is 1% (\(p = 0.01\); \(q = 1 - p = 0.99\)), then from the HWE we have:</p>
 
 <table>
   <thead>
     <tr>
-      <th> </th>
-      <th> </th>
-      <th> </th>
+      <th><strong>AA</strong> (\(p^2\))</th>
+      <th><strong>AT</strong> (\(2pq\))</th>
+      <th><strong>TT</strong> (\(q^2\))</th>
     </tr>
   </thead>
   <tbody>
@@ -342,11 +849,6 @@ $$P(G|S)=P(S|G)P(G)$$
       <td>0.0001</td>
       <td>0.0198</td>
       <td>0.9801</td>
-    </tr>
-    <tr>
-      <td><strong>AA</strong> ($p^2$)</td>
-      <td><strong>AT</strong> ($2pq$)</td>
-      <td><strong>TT</strong> ($q^2$)</td>
     </tr>
   </tbody>
 </table>
@@ -358,33 +860,17 @@ $$P(G|S)=P(S|G)P(G)$$
 <p><a href="https://github.com/ekg/freebayes">FreeBayes</a> is an open source variant caller that has been battle-tested by the 1000 Genomes community and is extensively used today (also see <a href="https://bcbio.wordpress.com/">bcbio</a>). It has a number of features that simplify variant discovery workflows. These include (from FreeBayes github page):</p>
 
 <ul>
-  <li><strong>Indel realignment is accomplished internally</strong> using a read-independent method, and issues resulting from discordant alignments are dramatically reducedy through the direct detection of haplotypes;</li>
-  <li><strong>The need for base quality recalibration is avoided</strong> through the direct detection of haplotypes. Sequencing platform errors tend to cluster (e.g. at the ends of reads), and generate unique, non-repeating haplotypes at a given locus;</li>
-  <li><strong>Variant quality recalibration is avoided</strong> by incorporating a number of metrics, such as read placement bias and allele balance, directly into the Bayesian model;</li>
+  <li><strong>Indel realignment is accomplished inte<span class="notranslate">rna</span>lly</strong> using a read-independent method, and issues resulting from discordant alignments are dramatically reduced through the direct detection of haplotypes</li>
+  <li><strong>The need for base quality recalibration is avoided</strong> through the direct detection of haplotypes. Sequencing platform errors tend to cluster (e.g. at the ends of <span class="notranslate">reads</span>), and generate unique, non-repeating haplotypes at a given locus</li>
+  <li><strong>Variant quality recalibration is avoided</strong> by incorporating a number of metrics, such as read placement bias and allele balance, directly into the Bayesian model</li>
   <li><strong>Ability to incorporate non-diploid cases</strong> such as pooled datasets or data from polyploid samples.</li>
 </ul>
 
-<p>Freebayes is a <em>haplotype-based</em> variant caller. This implies that instead of looking at an individual positions within an alignment of reads to the reference genome, it looks at a haplotype window, length of which is dynamically determined (see section 3.2. in <a href="https://arxiv.org/pdf/1207.3907v2.pdf">FreeBayes manuscript</a>):</p>
+<p>Freebayes is a <em>haplotype-based</em> variant caller. This implies that instead of looking at an individual positions within an alignment of <span class="notranslate">reads</span> to the reference genome, it looks at a haplotype window, length of which is dynamically determined (see section 3.2. in <a href="https://arxiv.org/pdf/1207.3907v2.pdf">FreeBayes manuscript</a>):</p>
 
-<table>
-  <thead>
-    <tr>
-      <th> </th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><img src="../../images/freebayes.png" alt="FreeBayes manuscript" /></td>
-    </tr>
-    <tr>
-      <td><small>Looking at a haplotype window makes misalignments tolerable. In this case a low complexity poly(A) stretch is misaligned. As a result looking at individual positions will result in calling multiple spurious varians. In the case of FreeBayes looking at a haplotype identifies two alleles (this is a diploid example) <code class="highlighter-rouge">A(7)</code> and <code class="highlighter-rouge">A(6)</code>, while <code class="highlighter-rouge">A(8)</code> is likely an error. Image by <a href="https://github.com/ekg/freebayes">Erik Garrison</a></small></td>
-    </tr>
-  </tbody>
-</table>
+<figure id="figure-1"><img src="../../images/freebayes.png" alt="Haplotype-based calling" /><figcaption><span class="figcaption-prefix">Figure 1:</span> Looking at a haplotype window makes misalignments tolerable. In this case a low complexity poly(A) stretch is misaligned. As a result looking at individual positions will result in calling multiple spurious variants. In the case of FreeBayes looking at a haplotype identifies two alleles (this is a diploid example) A(7) and A(6), while A(8) is likely an error. Image by Erik Garrison</figcaption></figure>
 
-<h1 id="lets-try-it">Let’s try it</h1>
-
-<h2 id="the-data">The data</h2>
+<h3 id="the-data">The data</h3>
 
 <p>In this example we will perform variant calling and annotation using <a href="https://jimb.stanford.edu/giab/">genome in the bottle data</a>. Specifically, we will use Ashkenazim Father-Mother-Son trio data from the Personal Genome Project:</p>
 
@@ -394,103 +880,138 @@ $$P(G|S)=P(S|G)P(G)$$
   <li>HG004 - NA24143 - hu8E87A9 (mother)</li>
 </ul>
 
-<p>Yet for a quick tutorial these datasets are way too big, so we created a downsampled (watered down) dataset. This dataset was produced by mapping the trio reads against the <code class="highlighter-rouge">hg19</code> version of the human genome, merging the resulting bam files together (we use readgroups to label individual reads so they can be traced to each of the original individuals), and restricting alignments to a small portion of chromosome 19 containing the <a href="https://www.ncbi.nlm.nih.gov/gene?cmd=Retrieve&amp;dopt=Graphics&amp;list_uids=5442"><em>POLRMT</em></a> gene.</p>
+<p>Yet for a quick tutorial these datasets are way too big, so we created a <a href="https://doi.org/10.5281/zenodo.60520">downsampled dataset</a>. This dataset was produced by <span class="notranslate">mapping</span> the trio <span class="notranslate">reads</span> against the <code class="language-plaintext highlighter-rouge">hg19</code> version of the human genome, merging the resulting bam files together (we use readgroups to label individual <span class="notranslate">reads</span> so they can be traced to each of the original individuals), and restricting alignments to a small portion of chromosome 19 containing the <a href="https://www.ncbi.nlm.nih.gov/gene?cmd=Retrieve&amp;dopt=Graphics&amp;list_uids=5442"><em>POLRMT</em></a> gene.</p>
 
-<p>Here is what to do to load the data:</p>
+<blockquote class="notranslate hands_on">
+  <h3 id="hands_on-hands-on-data-upload"><i class="fas fa-pencil-alt" aria-hidden="true"></i><span class="visually-hidden">hands_on</span> Hands-on: Data upload</h3>
 
-<blockquote class="hands_on">
-  <h3 id="data-upload-from-galaxy-library">Data upload from Galaxy Library</h3>
+  <ol>
+    <li>
+      <p>Create a new history for this variant calling exercise</p>
 
-  <p>Go to the <a href="https://usegalaxy.org/library/list#folders/F9ff2d127cd7ed6bc">data library</a> and select both BAM and PED datasets. Then Click <strong>to History</strong> button:</p>
+      <blockquote class="tip">
 
-  <p><img src="../../images/library_import.png" alt="Library import" /></p>
+        <h3 id="tip-tip-creating-a-new-history"><i class="far fa-lightbulb" aria-hidden="true"></i><span class="visually-hidden">tip</span> Tip: Creating a new history</h3>
 
-  <p>Galaxy will ask you if you want to import these data into a new history, which you might want (in the case below I called this history <code class="highlighter-rouge">genotyping try</code>):</p>
+        <p>Click the <i class="fas fa-plus" aria-hidden="true"></i><span class="visually-hidden">new-history</span> icon at the top of the history panel</p>
 
-  <p><img src="../../images/history_import.png" alt="Importing into history" /></p>
-
-  <p>The datasets will appear in your history:</p>
-
-  <p><img src="../../images/library_import_complete.png" alt="History after import" /></p>
-
+        <p>If the <i class="fas fa-plus" aria-hidden="true"></i><span class="visually-hidden">new-history</span> is missing:</p>
+        <ol>
+          <li>Click on the <i class="fas fa-cog" aria-hidden="true"></i><span class="visually-hidden"><span class="notranslate">galaxy</span>-gear</span> icon (<strong>History options</strong>) on the top of the history panel</li>
+          <li>Select the option <strong>Create New</strong> from the menu</li>
+        </ol>
+      </blockquote>
+    </li>
+    <li>Import the files named <code class="language-plaintext highlighter-rouge">GIAB-Ashkenazim-Trio.txt</code> (tabular format) and <code class="language-plaintext highlighter-rouge">GIAB-Ashkenazim-Trio-hg19</code> (BAM format) from <a href="https://doi.org/10.5281/zenodo.60520">Zenodo</a> or a data library:</li>
+    <li>Specify the used genome for <span class="notranslate">mapping</span>:
+      <ol>
+        <li>Click on the <i class="fas fa-pencil-alt" aria-hidden="true"></i><span class="visually-hidden"><span class="notranslate">galaxy</span>-pencil</span> <strong>pencil icon</strong> for the BAM dataset to edit its attributes</li>
+        <li>Select <code class="language-plaintext highlighter-rouge">Human Feb 2009</code> on <strong>Database/Build</strong></li>
+        <li>Click the <strong>Save</strong> button</li>
+      </ol>
+    </li>
+  </ol>
 </blockquote>
 
-<h2 id="generating-and-post-processing-freebayes-calls">Generating and post-processing FreeBayes calls</h2>
+<h3 id="generating-and-post-processing-freebayes-calls">Generating and post-processing FreeBayes calls</h3>
 
-<blockquote class="hands_on">
-  <h3 id="running-freebayes">Running FreeBayes</h3>
+<blockquote class="notranslate hands_on">
+  <h3 id="hands_on-hands-on-generating-freebayes-calls"><i class="fas fa-pencil-alt" aria-hidden="true"></i><span class="visually-hidden">hands_on</span> Hands-on: Generating FreeBayes calls</h3>
 
-  <p>Select <strong>FreeBayes</strong> from <strong>NGS: Variant Analysis</strong> section of the tool menu (left pane of Galaxy’s interface).
-Make sure the top part of the interface looks like shown below. Here we selected <code class="highlighter-rouge">GIAB-Ashkenazim-Trio-hg19</code> as input and set <strong>Using reference genome</strong> to <code class="highlighter-rouge">hg19</code> and <strong>Choose parameter selection level</strong> to <code class="highlighter-rouge">5</code>. The interface should look like this:</p>
-
-  <p><img src="../../images/FreeBayes_settings.png" alt="FreeBayes input and parameters" /></p>
-
-  <p>Scrolling down to <strong>Tweak algorithmic features?</strong> click <code class="highlighter-rouge">Yes</code> and set <strong>Calculate the marginal probability of genotypes and report as GQ in each sample field in the VCF output</strong> to <code class="highlighter-rouge">Yes</code>. This would help us evaluating the quality of genotype calls.</p>
-
-  <p><img src="../../images/freebayes_gq.png" alt="FreeBayes additional parameters" /></p>
-
-  <p>Depending on how busy Galaxy is this may take a little bit of time (coffee break?). Eventually this will produce a dataset in <a href="http://www.1000genomes.org/wiki/Analysis/variant-call-format">VCF</a> format containing 35 putative variants. Before we can continue we need to post-process this dataset by breaking compound variants into multiple independent variants with <strong>VcfAllelicPrimitives</strong> tool found within <strong>NGS: VCF Manipulation</strong> section. This is necessary for ensuring the smooth sailing through downstream analyses:</p>
-
+  <ol>
+    <li><strong>FreeBayes</strong> <i class="fas fa-wrench" aria-hidden="true"></i><span class="visually-hidden">tool</span> with the following parameters:
+      <ul>
+        <li><em>“Choose the source for the reference genome”</em>: <code class="language-plaintext highlighter-rouge">locally cached</code></li>
+        <li><em>“BAM dataset”</em>: the uploaded <code class="language-plaintext highlighter-rouge">GIAB-Ashkenazim-Trio-hg19</code> BAM dataset</li>
+        <li><em>“Using reference genome”</em>: <code class="language-plaintext highlighter-rouge">Human (Homo sapiens): hg19</code></li>
+        <li><em>“Choose parameter selection level”</em>: <code class="language-plaintext highlighter-rouge">5. Full list of options</code></li>
+        <li><em>“Algorithmic features”</em>: <code class="language-plaintext highlighter-rouge">Set algorithmic features</code></li>
+        <li><em>“Calculate the marginal probability of genotypes and report as GQ in each sample field in the VCF output”</em>: <code class="language-plaintext highlighter-rouge">Yes</code> (This would help us evaluating the quality of genotype calls)</li>
+      </ul>
+    </li>
+  </ol>
 </blockquote>
 
-<blockquote class="hands_on">
-  <h3 id="simplifying-variant-representation">Simplifying variant representation</h3>
+<p>This will produce a dataset in <a href="http://www.1000genomes.org/wiki/Analysis/variant-call-format">VCF</a> format containing 35 putative variants. Before we can continue, we need to post-process this dataset by breaking compound variants into multiple independent variants.</p>
 
-  <p>Select FreeBayes output as the input for this tool and make sure <strong>Maintain site and allele-level annotations when decomposing</strong> and <strong>Maintain genotype-level annotations when decomposing</strong> are set to <code class="highlighter-rouge">Yes</code>:</p>
+<blockquote class="notranslate hands_on">
+  <h3 id="hands_on-hands-on-simplify-variant-representation"><i class="fas fa-pencil-alt" aria-hidden="true"></i><span class="visually-hidden">hands_on</span> Hands-on: Simplify variant representation</h3>
 
-  <p><img src="../../images/vcfallelicprimitives.png" alt="VcfAllelicPrimitives tool and parameters" /></p>
-
+  <ol>
+    <li><strong>VcfAllelicPrimitives</strong> <i class="fas fa-wrench" aria-hidden="true"></i><span class="visually-hidden">tool</span> with:
+      <ul>
+        <li><em>“Select VCF dataset”</em>: the VCF output of <strong>FreeBayes</strong> <i class="fas fa-wrench" aria-hidden="true"></i><span class="visually-hidden">tool</span></li>
+        <li><em>“Maintain site and allele-level annotations when decomposing”</em>: <code class="language-plaintext highlighter-rouge">Yes</code></li>
+        <li><em>“Maintain genotype-level annotations when decomposing”</em>: <code class="language-plaintext highlighter-rouge">Yes</code></li>
+      </ul>
+    </li>
+  </ol>
 </blockquote>
 
-<p><strong>VCFAllelicPrimities</strong> generated a VCF files containing 37 records (the input VCF only contained 35). This is because a multiple nucleotide polymorphism (<code class="highlighter-rouge">TAGG|CAGA</code>) at position 618851 have been converted to two:</p>
+<p><strong>VCFAllelicPrimitives</strong> generates a VCF files containing 37 records (the input VCF only contained 35). This is because a multiple nucleotide polymorphism (<code class="language-plaintext highlighter-rouge">TAGG|CAGA</code>) at position 618851 have been converted to two:</p>
 
-<p><strong>Before:</strong></p>
+<table>
+  <thead>
+    <tr>
+      <th>Before</th>
+      <th>After</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">chr19 618851 . TAGG CAGA 81.7546</code></td>
+      <td><code class="language-plaintext highlighter-rouge">chr19 618851 . T C 81.7546</code><br /><code class="language-plaintext highlighter-rouge">chr19 618854 . G A 81.7546</code></td>
+    </tr>
+  </tbody>
+</table>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>chr19 618851 . TAGG CAGA 81.7546
-</code></pre></div></div>
+<h1 id="annotating-variants-with-snpeff">Annotating variants with SnpEff</h1>
 
-<p><strong>After:</strong></p>
+<p>At this point we are ready to begin annotating variants using <a href="http://snpeff.sourceforge.net/SnpEff.html"><strong>SnpEff</strong></a>. SnpEff “<em>…annotates and predicts the effects of variants on genes (such as amino acid changes)…</em>” and so is critical for functional interpretation of variation data.</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>chr19 618851 . T C 81.7546
-chr19 618854 . G A 81.7546
-</code></pre></div></div>
-
-<h3 id="annotating-variants-with-snpeff">Annotating variants with SnpEff</h3>
-
-<p>At this point we are ready to begin annotating variants using <a href="http://snpeff.sourceforge.net/SnpEff.html">SnpEff</a>. SnpEff, a project maintained by <a href="https://www.linkedin.com/in/pablocingolani">Pablo Cingolani</a> “<em>…annotates and predicts the effects of variants on genes (such as amino acid changes)…</em>” and so is critical for functional interpretation of variation data.</p>
-
-<blockquote class="hands_on">
-  <h3 id="running-snpeff">Running SNPeff</h3>
-
-  <p>Select <strong>NGS: Variant Analysis</strong> → <strong>SnpEff</strong>. Select the latest version of annotation database matching genome version against which reads were mapped and VCF produced. In this case it is <code class="highlighter-rouge">GRCh37.75: hg19</code>:</p>
-
-  <p><img src="../../images/snpeff.png" alt="SNPeff input and parameters" /></p>
-
-  <p>SnpEff will generate two outputs: (1) an annotated VCF file and (2) an HTML report. The report contains a number of useful metrics such as distribution of variants across gene features:</p>
-
-  <p><img src="../../images/snpeff_chart.png" alt="SNPeff output" /></p>
-
-  <p>or changes to codons:</p>
-
-  <p><img src="../../images/snpeff_codons.png" alt="SNPeff output codons changes" /></p>
-
+<blockquote class="notranslate hands_on">
+  <h3 id="hands_on-annotating-variants"><i class="fas fa-pencil-alt" aria-hidden="true"></i><span class="visually-hidden">hands_on</span> Annotating variants</h3>
+  <ol>
+    <li><strong>SnpEff</strong> (Variant effect and annotation) <i class="fas fa-wrench" aria-hidden="true"></i><span class="visually-hidden">tool</span> with:
+      <ul>
+        <li><em>“Sequence changes (SNPs, MNPs, InDels)”</em>: the VCF output of <strong>VcfAllelicPrimitives</strong> <i class="fas fa-wrench" aria-hidden="true"></i><span class="visually-hidden">tool</span></li>
+        <li><em>“Genome source”</em>: <code class="language-plaintext highlighter-rouge">Locally installed reference genome</code></li>
+        <li><em>“Genome”</em>: <code class="language-plaintext highlighter-rouge">Homo sapiens: hg19</code></li>
+      </ul>
+    </li>
+  </ol>
 </blockquote>
 
-<h2 id="manipulating-variation-data-with-gemini">Manipulating variation data with GEMINI</h2>
+<p>SnpEff will generate two outputs:</p>
+
+<ol>
+  <li>an annotated VCF file</li>
+  <li>an HTML report</li>
+</ol>
+
+<p>The report contains a number of useful metrics such as distribution of variants across gene features:</p>
+
+<p><img src="../../images/snpeff_chart.png" alt="SnpEff output chart" /></p>
+
+<p>or changes to codons:</p>
+
+<p><img src="../../images/snpeff_codons.png" alt="SnpEff output codon changes" /></p>
+
+<h1 id="manipulating-variation-data-with-gemini">Manipulating variation data with GEMINI</h1>
 
 <p>Now that we have an annotated VCF file it is time to peek inside our variation data. <a href="http://quinlanlab.org/">Aaron Quinlan</a>, creator of <a href="http://gemini.readthedocs.org/en/latest/index.html">GEMINI</a>, calls it <em>Detective work</em>.</p>
 
-<h3 id="loading-data-into-gemini">Loading data into GEMINI</h3>
+<h2 id="loading-data-into-gemini">Loading data into GEMINI</h2>
 
-<p>The first step is to convert a VCF file we would like to analyze into a GEMINI database. For this we will use <strong>GEMINI Load</strong> tool from <strong>NGS: GEMINI</strong> section. GEMINI takes as input a VCF file and a PED file describing the relationship between samples. In the case of our dataset the PED file looks like this (accessible from <a href="https://usegalaxy.org/library/list#folders/F9ff2d127cd7ed6bc/datasets/418b2500e809568b">here</a>):</p>
+<p>The first step is to convert a VCF file we would like to analyze into a GEMINI database. For this we will use <strong>GEMINI Load</strong> tool. GEMINI takes as input a VCF file and a <a href="https://www.cog-genomics.org/plink2/formats#ped">PED</a> file describing the relationship between samples. In our case the PED file looks like this (second imported file):</p>
 
 <table class="table table-responsive">
   <thead>
     <tr>
       <th>#family_id</th>
       <th>sample_id</th>
-      <th>paternal_id</th>
-      <th>maternal_id</th>
+      <th>pate<span class="notranslate">rna</span>l_id</th>
+      <th>mate<span class="notranslate">rna</span>l_id</th>
       <th>sex</th>
       <th>phenotype</th>
       <th>ethnicity</th>
@@ -527,279 +1048,336 @@ chr19 618854 . G A 81.7546
   </tbody>
 </table>
 
-<blockquote class="hands_on">
-  <h3 id="loading-data-to-gemini">Loading data to GEMINI</h3>
+<blockquote class="notranslate hands_on">
+  <h3 id="hands_on-hands-on-loading-data-into-gemini"><i class="fas fa-pencil-alt" aria-hidden="true"></i><span class="visually-hidden">hands_on</span> Hands-on: Loading data into GEMINI</h3>
 
-  <p>So let’s load data into GEMINI. Set VCF and PED inputs:</p>
+  <ol>
+    <li><strong>GEMINI load</strong> <i class="fas fa-wrench" aria-hidden="true"></i><span class="visually-hidden">tool</span> with:
+      <ul>
+        <li><em>“VCF file to be loaded in the GEMINI database”</em>: the VCF output of <strong>SnpEff</strong> <i class="fas fa-wrench" aria-hidden="true"></i><span class="visually-hidden">tool</span></li>
+        <li><em>“Sample information file in PED+ format”</em>: the uploaded <code class="language-plaintext highlighter-rouge">GIAB-Ashkenazim-Trio.txt</code> tabular</li>
+        <li><em>“Choose a gemini annotation database”</em>: the most recent available release</li>
+      </ul>
 
-  <p><img src="../../images/gemini_load.png" alt="GEMINI load input and parameters" /></p>
+      <p>This will create an SQLite database in your history.</p>
+    </li>
+    <li>Run <strong>GEMINI db_info</strong> <i class="fas fa-wrench" aria-hidden="true"></i><span class="visually-hidden">tool</span> to see the content of the database:
+      <ul>
+        <li><em>“GEMINI database”</em>: the output of <strong>GEMINI load</strong> <i class="fas fa-wrench" aria-hidden="true"></i><span class="visually-hidden">tool</span></li>
+      </ul>
 
-  <p>This creates a sqlite database. To see the content of the database use <strong>GEMINI_db_info</strong>:</p>
-
-  <p><img src="../../images/gemini_db_info.png" alt="gemini_db_info tool to observe sqlite database" /></p>
-
-  <p>This produce a list of <a href="https://github.com/nekrut/galaxy/wiki/datasets/gemini_tables.txt">all tables and fields</a> in the database.</p>
-
+      <p>This produces a list of all database tables and their columns. The latest version of the GEMINI database schema can be found <a href="https://gemini.readthedocs.org/en/latest/content/database_schema.html">here</a>.</p>
+    </li>
+  </ol>
 </blockquote>
 
-<h3 id="querying-gemini-database">Querying GEMINI database</h3>
+<h2 id="querying-the-gemini-database">Querying the GEMINI database</h2>
 
-<p>GEMINI database is queried using the versatile SQL language (more on SQL <a href="https://swcarpentry.github.io/sql-novice-survey">here</a>). In Galaxy’s version of GEMINI this is done using <strong>GEMINI_query</strong> tool. Within this tool SQL commands are typed directly into the <strong>The query to be issued to the database</strong> text box. Let’s begin getting information from some of the tables we discovered with <strong>GEMINI_db_info</strong> tool above.</p>
+<p>The GEMINI database can be queried using the versatile SQL language (more on SQL <a href="https://swcarpentry.github.io/sql-novice-survey">here</a>). In <span class="notranslate">Galaxy</span> this is done using the <strong>GEMINI query</strong> tool. Within this tool SQL commands are typed directly into the <strong>The query to be issued to the database</strong> text box. Let’s begin getting information from some of the tables we discovered using the <strong>GEMINI db_info</strong> tool above.</p>
 
-<p>The examples below are taken from “<a href="https://s3.amazonaws.com/gemini-tutorials/Intro-To-Gemini.pdf">Intro to Gemini</a>” tutorial. For extensive documentation see “<a href="https://gemini.readthedocs.org/en/latest/content/querying.html">Querying GEMINI</a>”.</p>
+<blockquote class="comment">
+  <h3 id="comment-gemini-tutorials"><i class="far fa-comment-dots" aria-hidden="true"></i><span class="visually-hidden">comment</span> GEMINI tutorials</h3>
 
-<blockquote class="question">
-  <h3 id="are-there-novel-varinats-that-are-not-annotated-in-dbsnp-database">Are there “novel” varinats that are not annotated in dbSNP database?</h3>
-
-  <p>To answer this question we will type the following query:</p>
-
-  <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>SELECT count(*) FROM variants WHERE in_dbsnp == 0
-</code></pre></div>  </div>
-
-  <p>into <strong>The query to be issued to the database</strong> field of the interface:</p>
-
-  <p><img src="../../images/gemini_query1.png" alt="GEMINI query overview" /></p>
-
-  <p>As we can see from <a href="https://usegalaxy.org/datasets/bbd44e69cb8906b51bb37b9032761321/display/?preview=True">output (Click this link to see it)</a> there are 21 variants that are not annotated in dbSNP.</p>
-
+  <p>The examples below are taken from “<a href="https://s3.amazonaws.com/gemini-tutorials/Intro-To-Gemini.pdf">Introduction to GEMINI</a>” tutorial. For extensive documentation see “<a href="https://gemini.readthedocs.org/en/latest/content/querying.html">Querying the GEMINI database</a>”.</p>
 </blockquote>
 
-<blockquote class="question">
-  <h3 id="which-variants-are-found-within-polrmt-gene">Which variants are found within POLRMT gene?</h3>
+<blockquote class="notranslate hands_on">
+  <h3 id="hands_on-hands-on-selecting-novel-variants-that-are-not-annotated-in-dbsnp-database"><i class="fas fa-pencil-alt" aria-hidden="true"></i><span class="visually-hidden">hands_on</span> Hands-on: Selecting “novel” variants that are not annotated in dbSNP database</h3>
 
-  <p>To answer this type:</p>
+  <ol>
+    <li><strong>GEMINI query</strong> <i class="fas fa-wrench" aria-hidden="true"></i><span class="visually-hidden">tool</span> with:
+      <ul>
+        <li><em>“GEMINI database”</em>: the output of <strong>GEMINI load</strong> <i class="fas fa-wrench" aria-hidden="true"></i><span class="visually-hidden">tool</span></li>
+        <li><em>“The query to be issued to the database”</em>: <code class="language-plaintext highlighter-rouge">SELECT count(*) FROM variants WHERE in_dbsnp == 0</code></li>
+      </ul>
 
-  <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>SELECT * FROM variants WHERE filter is NULL and gene = 'POLRMT'
-</code></pre></div>  </div>
-
-  <p>The above query will produce <a href="https://usegalaxy.org/datasets/bbd44e69cb8906b5a0bb5b2cc0695697/display/?preview=True">output</a> with very large number of columns. To restrict the number of columns to a manageable set let’s use this command (you may need to scroll sideways):</p>
-
-  <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>SELECT rs_ids, aaf_esp_ea, impact, clinvar_disease_name, clinvar_sig FROM variants WHERE filter is NULL and gene = 'POLRMT'
-</code></pre></div>  </div>
-
-  <p>(column definitions can be found <a href="https://gemini.readthedocs.org/en/latest/content/database_schema.html">here</a>)</p>
-
-  <p><a href="https://usegalaxy.org/datasets/bbd44e69cb8906b540d65297cd1d26bb/display/?preview=True">Output</a> shows varinats found within the <em>POLRMT</em> gene.</p>
-
+      <p>As we can see in the output dataset, there are 21 variants that are not annotated in dbSNP.</p>
+    </li>
+  </ol>
 </blockquote>
 
-<h3 id="querying-genotypes">Querying genotypes</h3>
+<blockquote class="notranslate hands_on">
+  <h3 id="hands_on-find-variants-within-the-polrmt-gene"><i class="fas fa-pencil-alt" aria-hidden="true"></i><span class="visually-hidden">hands_on</span> Find variants within the POLRMT gene</h3>
 
-<p>GEMINI provides access to genotype, sequencing depth, genotype quality, and genotype likelihoods for each individual (<code class="highlighter-rouge">subjectID</code>):</p>
+  <ol>
+    <li><strong>GEMINI query</strong> <i class="fas fa-wrench" aria-hidden="true"></i><span class="visually-hidden">tool</span> with:
+      <ul>
+        <li><em>“GEMINI database”</em>: the output of <strong>GEMINI load</strong> <i class="fas fa-wrench" aria-hidden="true"></i><span class="visually-hidden">tool</span></li>
+        <li><em>“The query to be issued to the database”</em>: <code class="language-plaintext highlighter-rouge">SELECT rs_ids, aaf_esp_ea, impact, clinvar_disease_name, clinvar_sig FROM variants WHERE filter is NULL and gene = 'POLRMT'</code></li>
+      </ul>
+
+      <p>Since the <code class="language-plaintext highlighter-rouge">variants</code> table has a large number of columns, in the query above we had to select only the most interesting columns. The output shows the variants found within the <em>POLRMT</em> gene.</p>
+    </li>
+  </ol>
+</blockquote>
+
+<h2 id="querying-genotypes">Querying genotypes</h2>
+
+<p>GEMINI provides access to genotype, sequencing depth, genotype quality, and genotype likelihoods for each individual (<code class="language-plaintext highlighter-rouge">subjectID</code>):</p>
 
 <ul>
-  <li><code class="highlighter-rouge">gt_types.subjectID</code> - three types of genotype types: <code class="highlighter-rouge">HOM_REF</code>, <code class="highlighter-rouge">HET</code>, ‘HOM_ALT`;</li>
-  <li><code class="highlighter-rouge">gt_quals.subjectID</code> - genotype quality</li>
-  <li><code class="highlighter-rouge">gt_depths.subjectID</code> - total number of reads in this subject at position</li>
-  <li><code class="highlighter-rouge">gt_ref_depths.subjectID</code> -  number of reference allele reads in this subject at position</li>
-  <li><code class="highlighter-rouge">gt_alt_depths.subjectID</code> - number of alternate allele reads in this subject at position</li>
+  <li><code class="language-plaintext highlighter-rouge">gt_types.subjectID</code> - three types of genotype types: <code class="language-plaintext highlighter-rouge">HOM_REF</code>, <code class="language-plaintext highlighter-rouge">HET</code>, <code class="language-plaintext highlighter-rouge">HOM_ALT</code></li>
+  <li><code class="language-plaintext highlighter-rouge">gt_quals.subjectID</code> - genotype quality</li>
+  <li><code class="language-plaintext highlighter-rouge">gt_depths.subjectID</code> - total number of <span class="notranslate">reads</span> in this subject at position</li>
+  <li><code class="language-plaintext highlighter-rouge">gt_ref_depths.subjectID</code> -  number of reference allele <span class="notranslate">reads</span> in this subject at position</li>
+  <li><code class="language-plaintext highlighter-rouge">gt_alt_depths.subjectID</code> - number of alte<span class="notranslate">rna</span>te allele <span class="notranslate">reads</span> in this subject at position</li>
 </ul>
 
 <blockquote class="question">
-  <h3 id="at-how-many-sites-does-child-in-our-trio-have-a-non-reference-allele">At how many sites does child in our trio have a non-reference allele?</h3>
+  <h3 id="question-questions"><i class="far fa-question-circle" aria-hidden="true"></i><span class="visually-hidden">question</span> Questions</h3>
 
-  <p>To answer this we will use two fields of <strong>GEMINI_query</strong> interface. In the <strong>The query to be issued to the database</strong> we will type:</p>
+  <ol>
+    <li>At how many sites does child have a non-reference allele?</li>
+    <li>At how many sites both father and son have non reference alleles?</li>
+    <li>List genotypes for father and son where they have non-reference alleles.</li>
+  </ol>
 
-  <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>SELECT * from variants
-</code></pre></div>  </div>
-
-  <p>and in the field <strong>Restrictions to apply to genotype values</strong> we will enter:</p>
-
-  <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>gt_types.HG002_NA24385_son &lt;&gt; HOM_REF
-</code></pre></div>  </div>
-
-  <p><img src="../../images/gemini_query2.png" alt="GEMINI queries" /></p>
-
-  <p>This produce <a href="https://usegalaxy.org/datasets/bbd44e69cb8906b560921700703d0255/display/?preview=True">a list of sites</a></p>
-
+  <blockquote class="solution">
+    <h3 id="solution-solution"><i class="far fa-eye" aria-hidden="true"></i><span class="visually-hidden">solution</span> Solution</h3>
+    <ol>
+      <li>To answer this question you can run the <strong>GEMINI query</strong> <i class="fas fa-wrench" aria-hidden="true"></i><span class="visually-hidden">tool</span> tool with:
+        <ul>
+          <li><em>“The query to be issued to the database”</em>: <code class="language-plaintext highlighter-rouge">SELECT * from variants</code></li>
+          <li><em>“Restrictions to apply to genotype values”</em>: <code class="language-plaintext highlighter-rouge">gt_types.HG002_NA24385_son &lt;&gt; HOM_REF</code></li>
+        </ul>
+      </li>
+      <li>To answer this question you can run the <strong>GEMINI query</strong> <i class="fas fa-wrench" aria-hidden="true"></i><span class="visually-hidden">tool</span> tool with:
+        <ul>
+          <li><em>“The query to be issued to the database”</em>: <code class="language-plaintext highlighter-rouge">SELECT * from variants</code></li>
+          <li><em>“Restrictions to apply to genotype values”</em>: <code class="language-plaintext highlighter-rouge">(gt_types.HG002_NA24385_son &lt;&gt; HOM_REF AND gt_types.HG003_NA24149_father &lt;&gt; HOM_REF)</code></li>
+        </ul>
+      </li>
+      <li>To answer this question you can run the <strong>GEMINI query</strong> <i class="fas fa-wrench" aria-hidden="true"></i><span class="visually-hidden">tool</span> tool with:
+        <ul>
+          <li><em>“The query to be issued to the database”</em>: <code class="language-plaintext highlighter-rouge">SELECT gts.HG002_NA24385_son, gts.HG003_NA24149_father from variants</code></li>
+          <li><em>“Restrictions to apply to genotype values”</em>: <code class="language-plaintext highlighter-rouge">(gt_types.HG002_NA24385_son &lt;&gt; HOM_REF AND gt_types.HG003_NA24149_father &lt;&gt; HOM_REF)</code></li>
+        </ul>
+      </li>
+    </ol>
+  </blockquote>
 </blockquote>
 
-<blockquote class="question">
-  <h3 id="at-how-many-sites-both-father-and-son-have-non-reference-alleles">At how many sites both father and son have non reference alleles?</h3>
+<h2 id="using-wildcards">Using wildcards</h2>
 
-  <p>To answer this we will type the same expression</p>
+<p>Wildcards simply writing SQL <span class="notranslate">expression</span>s when searching across multiple terms. The syntax for genotype filter wildcards is:</p>
 
-  <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>SELECT * from variants
-</code></pre></div>  </div>
-
-  <p>into <strong>The query to be issued to the database</strong> field and</p>
-
-  <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>(gt_types.HG002_NA24385_son &lt;&gt; HOM_REF AND gt_types.HG003_NA24149_father &lt;&gt; HOM_REF)
-</code></pre></div>  </div>
-
-  <p>into <strong>Restrictions to apply to genotype values</strong>.</p>
-
-  <p>This will produce the following <a href="https://usegalaxy.org/datasets/bbd44e69cb8906b5aab445b3cd632ba7/display/?preview=True">output</a></p>
-
-</blockquote>
-
-<blockquote class="question">
-  <h3 id="list-genotypes-for-father-and-son-where-they-have-non-reference-alleles">List genotypes for father and son where they have non-reference alleles.</h3>
-
-  <p>Type the following:</p>
-
-  <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>SELECT gts.HG002_NA24385_son, gts.HG003_NA24149_father from variants
-</code></pre></div>  </div>
-
-  <p>into <strong>The query to be issued to the database</strong> and</p>
-
-  <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>(gt_types.HG002_NA24385_son &lt;&gt; HOM_REF AND gt_types.HG003_NA24149_father &lt;&gt; HOM_REF)
-</code></pre></div>  </div>
-
-  <p>into <strong>Restrictions to apply to genotype values</strong>. Output will look like <a href="https://usegalaxy.org/datasets/bbd44e69cb8906b543c67f80be21ed02/display/?preview=True">this</a>.</p>
-
-</blockquote>
-
-<h3 id="using-wildcards">Using wildcards</h3>
-
-<p>Wilcards simply writing SQL expressions when searching across multiple terms. The syntax for genotype filter wilcards is</p>
-
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>(COLUMN).(SAMPLE_WILDCARD).(SAMPLE_WILDCARD_RULE).(RULE_ENFORCEMENT)
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>(COLUMN).(SAMPLE_WILDCARD).(SAMPLE_WILDCARD_RULE).(RULE_ENFORCEMENT)
 </code></pre></div></div>
 
-<p>Let’s try a few examples.</p>
+<p>Let’s look at some examples.</p>
 
 <blockquote class="question">
-  <h3 id="at-which-variants-all-samples-are-heterozygous">At which variants all samples are heterozygous?</h3>
+  <h3 id="question-question"><i class="far fa-question-circle" aria-hidden="true"></i><span class="visually-hidden">question</span> Question</h3>
 
-  <p>Type</p>
+  <p>At which variants are every sample heterozygous?</p>
 
-  <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>SELECT chrom, start, end, ref, alt, gene, impact, (gts).(*) FROM variants
-</code></pre></div>  </div>
+  <blockquote class="solution">
+    <h3 id="solution-solution-1"><i class="far fa-eye" aria-hidden="true"></i><span class="visually-hidden">solution</span> Solution</h3>
 
-  <p>into <strong>The query to be issued to the database</strong> and</p>
+    <p>To answer this question you can run the <strong>GEMINI query</strong> <i class="fas fa-wrench" aria-hidden="true"></i><span class="visually-hidden">tool</span> tool with:</p>
+    <ul>
+      <li><em>“The query to be issued to the database”</em>: <code class="language-plaintext highlighter-rouge">SELECT chrom, start, end, ref, alt, gene, impact, (gts).(*) FROM variants</code></li>
+      <li><em>“Restrictions to apply to genotype values”</em>: <code class="language-plaintext highlighter-rouge">(gt_types).(*).(==HET).(all)</code></li>
+    </ul>
 
-  <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>(gt_types).(*).(==HET).(all)
-</code></pre></div>  </div>
+    <p>Here we use wildcards for the query (<code class="language-plaintext highlighter-rouge">(gts.(*))</code> means get genotypes for <strong>all</strong> samples) and genotype filtering (<code class="language-plaintext highlighter-rouge">(gt_types).(*).(==HET).(all)</code>, the <a href="https://gemini.readthedocs.org/en/latest/content/querying.html#the-all-operator">all operator</a> implies that we want results for <strong>all</strong> affected individuals).</p>
 
-  <p>into <strong>Restrictions to apply to genotype values</strong>. Here we use wildcards for the query</p>
-
-  <ul>
-    <li><code class="highlighter-rouge">(gts.*)</code> = get genotypes for <strong>all</strong> samples</li>
-  </ul>
-
-  <p>and genotype filtering</p>
-
-  <ul>
-    <li><code class="highlighter-rouge">(gt_types).(*).(==HET).(all)</code></li>
-  </ul>
-
-  <p>the <a href="https://gemini.readthedocs.org/en/latest/content/querying.html#the-all-operator">all operator</a> implies that want results for <strong>all</strong> afftected individuals). Output will look like <a href="https://usegalaxy.org/datasets/bbd44e69cb8906b5819e1404b5e127d1/display/?preview=True">this</a>.</p>
-
+  </blockquote>
 </blockquote>
 
-<h3 id="going-further">Going further</h3>
+<h2 id="going-further">Going further</h2>
 
-<p>This short tutorial should give you an overall idea on how generate variant data in Galaxy and process it with GEMINI. Yet there is much more to learn. Below we list GEMINI tutorials and links to Galaxy libraries with relevant data:</p>
+<p>This short tutorial should give you an overall idea on how generate variant data in <span class="notranslate">Galaxy</span> and process it with GEMINI. Yet there is much more to learn. Below we list GEMINI tutorials and links to <span class="notranslate">Galaxy</span> libraries with relevant data:</p>
 
 <table>
   <thead>
     <tr>
-      <th style="text-align: left"> </th>
-      <th style="text-align: center"> </th>
-      <th style="text-align: center"> </th>
-      <th style="text-align: center"> </th>
+      <th style="text-align: left">Tutorial</th>
+      <th style="text-align: center">PDF</th>
+      <th style="text-align: center"><span class="notranslate">Galaxy</span> library</th>
+      <th style="text-align: center"><span class="notranslate">Galaxy</span> history</th>
     </tr>
   </thead>
   <tbody>
     <tr>
       <td style="text-align: left">Introduction</td>
-      <td style="text-align: center"><a href="https://s3.amazonaws.com/gemini-tutorials/Intro-To-Gemini.pdf"> PDF </a></td>
-      <td style="text-align: center"><a href="https://usegalaxy.org/library/list#folders/F0283ca691a41c352"> Sample Data </a></td>
-      <td style="text-align: center"><a href="https://usegalaxy.org/u/aun1/h/gemini-introduction"> Galaxy history </a></td>
+      <td style="text-align: center"><a href="https://s3.amazonaws.com/gemini-tutorials/Intro-To-Gemini.pdf"><i class="far fa-bookmark" aria-hidden="true"></i><span class="visually-hidden">references</span></a></td>
+      <td style="text-align: center"><a href="https://usegalaxy.org/library/folders/F0283ca691a41c352"><i class="far fa-folder" aria-hidden="true"></i><span class="visually-hidden"><span class="notranslate">galaxy</span>-library</span></a></td>
+      <td style="text-align: center"><a href="https://usegalaxy.org/u/aun1/h/gemini-introduction"><i class="fas fa-columns" aria-hidden="true"></i><span class="visually-hidden"><span class="notranslate">galaxy</span>-history</span></a></td>
     </tr>
     <tr>
       <td style="text-align: left">Identifying <em>de novo</em> mutations underlying Mendelian disease</td>
-      <td style="text-align: center"><a href="https://s3.amazonaws.com/gemini-tutorials/Gemini-DeNovo-Tutorial.pdf"> PDF </a></td>
-      <td style="text-align: center"><a href="https://usegalaxy.org/library/list#folders/F775008f45cbbf010"> Sample Data </a></td>
-      <td style="text-align: center"><a href="https://usegalaxy.org/u/aun1/h/gemini-de-novo-mutations"> Galaxy history </a></td>
+      <td style="text-align: center"><a href="https://s3.amazonaws.com/gemini-tutorials/Gemini-DeNovo-Tutorial.pdf"><i class="far fa-bookmark" aria-hidden="true"></i><span class="visually-hidden">references</span></a></td>
+      <td style="text-align: center"><a href="https://usegalaxy.org/library/folders/F775008f45cbbf010"><i class="far fa-folder" aria-hidden="true"></i><span class="visually-hidden"><span class="notranslate">galaxy</span>-library</span></a></td>
+      <td style="text-align: center"><a href="https://usegalaxy.org/u/aun1/h/gemini-de-novo-mutations"><i class="fas fa-columns" aria-hidden="true"></i><span class="visually-hidden"><span class="notranslate">galaxy</span>-history</span></a></td>
     </tr>
     <tr>
       <td style="text-align: left">Identifying autosomal recessive variants underlying Mendelian disease</td>
-      <td style="text-align: center"><a href="https://s3.amazonaws.com/gemini-tutorials/Gemini-Recessive-Tutorial.pdf"> PDF </a></td>
-      <td style="text-align: center"><a href="https://usegalaxy.org/library/list#folders/F35b262f5ac8aa63a"> Sample Data </a></td>
-      <td style="text-align: center"><a href="https://usegalaxy.org/u/aun1/h/gemini-autosomal-recessive"> Galaxy history </a></td>
+      <td style="text-align: center"><a href="https://s3.amazonaws.com/gemini-tutorials/Gemini-Recessive-Tutorial.pdf"><i class="far fa-bookmark" aria-hidden="true"></i><span class="visually-hidden">references</span></a></td>
+      <td style="text-align: center"><a href="https://usegalaxy.org/library/folders/F35b262f5ac8aa63a"><i class="far fa-folder" aria-hidden="true"></i><span class="visually-hidden"><span class="notranslate">galaxy</span>-library</span></a></td>
+      <td style="text-align: center"><a href="https://usegalaxy.org/u/aun1/h/gemini-autosomal-recessive"><i class="fas fa-columns" aria-hidden="true"></i><span class="visually-hidden"><span class="notranslate">galaxy</span>-history</span></a></td>
     </tr>
     <tr>
       <td style="text-align: left">Identifying autosomal dominant variants underlying Mendelian disease</td>
-      <td style="text-align: center"><a href="https://s3.amazonaws.com/gemini-tutorials/Gemini-Dominant-Tutorial.pdf"> PDF </a></td>
-      <td style="text-align: center"><a href="https://usegalaxy.org/library/list#folders/F1c4722ad56892a31"> Sample Data </a></td>
-      <td style="text-align: center"><a href="https://usegalaxy.org/u/aun1/h/gemini-autosomal-dominant"> Galaxy history </a></td>
+      <td style="text-align: center"><a href="https://s3.amazonaws.com/gemini-tutorials/Gemini-Dominant-Tutorial.pdf"><i class="far fa-bookmark" aria-hidden="true"></i><span class="visually-hidden">references</span></a></td>
+      <td style="text-align: center"><a href="https://usegalaxy.org/library/folders/F1c4722ad56892a31"><i class="far fa-folder" aria-hidden="true"></i><span class="visually-hidden"><span class="notranslate">galaxy</span>-library</span></a></td>
+      <td style="text-align: center"><a href="https://usegalaxy.org/u/aun1/h/gemini-autosomal-dominant"><i class="fas fa-columns" aria-hidden="true"></i><span class="visually-hidden"><span class="notranslate">galaxy</span>-history</span></a></td>
     </tr>
   </tbody>
 </table>
 
-<h4 id="how-to-use-these-tutorials">How to use these tutorials?</h4>
+<h3 id="how-to-use-these-tutorials">How to use these tutorials?</h3>
 
 <ul>
-  <li>Right click on the <strong>PDF</strong> link and open tutorial in a new browser tab</li>
-  <li>Right click on <strong>Galaxy history</strong> link and open Galaxy history in another new browser tab</li>
-  <li>When Galaxy history interface opens you will need to click <strong>Import history</strong> link highlighted within a red outline in the following figure:</li>
-</ul>
+  <li>Right click on the <strong>PDF</strong> <i class="far fa-bookmark" aria-hidden="true"></i><span class="visually-hidden">references</span> icon and open tutorial in a new browser tab</li>
+  <li>Right click on <strong><span class="notranslate">Galaxy</span> history</strong> <i class="fas fa-columns" aria-hidden="true"></i><span class="visually-hidden"><span class="notranslate">galaxy</span>-history</span> icon and open <span class="notranslate">Galaxy</span> history in another new browser tab</li>
+  <li>
+    <p>When the <span class="notranslate">Galaxy</span> history interface opens, you will need to click the <strong>Import history</strong> link highlighted with a red outline in the following figure:</p>
 
-<p><img src="../../images/import_history.png" alt="Import history" /></p>
+    <p><img src="../../images/import_history.png" alt="Import history" /></p>
+  </li>
+  <li>
+    <p>If you have a wide screen arrange browsers tabs side by side:</p>
 
-<ul>
-  <li>If you have a wide screen arrange browsers tabs side by side:</li>
-</ul>
+    <p><img src="../../images/side-by-side.png" alt="Arranging browsers side by side" /></p>
+  </li>
+  <li>
+    <p>Proceed with the tutorial. For example, to repeat the following command from GEMINI tutorial:</p>
 
-<p><img src="../../images/side-by-side.png" alt="Arranging browsers side by side" /></p>
+    <p><img src="../../images/gemini_command.png" alt="GEMINI query command" /></p>
 
-<ul>
-  <li>Proceed with tutorial. For example, to repeat the following command from GEMINI tutorial:</li>
-</ul>
+    <p>use <span class="notranslate">Galaxy</span>’s <strong>GEMINI query</strong> tool as below:</p>
 
-<p><img src="../../images/gemini_command.png" alt="GEMINI query" /></p>
-
-<ul>
-  <li>Use Galaxy’s <strong>GEMINI_load</strong> tool:</li>
-</ul>
-
-<p><img src="../../images/galaxy_command.png" alt="GEMINI_load tool command" /></p>
-
-<ul>
+    <p><img src="../../images/galaxy_command.png" alt="GEMINI_query tool interface" /></p>
+  </li>
   <li>and so on….</li>
 </ul>
 
 
+                    
+                    <blockquote class="key_points">
+                        <h3><i class="fas fa-key" aria-hidden="true"></i><span class="visually-hidden">keypoints</span> Key points</h3>
+                        <ul>
+                            
+                            <li><p>Variants versus Genotypes</p>
+</li>
+                            
+                            <li><p>Bayesian approach to variant calling</p>
+</li>
+                            
+                            <li><p>Freebayes calls variant using haplotype windows</p>
+</li>
+                            
+                            <li><p>SNPEff allows functional annotation of variants</p>
+</li>
+                            
+                            <li><p>Gemini is a flexible system for analyzing variation patterns</p>
+</li>
+                            
+                        </ul>
+                    </blockquote>
+                    
+
+                    
+                    <h1 data-toc-skip>Useful literature</h1>
+                    <p>Further information, including links to documentation and original publications, regarding the tools, analysis techniques and the interpretation of results described in this tutorial can be found <a href="/training-material/topics/variant-analysis#references">here</a>.</p>
+                    
+
+                    
+
+                    <h1>Feedback</h1>
+                    <p class="text-muted">Did you use this material as an instructor? Feel free to give us feedback on <a href="https://github.com/galaxyproject/training-material/issues/1452" target="_blank">how it went</a>.</p>
+
+                    <div id="feedback-button">
+                        <img src="/training-material/shared/images/feedback.png" title="Click to activate" alt="Click here to load Google feedback frame" />
+                    </div>
+                    <div id="feedback-form">
+                    </div>
+                    <script type="text/javascript">
+                        (function (window, document) {
+                            function onDocumentReady(fn) {
+                                if (document.attachEvent ? document.readyState === "complete" : document.readyState !== "loading") {
+                                    fn();
+                                } else {
+                                    document.addEventListener('DOMContentLoaded', fn);
+                                }
+                            }
+
+                            onDocumentReady(function () {
+                                $("#feedback-button").click(function(evt){
+                                    var e = $(evt.target)
+                                    e.hide();
+
+                                    $("#feedback-form").html(`
+                                        <iframe id="feedback-google" class="google-form" src="https://docs.google.com/forms/d/e/1FAIpQLSd4VZptFTQ03kHkMz0JyW9b6_S8geU5KjNE_tLM0dixT3ZQmA/viewform?embedded=true&entry.1235803833=Calling variants in diploid systems (Variant Analysis)">Loading...</iframe>
+                                    `)
+                                })
+                            });
+                        })(window, document);
+                    </script>
+
+
+
+                    <h1>Citing this Tutorial</h1>
+                    <p>
+                        <ol>
+                            <li id="citation-text">Anton Nekrutenko, Nicola Soranzo, 2020 <b>Calling variants in diploid systems (Galaxy Training Materials)</b>. <a href="/training-material/topics/variant-analysis/tutorials/dip/tutorial.html">/training-material/topics/variant-analysis/tutorials/dip/tutorial.html</a> Online; accessed TODAY
+                            </li>
+                            <li>
+                            Batut et al., 2018 <b>Community-Driven Data Analysis Training for Biology</b> Cell Systems <a href="https://doi.org/10.1016%2Fj.cels.2018.05.012">10.1016/j.cels.2018.05.012</a>
+                            </li>
+                        </ol>
+                    </p>
+
+
+                    <blockquote class="details">
+                      <h3><i class="fa fa-info-circle" aria-hidden="true"></i><span class="visually-hidden">details</span> BibTeX</h3>
+                      <p style="display: none;">
+
+                    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight">
+<code id="citation-code">@misc{variant-analysis-dip,
+    author = "Anton Nekrutenko and Nicola Soranzo",
+    title = "Calling variants in diploid systems (Galaxy Training Materials)",
+    year = "2020",
+    month = "12",
+    day = "30"
+    url = "\url{/training-material/topics/variant-analysis/tutorials/dip/tutorial.html}",
+    note = "[Online; accessed TODAY]"
+}
+@article{Batut_2018,
+        doi = {10.1016/j.cels.2018.05.012},
+        url = {https://doi.org/10.1016%2Fj.cels.2018.05.012},
+        year = 2018,
+        month = {jun},
+        publisher = {Elsevier {BV}},
+        volume = {6},
+        number = {6},
+        pages = {752--758.e1},
+        author = {B{\'{e}}r{\'{e}}nice Batut and Saskia Hiltemann and Andrea Bagnacani and Dannon Baker and Vivek Bhardwaj and Clemens Blank and Anthony Bretaudeau and Loraine Brillet-Gu{\'{e}}guen and Martin {\v{C}}ech and John Chilton and Dave Clements and Olivia Doppelt-Azeroual and Anika Erxleben and Mallory Ann Freeberg and Simon Gladman and Youri Hoogstrate and Hans-Rudolf Hotz and Torsten Houwaart and Pratik Jagtap and Delphine Larivi{\`{e}}re and Gildas Le Corguill{\'{e}} and Thomas Manke and Fabien Mareuil and Fidel Ram{\'{\i}}rez and Devon Ryan and Florian Christoph Sigloch and Nicola Soranzo and Joachim Wolff and Pavankumar Videm and Markus Wolfien and Aisanjiang Wubuli and Dilmurat Yusuf and James Taylor and Rolf Backofen and Anton Nekrutenko and Björn Grüning},
+        title = {Community-Driven Data Analysis Training for Biology},
+        journal = {Cell Systems}
+}</code>
+                    </pre></div></div>
+                    </p>
+                    </blockquote>
+
+
+<script type="text/javascript">
+// update the date on load, or leave fallback of 'today'
+d = new Date();
+document.getElementById("citation-code").innerHTML = document.getElementById("citation-code").innerHTML.replace("TODAY", d.toDateString());
+document.getElementById("citation-text").innerHTML = document.getElementById("citation-text").innerHTML.replace("TODAY", d.toDateString());
+</script>
+
+                </div>
+            </div>
+        </div>
+
+        <h3><i class="far fa-thumbs-up" aria-hidden="true"></i><span class="visually-hidden">congratulations</span> Congratulations on successfully completing this tutorial!</h3>
+
         
-        <blockquote class="key_points">
-            <h3><i class="fa fa-key" aria-hidden="true"></i> Key points</h3>
-
-            <ul>
-                
-                <li>Variants versus Genotypes</li>
-                
-                <li>Bayesian approach to variant calling</li>
-                
-                <li>Freebayes calls variant using haplotype windows</li>
-                
-                <li>SNPEff allows functional annotation of variants</li>
-                
-                <li>Gemini is a flexible system for analyzing variation patterns</li>
-                
-            </ul>
-        </blockquote>
-        
 
         
-        <h1>Useful literature</h1>
-        <p>Further information, including links to documentation and original publications, regarding the tools, analysis techniques and the interpretation of results described in this tutorial can be found <a href="/training-material/topics/variant-analysis#references">here</a>.</p>
-        
-
-        
-
-        <h3><i class="fa fa-thumbs-up" aria-hidden="true"></i> Congratulations on successfully completing this tutorial!</h3>
-
-        <hr>
-
-        <blockquote class="overview">
-            <h3><i class="fa fa-comments-o" aria-hidden="true"></i> Help us improve this content!</h3>
-            Please take a moment to fill in the Galaxy Training Network
-            <a href="https://tinyurl.com/GTNfeedback">Feedback Form</a>.
-            Your feedback helps us improve this tutorial and will be considered
-            in future revisions.
-        </blockquote>
     </section>
 </div>
 
@@ -809,12 +1387,15 @@ chr19 618854 . G A 81.7546
         <p>
             This material is the result of a collaborative work. Thanks to the
             <a href="https://wiki.galaxyproject.org/Teach/GTN">Galaxy Training Network</a>
-            and all the <a href="/training-material/hall-of-fame">contributors</a> (Anton Nekrutenko)!
+            and all the <a href="/training-material/hall-of-fame">contributors</a> (Anton Nekrutenko, Nicola Soranzo)!
         </p>
         <p>
             Found a typo? Something is wrong in this tutorial? Edit it on
             <a href="https://github.com/galaxyproject/training-material/tree/master/topics/variant-analysis/tutorials/dip/tutorial.md">GitHub</a>.
         </p>
+        <p>
+    The content of the tutorials and website is licensed under the <a rel="license" href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.
+</p>
     </div>
 </footer>
 
@@ -824,5 +1405,33 @@ chr19 618854 . G A 81.7546
     <script type="text/javascript" src="/training-material/assets/js/bootstrap.min.js?v=3"></script>
     <script type="text/javascript" src="/training-material/assets/js/details-element-polyfill.js"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/javascript" src="/training-material/assets/js/bootstrap-toc.min.js"></script>
     <script type="text/javascript" src="/training-material/assets/js/main.js"></script>
+    <script type="text/javascript" src="/training-material/assets/js/theme.js"></script>
+
+    <script type="text/javascript" src="/training-material/assets/js/clipboard.min.js"></script>
+    <script type="text/javascript">
+    var snippets=document.querySelectorAll('div.highlight');
+    [].forEach.call(snippets,function(snippet){
+        snippet.firstChild.insertAdjacentHTML('beforebegin','<button class="btn btn-light" data-clipboard-snippet><i class="fa fa-copy"></i>&nbsp;Copy</button>');
+    });
+
+    var clipboardSnippets=new ClipboardJS('[data-clipboard-snippet]',{
+        target:function(trigger){return trigger.nextElementSibling;
+    }});
+    </script>
+    
+
+    <script type="text/javascript">
+        if(window.location.hostname === "galaxyproject.github.io") {
+            // Redirect
+            var redirect = "https://training.galaxyproject.org" + window.location.pathname + window.location.search;
+            $('div.container.main-content').prepend("<div class='alert alert-warning'><strong>Note: </strong>This content has a new home at <a href=\"" + redirect + "\">" + redirect + "</a>, which you will be redirected to in 5 seconds.</div>");
+
+            window.setTimeout(function(){
+                window.location.href = redirect;
+            }, 5000)
+
+        }
+    </script>
 </html>

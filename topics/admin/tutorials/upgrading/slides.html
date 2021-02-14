@@ -6,11 +6,150 @@
 
 
 
+
+
+
   <head>
     <meta charset="utf-8">
     <title>Upgrading Galaxy</title>
+    
+        <script async defer data-domain="training.galaxyproject.org" src="https://plausible.galaxyproject.eu/js/plausible.js"></script>
+
+    
     <link rel="stylesheet" href="/training-material/assets/css/slides.css">
-    <link rel="stylesheet" href="/training-material/assets/css/font-awesome.css" id="theme">
+    <script src="https://kit.fontawesome.com/67b3f98409.js" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <link rel="shortcut icon" href="/training-material/favicon.ico" type="image/x-icon" />
+
+    
+    
+    
+    
+    <meta name="description" content="Resources related to configuration and maintenance of Gal..." />
+    <meta property="og:title" content="Galaxy Training: Upgrading Galaxy" />
+    <meta property="og:description" content="Resources related to configuration and maintenance of Gal..." />
+    <meta property="og:image" content="/training-material/assets/images/GTNLogo1000.png" />
+    <script type="application/ld+json">
+      
+
+
+{
+  "@context": "http://schema.org",
+  "@type": "Course",
+  "accessMode": [
+    "textual",
+    "visual"
+  ],
+  "accessModeSufficient": [
+    "textual",
+    "visual"
+  ],
+  "accessibilityControl": [
+    "fullKeyboardControl",
+    "fullMouseControl"
+  ],
+  "accessibilityFeature": [
+    "alternativeText",
+    "tableOfContents"
+  ],
+  "accessibilitySummary": "Short descriptions are present but long descriptions will be needed for non-visual users",
+  "audience": {
+    "@type": "EducationalAudience",
+    "educationalRole": "students"
+  },
+  "citation": {
+    "@type": "CreativeWork",
+    "name": "Community-Driven Data Analysis Training for Biology",
+    "url": "https://doi.org/10.1016/j.cels.2018.05.012"
+  },
+  "copyrightHolder": {
+    "@type": "Organization",
+    "email": "galaxytrainingnetwork@gmail.com",
+    "name": "Galaxy Training Network",
+    "url": "https://galaxyproject.org/teach/gtn/"
+  },
+  "discussionUrl": "https://gitter.im/Galaxy-Training-Network/Lobby",
+  "headline": "Upgrading Galaxy",
+  "inLanguage": {
+    "@type": "Language",
+    "name": "English",
+    "alternateName": "en"
+  },
+  "interactivityType": "mixed",
+  "isAccessibleForFree": true,
+  "license": "https://github.com/galaxyproject/training-material/blob/master/LICENSE.md",
+  "producer": {
+    "@type": "Organization",
+    "email": "galaxytrainingnetwork@gmail.com",
+    "name": "Galaxy Training Network",
+    "url": "https://galaxyproject.org/teach/gtn/"
+  },
+  "provider": {
+    "@type": "Organization",
+    "email": "galaxytrainingnetwork@gmail.com",
+    "name": "Galaxy Training Network",
+    "url": "https://galaxyproject.org/teach/gtn/"
+  },
+  "sourceOrganization": {
+    "@type": "Organization",
+    "email": "galaxytrainingnetwork@gmail.com",
+    "name": "Galaxy Training Network",
+    "url": "https://galaxyproject.org/teach/gtn/"
+  },
+  "isPartOf": {
+    "@type": "CreativeWork",
+    "name": "Galaxy Server administration",
+    "description": "Resources related to configuration and maintenance of Galaxy servers",
+    "url": "https://training.galaxyproject.org//training-material/topics/admin/"
+  },
+  "courseCode": "admin / upgrading / slides",
+  "learningResourceType": "slides",
+  "name": "Slides for 'Upgrading Galaxy' tutorial",
+  "url": "https://training.galaxyproject.org//training-material/topics/admin/tutorials/upgrading/slides.html",
+  "timeRequired": "PT1H",
+  "description": "The questions this  addresses are:\n - What is the release cycle of Galaxy?\n - What do I need to do before updating my Galaxy server?\n - How to upgrade Galaxy to a new release?\n\n\\nThe objectives are:\n - Identify the challenges involved in the Galaxy upgrade process.\n - Complete the upgrade to a new release.\n\n",
+  "hasPart": [
+
+  ],
+  "author": [
+    {
+      "@type": "Person",
+      "name": "Martin Čech"
+    },
+    {
+      "@type": "Person",
+      "name": "Enis Afgan"
+    },
+    {
+      "@type": "Person",
+      "name": "Nicola Soranzo"
+    }
+  ],
+  "contributor": [
+    {
+      "@type": "Person",
+      "name": "Martin Čech"
+    },
+    {
+      "@type": "Person",
+      "name": "Enis Afgan"
+    },
+    {
+      "@type": "Person",
+      "name": "Nicola Soranzo"
+    }
+  ],
+  "about": [
+    {
+      "@type": "CreativeWork",
+      "name": "Galaxy Server administration",
+      "description": "Resources related to configuration and maintenance of Galaxy servers",
+      "url": "https://training.galaxyproject.org//training-material/topics/admin/"
+    }
+  ]
+}
+    </script>
+    <script type="text/javascript" src="/training-material/assets/js/jquery.slim.min.js"></script>
   </head>
   <body>
     <textarea id="source">
@@ -18,17 +157,48 @@ name: inverse
 layout: true
 class: center, middle, inverse
 
+<div class="my-header"><span>
+<a href="/training-material/topics/admin" title="Return to topic page" ><i class="fa fa-level-up" aria-hidden="true"></i></a>
+
+<a class="nav-link" href="https://github.com/galaxyproject/training-material/edit/master/topics/admin/tutorials/upgrading/slides.html"><i class="fa fa-pencil" aria-hidden="true"></i></a>
+
+</span></div>
+
 <div class="my-footer"><span>
 
-<img src="/training-material/assets/images/GTN-60px.png" alt="Galaxy Training Network" style="height: 40px;">
+<img src="/training-material/assets/images/GTN-60px.png" alt="Galaxy Training Network" style="height: 40px;"/>
 
 </span></div>
 
 ---
 
+<img src="/training-material/assets/images/GTN.png" alt="Galaxy Training Network" style="height: 8em;"/>
+
 # Upgrading Galaxy
 
 
+<div class="contributors-line">
+
+
+ <a href="/training-material/hall-of-fame/martenson/" class="contributor-badge"><img src="https://avatars.githubusercontent.com/martenson" alt="Martin Čech">Martin Čech</a> <a href="/training-material/hall-of-fame/afgane/" class="contributor-badge"><img src="https://avatars.githubusercontent.com/afgane" alt="Enis Afgan">Enis Afgan</a> <a href="/training-material/hall-of-fame/nsoranzo/" class="contributor-badge"><img src="https://avatars.githubusercontent.com/nsoranzo" alt="Nicola Soranzo">Nicola Soranzo</a>
+
+
+</div>
+
+
+
+
+.footnote[Tip: press `P` to view the presenter notes]
+
+???
+Presenter notes contain extra information which might be useful if you
+intend to use these slides for teaching.
+
+Press `P` again to switch presenter notes off
+
+Press `C` to create a new window where the same presentation will be displayed.
+This window is linked to the main window. Changing slides on one will cause the
+slide to change on the other. Useful when presenting.
 
 ---
 
@@ -36,7 +206,8 @@ class: center, middle, inverse
 
 
 
-### <img class="emoji" title=":grey_question:" alt=":grey_question:" src="https://assets-cdn.github.com/images/icons/emoji/unicode/2754.png" height="20" width="20"> Questions
+
+### &lt;i class=&quot;far fa-question-circle&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt;&lt;span class=&quot;visually-hidden&quot;&gt;question&lt;/span&gt; Questions
 
 
 - What is the release cycle of Galaxy?
@@ -48,7 +219,9 @@ class: center, middle, inverse
 
 ---
 
-### <img class="emoji" title=":dart:" alt=":dart:" src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f3af.png" height="20" width="20"> Objectives
+
+
+### &lt;i class=&quot;fas fa-bullseye&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt;&lt;span class=&quot;visually-hidden&quot;&gt;objectives&lt;/span&gt; Objectives
 
 
 - Identify the challenges involved in the Galaxy upgrade process.
@@ -57,6 +230,7 @@ class: center, middle, inverse
 
 
 ---
+
 
 # Release Cycle
 
@@ -75,6 +249,13 @@ class: center, middle, inverse
   * Kept up to date (especially for recent releases)
 
 ---
+# Ansible
+
+We recommend setting up, managing, and upgrading Galaxy using the Ansible software management tool. Please see the materials under 'Galaxy Installation with Ansible'.
+
+When you use Ansible the majority of this slide deck is not relevant anymore since everything mentioned becomes a trivial change in your playbook configuration. Use Ansible if you can.
+
+---
 class: left
 # Deal with local Galaxy modifications
 
@@ -82,7 +263,19 @@ Two scenarios:
 1. Uncommitted changes
 2. Changes committed to a local branch (or to a fork)
 
-The latter is probably better in case of large changes.
+Don't use a Galaxy with uncommitted changes. Make a branch (it's easy) and commit your changes.
+
+---
+# Config Files
+
+Configs you change (galaxy.yml, job_conf.xml, dynamic job rules, ...) should live in version control and be installed outside the Galaxy server directory.
+
+How to store outside Galaxy server dir?
+
+- galaxy.yml: Start Galaxy with `uwsgi --yaml /path/to/galaxy.yml`
+- all other configs: Set correct path in `galaxy.yml`
+
+The galaxyproject.galaxy Ansible role can maintain these paths for you.
 
 ---
 class: left
@@ -91,12 +284,12 @@ class: left
 If there are *no local commits*, you can update a `release_YY.MM` branch by running:
 
 ```console
-$ git stash  # optional, in case of uncommitted modifications
 $ git pull --ff-only
-$ git stash pop  # optional, as above
 ```
 
 and restarting Galaxy.
+
+The galaxyproject.galaxy Ansible role can perform this update for you.
 
 ---
 class: left
@@ -116,7 +309,7 @@ class: left
 
 When you upgrade to a new release:
 * Plan a service downtime for the upgrade and inform your users
-* Configure your reverse proxy to serve a custom error page, e.g. for nginx inside the `server` section add:
+* Configure your reverse proxy to serve a custom error page (the galaxyproject.galaxy Ansible role can do this for you), e.g. for nginx inside the `server` section add:
   ```ini
   error_page 502 /static/custom_502.html;
   ```
@@ -133,15 +326,15 @@ $ find . -name '*.pyc' -delete
 $ rm -rf database/compiled_templates/*
 ```
 
+The galaxyproject.galaxy Ansible role can do the first step for you.
+
 ---
 # Upgrading the galaxy repo
 
 ```console
 $ git fetch
-$ git stash  # optional
 $ git checkout release_YY.MM
 $ git pull --ff-only
-$ git stash pop  # optional
 ```
 
 ---
@@ -167,16 +360,14 @@ $ deactivate
 
 ---
 class: left
-# make client on `dev`
+# Client Artifacts
 
-Since January 2018, the `dev` and pre-release (frozen) Galaxy branches do not
-contain client build artifacts (e.g. JavaScript bundles in `static/`).  For
-`dev`, Galaxy will automatically build the client locally, as needed, though if
-you need to do so manually (e.g. to include local changes), the following steps
-should do it:
+* Since 18.01, the `dev` and pre-release (frozen) Galaxy branches do not
+contain client build artifacts (e.g. JavaScript bundles in `static/`).
 
-1. install `yarn`
-2. run `make client-production`
+* Since 18.09 not even the `release_*` branches include the client build. Instead Galaxy will check for local JavaScript changes and perform a build if neccessary (including the build dependency installation).
+
+* You can always run `make client-production` to force the client build (the galaxyproject.galaxy Ansible role can do this for you).
 
 [Documentation](https://github.com/galaxyproject/galaxy/blob/dev/client/README.md)
 ---
@@ -198,6 +389,8 @@ Galaxy will notify you on the first startup it the upgrade includes migrations.
    ```console
    $ sh manage_db.sh upgrade -c $GALAXY_CONFIG_FILE
    ```
+
+The galaxyproject.postgresql Ansible role can configure PostgreSQL PITR backups and the galaxyproject.galaxy role can perform the database upgrades for you.
 
 ---
 # Start Galaxy
@@ -223,12 +416,10 @@ to be done while being on the newer branch:
 $ export GALAXY_CONFIG_FILE=/srv/galaxy/config/galaxy.yml
 $ export GALAXY_VIRTUAL_ENV=/srv/galaxy/venv
 $ sh manage_db.sh -c /srv/galaxy/config/galaxy.yml downgrade 140
-$ find . -name '*.pyc' -delete
+$ find /srv/galaxy/server/lib -name '*.pyc' -delete
 $ git fetch
-$ git stash  # optional
 $ git checkout release_18.01
 $ git pull --ff-only
-$ git stash pop  # optional
 $ ./scripts/common_startup.sh
 ```
 
@@ -237,9 +428,10 @@ the 18.01 release in the example above) can be found by looking at the last file
 https://github.com/galaxyproject/galaxy/tree/release_18.01/lib/galaxy/model/migrate/versions/
 
 
----
 
-### <img class="emoji" title=":grey_exclamation:" alt=":grey_exclamation:" src="https://assets-cdn.github.com/images/icons/emoji/unicode/2755.png" height="20" width="20"> Key points
+
+---
+### &lt;i class=&quot;fas fa-key&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt;&lt;span class=&quot;visually-hidden&quot;&gt;keypoints&lt;/span&gt; Key points
 
 
 - Galaxy release notes contain important information about a new release.
@@ -248,25 +440,61 @@ https://github.com/galaxyproject/galaxy/tree/release_18.01/lib/galaxy/model/migr
 
 
 
+
+
+
+
 ---
 
 ## Thank you!
 
-This material is the result of a collaborative work. Thanks the [Galaxy Training Network](https://wiki.galaxyproject.org/Teach/GTN) and all the contributors  (Martin Čech, Enis Afgan, Nicola Soranzo) !
+This material is the result of a collaborative work. Thanks to the [Galaxy Training Network](https://wiki.galaxyproject.org/Teach/GTN) and all the contributors!
 
 
-<img src="/training-material/assets/images/GTN.png" alt="Galaxy Training Network" style="height: 100px;">
+<div class="contributors-line">
+
+
+ <a href="/training-material/hall-of-fame/martenson/" class="contributor-badge"><img src="https://avatars.githubusercontent.com/martenson" alt="Martin Čech">Martin Čech</a> <a href="/training-material/hall-of-fame/afgane/" class="contributor-badge"><img src="https://avatars.githubusercontent.com/afgane" alt="Enis Afgan">Enis Afgan</a> <a href="/training-material/hall-of-fame/nsoranzo/" class="contributor-badge"><img src="https://avatars.githubusercontent.com/nsoranzo" alt="Nicola Soranzo">Nicola Soranzo</a>
+
+
+</div>
 
 
 
-.footnote[Found a typo? Something is wrong in this tutorial? <br>Edit it on [GitHub](https://github.com/galaxyproject/training-material/tree/master/topics/admin/tutorials/upgrading/slides.html)]
+<img src="/training-material/assets/images/GTN.png" alt="Galaxy Training Network" style="height: 100px;"/>
+
+
+This material is licensed under the <a rel="license" href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.
+
 
     </textarea>
-    <script src="/training-material/assets/js/remark-latest.min.js" type="text/javascript">
-    </script>
+	<script src="/training-material/assets/js/remark-latest.min.js" type="text/javascript"></script>
+    <script type="text/javascript" src="/training-material/assets/js/theme.js"></script>
+    <script type="text/javascript" src="/training-material/assets/js/clipboard.min.js"></script>
     <script type="text/javascript">
       var slideshow = remark.create({navigation: {scroll: false,}});
       var hljs = remark.highlighter.engine;
+      var snippets = document.querySelectorAll('code.remark-code');
+        [].forEach.call(snippets,function(snippet){
+          snippet.firstChild.insertAdjacentHTML('beforebegin','<button class="btn btn-light" data-clipboard-snippet><i class="fa fa-copy"></i>&nbsp;Copy</button>');
+        });
+      var clipboardSnippets=new ClipboardJS('[data-clipboard-snippet]',{
+        target:function(trigger){return trigger.parentElement;
+      }});
     </script>
+
+    <script type="text/javascript">
+        if(window.location.hostname === "galaxyproject.github.io") {
+            // Redirect
+            var redirect = "https://training.galaxyproject.org" + window.location.pathname + window.location.search;
+            $('body').prepend("<div style='text-align: center'><strong>Note: </strong>This content has a new home at <a href=\"" + redirect + "\">" + redirect + "</a>, which you will be redirected to in 5 seconds.</div>");
+
+            window.setTimeout(function(){
+                window.location.href = redirect;
+            }, 5000)
+
+        }
+    </script>
+
   </body>
 </html>
