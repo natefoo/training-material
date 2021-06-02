@@ -70,59 +70,93 @@
                     </li>
 
                     <li class="nav-item dropdown">
-                        <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-expanded="false" title="Language Selector">
-                            <i class="fas fa-language" aria-hidden="true"></i><span class="visually-hidden">language</span> Language
-                        </a>
-                        <div class="dropdown-menu">
-                            
-                            <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=fr&u=https%3A%2F%2Ftraining.galaxyproject.org%2Ftopics%2Fadmin%2Ftutorials%2Fpulsar%2Ftutorial.html&edit-text=&act=url" title="">
-                                Français
-                            </a>
-                            
-                            <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=ja&u=https%3A%2F%2Ftraining.galaxyproject.org%2Ftopics%2Fadmin%2Ftutorials%2Fpulsar%2Ftutorial.html&edit-text=&act=url" title="">
-                                日本語
-                            </a>
-                            
-                            <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=es&u=https%3A%2F%2Ftraining.galaxyproject.org%2Ftopics%2Fadmin%2Ftutorials%2Fpulsar%2Ftutorial.html&edit-text=&act=url" title="">
-                                Español
-                            </a>
-                            
-                            <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=pt&u=https%3A%2F%2Ftraining.galaxyproject.org%2Ftopics%2Fadmin%2Ftutorials%2Fpulsar%2Ftutorial.html&edit-text=&act=url" title="">
-                                Português
-                            </a>
-                            
-                            <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=ar&u=https%3A%2F%2Ftraining.galaxyproject.org%2Ftopics%2Fadmin%2Ftutorials%2Fpulsar%2Ftutorial.html&edit-text=&act=url" title="">
-                                العربية
-                            </a>
-                            
-                            <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=&u=https%3A%2F%2Ftraining.galaxyproject.org%2Ftopics%2Fadmin%2Ftutorials%2Fpulsar%2Ftutorial.html&edit-text=&act=url" title="">
-                                And more!
-                            </a>
-                        </div>
-                    </li>
-
-                    <li class="nav-item dropdown">
     <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-expanded="false" title="Help">
         <i class="far fa-question-circle" aria-hidden="true"></i><span class="visually-hidden">help</span> Help
     </a>
     <div class="dropdown-menu dropdown-menu-right">
+        <!-- disable Tess for now
         <form method="get" action="https://tess.elixir-europe.org/materials">
             <input type="text" id="search" name="q" value="" style="margin-left: 0.5em;/*! border-radius: 0px; */">
             <input type="hidden" value="Galaxy Training" name="content_provider">
             <input type="submit" value="Search on TeSS" style="width: 92%;border-radius: 0px;margin: 0.5em;background: #f47d20;border: 0px;padding: 0.25em;" class="">
         </form>
+        -->
 
-        <div class="dropdown-divider"></div>
-        <a class="dropdown-item" href="/training-material/faq" title="Check our FAQ">
-            FAQ
+        <a class="dropdown-item" href="/training-material/faq" title="Check our FAQs">
+           <i class="far fa-question-circle" aria-hidden="true"></i><span class="visually-hidden">question</span> FAQs
         </a>
+        
+        <a class="dropdown-item" href="/training-material/topics/admin/faqs/" title="Check our FAQs for the Galaxy Server administration topic">
+           <i class="far fa-question-circle" aria-hidden="true"></i><span class="visually-hidden">question</span> Topic FAQs
+        </a>
+        
         <a class="dropdown-item" href="https://help.galaxyproject.org/" title="Discuss on Galaxy Help">
-            Discuss on Galaxy Help
+            <i class="far fa-comments" aria-hidden="true"></i><span class="visually-hidden">feedback</span> Galaxy Help Forum
+        </a>
+        <a class="dropdown-item" href="https://gitter.im/Galaxy-Training-Network/Lobby" title="Discuss on gitter">
+           <i class="fab fa-gitter" aria-hidden="true"></i><span class="visually-hidden">gitter</span> Discuss on Gitter
+        </a>
+    </div>
+</li>
+
+
+                    <li class="nav-item dropdown">
+    <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-expanded="false" title="Extras">
+        <i class="far fa-star" aria-hidden="true"></i><span class="visually-hidden">galaxy-star</span> Extras
+    </a>
+    <div class="dropdown-menu dropdown-menu-right">
+
+        
+        <a class="dropdown-item" href="https://github.com/galaxyproject/training-material/edit/main/topics/admin/tutorials/pulsar/tutorial.md" title="Edit on GitHub">
+          <i class="fab fa-github" aria-hidden="true"></i><span class="visually-hidden">github</span> Edit on GitHub
+        </a>
+
+        <a class="dropdown-item" href="/training-material/stats.html" title="Show view statistics about this rrepository">
+            <i class="fas fa-chart-bar" aria-hidden="true"></i><span class="visually-hidden">galaxy-barchart</span> GTN statistics
+        </a>
+
+        <a class="dropdown-item" href="https://plausible.galaxyproject.eu/training.galaxyproject.org?period=12mo&page=/training-material/topics/admin/tutorials/pulsar/tutorial.html" title="Show view statistics of this page">
+            <i class="fas fa-chart-bar" aria-hidden="true"></i><span class="visually-hidden">galaxy-barchart</span> Page Metrics
         </a>
 
         <div class="dropdown-item">
             <div>
-                Theme
+                <i class="fas fa-language" aria-hidden="true"></i><span class="visually-hidden">language</span> Translate this page
+            </div>
+
+            <div id="lang-selector">
+                
+                <strong>Automatic Translations</strong>
+
+<a class="btn btn-info" href="https://translate.google.com/translate?hl=jp&sl=en&tl=fr&u=https%3A%2F%2Ftraining.galaxyproject.org/topics/admin/tutorials/pulsar/tutorial.html&edit-text=&act=url">
+                Français
+                </a>
+                
+<a class="btn btn-info" href="https://translate.google.com/translate?hl=jp&sl=en&tl=ja&u=https%3A%2F%2Ftraining.galaxyproject.org/topics/admin/tutorials/pulsar/tutorial.html&edit-text=&act=url">
+                日本語
+                </a>
+                
+<a class="btn btn-info" href="https://translate.google.com/translate?hl=jp&sl=en&tl=es&u=https%3A%2F%2Ftraining.galaxyproject.org/topics/admin/tutorials/pulsar/tutorial.html&edit-text=&act=url">
+                Español
+                </a>
+                
+<a class="btn btn-info" href="https://translate.google.com/translate?hl=jp&sl=en&tl=pt&u=https%3A%2F%2Ftraining.galaxyproject.org/topics/admin/tutorials/pulsar/tutorial.html&edit-text=&act=url">
+                Português
+                </a>
+                
+<a class="btn btn-info" href="https://translate.google.com/translate?hl=jp&sl=en&tl=ar&u=https%3A%2F%2Ftraining.galaxyproject.org/topics/admin/tutorials/pulsar/tutorial.html&edit-text=&act=url">
+                العربية
+                </a>
+                
+                <a class="btn btn-info" href="https://translate.google.com/translate?hl=jp&sl=en&tl=&u=https%3A%2F%2Ftraining.galaxyproject.org%2Ftopics%2Fadmin%2Ftutorials%2Fpulsar%2Ftutorial.html&edit-text=&act=url" title="">
+                And more!
+                </a>
+            </div>
+        </div>
+
+        <div class="dropdown-item">
+            <div>
+                <i class="fas fa-palette" aria-hidden="true"></i><span class="visually-hidden">gtn-theme</span> Theme
             </div>
 
             <div id="theme-selector" data-toggle="buttons">
@@ -150,12 +184,27 @@
     </div>
 </li>
 
-
+                    <!--
                     <li class="nav-item">
-                        <a class="nav-link" href="https://github.com/galaxyproject/training-material/edit/master/topics/admin/tutorials/pulsar/tutorial.md">
+                        <a class="nav-link" href="https://github.com/galaxyproject/training-material/edit/main/topics/admin/tutorials/pulsar/tutorial.md">
                             <i class="fab fa-github" aria-hidden="true"></i><span class="visually-hidden">github</span> Edit
                         </a>
                     </li>
+                    -->
+
+                     <!-- Search bar-->
+                    <li class="nav-item">
+                      <div id="navbarSupportedContent">
+                        <!-- Search form -->
+                        <form class="form-inline mr-auto" method="GET" action="/training-material/search">
+                          <i class="fas fa-search nav-link" aria-hidden="true"></i>
+                          <div class="md-form mb-2">
+                            <input name="query" class="form-control nicer" type="text" placeholder="Search Tutorials" aria-label="Search">
+                          </div>
+                        </form>
+                      </div>
+                    </li>
+
                 </ul>
             </div>
         </div>
@@ -211,7 +260,7 @@
   },
   "interactivityType": "mixed",
   "isAccessibleForFree": true,
-  "license": "https://github.com/galaxyproject/training-material/blob/master/LICENSE.md",
+  "license": "https://github.com/galaxyproject/training-material/blob/main/LICENSE.md",
   "producer": {
     "@type": "Organization",
     "email": "galaxytrainingnetwork@gmail.com",
@@ -377,6 +426,10 @@
     {
       "@type": "Person",
       "name": "Helena Rasche"
+    },
+    {
+      "@type": "Person",
+      "name": "Gianmauro Cuccuru"
     }
   ],
   "contributor": [
@@ -395,6 +448,10 @@
     {
       "@type": "Person",
       "name": "Helena Rasche"
+    },
+    {
+      "@type": "Person",
+      "name": "Gianmauro Cuccuru"
     }
   ],
   "about": [
@@ -414,7 +471,7 @@
 
         <div class="contributors-line">By: 
 
- <a href="/training-material/hall-of-fame/natefoo/" class="contributor-badge"><img src="https://avatars.githubusercontent.com/natefoo" alt="Nate Coraor">Nate Coraor</a> <a href="/training-material/hall-of-fame/slugger70/" class="contributor-badge"><img src="https://avatars.githubusercontent.com/slugger70" alt="Simon Gladman">Simon Gladman</a> <a href="/training-material/hall-of-fame/mvdbeek/" class="contributor-badge"><img src="https://avatars.githubusercontent.com/mvdbeek" alt="Marius van den Beek">Marius van den Beek</a> <a href="/training-material/hall-of-fame/hexylena/" class="contributor-badge"><img src="https://avatars.githubusercontent.com/hexylena" alt="Helena Rasche">Helena Rasche</a>
+ <a href="/training-material/hall-of-fame/natefoo/" class="contributor-badge"><img src="https://avatars.githubusercontent.com/natefoo" alt="Nate Coraor">Nate Coraor</a> <a href="/training-material/hall-of-fame/slugger70/" class="contributor-badge"><img src="https://avatars.githubusercontent.com/slugger70" alt="Simon Gladman">Simon Gladman</a> <a href="/training-material/hall-of-fame/mvdbeek/" class="contributor-badge"><img src="https://avatars.githubusercontent.com/mvdbeek" alt="Marius van den Beek">Marius van den Beek</a> <a href="/training-material/hall-of-fame/hexylena/" class="contributor-badge"><img src="https://avatars.githubusercontent.com/hexylena" alt="Helena Rasche">Helena Rasche</a> <a href="/training-material/hall-of-fame/gmauro/" class="contributor-badge"><img src="https://avatars.githubusercontent.com/gmauro" alt="Gianmauro Cuccuru">Gianmauro Cuccuru</a>
 
 </div>
 
@@ -840,7 +897,7 @@
             
 
             
-            <p><strong><i class="fas fa-hourglass-half" aria-hidden="true"></i><span class="visually-hidden">time</span> Time estimation:</strong> 60 minutes</p>
+            <div><strong><i class="fas fa-hourglass-half" aria-hidden="true"></i><span class="visually-hidden">time</span> Time estimation:</strong> 60 minutes</div>
             
 
             
@@ -849,7 +906,7 @@
             
 
             
-            <p id="supporting-materials"><strong><i class="fa fa-external-link" aria-hidden="true"></i> Supporting Materials</strong></p>
+            <div id="supporting-materials"><strong><i class="fa fa-external-link" aria-hidden="true"></i> Supporting Materials</strong></div>
             <ul>
                 <div class="supporting_material">
                 
@@ -865,11 +922,15 @@
                 
 
                 
+                
+                
+
+                
                 </div>
             </ul>
             
 
-            <p><strong> <i class="far fa-calendar" aria-hidden="true"></i><span class="visually-hidden">last_modification</span> Last modification:</strong> Jan 27, 2021 </p>
+            <div><strong> <i class="far fa-calendar" aria-hidden="true"></i><span class="visually-hidden">last_modification</span> Last modification:</strong> Jun 2, 2021 </div>
         </blockquote>
 
         <div class="container">
@@ -916,6 +977,7 @@
   </li>
   <li><a href="#configuring-galaxy-to-use-pulsar-as-a-job-destination" id="markdown-toc-configuring-galaxy-to-use-pulsar-as-a-job-destination">Configuring <span class="notranslate">Galaxy</span> to use Pulsar as a job destination</a></li>
   <li><a href="#testing-pulsar" id="markdown-toc-testing-pulsar">Testing Pulsar</a></li>
+  <li><a href="#retries-of-the-staging-actions" id="markdown-toc-retries-of-the-staging-actions">Retries of the staging actions</a></li>
   <li><a href="#pulsar-in-production" id="markdown-toc-pulsar-in-production">Pulsar in Production</a>    <ol>
       <li><a href="#australia" id="markdown-toc-australia">Australia</a></li>
       <li><a href="#europe" id="markdown-toc-europe">Europe</a></li>
@@ -1074,7 +1136,7 @@
       <div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">rabbitmq_password_<span class="notranslate">galaxy</span>_au</span><span class="pi">:</span> <span class="s">areallylongpasswordhere</span>
 </code></pre></div>      </div>
 
-      <p>This is going in a special file because both of our services, <span class="notranslate">Galaxy</span> and Pulsar, need it. Both <span class="notranslate">Galaxy</span> in the job configuration, and Pulsar in its configuration. The <code class="language-plaintext highlighter-rouge">group_vars/all.yml</code> is included for every playbook run, no matter which group a machine belong to.</p>
+      <p>This is going in a special file because both of our services, <span class="notranslate">Galaxy</span> and Pulsar, need it. Both <span class="notranslate">Galaxy</span> in the job configuration, and Pulsar in its configuration. The <code class="language-plaintext highlighter-rouge">group_vars/all.yml</code> is included for every playbook run, no matter which group a machine belongs to.</p>
 
       <p>Replace <code class="language-plaintext highlighter-rouge">areallylongpasswordhere</code> with a long randomish (or not) string.</p>
     </li>
@@ -1098,7 +1160,7 @@
 
 +# RabbitMQ
 <span class="gi">+rabbitmq_admin_password: a-different-long-password
-+rabbitmq_version: 3.8.9-1
++rabbitmq_version: 3.8.16-1
 +rabbitmq_plugins: rabbitmq_management
 +
 +rabbitmq_config:
@@ -1555,20 +1617,8 @@ curl <span class="nt">-k</span> https://localhost:5671
     <li>
       <p>Install the BWA and BWA-MEM tools, if needed.</p>
 
-      <blockquote class="tip">
-
-        <h3 id="tip-tip-install-tools-via-the-admin-ui"><i class="far fa-lightbulb" aria-hidden="true"></i><span class="visually-hidden">tip</span> Tip: Install tools via the Admin UI</h3>
-
-        <ol>
-          <li>Open <span class="notranslate">Galaxy</span> in your browser and type <code class="language-plaintext highlighter-rouge">bwa</code> in the tool search box on the left. If “Map with BWA-MEM” is among the search results, you can skip the following steps.</li>
-          <li>Access the Admin menu from the top bar (you need to be logged-in with an email specified in the <code class="language-plaintext highlighter-rouge">admin_users</code> setting)</li>
-          <li>Click “Install and Uninstall”, which can be found on the left, under “Tool Management”</li>
-          <li>Enter <code class="language-plaintext highlighter-rouge">bwa</code> in the search interface</li>
-          <li>Click on the first hit, having <code class="language-plaintext highlighter-rouge">devteam</code> as owner</li>
-          <li>Click the “Install” button for the latest revision</li>
-          <li>Enter “<span class="notranslate">Mapping</span>” as the target section and click “OK”.</li>
-        </ol>
-      </blockquote>
+      <!--SNIPPET-->
+      <blockquote class="tip">  <h3 data-toc-skip="" id="-tip-install-tools-via-the-admin-ui"><i class="far fa-lightbulb" aria-hidden="true"></i><span class="visually-hidden"></span> Tip: Install tools via the Admin UI</h3>  <ol>    <li>Open <span class="notranslate">Galaxy</span> in your browser and type <code class="language-plaintext highlighter-rouge">bwa</code> in the tool search box on the left. If “Map with BWA-MEM” is among the search results, you can skip the following steps.</li>    <li>Access the Admin menu from the top bar (you need to be logged-in with an email specified in the <code class="language-plaintext highlighter-rouge">admin_users</code> setting)</li>    <li>Click “Install and Uninstall”, which can be found on the left, under “Tool Management”</li>    <li>Enter <code class="language-plaintext highlighter-rouge">bwa</code> in the search interface</li>    <li>Click on the first hit, having <code class="language-plaintext highlighter-rouge">devteam</code> as owner</li>    <li>Click the “Install” button for the latest revision</li>    <li>Enter “<span class="notranslate">Mapping</span>” as the target section and click “OK”.</li>  </ol></blockquote>
     </li>
     <li>
       <p>We now need to tell <span class="notranslate">Galaxy</span> to send BWA and BWA-MEM jobs to the <code class="language-plaintext highlighter-rouge">pulsar</code> destination. We specify this in the <code class="language-plaintext highlighter-rouge">&lt;tools&gt;</code> section of the <code class="language-plaintext highlighter-rouge">job_conf.xml</code> file.</p>
@@ -1639,6 +1689,35 @@ https://zenodo.org/record/582600/files/mutant_R2.fastq
 
 <p>How awesome is that? Pulsar in another continent with reference data automatically from CVMFS :)</p>
 
+<h1 id="retries-of-the-staging-actions">Retries of the staging actions</h1>
+
+<p>When the staging actions are carried out by the Pulsar server itself (like in the case when driving Pulsar by message queue), there are some parameters that can be tweaked to ensure reliable communication between the <span class="notranslate">Galaxy</span> server and the remote Pulsar server. 
+The aim of these parameters is to control the retrying of staging actions in the event of a failure.</p>
+
+<p>For each action (preprocess/input or postprocess/output), you can specify:</p>
+<div class="language-text highlighter-rouge"><div class="highlight"><pre class="highlight"><code> - *_action_max_retries    - the maximum number of retries before giving up
+ - *_action_interval_start - how long start sleeping between retries (in seconds)
+ - *_action_interval_step  - by how much the interval is increased for each retry (in seconds)
+ - *_action_interval_max   - the maximum number of seconds to sleep between retries
+</code></pre></div></div>
+<p>substitute the * with <code class="language-plaintext highlighter-rouge">preprocess</code> or <code class="language-plaintext highlighter-rouge">postprocess</code></p>
+
+<p>In the following box, as an example, we have collected the values adopted in a Pulsar site with an unreliable network connection:</p>
+
+<div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">preprocess_action_max_retries</span><span class="pi">:</span> <span class="m">30</span>
+<span class="na">preprocess_action_interval_start</span><span class="pi">:</span> <span class="m">2</span>
+<span class="na">preprocess_action_interval_step</span><span class="pi">:</span> <span class="m">10</span>
+<span class="na">preprocess_action_interval_max</span><span class="pi">:</span> <span class="m">300</span>
+<span class="na">postprocess_action_max_retries</span><span class="pi">:</span> <span class="m">30</span>
+<span class="na">postprocess_action_interval_start</span><span class="pi">:</span> <span class="m">2</span>
+<span class="na">postprocess_action_interval_step</span><span class="pi">:</span> <span class="m">10</span>
+<span class="na">postprocess_action_interval_max</span><span class="pi">:</span> <span class="m">300</span>
+
+</code></pre></div></div>
+<p>In this case, for both actions, Pulsar will try to carry out the staging action 30 times, sleeping 2 secs after the first retry and adding 10 secs more to each next retries, until a maximum of 300 seconds between retries.</p>
+
+<p>We hope you never have to experience a situation like this one, but if needed just adapt the numbers to your case and add the parameters in the <code class="language-plaintext highlighter-rouge">pulsar_yaml_config</code> section of your <code class="language-plaintext highlighter-rouge">pulsarservers.yml</code> file.</p>
+
 <h1 id="pulsar-in-production">Pulsar in Production</h1>
 
 <p>If you want to make use of Pulsar on a Supercomputer, you only need access to a submit node, and you will need to run Pulsar there. We recommend that if you need to run a setup with Pulsar, that you deploy an AMQP server (e.g. RabbitMQ) alongside your <span class="notranslate">Galaxy</span>. That way, you can run Pulsar on any submit nodes, and it can connect directly to the AMQP and <span class="notranslate">Galaxy</span>. Other Pulsar deployment options require exposing ports wherever Pulsar is running, and this requires significant more coordination effort.</p>
@@ -1695,6 +1774,11 @@ https://zenodo.org/record/582600/files/mutant_R2.fastq
                     </blockquote>
                     
 
+                    <h1>Frequently Asked Questions</h1>
+                    Have questions about this tutorial? Check out the  <a href="/training-material/topics/admin/faqs/">FAQ page for the Galaxy Server administration topic</a> to see if your question is listed there.
+                    If not, please ask your question on the <a href="https://gitter.im/Galaxy-Training-Network/Lobby">GTN Gitter Channel</a> or the
+                    <a href="https://help.galaxyproject.org">Galaxy Help Forum</a>
+
                     
 
                     
@@ -1735,7 +1819,7 @@ https://zenodo.org/record/582600/files/mutant_R2.fastq
                     <h1>Citing this Tutorial</h1>
                     <p>
                         <ol>
-                            <li id="citation-text">Nate Coraor, Simon Gladman, Marius van den Beek, Helena Rasche, 2021 <b>Running Jobs on Remote Resources with Pulsar (Galaxy Training Materials)</b>. <a href="/training-material/topics/admin/tutorials/pulsar/tutorial.html">/training-material/topics/admin/tutorials/pulsar/tutorial.html</a> Online; accessed TODAY
+                            <li id="citation-text">Nate Coraor, Simon Gladman, Marius van den Beek, Helena Rasche, Gianmauro Cuccuru, 2021 <b>Running Jobs on Remote Resources with Pulsar (Galaxy Training Materials)</b>. <a href="/training-material/topics/admin/tutorials/pulsar/tutorial.html">/training-material/topics/admin/tutorials/pulsar/tutorial.html</a> Online; accessed TODAY
                             </li>
                             <li>
                             Batut et al., 2018 <b>Community-Driven Data Analysis Training for Biology</b> Cell Systems <a href="https://doi.org/10.1016%2Fj.cels.2018.05.012">10.1016/j.cels.2018.05.012</a>
@@ -1750,11 +1834,11 @@ https://zenodo.org/record/582600/files/mutant_R2.fastq
 
                     <div class="highlighter-rouge"><div class="highlight"><pre class="highlight">
 <code id="citation-code">@misc{admin-pulsar,
-    author = "Nate Coraor and Simon Gladman and Marius van den Beek and Helena Rasche",
+    author = "Nate Coraor and Simon Gladman and Marius van den Beek and Helena Rasche and Gianmauro Cuccuru",
     title = "Running Jobs on Remote Resources with Pulsar (Galaxy Training Materials)",
     year = "2021",
-    month = "01",
-    day = "27"
+    month = "06",
+    day = "02"
     url = "\url{/training-material/topics/admin/tutorials/pulsar/tutorial.html}",
     note = "[Online; accessed TODAY]"
 }
@@ -1801,11 +1885,11 @@ document.getElementById("citation-text").innerHTML = document.getElementById("ci
         <p>
             This material is the result of a collaborative work. Thanks to the
             <a href="https://wiki.galaxyproject.org/Teach/GTN">Galaxy Training Network</a>
-            and all the <a href="/training-material/hall-of-fame">contributors</a> (Nate Coraor, Simon Gladman, Marius van den Beek, Helena Rasche)!
+            and all the <a href="/training-material/hall-of-fame">contributors</a> (Nate Coraor, Simon Gladman, Marius van den Beek, Helena Rasche, Gianmauro Cuccuru)!
         </p>
         <p>
             Found a typo? Something is wrong in this tutorial? Edit it on
-            <a href="https://github.com/galaxyproject/training-material/tree/master/topics/admin/tutorials/pulsar/tutorial.md">GitHub</a>.
+            <a href="https://github.com/galaxyproject/training-material/tree/main/topics/admin/tutorials/pulsar/tutorial.md">GitHub</a>.
         </p>
         <p>
     The content of the tutorials and website is licensed under the <a rel="license" href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.
