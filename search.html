@@ -480,7 +480,7 @@ var tutorials = {
         "title"    : "Connecting Galaxy to a compute cluster",
         "description": "",
         "question" : "",
-        "objectives"  : "Be familiar with the basics of installing, configuring, and using Slurm, Understand all components of the Galaxy job running stack, Understand how the `job_conf.xml` file controls Galaxy's jobs subsystem, Have a strong understanding of Galaxy job destinations",
+        "objectives"  : "Be familiar with the basics of installing, configuring, and using Slurm, Understand all components of the Galaxy job running stack, Understand how the `job_conf.xml` file controls Galaxy's jobs subsystem, Have a strong understanding of Galaxy job destinations, Understand the purpose and function of Galaxy job metrics",
         "tags"     : "jobs",
         "level"     : "",
         "time_estimation": "1h",
@@ -862,23 +862,6 @@ var tutorials = {
         "level"     : "",
         "contributors": "natefoo, bgruening, hexylena",
         "entry"      : "        <div class='col-sm-6'>        <div class='card'>        <div class='card-body'>          <h5 class='card-title'>Mapping Jobs to Destinations</h5>          <h6 class='card-subtitle text-muted'>Galaxy Server administration</h6>          <p class='card-text'> </p>                      <p>                          <form method='GET' action='/training-material/search' style='display:inline'><input type='hidden' name='query' value='jobs'><button class='label label-default tutorial_tag' id='jobs' style='background-color: hsl(134, 80.0%, 85%); color: #333; border: 1px solid hsl(134, 80.0%, 45%)' title='Click to show all tutorials with this tag'>jobs</button></form>                        </p>                    <p> <a href='/training-material/hall-of-fame/natefoo/' class='contributor-badge'><img src='https://avatars.githubusercontent.com/natefoo' alt='Nate Coraor'>Nate Coraor</a> <a href='/training-material/hall-of-fame/bgruening/' class='contributor-badge'><img src='https://avatars.githubusercontent.com/bgruening' alt='Björn Grüning'>Björn Grüning</a> <a href='/training-material/hall-of-fame/hexylena/' class='contributor-badge'><img src='https://avatars.githubusercontent.com/hexylena' alt='Helena Rasche'>Helena Rasche</a></p>          <a class='btn btn-primary' href='/training-material/topics/admin/tutorials/job-destinations/tutorial.html'>View Tutorial</a>          </div>          </div>          </div>          "
-      },
-    
-
-       
-      "/topics/admin/tutorials/job-metrics/tutorial.html": {
-        "topic"    : "Galaxy Server administration",
-        "title"    : "Recording Job Metrics",
-        "description": "",
-        "question" : "",
-        "objectives"  : "What are job metrics?, What sort of information can I collect?, Where can I find this information?",
-        "tags"     : "",
-        "level"     : "",
-        "time_estimation": "15m",
-        "url"      : "/training-material/topics/admin/tutorials/job-metrics/tutorial.html",
-        "level"     : "",
-        "contributors": "hexylena",
-        "entry"      : "        <div class='col-sm-6'>        <div class='card'>        <div class='card-body'>          <h5 class='card-title'>Recording Job Metrics</h5>          <h6 class='card-subtitle text-muted'>Galaxy Server administration</h6>          <p class='card-text'> </p>                    <p> <a href='/training-material/hall-of-fame/hexylena/' class='contributor-badge'><img src='https://avatars.githubusercontent.com/hexylena' alt='Helena Rasche'>Helena Rasche</a></p>          <a class='btn btn-primary' href='/training-material/topics/admin/tutorials/job-metrics/tutorial.html'>View Tutorial</a>          </div>          </div>          </div>          "
       },
     
 
@@ -1710,12 +1693,29 @@ var tutorials = {
         "question" : "",
         "objectives"  : "Create a volcano plot of RNA-seq data to visualize significant genes",
         "tags"     : "",
-        "level"     : "",
-        "time_estimation": "1h",
+        "level"     : "Introductory",
+        "time_estimation": "30m",
         "url"      : "/training-material/topics/transcriptomics/tutorials/rna-seq-viz-with-volcanoplot/tutorial.html",
-        "level"     : "",
+        "level"     : "Introductory",
         "contributors": "mblue9",
         "entry"      : "        <div class='col-sm-6'>        <div class='card'>        <div class='card-body'>          <h5 class='card-title'>Visualization of RNA-Seq results with Volcano Plot</h5>          <h6 class='card-subtitle text-muted'>Transcriptomics</h6>          <p class='card-text'> </p>                    <p> <a href='/training-material/hall-of-fame/mblue9/' class='contributor-badge'><img src='https://avatars.githubusercontent.com/mblue9' alt='Maria Doyle'>Maria Doyle</a></p>          <a class='btn btn-primary' href='/training-material/topics/transcriptomics/tutorials/rna-seq-viz-with-volcanoplot/tutorial.html'>View Tutorial</a>          </div>          </div>          </div>          "
+      },
+    
+
+       
+      "/topics/transcriptomics/tutorials/rna-seq-viz-with-volcanoplot-r/tutorial.html": {
+        "topic"    : "Transcriptomics",
+        "title"    : "Visualization of RNA-Seq results with Volcano Plot in R",
+        "description": "",
+        "question" : "",
+        "objectives"  : "Learn how to use R to edit Volcano plot colours, points, labels and categories",
+        "tags"     : "",
+        "level"     : "Intermediate",
+        "time_estimation": "1H",
+        "url"      : "/training-material/topics/transcriptomics/tutorials/rna-seq-viz-with-volcanoplot-r/tutorial.html",
+        "level"     : "Intermediate",
+        "contributors": "mblue9",
+        "entry"      : "        <div class='col-sm-6'>        <div class='card'>        <div class='card-body'>          <h5 class='card-title'>Visualization of RNA-Seq results with Volcano Plot in R</h5>          <h6 class='card-subtitle text-muted'>Transcriptomics</h6>          <p class='card-text'> </p>                    <p> <a href='/training-material/hall-of-fame/mblue9/' class='contributor-badge'><img src='https://avatars.githubusercontent.com/mblue9' alt='Maria Doyle'>Maria Doyle</a></p>          <a class='btn btn-primary' href='/training-material/topics/transcriptomics/tutorials/rna-seq-viz-with-volcanoplot-r/tutorial.html'>View Tutorial</a>          </div>          </div>          </div>          "
       },
     
 
@@ -3743,7 +3743,7 @@ var tutorials = {
        
       "/topics/galaxy-interface/tutorials/ncbi-sarf/tutorial.html": {
         "topic"    : "Using Galaxy and Managing your Data",
-        "title"    : "SRA Aligned Read Formats to Speed Up SARS-CoV-2 data Analysis",
+        "title"    : "SRA Aligned Read Format to Speed Up SARS-CoV-2 data Analysis",
         "description": "",
         "question" : "",
         "objectives"  : "Learn about SRA aligned read format and vcf files for Runs containing SARS-CoV-2 content, Understand how to search the metadata for these Runs to find your dataset of interest and then import that data in your preferred format",
@@ -3752,8 +3752,8 @@ var tutorials = {
         "time_estimation": "30m",
         "url"      : "/training-material/topics/galaxy-interface/tutorials/ncbi-sarf/tutorial.html",
         "level"     : "",
-        "contributors": "jontrow, adelaiderhodes",
-        "entry"      : "        <div class='col-sm-6'>        <div class='card'>        <div class='card-body'>          <h5 class='card-title'>SRA Aligned Read Formats to Speed Up SARS-CoV-2 data Analysis</h5>          <h6 class='card-subtitle text-muted'>Using Galaxy and Managing your Data</h6>          <p class='card-text'> </p>                      <p>                          <form method='GET' action='/training-material/search' style='display:inline'><input type='hidden' name='query' value='ncbi'><button class='label label-default tutorial_tag' id='ncbi' style='background-color: hsl(351, 80.0%, 85%); color: #333; border: 1px solid hsl(351, 80.0%, 45%)' title='Click to show all tutorials with this tag'>ncbi</button></form>                          <form method='GET' action='/training-material/search' style='display:inline'><input type='hidden' name='query' value='covid19'><button class='label label-default tutorial_tag' id='covid19' style='background-color: hsl(332, 80.0%, 85%); color: #333; border: 1px solid hsl(332, 80.0%, 45%)' title='Click to show all tutorials with this tag'>covid19</button></form>                        </p>                    <p> <a href='/training-material/hall-of-fame/jontrow/' class='contributor-badge'><img src='https://avatars.githubusercontent.com/jontrow' alt='Jon Trow'>Jon Trow</a> <a href='/training-material/hall-of-fame/adelaiderhodes/' class='contributor-badge'><img src='https://avatars.githubusercontent.com/adelaiderhodes' alt='Adelaide Rhodes'>Adelaide Rhodes</a></p>          <a class='btn btn-primary' href='/training-material/topics/galaxy-interface/tutorials/ncbi-sarf/tutorial.html'>View Tutorial</a>          </div>          </div>          </div>          "
+        "contributors": "jontrow, Arhodes-NCBI",
+        "entry"      : "        <div class='col-sm-6'>        <div class='card'>        <div class='card-body'>          <h5 class='card-title'>SRA Aligned Read Format to Speed Up SARS-CoV-2 data Analysis</h5>          <h6 class='card-subtitle text-muted'>Using Galaxy and Managing your Data</h6>          <p class='card-text'> </p>                      <p>                          <form method='GET' action='/training-material/search' style='display:inline'><input type='hidden' name='query' value='ncbi'><button class='label label-default tutorial_tag' id='ncbi' style='background-color: hsl(351, 80.0%, 85%); color: #333; border: 1px solid hsl(351, 80.0%, 45%)' title='Click to show all tutorials with this tag'>ncbi</button></form>                          <form method='GET' action='/training-material/search' style='display:inline'><input type='hidden' name='query' value='covid19'><button class='label label-default tutorial_tag' id='covid19' style='background-color: hsl(332, 80.0%, 85%); color: #333; border: 1px solid hsl(332, 80.0%, 45%)' title='Click to show all tutorials with this tag'>covid19</button></form>                        </p>                    <p> <a href='/training-material/hall-of-fame/jontrow/' class='contributor-badge'><img src='https://avatars.githubusercontent.com/jontrow' alt='Jon Trow'>Jon Trow</a> <a href='/training-material/hall-of-fame/Arhodes-NCBI/' class='contributor-badge'><img src='https://avatars.githubusercontent.com/Arhodes-NCBI' alt='Adelaide Rhodes'>Adelaide Rhodes</a></p>          <a class='btn btn-primary' href='/training-material/topics/galaxy-interface/tutorials/ncbi-sarf/tutorial.html'>View Tutorial</a>          </div>          </div>          </div>          "
       },
     
 
@@ -3884,6 +3884,23 @@ var tutorials = {
     
 
        
+      "/topics/dev/tutorials/tool-from-scratch/tutorial.html": {
+        "topic"    : "Development in Galaxy",
+        "title"    : "Creating Galaxy tools from Conda Through Deployment",
+        "description": "",
+        "question" : "",
+        "objectives"  : "Learn how to make and deploy a conda package, Understand how to write a Galaxy tool wrapper, Be able to use a tool wrapper locally, Be able to test the tool wrapper, Learn how to add tools to the Galaxy toolshed and make them available to any user",
+        "tags"     : "",
+        "level"     : "",
+        "time_estimation": "3H",
+        "url"      : "/training-material/topics/dev/tutorials/tool-from-scratch/tutorial.html",
+        "level"     : "",
+        "contributors": "astrovsky01, davebx, bernt-matthias",
+        "entry"      : "        <div class='col-sm-6'>        <div class='card'>        <div class='card-body'>          <h5 class='card-title'>Creating Galaxy tools from Conda Through Deployment</h5>          <h6 class='card-subtitle text-muted'>Development in Galaxy</h6>          <p class='card-text'> </p>                    <p> <a href='/training-material/hall-of-fame/astrovsky01/' class='contributor-badge'><img src='https://avatars.githubusercontent.com/astrovsky01' alt='Alex Ostrovsky'>Alex Ostrovsky</a> <a href='/training-material/hall-of-fame/davebx/' class='contributor-badge'><img src='https://avatars.githubusercontent.com/davebx' alt='Dave B.'>Dave B.</a> <a href='/training-material/hall-of-fame/bernt-matthias/' class='contributor-badge'><img src='https://avatars.githubusercontent.com/bernt-matthias' alt='Matthias Bernt'>Matthias Bernt</a></p>          <a class='btn btn-primary' href='/training-material/topics/dev/tutorials/tool-from-scratch/tutorial.html'>View Tutorial</a>          </div>          </div>          </div>          "
+      },
+    
+
+       
       "/topics/dev/tutorials/data-source-integration/tutorial.html": {
         "topic"    : "Development in Galaxy",
         "title"    : "Data source integration",
@@ -3897,6 +3914,23 @@ var tutorials = {
         "level"     : "",
         "contributors": "bebatut, shiltemann, gmauro, hexylena",
         "entry"      : "        <div class='col-sm-6'>        <div class='card'>        <div class='card-body'>          <h5 class='card-title'>Data source integration</h5>          <h6 class='card-subtitle text-muted'>Development in Galaxy</h6>          <p class='card-text'> </p>                    <p> <a href='/training-material/hall-of-fame/bebatut/' class='contributor-badge'><img src='https://avatars.githubusercontent.com/bebatut' alt='Bérénice Batut'>Bérénice Batut</a> <a href='/training-material/hall-of-fame/shiltemann/' class='contributor-badge'><img src='https://avatars.githubusercontent.com/shiltemann' alt='Saskia Hiltemann'>Saskia Hiltemann</a> <a href='/training-material/hall-of-fame/gmauro/' class='contributor-badge'><img src='https://avatars.githubusercontent.com/gmauro' alt='Gianmauro Cuccuru'>Gianmauro Cuccuru</a> <a href='/training-material/hall-of-fame/hexylena/' class='contributor-badge'><img src='https://avatars.githubusercontent.com/hexylena' alt='Helena Rasche'>Helena Rasche</a></p>          <a class='btn btn-primary' href='/training-material/topics/dev/tutorials/data-source-integration/tutorial.html'>View Tutorial</a>          </div>          </div>          </div>          "
+      },
+    
+
+       
+      "/topics/dev/tutorials/debugging/tutorial.html": {
+        "topic"    : "Development in Galaxy",
+        "title"    : "Debugging Galaxy",
+        "description": "",
+        "question" : "",
+        "objectives"  : "Fix a broken branch, Interpret the results of failed tests on GitHub, Run individual tests locally, Fix errors identified by failing tests, Debug simple runtime errors using the Python debugger, Write tests exposing the identified bug",
+        "tags"     : "",
+        "level"     : "",
+        "time_estimation": "4h",
+        "url"      : "/training-material/topics/dev/tutorials/debugging/tutorial.html",
+        "level"     : "",
+        "contributors": "assuntad23, ic4f, jmchilton",
+        "entry"      : "        <div class='col-sm-6'>        <div class='card'>        <div class='card-body'>          <h5 class='card-title'>Debugging Galaxy</h5>          <h6 class='card-subtitle text-muted'>Development in Galaxy</h6>          <p class='card-text'> </p>                    <p> <a href='/training-material/hall-of-fame/assuntad23/' class='contributor-badge'><img src='https://avatars.githubusercontent.com/assuntad23' alt='Assunta DeSanto'>Assunta DeSanto</a> <a href='/training-material/hall-of-fame/ic4f/' class='contributor-badge'><img src='https://avatars.githubusercontent.com/ic4f' alt='Sergey Golitsynskiy'>Sergey Golitsynskiy</a> <a href='/training-material/hall-of-fame/jmchilton/' class='contributor-badge'><img src='https://avatars.githubusercontent.com/jmchilton' alt='John Chilton'>John Chilton</a></p>          <a class='btn btn-primary' href='/training-material/topics/dev/tutorials/debugging/tutorial.html'>View Tutorial</a>          </div>          </div>          </div>          "
       },
     
 
@@ -4188,7 +4222,7 @@ fetch('/training-material/search.json')
         <p>
     The content of the tutorials and website is licensed under the <a rel="license" href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.
 </p>
-        <p>This is revision <a href="https://github.com/galaxyproject/training-material/commit/2783bf6bec7513928d604742fc0f4201ce690f38">2783bf6bec7513928d604742fc0f4201ce690f38</a></p>
+        <p>This is revision <a href="https://github.com/galaxyproject/training-material/commit/a924d705fb694e1cd3dec9b9123b338cb6a6fecd">a924d705fb694e1cd3dec9b9123b338cb6a6fecd</a></p>
     </div>
 </footer>
 

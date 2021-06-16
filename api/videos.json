@@ -156,8 +156,6 @@
                                
                        
                                
-                       
-                               
 			{
 				"id": "admin/tutorials/cvmfs/slides",
 				"topic": "Galaxy Server administration",
@@ -308,6 +306,10 @@
 					
                        
                        
+                       
+                               
+                       
+                               
                        
                                
                        
@@ -690,6 +692,8 @@
 				"topic": "Transcriptomics",
 				"title": "Plates, Batches, and Barcodes"
 			},
+                               
+                       
                                
                        
                                
