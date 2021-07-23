@@ -16,6 +16,7 @@
         <link rel="stylesheet" href="/training-material/assets/css/academicons.css">
         <link rel="stylesheet" href="/training-material/assets/css/syntax_highlighting.css">
         <link rel="shortcut icon" href="/training-material/favicon.ico" type="image/x-icon" />
+        <link rel="alternate" type="application/atom+xml" href="/training-material/feed.xml" />
 
         
         
@@ -172,6 +173,9 @@
                 <label data-value="rainbow" class="btn btn-secondary">
                     <input type="radio" name="options" id="rainbow" autocomplete="off"> Rainbow
                 </label>
+                <label data-value="progress" class="btn btn-secondary">
+                    <input type="radio" name="options" id="progress" autocomplete="off">🏳️‍🌈
+                </label>
                 <label data-value="halloween" class="btn btn-secondary">
                     <input type="radio" name="options" id="halloween" autocomplete="off"> 🎃
                 </label>
@@ -181,6 +185,20 @@
             </div>
 
         </div>
+
+        <div class="dropdown-item">
+            <div>
+                <i class="fas fa-history" aria-hidden="true"></i><span class="visually-hidden">galaxy-rulebuilder-history</span> Previous Versions
+            </div>
+
+            
+            <div id="archive-selector">
+            
+                <a class="btn btn-warning" href="https://training.galaxyproject.org/archive/" title="Older Versions">Older Versions</a>
+            </div>
+
+        </div>
+
     </div>
 </li>
 
@@ -538,7 +556,7 @@
             </ul>
             
 
-            <div><strong> <i class="far fa-calendar" aria-hidden="true"></i><span class="visually-hidden">last_modification</span> Last modification:</strong> Jun 15, 2021 </div>
+            <div><strong> <i class="far fa-calendar" aria-hidden="true"></i><span class="visually-hidden">last_modification</span> Last modification:</strong> Jun 24, 2021 </div>
         </blockquote>
 
         <div class="container">
@@ -591,17 +609,8 @@
 
 <h2 id="contributing-to-galaxy">Contributing to <span class="notranslate">Galaxy</span></h2>
 
-<p>To contribute to <span class="notranslate">galaxy</span>, a GitHub account is required. Changes are proposed via a <a href="https://docs.github.com/en/github/collaborating-with-pull-requests">pull request</a>. This allows the project maintainers to review the changes and suggest improvements.</p>
-
-<p>The general steps are as follows:</p>
-
-<ol>
-  <li>Fork the <span class="notranslate">Galaxy</span> repository</li>
-  <li>Clone your fork</li>
-  <li>Make changes in a new branch</li>
-  <li>Commit your changes, push branch to your fork</li>
-  <li>Open a pull request for this branch in the <span class="notranslate">upstream</span> <span class="notranslate">Galaxy</span> repository</li>
-</ol>
+<!--SNIPPET-->
+<blockquote class="tip">  <h3 data-toc-skip="" id="-tip-how-to-contribute-to-galaxy"><i class="far fa-lightbulb" aria-hidden="true"></i><span class="visually-hidden"></span> Tip: How to Contribute to <span class="notranslate">Galaxy</span></h3>  <p>To contribute to <span class="notranslate">galaxy</span>, a GitHub account is required. Changes are proposed via a <a href="https://docs.github.com/en/github/collaborating-with-pull-requests">pull request</a>. This allows the project maintainers to review the changes and suggest improvements.</p>  <p>The general steps are as follows:</p>  <ol>  <li>Fork the <span class="notranslate">Galaxy</span> repository</li>  <li>Clone your fork</li>  <li>Make changes in a new branch</li>  <li>Commit your changes, push branch to your fork</li>  <li>Open a pull request for this branch in the <span class="notranslate">upstream</span> <span class="notranslate">Galaxy</span> repository</li></ol>  <blockquote class="details">  <h3 data-toc-skip="" id="details-git-github-and-galaxy-core"><i class="fas fa-info-circle" aria-hidden="true"></i><span class="visually-hidden">details</span> Git, Github, and <span class="notranslate">Galaxy</span> Core</h3>  <p>For a lot more information about Git branching and managing a repository on Githubsee the <a href="/training-material/topics/contributing/tutorials/github-command-line-contribution/tutorial.html">Contributing with GitHub via command-line</a>tutorial.</p>  <p>The <a href="/training-material/topics/dev/tutorials/architecture/slides.html"><span class="notranslate">Galaxy</span> Core Architecture slides</a> have a lot of import <span class="notranslate">Galaxy</span> core related information related to branches,project management, and contributing to <span class="notranslate">Galaxy</span> - under the Project Management section of the slides.</p></blockquote></blockquote>
 
 <p>In this tutorial, instead of cloning <span class="notranslate">Galaxy</span>’s default branch, we will clone a branch that has been created for this tutorial and contains several bugs that you’ll need to identify and fix. Also, we won’t be opening a pull request in the <span class="notranslate">upstream</span> <span class="notranslate">Galaxy</span> repository.</p>
 
@@ -627,44 +636,32 @@
       <p>Note: In the future, when you contribute to <span class="notranslate">Galaxy</span>, you’ll need to clone the <code class="language-plaintext highlighter-rouge">dev</code> branch, which is the default, so you don’t need to specify the <code class="language-plaintext highlighter-rouge">-b</code> option in the <code class="language-plaintext highlighter-rouge">git clone</code> command).</p>
     </li>
     <li>
-      <p>Before we can use <span class="notranslate">Galaxy</span>, we need to create a virtual environment and install the required dependencies. First, let’s create a virtual environment:</p>
+      <p>Before we can use <span class="notranslate">Galaxy</span>, we need to create a virtual environment and install the required dependencies. This is generally done with the <code class="language-plaintext highlighter-rouge">common_startup.sh</code> script:</p>
 
       <blockquote class="code-in">
         <h3 id="code-in-input-bash-1"><i class="far fa-keyboard" aria-hidden="true"></i><span class="visually-hidden">code-in</span> Input: Bash</h3>
-        <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>virtualenv .venv
+        <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>bash scripts/common_startup.sh <span class="nt">--dev-wheels</span>
 </code></pre></div>        </div>
       </blockquote>
 
-      <p>Make sure your Python version is at least 3.6 (you can check your Python version with <code class="language-plaintext highlighter-rouge">python --version</code>). If your system uses an older version, you may specify an alte<span class="notranslate">rna</span>tive Python interpreter using the <code class="language-plaintext highlighter-rouge">-p</code> option:</p>
-
-      <blockquote class="code-in">
-        <h3 id="code-in-input-bash-2"><i class="far fa-keyboard" aria-hidden="true"></i><span class="visually-hidden">code-in</span> Input: Bash</h3>
-        <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>virtualenv <span class="nt">-p</span> PATH-TO-PYTHON-INTERPETER .venv
-</code></pre></div>        </div>
-      </blockquote>
+      <p>Make sure your Python version is at least 3.6 (you can check your Python version with <code class="language-plaintext highlighter-rouge">python --version</code>). If your system uses an older version, you may specify an alte<span class="notranslate">rna</span>tive Python interpreter using the <code class="language-plaintext highlighter-rouge"><span class="notranslate">GALAXY</span>_PYTHON</code> environment variable (<code class="language-plaintext highlighter-rouge"><span class="notranslate">GALAXY</span>_PYTHON=/path/to/alt/python bash scripts/common_startup.sh --dev-wheels</code>).</p>
     </li>
     <li>
       <p>Activate your new virtual environment:</p>
 
       <blockquote class="code-in">
-        <h3 id="code-in-input-bash-3"><i class="far fa-keyboard" aria-hidden="true"></i><span class="visually-hidden">code-in</span> Input: Bash</h3>
+        <h3 id="code-in-input-bash-2"><i class="far fa-keyboard" aria-hidden="true"></i><span class="visually-hidden">code-in</span> Input: Bash</h3>
         <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">.</span> .venv/bin/activate
 </code></pre></div>        </div>
       </blockquote>
 
-      <p>Once activated, you’ll see the name of the virtual environment prepended to your shell prompt: <code class="language-plaintext highlighter-rouge">(.venv)$</code>. 5. Now you are ready to install the dependencies. Since you wil be doing development, you need to install the dependencies listed in <code class="language-plaintext highlighter-rouge">lib/<span class="notranslate">galaxy</span>/dependencies/dev-requirements.txt</code>:</p>
-
-      <blockquote class="code-in">
-        <h3 id="code-in-input-bash-4"><i class="far fa-keyboard" aria-hidden="true"></i><span class="visually-hidden">code-in</span> Input: Bash</h3>
-        <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>pip <span class="nb">install</span> <span class="nt">-r</span> lib/<span class="notranslate">galaxy</span>/dependencies/dev-requirements.txt
-</code></pre></div>        </div>
-      </blockquote>
+      <p>Once activated, you’ll see the name of the virtual environment prepended to your shell prompt: <code class="language-plaintext highlighter-rouge">(.venv)$</code>.</p>
     </li>
     <li>
       <p>Finally, let’s create a new branch for your edits:</p>
 
       <blockquote class="code-in">
-        <h3 id="code-in-input-bash-5"><i class="far fa-keyboard" aria-hidden="true"></i><span class="visually-hidden">code-in</span> Input: Bash</h3>
+        <h3 id="code-in-input-bash-3"><i class="far fa-keyboard" aria-hidden="true"></i><span class="visually-hidden">code-in</span> Input: Bash</h3>
         <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git checkout <span class="nt">-b</span> my-training
 </code></pre></div>        </div>
       </blockquote>
@@ -673,7 +670,7 @@
 
       <blockquote class="code-2col">
         <blockquote class="code-in">
-          <h3 id="code-in-input-bash-6"><i class="far fa-keyboard" aria-hidden="true"></i><span class="visually-hidden">code-in</span> Input: Bash</h3>
+          <h3 id="code-in-input-bash-4"><i class="far fa-keyboard" aria-hidden="true"></i><span class="visually-hidden">code-in</span> Input: Bash</h3>
           <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git branch
 </code></pre></div>          </div>
         </blockquote>
@@ -721,7 +718,7 @@
       <p>Instead, we will run the tests locally. Furthermore, we will run a specific test that we know is failing: this will give us the instant feedback we need.</p>
 
       <blockquote class="code-in">
-        <h3 id="code-in-input-bash-7"><i class="far fa-keyboard" aria-hidden="true"></i><span class="visually-hidden">code-in</span> Input: Bash</h3>
+        <h3 id="code-in-input-bash-5"><i class="far fa-keyboard" aria-hidden="true"></i><span class="visually-hidden">code-in</span> Input: Bash</h3>
         <p>Make sure you are in <code class="language-plaintext highlighter-rouge"><span class="notranslate">GALAXY</span>_ROOT</code> and your virtual environment is activated. If not, activate it:</p>
         <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">.</span> .venv/bin/activate
 </code></pre></div>        </div>
@@ -730,7 +727,7 @@
       <p>The simplest way to run the failing test locally is using pytest directly:</p>
 
       <blockquote class="code-in">
-        <h3 id="code-in-input-bash-8"><i class="far fa-keyboard" aria-hidden="true"></i><span class="visually-hidden">code-in</span> Input: Bash</h3>
+        <h3 id="code-in-input-bash-6"><i class="far fa-keyboard" aria-hidden="true"></i><span class="visually-hidden">code-in</span> Input: Bash</h3>
         <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>pytest <span class="nb">test</span>/unit/util/test_utils.py
 </code></pre></div>        </div>
       </blockquote>
@@ -789,7 +786,7 @@
 
 <h1 id="api-test-failure">API test failure</h1>
 
-<p>API test various aspects of the <span class="notranslate">Galaxy</span> API, as well as general backend aspects of <span class="notranslate">Galaxy</span> using the API. These tests require a <span class="notranslate">Galaxy</span> instance.</p>
+<p>API tests test various aspects of the <span class="notranslate">Galaxy</span> API, as well as general backend aspects of <span class="notranslate">Galaxy</span> using the API. These tests require a <span class="notranslate">Galaxy</span> instance.</p>
 
 <blockquote class="notranslate hands_on">
   <h3 id="hands_on-hands-on-fixing-a-failing-api-test"><i class="fas fa-pencil-alt" aria-hidden="true"></i><span class="visually-hidden">hands_on</span> Hands-on: Fixing a failing API test</h3>
@@ -819,7 +816,7 @@ FAILED lib/<span class="notranslate">galaxy</span>_test/api/test_licenses.py::Li
       <p>Let’s run the failed test:</p>
 
       <blockquote class="code-in">
-        <h3 id="code-in-input-bash-9"><i class="far fa-keyboard" aria-hidden="true"></i><span class="visually-hidden">code-in</span> Input: Bash</h3>
+        <h3 id="code-in-input-bash-7"><i class="far fa-keyboard" aria-hidden="true"></i><span class="visually-hidden">code-in</span> Input: Bash</h3>
         <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>./run_tests.sh <span class="nt">-api</span> lib/<span class="notranslate">galaxy</span>_test/api/test_licenses.py
 </code></pre></div>        </div>
       </blockquote>
@@ -873,7 +870,7 @@ FAILED lib/<span class="notranslate">galaxy</span>_test/api/test_licenses.py::Li
 
       <blockquote class="solution">
         <h3 id="solution-solution-5"><i class="far fa-eye" aria-hidden="true"></i><span class="visually-hidden">solution</span> Solution</h3>
-        <p>The <code class="language-plaintext highlighter-rouge">get_license_by_id()</code> method raises an <code class="language-plaintext highlighter-rouge">ObjectNotFound</code> error (which results in the 404 status code we see in the test result). This error is a direct result of the <code class="language-plaintext highlighter-rouge">get</code> method called on the previous line - take a look at that method:</p>
+        <p>The <code class="language-plaintext highlighter-rouge">get_license_by_id()</code> method raises an <code class="language-plaintext highlighter-rouge">ObjectNotFound</code> error (which results in the 404 status code we see in the test result). This error is a direct result of the LicensesManager <code class="language-plaintext highlighter-rouge">get</code> method called on the previous line (<code class="language-plaintext highlighter-rouge">license = self.get(id)</code>) - take a look at that method:</p>
         <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code>    <span class="k">def</span> <span class="nf">get</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">uri</span><span class="p">):</span>
         <span class="k">if</span> <span class="n">uri</span> <span class="ow">not</span> <span class="ow">in</span> <span class="bp">self</span><span class="p">.</span><span class="n">_by_index</span><span class="p">:</span>
             <span class="k">return</span> <span class="bp">self</span><span class="p">.</span><span class="n">_by_index</span><span class="p">[</span><span class="n">uri</span><span class="p">]</span>
@@ -929,7 +926,7 @@ FAILED lib/<span class="notranslate">galaxy</span>_test/api/test_licenses.py::Li
       <p>Alright, so we’ve seen the failure, but we want to verify it locally now. For this, you’ll need to open up a terminal.</p>
 
       <blockquote class="code-in">
-        <h3 id="code-in-input-bash-10"><i class="far fa-keyboard" aria-hidden="true"></i><span class="visually-hidden">code-in</span> Input: Bash</h3>
+        <h3 id="code-in-input-bash-8"><i class="far fa-keyboard" aria-hidden="true"></i><span class="visually-hidden">code-in</span> Input: Bash</h3>
         <p>Make sure you are in <code class="language-plaintext highlighter-rouge"><span class="notranslate">GALAXY</span>_ROOT</code> and your virtual environment is activated. If not, activate it:</p>
         <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">.</span> .venv/bin/activate
 </code></pre></div>        </div>
@@ -986,7 +983,7 @@ One of the failing tests on GitHub says “Client Unit Testing / jest”. Clicki
       <p><strong>Running the test locally</strong></p>
 
       <blockquote class="code-in">
-        <h3 id="code-in-input-bash-11"><i class="far fa-keyboard" aria-hidden="true"></i><span class="visually-hidden">code-in</span> Input: Bash</h3>
+        <h3 id="code-in-input-bash-9"><i class="far fa-keyboard" aria-hidden="true"></i><span class="visually-hidden">code-in</span> Input: Bash</h3>
         <p>Make sure you are in <code class="language-plaintext highlighter-rouge"><span class="notranslate">GALAXY</span>_ROOT</code> and your virtual environment is activated. If not, activate it:</p>
         <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">.</span> .venv/bin/activate
 </code></pre></div>        </div>
@@ -1098,7 +1095,7 @@ One of the failing tests on GitHub says “Client Unit Testing / jest”. Clicki
         <p>Either of these two commands will work:</p>
 
         <blockquote class="code-in">
-          <h3 id="code-in-input-bash-12"><i class="far fa-keyboard" aria-hidden="true"></i><span class="visually-hidden">code-in</span> Input: Bash</h3>
+          <h3 id="code-in-input-bash-10"><i class="far fa-keyboard" aria-hidden="true"></i><span class="visually-hidden">code-in</span> Input: Bash</h3>
           <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>./run_tests.sh <span class="nt">-selenium</span> lib/<span class="notranslate">galaxy</span>_test/selenium/test_collection_builders.py
 </code></pre></div>          </div>
           <p>or</p>
@@ -1175,7 +1172,7 @@ One of the failing tests on GitHub says “Client Unit Testing / jest”. Clicki
 
       <blockquote class="code-2col">
         <blockquote class="code-in">
-          <h3 id="code-in-input-bash-13"><i class="far fa-keyboard" aria-hidden="true"></i><span class="visually-hidden">code-in</span> Input: Bash</h3>
+          <h3 id="code-in-input-bash-11"><i class="far fa-keyboard" aria-hidden="true"></i><span class="visually-hidden">code-in</span> Input: Bash</h3>
           <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>./run.sh
 </code></pre></div>          </div>
         </blockquote>
@@ -1261,7 +1258,7 @@ Exception: This should not happen!
       <p>Now we need to restart <span class="notranslate">Galaxy</span>. However, to use pdb, we need to enable <span class="notranslate">Galaxy</span>’s debug configuration option. In general, it may be a good idea to enable this in your <code class="language-plaintext highlighter-rouge"><span class="notranslate">galaxy</span>.yml</code> configuration file (just copy or rename <code class="language-plaintext highlighter-rouge">config/<span class="notranslate">galaxy</span>.yml.sample</code> and uncomment the option you want to set). However, for the purposes of this exercise, it’s enough to set the <code class="language-plaintext highlighter-rouge"><span class="notranslate">GALAXY</span>_CONFIG_DEBUG</code> environment variable when running <span class="notranslate">Galaxy</span>:</p>
 
       <blockquote class="code-in">
-        <h3 id="code-in-input-bash-14"><i class="far fa-keyboard" aria-hidden="true"></i><span class="visually-hidden">code-in</span> Input: Bash</h3>
+        <h3 id="code-in-input-bash-12"><i class="far fa-keyboard" aria-hidden="true"></i><span class="visually-hidden">code-in</span> Input: Bash</h3>
         <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv"><span class="notranslate">GALAXY</span>_CONFIG_DEBUG</span><span class="o">=</span>1 ./run.sh
 </code></pre></div>        </div>
       </blockquote>
@@ -1540,7 +1537,7 @@ Head over to the function’s definition (you can tell from the import statement
     title = "Debugging Galaxy (Galaxy Training Materials)",
     year = "2021",
     month = "06",
-    day = "15"
+    day = "24"
     url = "\url{https://training.galaxyproject.org/training-material/topics/dev/tutorials/debugging/tutorial.html}",
     note = "[Online; accessed TODAY]"
 }

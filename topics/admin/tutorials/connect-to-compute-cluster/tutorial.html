@@ -16,6 +16,7 @@
         <link rel="stylesheet" href="/training-material/assets/css/academicons.css">
         <link rel="stylesheet" href="/training-material/assets/css/syntax_highlighting.css">
         <link rel="shortcut icon" href="/training-material/favicon.ico" type="image/x-icon" />
+        <link rel="alternate" type="application/atom+xml" href="/training-material/feed.xml" />
 
         
         
@@ -172,6 +173,9 @@
                 <label data-value="rainbow" class="btn btn-secondary">
                     <input type="radio" name="options" id="rainbow" autocomplete="off"> Rainbow
                 </label>
+                <label data-value="progress" class="btn btn-secondary">
+                    <input type="radio" name="options" id="progress" autocomplete="off">🏳️‍🌈
+                </label>
                 <label data-value="halloween" class="btn btn-secondary">
                     <input type="radio" name="options" id="halloween" autocomplete="off"> 🎃
                 </label>
@@ -181,6 +185,20 @@
             </div>
 
         </div>
+
+        <div class="dropdown-item">
+            <div>
+                <i class="fas fa-history" aria-hidden="true"></i><span class="visually-hidden">galaxy-rulebuilder-history</span> Previous Versions
+            </div>
+
+            
+            <div id="archive-selector">
+            
+                <a class="btn btn-warning" href="https://training.galaxyproject.org/archive/" title="Older Versions">Older Versions</a>
+            </div>
+
+        </div>
+
     </div>
 </li>
 
@@ -542,7 +560,11 @@
                     
                         
                     
+                        
+                    
                 
+                    
+                        
                     
                         
                     
@@ -674,7 +696,7 @@
             </ul>
             
 
-            <div><strong> <i class="far fa-calendar" aria-hidden="true"></i><span class="visually-hidden">last_modification</span> Last modification:</strong> Jun 10, 2021 </div>
+            <div><strong> <i class="far fa-calendar" aria-hidden="true"></i><span class="visually-hidden">last_modification</span> Last modification:</strong> Jul 2, 2021 </div>
         </blockquote>
 
         <div class="container">
@@ -784,7 +806,7 @@ be taken into consideration when choosing where to run jobs and what parameters 
 
       <div data-commit="Add slurm configuration" class="language-diff highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="gd">--- a/group_vars/<span class="notranslate">galaxy</span>servers.yml
 </span><span class="gi">+++ b/group_vars/<span class="notranslate">galaxy</span>servers.yml
-</span><span class="p">@@ -139,3 +139,13 @@</span> golang_gopath: '/opt/workspace-go'
+</span><span class="p">@@ -137,3 +137,13 @@</span> golang_gopath: '/opt/workspace-go'
  # Singularity target version
  singularity_version: "3.7.4"
  singularity_go_path: "{{ golang_install_dir }}"
@@ -1040,12 +1062,12 @@ sleep </span>30
 
       <div data-commit="Configure DRMAA_LIBRARY_PATH" class="language-diff highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="gd">--- a/group_vars/<span class="notranslate">galaxy</span>servers.yml
 </span><span class="gi">+++ b/group_vars/<span class="notranslate">galaxy</span>servers.yml
-</span><span class="p">@@ -103,6 +103,7 @@</span> <span class="notranslate">galaxy</span>_config_files:
-
+</span><span class="p">@@ -101,6 +101,7 @@</span> <span class="notranslate">galaxy</span>_config_templates:
+    
  # systemd
  <span class="notranslate">galaxy</span>_manage_systemd: yes
 <span class="gi">+<span class="notranslate">galaxy</span>_systemd_env: [DRMAA_LIBRARY_PATH="/usr/lib/slurm-drmaa/lib/libdrmaa.so.1"]
-</span>
+</span>    
  # Certbot
  certbot_auto_renew_hour: "{{ 23 |random(seed=inventory_hostname)  }}"
    
@@ -1470,8 +1492,8 @@ However most of the metrics exposed by this setting are quite safe (e.g. cgroups
     author = "Nate Coraor and Björn Grüning and Helena Rasche",
     title = "Connecting Galaxy to a compute cluster (Galaxy Training Materials)",
     year = "2021",
-    month = "06",
-    day = "10"
+    month = "07",
+    day = "02"
     url = "\url{https://training.galaxyproject.org/training-material/topics/admin/tutorials/connect-to-compute-cluster/tutorial.html}",
     note = "[Online; accessed TODAY]"
 }
@@ -1517,6 +1539,8 @@ document.getElementById("citation-text").innerHTML = document.getElementById("ci
         
             <ul>
                 
+                    
+                        
                     
                         
                     

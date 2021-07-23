@@ -90,6 +90,8 @@
                                
                        
                                
+                       
+                               
 			{
 				"id": "admin/tutorials/database/slides",
 				"topic": "Galaxy Server administration",
@@ -285,6 +287,8 @@
 				"topic": "Contributing to the Galaxy Training Material",
 				"title": "Creating Slides"
 			},
+                               
+                       
                                
                        
                                
@@ -603,6 +607,14 @@
                        
                                
                        
+                               
+                       
+                               
+                       
+                               
+                       
+                               
+                       
                
 					
                        
@@ -734,6 +746,8 @@
 					
                        
                        
+                       
+                               
                        
                                
                        

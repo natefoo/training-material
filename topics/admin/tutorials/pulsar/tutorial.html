@@ -16,6 +16,7 @@
         <link rel="stylesheet" href="/training-material/assets/css/academicons.css">
         <link rel="stylesheet" href="/training-material/assets/css/syntax_highlighting.css">
         <link rel="shortcut icon" href="/training-material/favicon.ico" type="image/x-icon" />
+        <link rel="alternate" type="application/atom+xml" href="/training-material/feed.xml" />
 
         
         
@@ -172,6 +173,9 @@
                 <label data-value="rainbow" class="btn btn-secondary">
                     <input type="radio" name="options" id="rainbow" autocomplete="off"> Rainbow
                 </label>
+                <label data-value="progress" class="btn btn-secondary">
+                    <input type="radio" name="options" id="progress" autocomplete="off">🏳️‍🌈
+                </label>
                 <label data-value="halloween" class="btn btn-secondary">
                     <input type="radio" name="options" id="halloween" autocomplete="off"> 🎃
                 </label>
@@ -181,6 +185,20 @@
             </div>
 
         </div>
+
+        <div class="dropdown-item">
+            <div>
+                <i class="fas fa-history" aria-hidden="true"></i><span class="visually-hidden">galaxy-rulebuilder-history</span> Previous Versions
+            </div>
+
+            
+            <div id="archive-selector">
+            
+                <a class="btn btn-warning" href="https://training.galaxyproject.org/archive/" title="Older Versions">Older Versions</a>
+            </div>
+
+        </div>
+
     </div>
 </li>
 
@@ -620,7 +638,11 @@
                     
                         
                     
+                        
+                    
                 
+                    
+                        
                     
                         
                     
@@ -798,7 +820,11 @@
                     
                         
                     
+                        
+                    
                 
+                    
+                        
                     
                         
                     
@@ -941,6 +967,8 @@
                         
                     
                         
+                    
+                        
                             
                             <li> Reference Data with CVMFS:
                             
@@ -1022,7 +1050,7 @@
             </ul>
             
 
-            <div><strong> <i class="far fa-calendar" aria-hidden="true"></i><span class="visually-hidden">last_modification</span> Last modification:</strong> Jun 16, 2021 </div>
+            <div><strong> <i class="far fa-calendar" aria-hidden="true"></i><span class="visually-hidden">last_modification</span> Last modification:</strong> Jul 2, 2021 </div>
         </blockquote>
 
         <div class="container">
@@ -1181,7 +1209,7 @@
 <span class="gi">+- name: use<span class="notranslate">galaxy</span>_eu.rabbitmq
 +  version: 0.1.0
 +- src: <span class="notranslate">galaxy</span>project.pulsar
-+  version: 1.0.7
++  version: 1.0.8
 </span>   
 </code></pre></div>      </div>
     </li>
@@ -1289,7 +1317,7 @@
 
       <div data-commit="Configure RabbitMQ" class="language-diff highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="gd">--- a/group_vars/<span class="notranslate">galaxy</span>servers.yml
 </span><span class="gi">+++ b/group_vars/<span class="notranslate">galaxy</span>servers.yml
-</span><span class="p">@@ -128,8 +128,10 @@</span> certbot_environment: staging
+</span><span class="p">@@ -126,8 +126,10 @@</span> certbot_environment: staging
  certbot_well_known_root: /srv/nginx/_well-known_root
  certbot_share_key_users:
    - nginx
@@ -1300,7 +1328,7 @@
 </span> certbot_domains:
   - "{{ inventory_hostname }}"
  certbot_agree_tos: --agree-tos
-<span class="p">@@ -162,3 +164,31 @@</span> slurm_config:
+<span class="p">@@ -160,3 +162,31 @@</span> slurm_config:
    SlurmdParameters: config_overrides   # Ignore errors if the host actually has cores != 2
    SelectType: select/cons_res
    SelectTypeParameters: CR_CPU_Memory  # Allocate individual cores/memory instead of entire node
@@ -1810,7 +1838,7 @@ curl <span class="nt">-k</span> https://localhost:5671
       <p>Install the BWA and BWA-MEM tools, if needed.</p>
 
       <!--SNIPPET-->
-      <blockquote class="tip">  <h3 data-toc-skip="" id="-tip-install-tools-via-the-admin-ui"><i class="far fa-lightbulb" aria-hidden="true"></i><span class="visually-hidden"></span> Tip: Install tools via the Admin UI</h3>  <ol>    <li>Open <span class="notranslate">Galaxy</span> in your browser and type <code class="language-plaintext highlighter-rouge">bwa</code> in the tool search box on the left. If “Map with BWA-MEM” is among the search results, you can skip the following steps.</li>    <li>Access the Admin menu from the top bar (you need to be logged-in with an email specified in the <code class="language-plaintext highlighter-rouge">admin_users</code> setting)</li>    <li>Click “Install and Uninstall”, which can be found on the left, under “Tool Management”</li>    <li>Enter <code class="language-plaintext highlighter-rouge">bwa</code> in the search interface</li>    <li>Click on the first hit, having <code class="language-plaintext highlighter-rouge">devteam</code> as owner</li>    <li>Click the “Install” button for the latest revision</li>    <li>Enter “<span class="notranslate">Mapping</span>” as the target section and click “OK”.</li>  </ol></blockquote>
+      <blockquote class="tip">  <h3 data-toc-skip="" id="-tip-install-tools-via-the-admin-ui"><i class="far fa-lightbulb" aria-hidden="true"></i><span class="visually-hidden"></span> Tip: Install tools via the Admin UI</h3>  <ol>  <li>Open <span class="notranslate">Galaxy</span> in your browser and type <code class="language-plaintext highlighter-rouge">bwa</code> in the tool search box on the left. If “Map with BWA-MEM” is among the search results, you can skip the following steps.</li>  <li>Access the Admin menu from the top bar (you need to be logged-in with an email specified in the <code class="language-plaintext highlighter-rouge">admin_users</code> setting)</li>  <li>Click “Install and Uninstall”, which can be found on the left, under “Tool Management”</li>  <li>Enter <code class="language-plaintext highlighter-rouge">bwa</code> in the search interface</li>  <li>Click on the first hit, having <code class="language-plaintext highlighter-rouge">devteam</code> as owner</li>  <li>Click the “Install” button for the latest revision</li>  <li>Enter “<span class="notranslate">Mapping</span>” as the target section and click “OK”.</li></ol></blockquote>
     </li>
     <li>
       <p>We now need to tell <span class="notranslate">Galaxy</span> to send BWA and BWA-MEM jobs to the <code class="language-plaintext highlighter-rouge">pulsar</code> destination. We specify this in the <code class="language-plaintext highlighter-rouge">&lt;tools&gt;</code> section of the <code class="language-plaintext highlighter-rouge">job_conf.xml</code> file.</p>
@@ -2051,8 +2079,8 @@ The aim of these parameters is to control the retrying of staging actions in the
     author = "Nate Coraor and Simon Gladman and Marius van den Beek and Helena Rasche and Gianmauro Cuccuru",
     title = "Running Jobs on Remote Resources with Pulsar (Galaxy Training Materials)",
     year = "2021",
-    month = "06",
-    day = "16"
+    month = "07",
+    day = "02"
     url = "\url{https://training.galaxyproject.org/training-material/topics/admin/tutorials/pulsar/tutorial.html}",
     note = "[Online; accessed TODAY]"
 }

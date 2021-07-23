@@ -16,6 +16,7 @@
         <link rel="stylesheet" href="/training-material/assets/css/academicons.css">
         <link rel="stylesheet" href="/training-material/assets/css/syntax_highlighting.css">
         <link rel="shortcut icon" href="/training-material/favicon.ico" type="image/x-icon" />
+        <link rel="alternate" type="application/atom+xml" href="/training-material/feed.xml" />
 
         
         
@@ -147,6 +148,9 @@
                 <label data-value="rainbow" class="btn btn-secondary">
                     <input type="radio" name="options" id="rainbow" autocomplete="off"> Rainbow
                 </label>
+                <label data-value="progress" class="btn btn-secondary">
+                    <input type="radio" name="options" id="progress" autocomplete="off">🏳️‍🌈
+                </label>
                 <label data-value="halloween" class="btn btn-secondary">
                     <input type="radio" name="options" id="halloween" autocomplete="off"> 🎃
                 </label>
@@ -156,6 +160,20 @@
             </div>
 
         </div>
+
+        <div class="dropdown-item">
+            <div>
+                <i class="fas fa-history" aria-hidden="true"></i><span class="visually-hidden">galaxy-rulebuilder-history</span> Previous Versions
+            </div>
+
+            
+            <div id="archive-selector">
+            
+                <a class="btn btn-warning" href="https://training.galaxyproject.org/archive/" title="Older Versions">Older Versions</a>
+            </div>
+
+        </div>
+
     </div>
 </li>
 
@@ -313,210 +331,6 @@
 						
 					
 						
-						<li>
-							
-							
-							<a href="/training-material/topics/admin">
-								Galaxy Server administration
-							</a>
-							/
-							<a href="/training-material//topics/admin/tutorials/pulsar/tutorial.html">
-							Running Jobs on Remote Resources with Pulsar
-							</a>
-						</li>
-						
-					
-						
-					
-						
-						<li>
-							
-							
-							<a href="/training-material/topics/admin">
-								Galaxy Server administration
-							</a>
-							/
-							<a href="/training-material//topics/admin/tutorials/cvmfs/tutorial.html">
-							Reference Data with CVMFS
-							</a>
-						</li>
-						
-					
-						
-					
-						
-					
-						
-					
-						
-					
-						
-					
-						
-					
-						
-					
-						
-					
-						
-						<li>
-							
-							
-							<a href="/training-material/topics/admin">
-								Galaxy Server administration
-							</a>
-							/
-							<a href="/training-material//topics/admin/tutorials/interactive-tools/tutorial.html">
-							Galaxy Interactive Tools
-							</a>
-						</li>
-						
-					
-						
-						<li>
-							
-							
-							<a href="/training-material/topics/admin">
-								Galaxy Server administration
-							</a>
-							/
-							<a href="/training-material//topics/admin/tutorials/upgrading/tutorial.html">
-							Upgrading Galaxy
-							</a>
-						</li>
-						
-					
-						
-					
-						
-					
-						
-						<li>
-							
-							
-							<a href="/training-material/topics/admin">
-								Galaxy Server administration
-							</a>
-							/
-							<a href="/training-material//topics/admin/tutorials/ansible-galaxy/tutorial.html">
-							Galaxy Installation with Ansible
-							</a>
-						</li>
-						
-					
-						
-					
-						
-					
-						
-						<li>
-							
-							
-							<a href="/training-material/topics/admin">
-								Galaxy Server administration
-							</a>
-							/
-							<a href="/training-material//topics/admin/tutorials/cvmfs-manual/tutorial.html">
-							Reference Data with CVMFS without Ansible
-							</a>
-						</li>
-						
-					
-						
-					
-						
-						<li>
-							
-							
-							<a href="/training-material/topics/admin">
-								Galaxy Server administration
-							</a>
-							/
-							<a href="/training-material//topics/admin/tutorials/reports/tutorial.html">
-							Galaxy Monitoring with Reports
-							</a>
-						</li>
-						
-					
-						
-					
-						
-					
-						
-						<li>
-							
-							
-							<a href="/training-material/topics/assembly">
-								Assembly
-							</a>
-							/
-							<a href="/training-material//topics/assembly/tutorials/debruijn-graph-assembly/tutorial.html">
-							De Bruijn Graph Assembly
-							</a>
-						</li>
-						
-					
-						
-					
-						
-					
-						
-						<li>
-							
-							
-							<a href="/training-material/topics/assembly">
-								Assembly
-							</a>
-							/
-							<a href="/training-material//topics/assembly/tutorials/unicycler-assembly/tutorial.html">
-							Unicycler Assembly
-							</a>
-						</li>
-						
-					
-						
-					
-						
-					
-						
-					
-						
-						<li>
-							
-							
-							<a href="/training-material/topics/assembly">
-								Assembly
-							</a>
-							/
-							<a href="/training-material//topics/assembly/tutorials/general-introduction/tutorial.html">
-							An Introduction to Genome Assembly
-							</a>
-						</li>
-						
-					
-						
-					
-						
-					
-						
-					
-						
-					
-						
-					
-						
-					
-						
-					
-						
-					
-						
-					
-						
-					
-						
-					
-						
 					
 						
 					
@@ -595,6 +409,134 @@
 						
 					
 						
+						<li>
+							
+							
+							<a href="/training-material/topics/admin">
+								Galaxy Server administration
+							</a>
+							/
+							<a href="/training-material//topics/admin/tutorials/ansible-galaxy/tutorial.html">
+							Galaxy Installation with Ansible
+							</a>
+						</li>
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+						<li>
+							
+							
+							<a href="/training-material/topics/admin">
+								Galaxy Server administration
+							</a>
+							/
+							<a href="/training-material//topics/admin/tutorials/interactive-tools/tutorial.html">
+							Galaxy Interactive Tools
+							</a>
+						</li>
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+						<li>
+							
+							
+							<a href="/training-material/topics/admin">
+								Galaxy Server administration
+							</a>
+							/
+							<a href="/training-material//topics/admin/tutorials/pulsar/tutorial.html">
+							Running Jobs on Remote Resources with Pulsar
+							</a>
+						</li>
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+						<li>
+							
+							
+							<a href="/training-material/topics/admin">
+								Galaxy Server administration
+							</a>
+							/
+							<a href="/training-material//topics/admin/tutorials/reports/tutorial.html">
+							Galaxy Monitoring with Reports
+							</a>
+						</li>
+						
+					
+						
+						<li>
+							
+							
+							<a href="/training-material/topics/admin">
+								Galaxy Server administration
+							</a>
+							/
+							<a href="/training-material//topics/admin/tutorials/cvmfs-manual/tutorial.html">
+							Reference Data with CVMFS without Ansible
+							</a>
+						</li>
+						
+					
+						
+						<li>
+							
+							
+							<a href="/training-material/topics/admin">
+								Galaxy Server administration
+							</a>
+							/
+							<a href="/training-material//topics/admin/tutorials/upgrading/tutorial.html">
+							Upgrading Galaxy
+							</a>
+						</li>
+						
+					
+						
+					
+						
+						<li>
+							
+							
+							<a href="/training-material/topics/admin">
+								Galaxy Server administration
+							</a>
+							/
+							<a href="/training-material//topics/admin/tutorials/cvmfs/tutorial.html">
+							Reference Data with CVMFS
+							</a>
+						</li>
+						
 					
 						
 					
@@ -690,14 +632,130 @@
 						<li>
 							
 							
-							<a href="/training-material/topics/variant-analysis">
-								Variant Analysis
+							<a href="/training-material/topics/assembly">
+								Assembly
 							</a>
 							/
-							<a href="/training-material//topics/variant-analysis/tutorials/microbial-variants/tutorial.html">
-							Microbial Variant Calling
+							<a href="/training-material//topics/assembly/tutorials/general-introduction/tutorial.html">
+							An Introduction to Genome Assembly
 							</a>
 						</li>
+						
+					
+						
+					
+						
+						<li>
+							
+							
+							<a href="/training-material/topics/assembly">
+								Assembly
+							</a>
+							/
+							<a href="/training-material//topics/assembly/tutorials/unicycler-assembly/tutorial.html">
+							Unicycler Assembly
+							</a>
+						</li>
+						
+					
+						
+					
+						
+						<li>
+							
+							
+							<a href="/training-material/topics/assembly">
+								Assembly
+							</a>
+							/
+							<a href="/training-material//topics/assembly/tutorials/debruijn-graph-assembly/tutorial.html">
+							De Bruijn Graph Assembly
+							</a>
+						</li>
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
 						
 					
 						
@@ -727,67 +785,17 @@
 						
 					
 						
-					
-						
-					
-						
-					
-						
-					
-						
-					
-						
-					
-						
-					
-						
-					
-						
-					
-						
-					
-						
-					
-						
-					
-						
-					
-						
-					
-						
-					
-						
-					
-						
-					
-						
-					
-						
-					
-						
-					
-						
-					
-						
-					
-						
-					
-						
-					
-						
-					
-						
-					
-						
-					
-						
-					
-						
-					
-						
-					
-						
-					
+						<li>
+							
+							
+							<a href="/training-material/topics/variant-analysis">
+								Variant Analysis
+							</a>
+							/
+							<a href="/training-material//topics/variant-analysis/tutorials/microbial-variants/tutorial.html">
+							Microbial Variant Calling
+							</a>
+						</li>
 						
 					
 						
@@ -828,6 +836,24 @@
 							Genome annotation with Prokka
 							</a>
 						</li>
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
 						
 					
 						
@@ -912,73 +938,7 @@
 						
 					
 						
-						<li>
-							
-							
-							<a href="/training-material/topics/admin">
-								Galaxy Server administration
-							</a>
-							/
-							<a href="/training-material//topics/admin/tutorials/pulsar/slides.html">
-							Running Jobs on Remote Resources with Pulsar
-							</a>
-						</li>
-						
 					
-						
-						<li>
-							
-							
-							<a href="/training-material/topics/admin">
-								Galaxy Server administration
-							</a>
-							/
-							<a href="/training-material//topics/admin/tutorials/gxadmin/slides.html">
-							Galaxy Monitoring with gxadmin
-							</a>
-						</li>
-						
-					
-						
-						<li>
-							
-							
-							<a href="/training-material/topics/admin">
-								Galaxy Server administration
-							</a>
-							/
-							<a href="/training-material//topics/admin/tutorials/cvmfs/slides.html">
-							Reference Data with CVMFS
-							</a>
-						</li>
-						
-					
-						
-						<li>
-							
-							
-							<a href="/training-material/topics/admin">
-								Galaxy Server administration
-							</a>
-							/
-							<a href="/training-material//topics/admin/tutorials/reference-genomes/slides.html">
-							Reference Genomes in Galaxy
-							</a>
-						</li>
-						
-					
-						
-						<li>
-							
-							
-							<a href="/training-material/topics/admin">
-								Galaxy Server administration
-							</a>
-							/
-							<a href="/training-material//topics/admin/tutorials/cloudbursting/slides.html">
-							Galaxy on the Cloud
-							</a>
-						</li>
 						
 					
 						
@@ -990,67 +950,7 @@
 						
 					
 						
-						<li>
-							
-							
-							<a href="/training-material/topics/admin">
-								Galaxy Server administration
-							</a>
-							/
-							<a href="/training-material//topics/admin/tutorials/uwsgi/slides.html">
-							uWSGI
-							</a>
-						</li>
-						
 					
-						
-						<li>
-							
-							
-							<a href="/training-material/topics/admin">
-								Galaxy Server administration
-							</a>
-							/
-							<a href="/training-material//topics/admin/tutorials/general-monitoring/slides.html">
-							Galaxy Monitoring
-							</a>
-						</li>
-						
-					
-						
-					
-						
-					
-						
-					
-						
-					
-						
-						<li>
-							
-							
-							<a href="/training-material/topics/admin">
-								Galaxy Server administration
-							</a>
-							/
-							<a href="/training-material//topics/admin/tutorials/monitoring/slides.html">
-							Galaxy Monitoring with Telegraf and Grafana
-							</a>
-						</li>
-						
-					
-						
-						<li>
-							
-							
-							<a href="/training-material/topics/admin">
-								Galaxy Server administration
-							</a>
-							/
-							<a href="/training-material//topics/admin/tutorials/maintenance/slides.html">
-							Server Maintenance and Backups
-							</a>
-						</li>
 						
 					
 						
@@ -1074,6 +974,10 @@
 						
 					
 						
+					
+						
+					
+						
 						<li>
 							
 							
@@ -1081,14 +985,24 @@
 								Galaxy Server administration
 							</a>
 							/
-							<a href="/training-material//topics/admin/tutorials/tool-management/slides.html">
-							Galaxy Tool Management with Ephemeris
+							<a href="/training-material//topics/admin/tutorials/general-monitoring/slides.html">
+							Galaxy Monitoring
 							</a>
 						</li>
 						
 					
 						
-					
+						<li>
+							
+							
+							<a href="/training-material/topics/admin">
+								Galaxy Server administration
+							</a>
+							/
+							<a href="/training-material//topics/admin/tutorials/maintenance/slides.html">
+							Server Maintenance and Backups
+							</a>
+						</li>
 						
 					
 						
@@ -1110,6 +1024,152 @@
 						
 					
 						
+					
+						
+						<li>
+							
+							
+							<a href="/training-material/topics/admin">
+								Galaxy Server administration
+							</a>
+							/
+							<a href="/training-material//topics/admin/tutorials/cloudbursting/slides.html">
+							Galaxy on the Cloud
+							</a>
+						</li>
+						
+					
+						
+						<li>
+							
+							
+							<a href="/training-material/topics/admin">
+								Galaxy Server administration
+							</a>
+							/
+							<a href="/training-material//topics/admin/tutorials/reference-genomes/slides.html">
+							Reference Genomes in Galaxy
+							</a>
+						</li>
+						
+					
+						
+					
+						
+						<li>
+							
+							
+							<a href="/training-material/topics/admin">
+								Galaxy Server administration
+							</a>
+							/
+							<a href="/training-material//topics/admin/tutorials/uwsgi/slides.html">
+							uWSGI
+							</a>
+						</li>
+						
+					
+						
+					
+						
+						<li>
+							
+							
+							<a href="/training-material/topics/admin">
+								Galaxy Server administration
+							</a>
+							/
+							<a href="/training-material//topics/admin/tutorials/pulsar/slides.html">
+							Running Jobs on Remote Resources with Pulsar
+							</a>
+						</li>
+						
+					
+						
+						<li>
+							
+							
+							<a href="/training-material/topics/admin">
+								Galaxy Server administration
+							</a>
+							/
+							<a href="/training-material//topics/admin/tutorials/monitoring/slides.html">
+							Galaxy Monitoring with Telegraf and Grafana
+							</a>
+						</li>
+						
+					
+						
+					
+						
+					
+						
+						<li>
+							
+							
+							<a href="/training-material/topics/admin">
+								Galaxy Server administration
+							</a>
+							/
+							<a href="/training-material//topics/admin/tutorials/gxadmin/slides.html">
+							Galaxy Monitoring with gxadmin
+							</a>
+						</li>
+						
+					
+						
+					
+						
+					
+						
+					
+						
+						<li>
+							
+							
+							<a href="/training-material/topics/admin">
+								Galaxy Server administration
+							</a>
+							/
+							<a href="/training-material//topics/admin/tutorials/tool-management/slides.html">
+							Galaxy Tool Management with Ephemeris
+							</a>
+						</li>
+						
+					
+						
+						<li>
+							
+							
+							<a href="/training-material/topics/admin">
+								Galaxy Server administration
+							</a>
+							/
+							<a href="/training-material//topics/admin/tutorials/cvmfs/slides.html">
+							Reference Data with CVMFS
+							</a>
+						</li>
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
 						<li>
 							
 							
@@ -1117,8 +1177,8 @@
 								Assembly
 							</a>
 							/
-							<a href="/training-material//topics/assembly/tutorials/debruijn-graph-assembly/slides.html">
-							De Bruijn Graph Assembly
+							<a href="/training-material//topics/assembly/tutorials/general-introduction/slides.html">
+							An Introduction to Genome Assembly
 							</a>
 						</li>
 						
@@ -1147,8 +1207,8 @@
 								Assembly
 							</a>
 							/
-							<a href="/training-material//topics/assembly/tutorials/algorithms-introduction/slides.html">
-							Deeper look into Genome Assembly algorithms
+							<a href="/training-material//topics/assembly/tutorials/debruijn-graph-assembly/slides.html">
+							De Bruijn Graph Assembly
 							</a>
 						</li>
 						
@@ -1161,50 +1221,10 @@
 								Assembly
 							</a>
 							/
-							<a href="/training-material//topics/assembly/tutorials/general-introduction/slides.html">
-							An Introduction to Genome Assembly
+							<a href="/training-material//topics/assembly/tutorials/algorithms-introduction/slides.html">
+							Deeper look into Genome Assembly algorithms
 							</a>
 						</li>
-						
-					
-						
-					
-						
-					
-						
-					
-						
-					
-						
-					
-						
-					
-						
-					
-						
-					
-						
-					
-						
-					
-						
-					
-						
-					
-						
-					
-						
-					
-						
-					
-						
-					
-						
-					
-						
-					
-						
-					
 						
 					
 						
@@ -1229,6 +1249,12 @@
 							Genome annotation with Prokka
 							</a>
 						</li>
+						
+					
+						
+					
+						
+					
 						
 					
 						
@@ -1285,130 +1311,6 @@ var topics = [
 
 	
 
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-		
-		
-		"Galaxy Server administration",
-	
-
-	
-
-	
-		
-		
-		"Galaxy Server administration",
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-		
-		
-		"Galaxy Server administration",
-	
-
-	
-		
-		
-		"Galaxy Server administration",
-	
-
-	
-
-	
-
-	
-		
-		
-		"Galaxy Server administration",
-	
-
-	
-
-	
-
-	
-		
-		
-		"Galaxy Server administration",
-	
-
-	
-
-	
-		
-		
-		"Galaxy Server administration",
-	
-
-	
-
-	
-
-	
-		
-		
-		"Assembly",
-	
-
-	
-
-	
-
-	
-		
-		
-		"Assembly",
-	
-
-	
-
-	
-
-	
-
-	
-		
-		
-		"Assembly",
 	
 
 	
@@ -1504,6 +1406,196 @@ var topics = [
 	
 
 	
+		
+		
+		"Galaxy Server administration",
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+		
+		
+		"Galaxy Server administration",
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+		
+		
+		"Galaxy Server administration",
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+		
+		
+		"Galaxy Server administration",
+	
+
+	
+		
+		
+		"Galaxy Server administration",
+	
+
+	
+		
+		
+		"Galaxy Server administration",
+	
+
+	
+
+	
+		
+		
+		"Galaxy Server administration",
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+		
+		
+		"Assembly",
+	
+
+	
+
+	
+		
+		
+		"Assembly",
+	
+
+	
+
+	
+		
+		
+		"Assembly",
+	
+
+	
+
+	
+
+	
 
 	
 
@@ -1602,18 +1694,6 @@ var topics = [
 	
 
 	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
 		
 		
 		"Variant Analysis",
@@ -1646,6 +1726,41 @@ var topics = [
 	
 
 	
+		
+		
+		"Genome Annotation",
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
 
 	
 
@@ -1697,6 +1812,180 @@ var topics = [
 
 	
 
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+		
+		
+		"Galaxy Server administration",
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+		
+		
+		"Galaxy Server administration",
+	
+
+	
+		
+		
+		"Galaxy Server administration",
+	
+
+	
+		
+		
+		"Galaxy Server administration",
+	
+
+	
+
+	
+
+	
+
+	
+		
+		
+		"Galaxy Server administration",
+	
+
+	
+		
+		
+		"Galaxy Server administration",
+	
+
+	
+
+	
+		
+		
+		"Galaxy Server administration",
+	
+
+	
+
+	
+		
+		
+		"Galaxy Server administration",
+	
+
+	
+		
+		
+		"Galaxy Server administration",
+	
+
+	
+
+	
+
+	
+		
+		
+		"Galaxy Server administration",
+	
+
+	
+
+	
+
+	
+
+	
+		
+		
+		"Galaxy Server administration",
+	
+
+	
+		
+		
+		"Galaxy Server administration",
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+		
+		
+		"Assembly",
+	
+
+	
+		
+		
+		"Assembly",
+	
+
+	
+
+	
+		
+		
+		"Assembly",
+	
+
+	
+		
+		
+		"Assembly",
 	
 
 	
@@ -1719,261 +2008,6 @@ var topics = [
 
 	
 
-	
-
-	
-
-	
-
-	
-
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-		
-		
-		"Galaxy Server administration",
-	
-
-	
-		
-		
-		"Galaxy Server administration",
-	
-
-	
-		
-		
-		"Galaxy Server administration",
-	
-
-	
-		
-		
-		"Galaxy Server administration",
-	
-
-	
-		
-		
-		"Galaxy Server administration",
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-		
-		
-		"Galaxy Server administration",
-	
-
-	
-		
-		
-		"Galaxy Server administration",
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-		
-		
-		"Galaxy Server administration",
-	
-
-	
-		
-		
-		"Galaxy Server administration",
-	
-
-	
-
-	
-		
-		
-		"Galaxy Server administration",
-	
-
-	
-
-	
-
-	
-		
-		
-		"Galaxy Server administration",
-	
-
-	
-
-	
-
-	
-		
-		
-		"Galaxy Server administration",
-	
-
-	
-
-	
-
-	
-		
-		
-		"Assembly",
-	
-
-	
-		
-		
-		"Assembly",
-	
-
-	
-
-	
-		
-		
-		"Assembly",
-	
-
-	
-		
-		
-		"Assembly",
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-		
-		
-		"Genome Annotation",
 	
 
 	
@@ -2051,7 +2085,7 @@ var chart = new Chart(ctx, {
         <p>
     The content of the tutorials and website is licensed under the <a rel="license" href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.
 </p>
-        <p>This is revision <a href="https://github.com/galaxyproject/training-material/commit/baf0bce294a9a04bd6543597a7770438ef7ca0b7">baf0bce294a9a04bd6543597a7770438ef7ca0b7</a></p>
+        <p>This is revision <a href="https://github.com/galaxyproject/training-material/commit/058d8f9c84123246791d837f5f8f4790547274f3">058d8f9c84123246791d837f5f8f4790547274f3</a></p>
     </div>
 </footer>
 

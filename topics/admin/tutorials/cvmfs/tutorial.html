@@ -16,6 +16,7 @@
         <link rel="stylesheet" href="/training-material/assets/css/academicons.css">
         <link rel="stylesheet" href="/training-material/assets/css/syntax_highlighting.css">
         <link rel="shortcut icon" href="/training-material/favicon.ico" type="image/x-icon" />
+        <link rel="alternate" type="application/atom+xml" href="/training-material/feed.xml" />
 
         
         
@@ -172,6 +173,9 @@
                 <label data-value="rainbow" class="btn btn-secondary">
                     <input type="radio" name="options" id="rainbow" autocomplete="off"> Rainbow
                 </label>
+                <label data-value="progress" class="btn btn-secondary">
+                    <input type="radio" name="options" id="progress" autocomplete="off">🏳️‍🌈
+                </label>
                 <label data-value="halloween" class="btn btn-secondary">
                     <input type="radio" name="options" id="halloween" autocomplete="off"> 🎃
                 </label>
@@ -181,6 +185,20 @@
             </div>
 
         </div>
+
+        <div class="dropdown-item">
+            <div>
+                <i class="fas fa-history" aria-hidden="true"></i><span class="visually-hidden">galaxy-rulebuilder-history</span> Previous Versions
+            </div>
+
+            
+            <div id="archive-selector">
+            
+                <a class="btn btn-warning" href="https://training.galaxyproject.org/archive/" title="Older Versions">Older Versions</a>
+            </div>
+
+        </div>
+
     </div>
 </li>
 
@@ -518,7 +536,11 @@
                     
                         
                     
+                        
+                    
                 
+                    
+                        
                     
                         
                     
@@ -650,7 +672,7 @@
             </ul>
             
 
-            <div><strong> <i class="far fa-calendar" aria-hidden="true"></i><span class="visually-hidden">last_modification</span> Last modification:</strong> Jun 16, 2021 </div>
+            <div><strong> <i class="far fa-calendar" aria-hidden="true"></i><span class="visually-hidden">last_modification</span> Last modification:</strong> Jun 22, 2021 </div>
         </blockquote>
 
         <div class="container">
@@ -814,7 +836,7 @@ data.<span class="notranslate">galaxy</span>project.org</p>
 <p>If the terms “Ansible”, “role” and “playbook” mean nothing to you, please checkout <a href="/training-material/topics/admin/tutorials/ansible/slides.html">the Ansible introduction slides</a> and <a href="/training-material/topics/admin/tutorials/ansible/tutorial.html">the Ansible introduction tutorial</a></p>
 
 <!--SNIPPET-->
-<blockquote class="tip">  <h3 data-toc-skip="" id="-tip-running-ansible-on-your-remote-machine"><i class="far fa-lightbulb" aria-hidden="true"></i><span class="visually-hidden"></span> Tip: Running Ansible on your remote machine</h3>  <p>It is possible to have ansible installed on the remote machine and run it there, not just from your local machine connecting to the remote machine.Your hosts file will need to use <code class="language-plaintext highlighter-rouge">localhost</code>,  and whenever you run playbooks with <code class="language-plaintext highlighter-rouge">ansible-playbook -i hosts playbook.yml</code>, you will need to add <code class="language-plaintext highlighter-rouge">-c local</code> to your command.Be <strong>certain</strong> that the playbook that you’re writing on the remote machine is stored somewhere safe, like your user home directory, or backed up on your local machine. The cloud can be unreliable and things can disappear at any time.</p></blockquote>
+<blockquote class="tip">  <h3 data-toc-skip="" id="-tip-running-ansible-on-your-remote-machine"><i class="far fa-lightbulb" aria-hidden="true"></i><span class="visually-hidden"></span> Tip: Running Ansible on your remote machine</h3>  <p>It is possible to have ansible installed on the remote machine and run it there, not just from your local machine connecting to the remote machine.</p>  <p>Your hosts file will need to use <code class="language-plaintext highlighter-rouge">localhost</code>,  and whenever you run playbooks with <code class="language-plaintext highlighter-rouge">ansible-playbook -i hosts playbook.yml</code>, you will need to add <code class="language-plaintext highlighter-rouge">-c local</code> to your command.</p>  <p>Be <strong>certain</strong> that the playbook that you’re writing on the remote machine is stored somewhere safe, like your user home directory, or backed up on your local machine. The cloud can be unreliable and things can disappear at any time.</p></blockquote>
 
 <blockquote class="spoken" data-visual="gtn" data-target="#installing-and-configuring">
   <p>Okay, so now we’re going to move on to installing and configuring <span class="notranslate">Galaxy</span>’s
@@ -1257,7 +1279,7 @@ able to use all of the data contained within this repository.</p>
       <div data-commit="Add tool_data_table_config_path to group variables" data-ref="gvconf" class="language-diff highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="gd">--- a/group_vars/<span class="notranslate">galaxy</span>servers.yml
 </span><span class="gi">+++ b/group_vars/<span class="notranslate">galaxy</span>servers.yml
 </span><span class="p">@@ -29,6 +29,7 @@</span> miniconda_manage_dependencies: false
-
+    
  <span class="notranslate">galaxy</span>_config:
    <span class="notranslate">galaxy</span>:
 <span class="gi">+    tool_data_table_config_path: /cvmfs/data.<span class="notranslate">galaxy</span>project.org/byhand/location/tool_data_table_conf.xml,/cvmfs/data.<span class="notranslate">galaxy</span>project.org/managed/location/tool_data_table_conf.xml
@@ -1301,7 +1323,7 @@ configuration file. And then <span class="notranslate">Galaxy</span> is now rest
       <p>Install the BWA-MEM tool, if needed.</p>
 
       <!--SNIPPET-->
-      <blockquote class="tip">  <h3 data-toc-skip="" id="-tip-install-tools-via-the-admin-ui"><i class="far fa-lightbulb" aria-hidden="true"></i><span class="visually-hidden"></span> Tip: Install tools via the Admin UI</h3>  <ol>    <li>Open <span class="notranslate">Galaxy</span> in your browser and type <code class="language-plaintext highlighter-rouge">bwa</code> in the tool search box on the left. If “Map with BWA-MEM” is among the search results, you can skip the following steps.</li>    <li>Access the Admin menu from the top bar (you need to be logged-in with an email specified in the <code class="language-plaintext highlighter-rouge">admin_users</code> setting)</li>    <li>Click “Install and Uninstall”, which can be found on the left, under “Tool Management”</li>    <li>Enter <code class="language-plaintext highlighter-rouge">bwa</code> in the search interface</li>    <li>Click on the first hit, having <code class="language-plaintext highlighter-rouge">devteam</code> as owner</li>    <li>Click the “Install” button for the latest revision</li>    <li>Enter “<span class="notranslate">Mapping</span>” as the target section and click “OK”.</li>  </ol></blockquote>
+      <blockquote class="tip">  <h3 data-toc-skip="" id="-tip-install-tools-via-the-admin-ui"><i class="far fa-lightbulb" aria-hidden="true"></i><span class="visually-hidden"></span> Tip: Install tools via the Admin UI</h3>  <ol>  <li>Open <span class="notranslate">Galaxy</span> in your browser and type <code class="language-plaintext highlighter-rouge">bwa</code> in the tool search box on the left. If “Map with BWA-MEM” is among the search results, you can skip the following steps.</li>  <li>Access the Admin menu from the top bar (you need to be logged-in with an email specified in the <code class="language-plaintext highlighter-rouge">admin_users</code> setting)</li>  <li>Click “Install and Uninstall”, which can be found on the left, under “Tool Management”</li>  <li>Enter <code class="language-plaintext highlighter-rouge">bwa</code> in the search interface</li>  <li>Click on the first hit, having <code class="language-plaintext highlighter-rouge">devteam</code> as owner</li>  <li>Click the “Install” button for the latest revision</li>  <li>Enter “<span class="notranslate">Mapping</span>” as the target section and click “OK”.</li></ol></blockquote>
     </li>
     <li>
       <p>In your <span class="notranslate">Galaxy</span> server, open the <strong>Map with BWA-MEM</strong> <i class="fas fa-wrench" aria-hidden="true"></i><span class="visually-hidden">tool</span> tool. Now check that there are a lot more reference genomes available for use!</p>
@@ -1509,7 +1531,7 @@ day soon at a <span class="notranslate">Galaxy</span> conference. Thank you and 
     title = "Reference Data with CVMFS (Galaxy Training Materials)",
     year = "2021",
     month = "06",
-    day = "16"
+    day = "22"
     url = "\url{https://training.galaxyproject.org/training-material/topics/admin/tutorials/cvmfs/tutorial.html}",
     note = "[Online; accessed TODAY]"
 }

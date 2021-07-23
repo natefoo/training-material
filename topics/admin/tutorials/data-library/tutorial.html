@@ -16,6 +16,7 @@
         <link rel="stylesheet" href="/training-material/assets/css/academicons.css">
         <link rel="stylesheet" href="/training-material/assets/css/syntax_highlighting.css">
         <link rel="shortcut icon" href="/training-material/favicon.ico" type="image/x-icon" />
+        <link rel="alternate" type="application/atom+xml" href="/training-material/feed.xml" />
 
         
         
@@ -172,6 +173,9 @@
                 <label data-value="rainbow" class="btn btn-secondary">
                     <input type="radio" name="options" id="rainbow" autocomplete="off"> Rainbow
                 </label>
+                <label data-value="progress" class="btn btn-secondary">
+                    <input type="radio" name="options" id="progress" autocomplete="off">🏳️‍🌈
+                </label>
                 <label data-value="halloween" class="btn btn-secondary">
                     <input type="radio" name="options" id="halloween" autocomplete="off"> 🎃
                 </label>
@@ -181,6 +185,20 @@
             </div>
 
         </div>
+
+        <div class="dropdown-item">
+            <div>
+                <i class="fas fa-history" aria-hidden="true"></i><span class="visually-hidden">galaxy-rulebuilder-history</span> Previous Versions
+            </div>
+
+            
+            <div id="archive-selector">
+            
+                <a class="btn btn-warning" href="https://training.galaxyproject.org/archive/" title="Older Versions">Older Versions</a>
+            </div>
+
+        </div>
+
     </div>
 </li>
 
@@ -556,7 +574,11 @@
                     
                         
                     
+                        
+                    
                 
+                    
+                        
                     
                         
                     
@@ -692,6 +714,8 @@
                         
                     
                         
+                    
+                        
                             
                             <li> Galaxy Tool Management with Ephemeris:
                             
@@ -777,7 +801,7 @@
             </ul>
             
 
-            <div><strong> <i class="far fa-calendar" aria-hidden="true"></i><span class="visually-hidden">last_modification</span> Last modification:</strong> Jun 16, 2021 </div>
+            <div><strong> <i class="far fa-calendar" aria-hidden="true"></i><span class="visually-hidden">last_modification</span> Last modification:</strong> Jul 9, 2021 </div>
         </blockquote>
 
         <div class="container">
@@ -844,7 +868,7 @@ of a sequencing run or similar project to a group of users on the servers.</p>
       <div data-commit="Configure the library import directories" class="language-diff highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="gd">--- a/group_vars/<span class="notranslate">galaxy</span>servers.yml
 </span><span class="gi">+++ b/group_vars/<span class="notranslate">galaxy</span>servers.yml
 </span><span class="p">@@ -29,6 +29,8 @@</span> miniconda_manage_dependencies: false
-
+    
  <span class="notranslate">galaxy</span>_config:
    <span class="notranslate">galaxy</span>:
 <span class="gi">+    library_import_dir: /libraries/admin
@@ -924,6 +948,14 @@ of a sequencing run or similar project to a group of users on the servers.</p>
 
 <p>This will enable the option for everyone, any unprivileged user with a folder in the <code class="language-plaintext highlighter-rouge">user_library_import_dir</code> directory <em>and</em> permissions on a data library can import things from their import directory.</p>
 
+<blockquote class="tip">
+  <h3 id="tip-tip-do-you-not-see-a-directory-here"><i class="far fa-lightbulb" aria-hidden="true"></i><span class="visually-hidden">tip</span> Tip: Do you not see a directory here?</h3>
+  <p>We pre-created a directory for someone registered as <code class="language-plaintext highlighter-rouge">admin@example.org</code>, but if you are logged in with an account registered with a different email, you’ll see nothing.</p>
+
+  <p>You can fix this by going into /libraries/user and <code class="language-plaintext highlighter-rouge">ln -s admin@example.org whatever-email-you-used</code>
+Then it should appear in <span class="notranslate">Galaxy</span>.</p>
+</blockquote>
+
 <h2 id="from-import-directory-admins-only">from import Directory (Admins only)</h2>
 
 <p>Similarly to the user import directories, there is the option to have an admin only import area. If one admin is responsible for creating the data libraries and importing data this can be a good option.</p>
@@ -973,7 +1005,7 @@ We’ve included this file in the example data libraries repository we cloned at
 <p>Let’s try setting that up in our <span class="notranslate">Galaxy</span>!</p>
 
 <!--SNIPPET-->
-<blockquote class="tip">  <h3 data-toc-skip="" id="-tip-getting-your-api-key"><i class="far fa-lightbulb" aria-hidden="true"></i><span class="visually-hidden"></span> Tip: Getting your API key</h3>  <p><span class="notranslate">Galaxy</span> admin accounts are specified as a comma-separated email list in the <code class="language-plaintext highlighter-rouge">admin_users</code> directive of <code class="language-plaintext highlighter-rouge"><span class="notranslate">galaxy</span>.yml</code> . If you have set up your <span class="notranslate">Galaxy</span> server using the <a href="/training-material/topics/admin/tutorials/ansible-galaxy/tutorial.html"><span class="notranslate">Galaxy</span> Installation with Ansible</a> tutorial, this is set to <code class="language-plaintext highlighter-rouge">admin@example.org</code>.</p>  <ol>    <li>In your browser, open your <span class="notranslate">Galaxy</span> homepage</li>    <li>Log in, or register a new account, if it’s the first time you’re logging in</li>    <li>Go to <code class="language-plaintext highlighter-rouge">User -&gt; Preferences</code> in the top menu bar, then click on <code class="language-plaintext highlighter-rouge">Manage API key</code></li>    <li>If there is no current API key available, click on <code class="language-plaintext highlighter-rouge">Create a new key</code> to generate it</li>    <li>Copy your API key to somewhere convenient, you will need it throughout this tutorial</li>  </ol></blockquote>
+<blockquote class="tip">  <h3 data-toc-skip="" id="-tip-getting-your-api-key"><i class="far fa-lightbulb" aria-hidden="true"></i><span class="visually-hidden"></span> Tip: Getting your API key</h3>  <p><span class="notranslate">Galaxy</span> admin accounts are specified as a comma-separated email list in the <code class="language-plaintext highlighter-rouge">admin_users</code> directive of <code class="language-plaintext highlighter-rouge"><span class="notranslate">galaxy</span>.yml</code> . If you have set up your <span class="notranslate">Galaxy</span> server using the <a href="/training-material/topics/admin/tutorials/ansible-galaxy/tutorial.html"><span class="notranslate">Galaxy</span> Installation with Ansible</a> tutorial, this is set to <code class="language-plaintext highlighter-rouge">admin@example.org</code>.</p>  <ol>  <li>In your browser, open your <span class="notranslate">Galaxy</span> homepage</li>  <li>Log in, or register a new account, if it’s the first time you’re logging in</li>  <li>Go to <code class="language-plaintext highlighter-rouge">User -&gt; Preferences</code> in the top menu bar, then click on <code class="language-plaintext highlighter-rouge">Manage API key</code></li>  <li>If there is no current API key available, click on <code class="language-plaintext highlighter-rouge">Create a new key</code> to generate it</li>  <li>Copy your API key to somewhere convenient, you will need it throughout this tutorial</li></ol></blockquote>
 
 <blockquote class="notranslate hands_on">
   <h3 id="hands_on-hands-on-importing-data-library-yaml"><i class="fas fa-pencil-alt" aria-hidden="true"></i><span class="visually-hidden">hands_on</span> hands-on: importing data library yaml.</h3>
@@ -1145,8 +1177,8 @@ library already exists! <span class="nb">id</span>: f597429621d6eb2b
     author = "Helena Rasche and Saskia Hiltemann",
     title = "Data Libraries (Galaxy Training Materials)",
     year = "2021",
-    month = "06",
-    day = "16"
+    month = "07",
+    day = "09"
     url = "\url{https://training.galaxyproject.org/training-material/topics/admin/tutorials/data-library/tutorial.html}",
     note = "[Online; accessed TODAY]"
 }
