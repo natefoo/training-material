@@ -30,7 +30,7 @@
     </head>
     <body data-spy="scroll" data-target="#toc">
         <header>
-    <nav class="navbar navbar-expand-md navbar-dark">
+    <nav class="navbar navbar-expand-md navbar-dark" aria-label="Site Navigation">
         <div class="container">
             <a class="navbar-brand" href="/training-material/">
                 <img src="/training-material/assets/images/GTN-60px.png" height="30" alt="Galaxy Training Network logo">
@@ -43,10 +43,48 @@
             <div class="collapse navbar-collapse" id="top-navbar">
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                         <a class="nav-link" href="/training-material/hall-of-fame" title="Hall of Fame">
-                            <i class="fas fa-users" aria-hidden="true"></i><span class="visually-hidden">hall-of-fame</span> Contributors
+                        
+                        <a class="nav-link" href="/training-material/hall-of-fame" title="Hall of Fame">
+                           <i class="fas fa-users" aria-hidden="true"></i><span class="visually-hidden">hall-of-fame</span> Contributors
                         </a>
+
+                        
                     </li>
+
+                    <li class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-expanded="false" title="Languages">
+                            <i class="fas fa-language" aria-hidden="true"></i><span class="visually-hidden">language</span> Languages
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-right">
+                            
+                              <strong class="dropdown-header">Automatic Translations</strong>
+            
+            <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=fr&u=https%3A%2F%2Ftraining.galaxyproject.org/videos/&edit-text=&act=url">
+                            Français
+                            </a>
+                            
+            <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=ja&u=https%3A%2F%2Ftraining.galaxyproject.org/videos/&edit-text=&act=url">
+                            日本語
+                            </a>
+                            
+            <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=es&u=https%3A%2F%2Ftraining.galaxyproject.org/videos/&edit-text=&act=url">
+                            Español
+                            </a>
+                            
+            <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=pt&u=https%3A%2F%2Ftraining.galaxyproject.org/videos/&edit-text=&act=url">
+                            Português
+                            </a>
+                            
+            <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=ar&u=https%3A%2F%2Ftraining.galaxyproject.org/videos/&edit-text=&act=url">
+                            العربية
+                            </a>
+                            
+                            <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=&u=https%3A%2F%2Ftraining.galaxyproject.org/videos/&edit-text=&act=url" title="">
+                            And more!
+                            </a>
+                        </div>
+                    </li>
+
                     <li class="nav-item dropdown">
     <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-expanded="false" title="Help">
         <i class="far fa-question-circle" aria-hidden="true"></i><span class="visually-hidden">help</span> Help
@@ -85,7 +123,7 @@
           <i class="fab fa-github" aria-hidden="true"></i><span class="visually-hidden">github</span> Edit on GitHub
         </a>
 
-        <a class="dropdown-item" href="/training-material/stats.html" title="Show view statistics about this rrepository">
+        <a class="dropdown-item" href="/training-material/stats.html" title="Show view statistics about this repository">
             <i class="fas fa-chart-bar" aria-hidden="true"></i><span class="visually-hidden">galaxy-barchart</span> GTN statistics
         </a>
 
@@ -93,40 +131,11 @@
             <i class="fas fa-chart-bar" aria-hidden="true"></i><span class="visually-hidden">galaxy-barchart</span> Page Metrics
         </a>
 
-        <div class="dropdown-item">
-            <div>
-                <i class="fas fa-language" aria-hidden="true"></i><span class="visually-hidden">language</span> Translate this page
-            </div>
-
-            <div id="lang-selector">
-                
-                <strong>Automatic Translations</strong>
-
-<a class="btn btn-info" href="https://translate.google.com/translate?hl=jp&sl=en&tl=fr&u=https%3A%2F%2Ftraining.galaxyproject.org/videos/&edit-text=&act=url">
-                Français
-                </a>
-                
-<a class="btn btn-info" href="https://translate.google.com/translate?hl=jp&sl=en&tl=ja&u=https%3A%2F%2Ftraining.galaxyproject.org/videos/&edit-text=&act=url">
-                日本語
-                </a>
-                
-<a class="btn btn-info" href="https://translate.google.com/translate?hl=jp&sl=en&tl=es&u=https%3A%2F%2Ftraining.galaxyproject.org/videos/&edit-text=&act=url">
-                Español
-                </a>
-                
-<a class="btn btn-info" href="https://translate.google.com/translate?hl=jp&sl=en&tl=pt&u=https%3A%2F%2Ftraining.galaxyproject.org/videos/&edit-text=&act=url">
-                Português
-                </a>
-                
-<a class="btn btn-info" href="https://translate.google.com/translate?hl=jp&sl=en&tl=ar&u=https%3A%2F%2Ftraining.galaxyproject.org/videos/&edit-text=&act=url">
-                العربية
-                </a>
-                
-                <a class="btn btn-info" href="https://translate.google.com/translate?hl=jp&sl=en&tl=&u=https%3A%2F%2Ftraining.galaxyproject.org%2Ftopics%2F%2Ftutorials%2F%2Ftutorial.html&edit-text=&act=url" title="">
-                And more!
-                </a>
-            </div>
-        </div>
+        
+            <a class="dropdown-item" href="/training-material/feedback.html" title="Show feedback statistics about this repository">
+                <i class="fas fa-chart-bar" aria-hidden="true"></i><span class="visually-hidden">galaxy-barchart</span> GTN feedback
+            </a>
+        
 
         <div class="dropdown-item">
             <div>
@@ -178,7 +187,7 @@
 
                     <!-- Search bar-->
                     <li class="nav-item">
-                      <div id="navbarSupportedContent">
+                      <div id="navbarSupportedContent" role="search">
                         <!-- Search form -->
                         <form class="form-inline mr-auto" method="GET" action="/training-material/search">
                           <i class="fas fa-search nav-link" aria-hidden="true"></i>
@@ -194,12 +203,11 @@
     </nav>
 </header>
 
+        <div class="container main-content" role="main">
+        <section>
+  <h1>GTN Videos</h1>
 
-<div class="container main-content">
-  <section>
-    <h1> GTN Videos </h1>
-
-    
+  
 <p>The GTN now generates videos for selected slide decks. Click on a topic below to jump to the video page for that topic!</p>
 
 <h2>Introduction to Galaxy Analyses</h2>
@@ -219,6 +227,19 @@
 					</div>
 				</a>
 			</div>
+			
+			
+			<div class="pl-item">
+				<a href="watch.html?v=introduction/tutorials/galaxy-intro-short/slides_ES">
+					<div class="cover">
+						<img src="https://training.galaxyproject.org/videos/topics/introduction/tutorials/galaxy-intro-short/slides_ES.mp4.png" width="200px" />
+					</div>
+					<div>
+						<div class="title">[ES] A short introduction to Galaxy</div>
+					</div>
+				</a>
+			</div>
+			
 		
 	
 		
@@ -236,7 +257,18 @@
 		
 	
 		
-	
+			
+			<div class="pl-item">
+				<a href="watch.html?v=introduction/tutorials/options-for-using-galaxy/slides">
+					<div class="cover">
+						<img src="https://training.galaxyproject.org/videos/topics/introduction/tutorials/options-for-using-galaxy/slides.mp4.png" width="200px" />
+					</div>
+					<div>
+						<div class="title">Options for using Galaxy</div>
+					</div>
+				</a>
+			</div>
+			
 		
 	
 </div>
@@ -260,6 +292,7 @@
 					</div>
 				</a>
 			</div>
+			
 		
 	
 		
@@ -276,6 +309,7 @@
 					</div>
 				</a>
 			</div>
+			
 		
 	
 		
@@ -290,6 +324,7 @@
 					</div>
 				</a>
 			</div>
+			
 		
 	
 		
@@ -304,6 +339,7 @@
 					</div>
 				</a>
 			</div>
+			
 		
 	
 		
@@ -330,6 +366,7 @@
 					</div>
 				</a>
 			</div>
+			
 		
 	
 		
@@ -348,6 +385,7 @@
 					</div>
 				</a>
 			</div>
+			
 		
 	
 		
@@ -362,6 +400,7 @@
 					</div>
 				</a>
 			</div>
+			
 		
 	
 		
@@ -378,6 +417,7 @@
 					</div>
 				</a>
 			</div>
+			
 		
 	
 		
@@ -394,6 +434,7 @@
 					</div>
 				</a>
 			</div>
+			
 		
 	
 		
@@ -414,6 +455,9 @@
 					</div>
 				</a>
 			</div>
+			
+		
+	
 		
 	
 		
@@ -432,6 +476,7 @@
 					</div>
 				</a>
 			</div>
+			
 		
 	
 		
@@ -452,6 +497,9 @@
 					</div>
 				</a>
 			</div>
+			
+		
+	
 		
 	
 		
@@ -468,10 +516,11 @@
 						<img src="https://training.galaxyproject.org/videos/topics/admin/tutorials/users-groups-quotas/slides.mp4.png" width="200px" />
 					</div>
 					<div>
-						<div class="title">User, Group and Quota managment</div>
+						<div class="title">User, Role, Group and Quota managment</div>
 					</div>
 				</a>
 			</div>
+			
 		
 	
 		
@@ -493,6 +542,7 @@
 					</div>
 				</a>
 			</div>
+			
 		
 	
 		
@@ -507,10 +557,41 @@
 					</div>
 				</a>
 			</div>
+			
 		
 	
 		
 	
+		
+	
+		
+			
+			<div class="pl-item">
+				<a href="watch.html?v=climate/tutorials/pangeo/slides">
+					<div class="cover">
+						<img src="https://training.galaxyproject.org/videos/topics/climate/tutorials/pangeo/slides.mp4.png" width="200px" />
+					</div>
+					<div>
+						<div class="title">Pangeo ecosystem 101 for everyone - Introduction to Xarray Galaxy Tools</div>
+					</div>
+				</a>
+			</div>
+			
+		
+	
+		
+			
+			<div class="pl-item">
+				<a href="watch.html?v=climate/tutorials/pangeo-notebook/slides">
+					<div class="cover">
+						<img src="https://training.galaxyproject.org/videos/topics/climate/tutorials/pangeo-notebook/slides.mp4.png" width="200px" />
+					</div>
+					<div>
+						<div class="title">Pangeo Notebook in Galaxy - Introduction to Xarray</div>
+					</div>
+				</a>
+			</div>
+			
 		
 	
 		
@@ -546,6 +627,7 @@
 					</div>
 				</a>
 			</div>
+			
 		
 	
 		
@@ -562,8 +644,45 @@
 	
 </div>
 
+<h2>RDMBites Data Management</h2>
+<div id="playlist">
+	
+		
+			
+			<div class="pl-item">
+				<a href="watch.html?v=data-management/tutorials/0013_file-naming/slides">
+					<div class="cover">
+						<img src="https://training.galaxyproject.org/videos/topics/data-management/tutorials/0013_file-naming/slides.mp4.png" width="200px" />
+					</div>
+					<div>
+						<div class="title">How to Name Files</div>
+					</div>
+				</a>
+			</div>
+			
+		
+	
+		
+			
+			<div class="pl-item">
+				<a href="watch.html?v=data-management/tutorials/0114_data-stewardship/slides">
+					<div class="cover">
+						<img src="https://training.galaxyproject.org/videos/topics/data-management/tutorials/0114_data-stewardship/slides.mp4.png" width="200px" />
+					</div>
+					<div>
+						<div class="title">What is Data Stewardship?</div>
+					</div>
+				</a>
+			</div>
+			
+		
+	
+</div>
+
 <h2>Development in Galaxy</h2>
 <div id="playlist">
+	
+		
 	
 		
 	
@@ -603,6 +722,7 @@
 					</div>
 				</a>
 			</div>
+			
 		
 	
 		
@@ -627,6 +747,7 @@
 					</div>
 				</a>
 			</div>
+			
 		
 	
 </div>
@@ -650,6 +771,9 @@
 					</div>
 				</a>
 			</div>
+			
+		
+	
 		
 	
 		
@@ -666,6 +790,25 @@
 
 <h2>Genome Annotation</h2>
 <div id="playlist">
+	
+		
+	
+		
+			
+			<div class="pl-item">
+				<a href="watch.html?v=genome-annotation/tutorials/crispr-screen/slides">
+					<div class="cover">
+						<img src="https://training.galaxyproject.org/videos/topics/genome-annotation/tutorials/crispr-screen/slides.mp4.png" width="200px" />
+					</div>
+					<div>
+						<div class="title">CRISPR screen analysis</div>
+					</div>
+				</a>
+			</div>
+			
+		
+	
+		
 	
 		
 	
@@ -689,6 +832,9 @@
 					</div>
 				</a>
 			</div>
+			
+		
+	
 		
 	
 		
@@ -703,6 +849,7 @@
 					</div>
 				</a>
 			</div>
+			
 		
 	
 </div>
@@ -722,6 +869,9 @@
 					</div>
 				</a>
 			</div>
+			
+		
+	
 		
 	
 		
@@ -799,6 +949,23 @@
 					</div>
 				</a>
 			</div>
+			
+			
+			<div class="pl-item">
+				<a href="watch.html?v=transcriptomics/tutorials/scrna-intro/slides_ES">
+					<div class="cover">
+						<img src="https://training.galaxyproject.org/videos/topics/transcriptomics/tutorials/scrna-intro/slides_ES.mp4.png" width="200px" />
+					</div>
+					<div>
+						<div class="title">[ES] An introduction to scRNA-seq data analysis</div>
+					</div>
+				</a>
+			</div>
+			
+		
+	
+		
+	
 		
 	
 		
@@ -833,6 +1000,9 @@
 					</div>
 				</a>
 			</div>
+			
+		
+	
 		
 	
 		
@@ -875,17 +1045,18 @@
 					</div>
 				</a>
 			</div>
+			
 		
 	
 </div>
 
 
 
-  </section>
-</div>
+</section>
 
-
-<footer>
+        </div>
+        
+            <footer>
     <div class="container">
         <br><br>
         <p>
@@ -893,13 +1064,13 @@
             provides researchers with online training materials, connects them with local trainers, and helps promoting open data analysis practices worldwide.
         </p>
         <p>
-    The content of the tutorials and website is licensed under the <a rel="license" href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.
+The content of the tutorials is licensed under the <a rel="license" href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>. The website and infrastructure is licensed under <a rel="license" href="https://github.com/galaxyproject/training-material/blob/main/LICENSE.md">MIT</a>.
 </p>
-        <p>This is revision <a href="https://github.com/galaxyproject/training-material/commit/058d8f9c84123246791d837f5f8f4790547274f3">058d8f9c84123246791d837f5f8f4790547274f3</a></p>
+        <p>This is revision <a href="https://github.com/galaxyproject/training-material/commit/e9b7a98ea90f2cfb56e300a0d368c07214131128">e9b7a98ea90f2cfb56e300a0d368c07214131128</a></p>
     </div>
 </footer>
 
-
+        
     </body>
     <script type="text/javascript" src="/training-material/assets/js/jquery.slim.min.js"></script>
     <script type="text/javascript" src="/training-material/assets/js/popper.min.js"></script>
