@@ -55,7 +55,7 @@
       "url": "https://training.galaxyproject.org/training-material/api/contributors/simonbray.json"
     }
   ],
-  "last_modified_at": "04-Mar-22",
+  "last_modified_at": "2022-03-04T17:21:35+00:00",
   "url": "/topics/computational-chemistry/tutorials/analysis-md-simulations/tutorial.html",
   "topic_name": "computational-chemistry",
   "tutorial_name": "analysis-md-simulations",
@@ -63,11 +63,11 @@
   "slides": false,
   "workflows": [
     {
-      "workflow": "main_workflow.ga",
+      "workflow": "advanced_workflow.ga",
       "tests": true
     },
     {
-      "workflow": "advanced_workflow.ga",
+      "workflow": "main_workflow.ga",
       "tests": true
     }
   ],
