@@ -15,7 +15,7 @@ key_points:
   - "FastqQC is a tool allowing to check the quality of FASTQ datasets."
   - "The most common tools for mapping are Bowtie, BWA, BWA-MEM. You can use in-built genome to map against or upload one if it is missing."
   - "The standard format for storing aligned reads is SAM/BAM. The major toolsets to process these datasets are DeepTools, SAMtools, BAMtools and Picard."
-  - "Data can be uploaded directly from a computer, from EBI SRA and from NCBI SRA, also using FTP or URL."
+  - "Data can be uploaded directly from a computer, from EBI SRA and from NCBI SRA, and also from the command-line or by URL."
   - "One can retrieve NGS data from Sequence Read Archive"
   - "Galaxy can analyze massive amounts of data and make them suitable for secondary analysis"
 subtopic: next-steps
@@ -392,11 +392,9 @@ This works well for small files because web browser do not like lengthy file tra
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/FFCDx1rMGAQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-## Using FTP
+## From your computer or remote systems using galaxy-upload
 
-FTP ([file transfer protocol](https://en.wikipedia.org/wiki/File_Transfer_Protocol)) allows transferring large collection of files:
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/hC8KSuT_OP8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+[galaxy-upload](https://galaxy-upload.readthedocs.io/) is a command-line utility for uploading data to Galaxy, which is useful for loading data to Galaxy from remote systems (e.g. that you log in to via SSH).
 
 ## From NCBI short read archive
 

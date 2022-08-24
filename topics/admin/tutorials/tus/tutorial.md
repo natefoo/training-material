@@ -5,7 +5,7 @@ title: "Performant Uploads with TUS"
 zenodo_link: ""
 questions:
 objectives:
-  - Setup TUSd
+  - Setup tusd
   - Configure Galaxy to use it to process uploads
 time_estimation: "30M"
 key_points:
@@ -14,6 +14,7 @@ contributors:
   - mvdbeek
   - hexylena
   - lldelisle
+  - natefoo
 subtopic: features
 requirements:
   - type: "internal"
@@ -24,6 +25,14 @@ requirements:
 ---
 
 Here you'll learn to setup [TUS](https://tus.io/) an open source resumable file upload server to process uploads for Galaxy. We use an external process here to offload the main Galaxy processes for more important work and not impact the entire system during periods of heavy uploading.
+
+> ### {% icon question %} Is tusd required?
+> No! As of Galaxy 22.01, tus support is shipped with Galaxy in the form of a pure-python middleware and most UI and API uploads will automatically use the tus protocol. However, using tusd has notable advantages over the middleware:
+>
+> 1. Uploads are not interrupted when Galaxy is restarted,
+> 2. tusd is more performant than the middleware, and
+> 3. Using tusd decreases the load of the Galaxy server processes.
+{: .question}
 
 > ### Agenda
 >
@@ -39,8 +48,8 @@ Here you'll learn to setup [TUS](https://tus.io/) an open source resumable file 
 To allow your user to upload via TUS, you will need to:
 
 - configure Galaxy to know where the files are uploaded.
-- install TUSd
-- configure Nginx to proxy TUSd
+- install tusd
+- configure Nginx to proxy tusd
 
 ## Installing and Configuring
 
@@ -105,6 +114,7 @@ To allow your user to upload via TUS, you will need to:
 >    +      - "-upload-dir={{ galaxy_config.galaxy.tus_upload_store }}"
 >    +      - "-hooks-http=https://{{ inventory_hostname }}/api/upload/hooks"
 >    +      - "-hooks-http-forward-headers=X-Api-Key,Cookie"
+>    +      - "-hooks-enabled-events pre-create"
 >    {% endraw %}
 >    ```
 >    {: data-commit="Configure TUS in your group variables"}
@@ -191,6 +201,8 @@ Congratulations, you've set up TUS for Galaxy.
 > 5. You'll see files in that directory, a file that's been uploaded and an 'info' file which contains metadata about the upload.
 >
 {: .hands_on}
+
+
 
 > ```bash
 > 1.sh
