@@ -24,7 +24,7 @@
 <meta name="DC.type" content="text" />
 <meta name="DC.title" content="Visualization of RNA-Seq results with CummeRbund" />
 <meta name="DC.publisher" content="Galaxy Training Network" />
-<meta name="DC.date" content="2022-10-18 14:23:35 +0000" />
+<meta name="DC.date" content="2022-11-18 10:50:07 +0000" />
 <meta name="DC.creator" content="Andrea Bagnacani" />
 
         
@@ -271,7 +271,7 @@
     "name": "Galaxy Training Network",
     "url": "https://galaxyproject.org/teach/gtn/"
   },
-  "dateModified": "2022-10-18 14:23:35 +0000",
+  "dateModified": "2022-11-18 10:50:07 +0000",
   "discussionUrl": "https://gitter.im/Galaxy-Training-Network/Lobby",
   "headline": "Visualization of RNA-Seq results with CummeRbund",
   "interactivityType": "mixed",
@@ -477,11 +477,7 @@
     <div markdown="0">
 
 	<div class="contributors-line">
-		Authors: 
-<a href="/training-material/hall-of-fame/bagnacan/" class="contributor-badge contributor-bagnacan"><img src="https://avatars.githubusercontent.com/bagnacan?s=27" alt="Avatar">Andrea Bagnacani</a>
-
-
-
+		Authors: <a href="/training-material/hall-of-fame/bagnacan/" class="contributor-badge contributor-bagnacan"><img src="https://avatars.githubusercontent.com/bagnacan?s=27" alt="Avatar">Andrea Bagnacani</a>
 	</div>
 
 </div>
@@ -689,7 +685,7 @@
         </ul>
         
 
-        <div><strong><i class="far fa-calendar" aria-hidden="true"></i> Last modification:</strong> Oct 18, 2022 </div>
+        <div><strong><i class="far fa-calendar" aria-hidden="true"></i> Last modification:</strong> Nov 18, 2022 </div>
         <div><strong><i class="fas fa-balance-scale" aria-hidden="true"></i> License:</strong>
             
             <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Tutorial Content is licensed under Creative Commons Attribution 4.0 International License</a>
@@ -746,7 +742,7 @@
 
 <p>A typical <span class="notranslate">workflow</span> for the visualization of <span class="notranslate">RNA</span>-Seq data involving CummeRbund:</p>
 
-<p><img src="../../images/cummerbund-rna-seq-viz-with-cummerbund.png" alt="workflow. " loading="lazy" /></p>
+<p><img src="../../images/transcriptomics_images/cummerbund-rna-seq-viz-with-cummerbund.png" alt="workflow. " loading="lazy" /></p>
 
 <p>CummeRbund <span class="notranslate">reads</span> your <span class="notranslate">RNA</span>-Seq results from a <a href="https://www.sqlite.org/">SQLite</a> database. This database has to be created using CuffDiff’s SQLite output option.</p>
 
@@ -755,7 +751,7 @@
 
   <p>Instruct CuffDiff to organize its output in a SQLite database to be read CummeRbund.</p>
 
-  <p><img src="../../images/cummerbund-cuffdiff-set-sqlite.png" alt="SQLite output. " loading="lazy" /></p>
+  <p><img src="../../images/transcriptomics_images/cummerbund-cuffdiff-set-sqlite.png" alt="SQLite output. " loading="lazy" /></p>
 </blockquote>
 
 <h1 id="importing-rna-seq-result-data">Importing <span class="notranslate">RNA</span>-Seq result data</h1>
@@ -968,7 +964,7 @@
 
 <p>Our first CummeRbund plot is the “<span class="notranslate">Expression</span> Plot” of the isoforms of gene NDUFV1, which shows the <span class="notranslate">expression</span> differences of isoforms NM_001166102 and NM_007103 among the three conditions. Error bars capture the variability of the distribution of FPKM values: the broader the distribution of FPKM values, the larger the corresponding error bar.</p>
 
-<p><img src="../../images/cummerbund-expression-plot.png" alt="Expression plot. " loading="lazy" /></p>
+<p><img src="../../images/transcriptomics_images/cummerbund-expression-plot.png" alt="Expression plot. " loading="lazy" /></p>
 
 <p>Our plot has a modest number of isoforms, and is therefore easy to read. However, with a high number of isoforms and <span class="notranslate">expression</span> variability among different conditions, the plot can look very busy. We can therefore change the visualization type by selecting another type of plot. Let’s change visualization.</p>
 
@@ -995,7 +991,7 @@
   </ol>
 </blockquote>
 
-<p><img src="../../images/cummerbund-expression-bar-plot.png" alt="Expression bar plot. " loading="lazy" /></p>
+<p><img src="../../images/transcriptomics_images/cummerbund-expression-bar-plot.png" alt="Expression bar plot. " loading="lazy" /></p>
 
 <p>The <span class="notranslate">Expression</span> Bar Plot of gene NDUFV1’s replicates NM_001166102 and NM_007103, shows the <span class="notranslate">expression</span> changes across the three aforementioned conditions.</p>
 
@@ -1044,14 +1040,14 @@ As a showcase example, let’s consider only the top 5 differentially expressed 
 
 </blockquote>
 
-<p><img src="../../images/cummerbund-heatmap.png" alt="Expression bar plot. " loading="lazy" /></p>
+<p><img src="../../images/transcriptomics_images/cummerbund-heatmap.png" alt="Expression bar plot. " loading="lazy" /></p>
 
 <p>Heatmap of significant differentially expressed isoforms of genes LIMCH1, IFNL2, CXCL11, NUB1. Differences in up- and down-regulation of certain gene isoforms across Patient 1 (hits7), Patient 2 (hits8), and Control (hits9), are visible in the lower and upper part of the heatmap.</p>
 
 <blockquote class="comment">
   <div id="comment-1" class="box-title" aria-label="comment box: "><i class="far fa-comment-dots" aria-hidden="true"></i><span class="visually-hidden"></span> Comment</div>
 
-  <p>For more sophisticated visualizations of your <span class="notranslate">RNA</span>-Seq analysis results, try selecting different CummeRbund plot options and parametrizations. Have a look also at CummeRbund’s <a href="http://compbio.mit.edu/cummeRbund/manual_2_0.html">manual</a>. Alte<span class="notranslate">rna</span>tively, you can modify a plot’s style by changing CummeRbund’s R output! CummeRbund’s R outputs are <em>ggplot</em> objects. Look <a href="https://github.com/tidyverse/ggplot2">here</a> to learn how to change fonts, colors, error bars, and more.</p>
+  <p>For more sophisticated visualizations of your <span class="notranslate">RNA</span>-Seq analysis results, try selecting different CummeRbund plot options and parametrizations. Have a look also at CummeRbund’s <a href="http://compbio.mit.edu/cummeRbund/manual_2_0.html">manual</a>. Alte<span class="notranslate">rna</span>tively, you can modify a plot’s style by changing CummeRbund’s R output! CummeRbund’s R outputs are <em>ggplot</em> objects. Look at the <a href="https://github.com/tidyverse/ggplot2">ggplot2 documentation</a> to learn how to change fonts, colors, error bars, and more.</p>
 </blockquote>
 
 <h1 id="conclusion">Conclusion</h1>
@@ -1131,7 +1127,8 @@ In this tutorial we overviewed the advantages of visualizing <span class="notran
                 <h1>Citing this Tutorial</h1>
                 <p>
                     <ol>
-                        <li id="citation-text">Andrea Bagnacani,  <b>Visualization of RNA-Seq results with CummeRbund (Galaxy Training Materials)</b>. <a href="https://training.galaxyproject.org/training-material/topics/transcriptomics/tutorials/rna-seq-viz-with-cummerbund/tutorial.html">https://training.galaxyproject.org/training-material/topics/transcriptomics/tutorials/rna-seq-viz-with-cummerbund/tutorial.html</a> Online; accessed TODAY
+                        <li id="citation-text">
+                            Andrea Bagnacani,  <b>Visualization of RNA-Seq results with CummeRbund (Galaxy Training Materials)</b>. <a href="https://training.galaxyproject.org/training-material/topics/transcriptomics/tutorials/rna-seq-viz-with-cummerbund/tutorial.html">https://training.galaxyproject.org/training-material/topics/transcriptomics/tutorials/rna-seq-viz-with-cummerbund/tutorial.html</a> Online; accessed TODAY
                         </li>
                         <li>
                         Batut et al., 2018 <b>Community-Driven Data Analysis Training for Biology</b> Cell Systems <a href="https://doi.org/10.1016%2Fj.cels.2018.05.012">10.1016/j.cels.2018.05.012</a>
@@ -1151,6 +1148,7 @@ In this tutorial we overviewed the advantages of visualizing <span class="notran
                    <p style="display: none;">
 
                    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight">
+
 
 <code id="citation-code">@misc{transcriptomics-rna-seq-viz-with-cummerbund,
 author = "Andrea Bagnacani",
@@ -1204,39 +1202,39 @@ document.getElementById("citation-text").innerHTML = document.getElementById("ci
 
         </div>
         
+        <script type="text/javascript" src="/training-material/assets/js/jquery.slim.min.js"></script>
+        <script type="text/javascript" src="/training-material/assets/js/popper.min.js"></script>
+        <script type="text/javascript" src="/training-material/assets/js/bootstrap.min.js?v=3"></script>
+        <script type="text/javascript" src="/training-material/assets/js/details-element-polyfill.js"></script>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+        <script type="text/javascript" src="/training-material/assets/js/bootstrap-toc.min.js"></script>
+        <script type="text/javascript" src="/training-material/assets/js/main.js"></script>
+        <script type="text/javascript" src="/training-material/assets/js/theme.js"></script>
+
+        <script type="text/javascript" src="/training-material/assets/js/clipboard.min.js"></script>
+        <script type="text/javascript">
+        var snippets=document.querySelectorAll('div.highlight');
+        [].forEach.call(snippets,function(snippet){
+            snippet.firstChild.insertAdjacentHTML('beforebegin','<button class="btn btn-light" data-clipboard-snippet><i class="fa fa-copy"></i>&nbsp;Copy</button>');
+        });
+
+        var clipboardSnippets=new ClipboardJS('[data-clipboard-snippet]',{
+            target:function(trigger){return trigger.nextElementSibling;
+        }});
+        </script>
+        
+
+        <script type="text/javascript">
+            if(window.location.hostname === "galaxyproject.github.io") {
+                // Redirect
+                var redirect = "https://training.galaxyproject.org" + window.location.pathname + window.location.search;
+                $('div.container.main-content').prepend("<div class='alert alert-warning'><strong>Note: </strong>This content has a new home at <a href=\"" + redirect + "\">" + redirect + "</a>, which you will be redirected to in 5 seconds.</div>");
+
+                window.setTimeout(function(){
+                    window.location.href = redirect;
+                }, 5000)
+
+            }
+        </script>
     </body>
-    <script type="text/javascript" src="/training-material/assets/js/jquery.slim.min.js"></script>
-    <script type="text/javascript" src="/training-material/assets/js/popper.min.js"></script>
-    <script type="text/javascript" src="/training-material/assets/js/bootstrap.min.js?v=3"></script>
-    <script type="text/javascript" src="/training-material/assets/js/details-element-polyfill.js"></script>
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
-    <script type="text/javascript" src="/training-material/assets/js/bootstrap-toc.min.js"></script>
-    <script type="text/javascript" src="/training-material/assets/js/main.js"></script>
-    <script type="text/javascript" src="/training-material/assets/js/theme.js"></script>
-
-    <script type="text/javascript" src="/training-material/assets/js/clipboard.min.js"></script>
-    <script type="text/javascript">
-    var snippets=document.querySelectorAll('div.highlight');
-    [].forEach.call(snippets,function(snippet){
-        snippet.firstChild.insertAdjacentHTML('beforebegin','<button class="btn btn-light" data-clipboard-snippet><i class="fa fa-copy"></i>&nbsp;Copy</button>');
-    });
-
-    var clipboardSnippets=new ClipboardJS('[data-clipboard-snippet]',{
-        target:function(trigger){return trigger.nextElementSibling;
-    }});
-    </script>
-    
-
-    <script type="text/javascript">
-        if(window.location.hostname === "galaxyproject.github.io") {
-            // Redirect
-            var redirect = "https://training.galaxyproject.org" + window.location.pathname + window.location.search;
-            $('div.container.main-content').prepend("<div class='alert alert-warning'><strong>Note: </strong>This content has a new home at <a href=\"" + redirect + "\">" + redirect + "</a>, which you will be redirected to in 5 seconds.</div>");
-
-            window.setTimeout(function(){
-                window.location.href = redirect;
-            }, 5000)
-
-        }
-    </script>
 </html>
