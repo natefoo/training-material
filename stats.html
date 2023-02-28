@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
     <head>
         <meta charset="utf-8">
@@ -14,7 +14,6 @@
         <link rel="stylesheet" href="/training-material/assets/css/main.css?v=2">
         <script src="https://kit.fontawesome.com/67b3f98409.js" crossorigin="anonymous"></script>
         <link rel="stylesheet" href="/training-material/assets/css/academicons.css">
-        <link rel="stylesheet" href="/training-material/assets/css/syntax_highlighting.css">
         <link rel="shortcut icon" href="/training-material/favicon.ico" type="image/x-icon" />
         <link rel="alternate" type="application/atom+xml" href="/training-material/feed.xml" />
         <link rel="canonical" href="https://training.galaxyproject.org/training-material/stats.html" />
@@ -30,15 +29,17 @@
         
         
         
-        
         <meta name="description" content="Collection of tutorials developed and maintained by the w..." />
         <meta property="og:site_name" content="Galaxy Training Network" />
         <meta property="og:title" content="Galaxy Training" />
         <meta property="og:description" content="Collection of tutorials developed and maintained by the w..." />
+        
         <meta property="og:image" content="/training-material/assets/images/GTNLogo1000.png" />
 
+        
     </head>
     <body data-spy="scroll" data-target="#toc">
+        <script type="text/javascript" src="/training-material/assets/js/theme.js"></script>
         <header>
     <nav class="navbar navbar-expand-md navbar-dark" aria-label="Site Navigation">
         <div class="container">
@@ -154,27 +155,14 @@
             </div>
 
             <div id="theme-selector" data-toggle="buttons">
-                <label data-value="default" class="btn btn-secondary">
-                    <input type="radio" name="options" id="default" autocomplete="off"> Default
-                </label>
-                <label data-value="night" class="btn btn-secondary">
-                    <input type="radio" name="options" id="night" autocomplete="off"> Night
-                </label>
-                <label data-value="midnight" class="btn btn-secondary">
-                    <input type="radio" name="options" id="midnight" autocomplete="off"> Midnight
-                </label>
-                <label data-value="rainbow" class="btn btn-secondary">
-                    <input type="radio" name="options" id="rainbow" autocomplete="off"> Rainbow
-                </label>
-                <label data-value="progress" class="btn btn-secondary">
-                    <input type="radio" name="options" id="progress" autocomplete="off">🏳️‍🌈
-                </label>
-                <label data-value="halloween" class="btn btn-secondary">
-                    <input type="radio" name="options" id="halloween" autocomplete="off"> 🎃
-                </label>
-                <label data-value="straya" class="btn btn-secondary">
-                    <input type="radio" name="options" id="downunder" autocomplete="off"> 🇦🇺
-                </label>
+                    <button class="btn" data-theme="default">Default</button>
+                    <button class="btn" data-theme="night">Night</button>
+                    <button class="btn" data-theme="midnight">Midnight</button>
+                    <button class="btn" data-theme="rainbow">Rainbow</button>
+                    <button class="btn" data-theme="blm">✊🏿</button>
+                    <button class="btn" data-theme="progress" >🏳️‍🌈</button>
+                    <button class="btn" data-theme="halloween">🎃</button>
+                    <button class="btn" data-theme="straya">🇦🇺</button>
             </div>
 
         </div>
@@ -238,14 +226,14 @@
 
 <div class="stats">
 
-<!--SNIPPET--><!-- tutorial stats --><div class="row"><div class="col-md-4"> <div class="gtn-card color-agenda">   <div class="card-title">30</div>   <div class="card-text">Topics</div> </div></div><div class="col-md-4"> <div class="gtn-card color-tip">   <div class="card-title">302</div>   <div class="card-text">Tutorials</div> </div></div><div class="col-md-4"> <div class="gtn-card color-details">   <div class="card-title">356</div>   <div class="card-text"><abbr title="Frequently Asked Questions">FAQs</abbr></div> </div></div><div class="col-md-6"> <div class="gtn-card color-comment">   <div class="card-title">280</div>   <div class="card-text">Contributors</div> </div></div><div class="col-md-6"> <div class="gtn-card color-handson">   <div class="card-title">7.7</div>   <div class="card-text">Years</div> </div></div></div>
+<!--SNIPPET--> <!-- tutorial stats --> <div class="row" style="color: var(--text-color-boxtitle)"> <div class="col-md-4">  <div class="gtn-card color-agenda">    <div class="card-title">32</div>    <div class="card-text">Topics</div>  </div> </div> <div class="col-md-4">  <div class="gtn-card color-tip">    <div class="card-title">325</div>    <div class="card-text">Tutorials</div>  </div> </div> <div class="col-md-4">  <div class="gtn-card color-details">    <div class="card-title">357</div>    <div class="card-text"><abbr title="Frequently Asked Questions">FAQs</abbr></div>  </div> </div> <div class="col-md-6">  <div class="gtn-card color-comment">    <div class="card-title">285</div>    <div class="card-text">Contributors</div>  </div> </div> <div class="col-md-6">  <div class="gtn-card color-handson">    <div class="card-title">7.7</div>    <div class="card-text">Years</div>  </div> </div> </div> 
 <div class="row">
 
 <!-- tutorials per topic -->
 <div class="col-md-6">
  <div class="card">
   <div class="card-body">
-   <h5 class="card-title">18 Scientific Topics</h5>
+   <h5 class="card-title">20 Scientific Topics</h5>
    <canvas id="tutorialsBar" width="400" height="400"></canvas>
    </div>
  </div>
@@ -282,13 +270,25 @@
     <ul>
     
         
-        <li><a href="/training-material/hall-of-fame/davidsalgado/" class="contributor-badge contributor-davidsalgado"><img src="https://avatars.githubusercontent.com/davidsalgado?s=27" alt="Avatar" />David Salgado</a></li>
+        <li><a href="/training-material/hall-of-fame/alliecreason/" class="contributor-badge contributor-alliecreason"><img src="/training-material/assets/images/orcid.png" alt="orcid logo" /><img src="https://avatars.githubusercontent.com/alliecreason?s=27" alt="Avatar" />Allison Creason</a></li>
     
         
-        <li><a href="/training-material/hall-of-fame/MarisaJL/" class="contributor-badge contributor-MarisaJL"><img src="https://avatars.githubusercontent.com/MarisaJL?s=27" alt="Avatar" />Marisa Loach</a></li>
+        <li><a href="/training-material/hall-of-fame/deeptivarshney/" class="contributor-badge contributor-deeptivarshney"><img src="https://avatars.githubusercontent.com/deeptivarshney?s=27" alt="Avatar" />Deepti Varshney</a></li>
+    
+        
+        <li><a href="/training-material/hall-of-fame/miRlyKayleigh/" class="contributor-badge contributor-miRlyKayleigh"><img src="https://avatars.githubusercontent.com/miRlyKayleigh?s=27" alt="Avatar" />Kayleigh Smith</a></li>
+    
+        
+        <li><a href="/training-material/hall-of-fame/d-salgado/" class="contributor-badge contributor-d-salgado"><img src="https://avatars.githubusercontent.com/d-salgado?s=27" alt="Avatar" />David Salgado</a></li>
+    
+        
+        <li><a href="/training-material/hall-of-fame/MarisaJL/" class="contributor-badge contributor-MarisaJL"><img src="/training-material/assets/images/orcid.png" alt="orcid logo" /><img src="https://avatars.githubusercontent.com/MarisaJL?s=27" alt="Avatar" />Marisa Loach</a></li>
     
         
         <li><a href="/training-material/hall-of-fame/allegravia/" class="contributor-badge contributor-allegravia"><img src="https://avatars.githubusercontent.com/allegravia?s=27" alt="Avatar" />Allegra Via</a></li>
+    
+        
+        <li><a href="/training-material/hall-of-fame/hrukkudyr/" class="contributor-badge contributor-hrukkudyr"><img src="/training-material/assets/images/orcid.png" alt="orcid logo" /><img src="https://avatars.githubusercontent.com/hrukkudyr?s=27" alt="Avatar" />Graeme Tyson</a></li>
     
         
         <li><a href="/training-material/hall-of-fame/Khaled196/" class="contributor-badge contributor-Khaled196"><img src="https://avatars.githubusercontent.com/Khaled196?s=27" alt="Avatar" />Khaled Jum'ah</a></li>
@@ -298,18 +298,6 @@
     
         
         <li><a href="/training-material/hall-of-fame/teresa-m/" class="contributor-badge contributor-teresa-m"><img src="https://avatars.githubusercontent.com/teresa-m?s=27" alt="Avatar" />Teresa Müller</a></li>
-    
-        
-        <li><a href="/training-material/hall-of-fame/epsrc-training-grant/" class="contributor-badge contributor-epsrc-training-grant"><img src="https://avatars.githubusercontent.com/epsrc-training-grant?s=27" alt="Avatar" />EPSRC Training Grant DTP 2020-2021 Open University</a></li>
-    
-        
-        <li><a href="/training-material/hall-of-fame/elixir-goblet-ttt/" class="contributor-badge contributor-elixir-goblet-ttt"><img src="https://avatars.githubusercontent.com/elixir-goblet-ttt?s=27" alt="Avatar" />ELIXIR Goblet Train the Trainers</a></li>
-    
-        
-        <li><a href="/training-material/hall-of-fame/chklopp/" class="contributor-badge contributor-chklopp"><img src="https://avatars.githubusercontent.com/chklopp?s=27" alt="Avatar" />Christophe Klopp</a></li>
-    
-        
-        <li><a href="/training-material/hall-of-fame/paulineauffret/" class="contributor-badge contributor-paulineauffret"><img src="https://avatars.githubusercontent.com/paulineauffret?s=27" alt="Avatar" />Pauline Auffret</a></li>
     
     </ul>
     <p class="card-text">Thanks a lot for your contributions!</p>
@@ -350,12 +338,26 @@
       <tr>
         <td></td>
         <td style="text-align:right">
-            <a href="/training-material/topics/transcriptomics">
-                Transcriptomics
+            <a href="/training-material/topics/single-cell">
+                Single Cell
             </a>
 </td>
-        <td><a href="/training-material//topics/transcriptomics/tutorials/mirna-target-finder/tutorial.html">
-            Whole transcriptome analysis of Arabidopsis thaliana
+        <td><a href="/training-material//topics/single-cell/tutorials/scrna-umis/tutorial.html">
+            Understanding Barcodes
+            </a></td>
+      </tr>
+    
+            
+            
+      <tr>
+        <td></td>
+        <td style="text-align:right">
+            <a href="/training-material/topics/assembly">
+                Assembly
+            </a>
+</td>
+        <td><a href="/training-material//topics/assembly/tutorials/vgp_genome_assembly/tutorial.html">
+            VGP assembly pipeline
             </a></td>
       </tr>
     
@@ -368,8 +370,8 @@
                 Metagenomics
             </a>
 </td>
-        <td><a href="/training-material//topics/metagenomics/tutorials/metagenomics-assembly/tutorial.html">
-            Assembly of metagenomic sequencing data
+        <td><a href="/training-material//topics/metagenomics/tutorials/pathogen-detection-from-nanopore-foodborne-data/tutorial.html">
+            Pathogen detection from (direct Nanopore) sequencing data using Galaxy - Foodborne Edition
             </a></td>
       </tr>
     
@@ -378,82 +380,12 @@
       <tr>
         <td></td>
         <td style="text-align:right">
-            <a href="/training-material/topics/admin">
-                Galaxy Server administration
+            <a href="/training-material/topics/epigenetics">
+                Epigenetics
             </a>
 </td>
-        <td><a href="/training-material//topics/admin/tutorials/ansible-galaxy/tutorial.html">
-            Galaxy Installation with Ansible
-            </a></td>
-      </tr>
-    
-            
-            
-      <tr>
-        <td></td>
-        <td style="text-align:right">
-            <a href="/training-material/topics/admin">
-                Galaxy Server administration
-            </a>
-</td>
-        <td><a href="/training-material//topics/admin/tutorials/interactive-tools/tutorial.html">
-            Galaxy Interactive Tools
-            </a></td>
-      </tr>
-    
-            
-            
-      <tr>
-        <td></td>
-        <td style="text-align:right">
-            <a href="/training-material/topics/variant-analysis">
-                Variant Analysis
-            </a>
-</td>
-        <td><a href="/training-material//topics/variant-analysis/tutorials/aiv-analysis/tutorial.html">
-            Avian influenza viral strain analysis from gene segment sequencing data
-            </a></td>
-      </tr>
-    
-            
-            
-      <tr>
-        <td></td>
-        <td style="text-align:right">
-            <a href="/training-material/topics/transcriptomics">
-                Transcriptomics
-            </a>
-</td>
-        <td><a href="/training-material//topics/transcriptomics/tutorials/de-novo/tutorial.html">
-            De novo transcriptome reconstruction with RNA-Seq
-            </a></td>
-      </tr>
-    
-            
-            
-      <tr>
-        <td></td>
-        <td style="text-align:right">
-            <a href="/training-material/topics/proteomics">
-                Proteomics
-            </a>
-</td>
-        <td><a href="/training-material//topics/proteomics/tutorials/protein-id-oms/tutorial.html">
-            Peptide and Protein ID using OpenMS tools
-            </a></td>
-      </tr>
-    
-            
-            
-      <tr>
-        <td></td>
-        <td style="text-align:right">
-            <a href="/training-material/topics/variant-analysis">
-                Variant Analysis
-            </a>
-</td>
-        <td><a href="/training-material//topics/variant-analysis/tutorials/trio-analysis/tutorial.html">
-            Trio Analysis using Synthetic Datasets from RD-Connect GPAP
+        <td><a href="/training-material//topics/epigenetics/tutorials/formation_of_super-structures_on_xi/tutorial.html">
+            Formation of the Super-Structures on the Inactive X
             </a></td>
       </tr>
     
@@ -466,8 +398,64 @@
                 Single Cell
             </a>
 </td>
-        <td><a href="/training-material//topics/single-cell/tutorials/scrna-scanpy-pbmc3k/tutorial.html">
-            Clustering 3K PBMCs with Scanpy
+        <td><a href="/training-material//topics/single-cell/tutorials/scrna-case_alevin/tutorial.html">
+            Generating a single cell matrix using Alevin
+            </a></td>
+      </tr>
+    
+            
+            
+      <tr>
+        <td></td>
+        <td style="text-align:right">
+            <a href="/training-material/topics/computational-chemistry">
+                Computational chemistry
+            </a>
+</td>
+        <td><a href="/training-material//topics/computational-chemistry/tutorials/md-simulation-namd/tutorial.html">
+            Running molecular dynamics simulations using NAMD
+            </a></td>
+      </tr>
+    
+            
+            
+      <tr>
+        <td></td>
+        <td style="text-align:right">
+            <a href="/training-material/topics/sequence-analysis">
+                Sequence analysis
+            </a>
+</td>
+        <td><a href="/training-material//topics/sequence-analysis/tutorials/ncbi-blast-against-the-madland/tutorial.html">
+            NCBI BLAST+ against the MAdLand
+            </a></td>
+      </tr>
+    
+            
+            
+      <tr>
+        <td></td>
+        <td style="text-align:right">
+            <a href="/training-material/topics/genome-annotation">
+                Genome Annotation
+            </a>
+</td>
+        <td><a href="/training-material//topics/genome-annotation/tutorials/genome-annotation/tutorial.html">
+            Genome Annotation
+            </a></td>
+      </tr>
+    
+            
+            
+      <tr>
+        <td></td>
+        <td style="text-align:right">
+            <a href="/training-material/topics/metabolomics">
+                Metabolomics
+            </a>
+</td>
+        <td><a href="/training-material//topics/metabolomics/tutorials/gcms/tutorial.html">
+            Mass spectrometry : GC-MS analysis with metaMS package
             </a></td>
       </tr>
     
@@ -514,8 +502,8 @@ function genColors(size) {
 
 // Charts displaying number of tutorials per topic
 // Scientific Topics
-var data_tutos = [15,7,8,12,9,15,4,12,7,10,27,3,15,16,4,21,14,3];
-var labels_topics = ["Assembly","Climate","Computational chemistry","Ecology","Epigenetics","Genome Annotation","Imaging","Introduction to Galaxy Analyses","Metabolomics","Metagenomics","Proteomics","Sequence analysis","Single Cell","Statistics and machine learning","Synthetic Biology","Transcriptomics","Variant Analysis","Visualisation"];
+var data_tutos = [15,7,8,8,13,9,2,15,5,12,7,11,27,4,19,16,3,21,14,3];
+var labels_topics = ["Assembly","Climate","Computational chemistry","SARS-CoV-2","Ecology","Epigenetics","Evolution","Genome Annotation","Imaging","Introduction to Galaxy Analyses","Metabolomics","Metagenomics","Proteomics","Sequence analysis","Single Cell","Statistics and machine learning","Synthetic Biology","Transcriptomics","Variant Analysis","Visualisation"];
 
 // Remove animations for accessibility
 const isReduced = window.matchMedia(`(prefers-reduced-motion: reduce)`) === true || window.matchMedia(`(prefers-reduced-motion: reduce)`).matches === true;
@@ -554,7 +542,7 @@ var tutorialsBar = new Chart('tutorialsBar', {
 
 // Technical Topics
 // Chart displaying number of tutorials per topic
-var data_tutos = [14,22,22,36,44,19];
+var data_tutos = [14,22,21,36,44,19];
 var labels_topics = ["Teaching and Hosting Galaxy training","Using Galaxy and Managing your Data","Development in Galaxy","Foundations of Data Science","Galaxy Server administration","Contributing to the Galaxy Training Material"];
 
 var tutorialsBarTechnical = new Chart("tutorialsBarTechnical", {
@@ -596,9 +584,9 @@ var tutorialsBarTechnical = new Chart("tutorialsBarTechnical", {
 
 
 // Contributors chart
-var data_contributors = [{x:"2017-10" , y: 62 } ,{x:"2017-12" , y: 64 } ,{x:"2018-02" , y: 65 } ,{x:"2018-06" , y: 67 } ,{x:"2018-07" , y: 83 } ,{x:"2018-08" , y: 89 } ,{x:"2018-09" , y: 94 } ,{x:"2018-10" , y: 105 } ,{x:"2018-11" , y: 106 } ,{x:"2018-12" , y: 109 } ,{x:"2019-01" , y: 110 } ,{x:"2019-02" , y: 111 } ,{x:"2019-03" , y: 112 } ,{x:"2019-04" , y: 118 } ,{x:"2019-05" , y: 125 } ,{x:"2019-06" , y: 129 } ,{x:"2019-07" , y: 138 } ,{x:"2019-08" , y: 146 } ,{x:"2019-09" , y: 148 } ,{x:"2019-10" , y: 150 } ,{x:"2019-11" , y: 151 } ,{x:"2019-12" , y: 153 } ,{x:"2020-01" , y: 155 } ,{x:"2020-03" , y: 156 } ,{x:"2020-04" , y: 157 } ,{x:"2020-07" , y: 158 } ,{x:"2020-09" , y: 163 } ,{x:"2020-10" , y: 165 } ,{x:"2020-11" , y: 168 } ,{x:"2020-12" , y: 173 } ,{x:"2021-01" , y: 175 } ,{x:"2021-02" , y: 178 } ,{x:"2021-03" , y: 181 } ,{x:"2021-05" , y: 184 } ,{x:"2021-06" , y: 192 } ,{x:"2021-08" , y: 193 } ,{x:"2021-09" , y: 195 } ,{x:"2021-10" , y: 198 } ,{x:"2021-11" , y: 221 } ,{x:"2021-12" , y: 228 } ,{x:"2022-01" , y: 231 } ,{x:"2022-02" , y: 236 } ,{x:"2022-03" , y: 242 } ,{x:"2022-04" , y: 259 } ,{x:"2022-05" , y: 264 } ,{x:"2022-06" , y: 267 } ,{x:"2022-07" , y: 269 } ,{x:"2022-08" , y: 270 } ,{x:"2022-09" , y: 272 } ,{x:"2022-10" , y: 278 } ,{x:"" , y: 280 } ];
+var data_contributors = [{x:"2017-10" , y: 62 } ,{x:"2017-12" , y: 64 } ,{x:"2018-02" , y: 65 } ,{x:"2018-06" , y: 67 } ,{x:"2018-07" , y: 83 } ,{x:"2018-08" , y: 89 } ,{x:"2018-09" , y: 94 } ,{x:"2018-10" , y: 105 } ,{x:"2018-11" , y: 106 } ,{x:"2018-12" , y: 109 } ,{x:"2019-01" , y: 110 } ,{x:"2019-02" , y: 111 } ,{x:"2019-03" , y: 112 } ,{x:"2019-04" , y: 118 } ,{x:"2019-05" , y: 125 } ,{x:"2019-06" , y: 129 } ,{x:"2019-07" , y: 138 } ,{x:"2019-08" , y: 146 } ,{x:"2019-09" , y: 148 } ,{x:"2019-10" , y: 150 } ,{x:"2019-11" , y: 151 } ,{x:"2019-12" , y: 153 } ,{x:"2020-01" , y: 155 } ,{x:"2020-03" , y: 156 } ,{x:"2020-04" , y: 157 } ,{x:"2020-07" , y: 158 } ,{x:"2020-09" , y: 163 } ,{x:"2020-10" , y: 165 } ,{x:"2020-11" , y: 168 } ,{x:"2020-12" , y: 173 } ,{x:"2021-01" , y: 175 } ,{x:"2021-02" , y: 178 } ,{x:"2021-03" , y: 181 } ,{x:"2021-05" , y: 184 } ,{x:"2021-06" , y: 192 } ,{x:"2021-08" , y: 193 } ,{x:"2021-09" , y: 195 } ,{x:"2021-10" , y: 198 } ,{x:"2021-11" , y: 221 } ,{x:"2021-12" , y: 228 } ,{x:"2022-01" , y: 231 } ,{x:"2022-02" , y: 236 } ,{x:"2022-03" , y: 242 } ,{x:"2022-04" , y: 259 } ,{x:"2022-05" , y: 264 } ,{x:"2022-06" , y: 267 } ,{x:"2022-07" , y: 269 } ,{x:"2022-08" , y: 271 } ,{x:"2022-09" , y: 273 } ,{x:"2022-10" , y: 280 } ,{x:"2022-12" , y: 282 } ,{x:"2023-02" , y: 284 } ,{x:"" , y: 285 } ];
 
-var labels_contributors = ["2017-09","2017-10","2017-12","2018-02","2018-06","2018-07","2018-08","2018-09","2018-10","2018-11","2018-12","2019-01","2019-02","2019-03","2019-04","2019-05","2019-06","2019-07","2019-08","2019-09","2019-10","2019-11","2019-12","2020-01","2020-03","2020-04","2020-07","2020-09","2020-10","2020-11","2020-12","2021-01","2021-02","2021-03","2021-05","2021-06","2021-08","2021-09","2021-10","2021-11","2021-12","2022-01","2022-02","2022-03","2022-04","2022-05","2022-06","2022-07","2022-08","2022-09","2022-10"];
+var labels_contributors = ["2017-09","2017-10","2017-12","2018-02","2018-06","2018-07","2018-08","2018-09","2018-10","2018-11","2018-12","2019-01","2019-02","2019-03","2019-04","2019-05","2019-06","2019-07","2019-08","2019-09","2019-10","2019-11","2019-12","2020-01","2020-03","2020-04","2020-07","2020-09","2020-10","2020-11","2020-12","2021-01","2021-02","2021-03","2021-05","2021-06","2021-08","2021-09","2021-10","2021-11","2021-12","2022-01","2022-02","2022-03","2022-04","2022-05","2022-06","2022-07","2022-08","2022-09","2022-10","2022-12","2023-02"];
 
 var contributorsBar = new Chart('contributorsGraph', {
   type: 'line',
@@ -651,7 +639,7 @@ var contributorsBar = new Chart('contributorsGraph', {
         The content of the tutorials is licensed under the <a rel="license" href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>. The website and infrastructure is licensed under <a rel="license" href="https://github.com/galaxyproject/training-material/blob/main/LICENSE.md">MIT</a>.
         </p>
 
-        <p>This is revision <a href="https://github.com/galaxyproject/training-material/commit/3b2f60880a27f6a35ce39661781afb4d8ee089a0">3b2f60880a27f6a35ce39661781afb4d8ee089a0</a></p>
+        <p>This is revision <a href="https://github.com/galaxyproject/training-material/commit/02ca841a5b078ce569e62cbfa7cd1b4396e4c85d">02ca841a5b078ce569e62cbfa7cd1b4396e4c85d</a></p>
     </div>
 </footer>
 
@@ -663,8 +651,6 @@ var contributorsBar = new Chart('contributorsGraph', {
         <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
         <script type="text/javascript" src="/training-material/assets/js/bootstrap-toc.min.js"></script>
         <script type="text/javascript" src="/training-material/assets/js/main.js"></script>
-        <script type="text/javascript" src="/training-material/assets/js/theme.js"></script>
-
         <script type="text/javascript" src="/training-material/assets/js/clipboard.min.js"></script>
         <script type="text/javascript">
         var snippets=document.querySelectorAll('div.highlight');
