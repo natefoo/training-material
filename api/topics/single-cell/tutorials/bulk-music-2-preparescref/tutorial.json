@@ -68,14 +68,14 @@
   "slides": false,
   "workflows": [
     {
-      "workflow": "sc_matrix.ga",
-      "tests": false,
-      "url": "https://training.galaxyproject.org/training-material/topics/single-cell/tutorials/bulk-music-2-preparescref/workflows/sc_matrix.ga"
-    },
-    {
       "workflow": "sc_metadata.ga",
       "tests": false,
       "url": "https://training.galaxyproject.org/training-material/topics/single-cell/tutorials/bulk-music-2-preparescref/workflows/sc_metadata.ga"
+    },
+    {
+      "workflow": "sc_matrix.ga",
+      "tests": false,
+      "url": "https://training.galaxyproject.org/training-material/topics/single-cell/tutorials/bulk-music-2-preparescref/workflows/sc_matrix.ga"
     }
   ],
   "tools": [

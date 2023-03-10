@@ -48,14 +48,14 @@
   "slides": false,
   "workflows": [
     {
-      "workflow": "subworkflow.ga",
-      "tests": false,
-      "url": "https://training.galaxyproject.org/training-material/topics/galaxy-interface/tutorials/workflow-editor/workflows/subworkflow.ga"
-    },
-    {
       "workflow": "main_workflow.ga",
       "tests": false,
       "url": "https://training.galaxyproject.org/training-material/topics/galaxy-interface/tutorials/workflow-editor/workflows/main_workflow.ga"
+    },
+    {
+      "workflow": "subworkflow.ga",
+      "tests": false,
+      "url": "https://training.galaxyproject.org/training-material/topics/galaxy-interface/tutorials/workflow-editor/workflows/subworkflow.ga"
     }
   ],
   "tools": [

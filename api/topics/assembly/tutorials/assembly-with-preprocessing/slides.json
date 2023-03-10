@@ -99,14 +99,14 @@
   "slides": true,
   "workflows": [
     {
-      "workflow": "assembly_with_preprocessing.ga",
-      "tests": false,
-      "url": "https://training.galaxyproject.org/training-material/topics/assembly/tutorials/assembly-with-preprocessing/workflows/assembly_with_preprocessing.ga"
-    },
-    {
       "workflow": "assembly_with_preprocessing_and_sra_download.ga",
       "tests": false,
       "url": "https://training.galaxyproject.org/training-material/topics/assembly/tutorials/assembly-with-preprocessing/workflows/assembly_with_preprocessing_and_sra_download.ga"
+    },
+    {
+      "workflow": "assembly_with_preprocessing.ga",
+      "tests": false,
+      "url": "https://training.galaxyproject.org/training-material/topics/assembly/tutorials/assembly-with-preprocessing/workflows/assembly_with_preprocessing.ga"
     }
   ],
   "tools": [

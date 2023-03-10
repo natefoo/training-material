@@ -62,14 +62,14 @@
   "slides": false,
   "workflows": [
     {
-      "workflow": "wf_proteinID_SG_PS_multipleFiles.ga",
-      "tests": false,
-      "url": "https://training.galaxyproject.org/training-material/topics/proteomics/tutorials/protein-id-sg-ps/workflows/wf_proteinID_SG_PS_multipleFiles.ga"
-    },
-    {
       "workflow": "wf_proteinID_SG_PS.ga",
       "tests": false,
       "url": "https://training.galaxyproject.org/training-material/topics/proteomics/tutorials/protein-id-sg-ps/workflows/wf_proteinID_SG_PS.ga"
+    },
+    {
+      "workflow": "wf_proteinID_SG_PS_multipleFiles.ga",
+      "tests": false,
+      "url": "https://training.galaxyproject.org/training-material/topics/proteomics/tutorials/protein-id-sg-ps/workflows/wf_proteinID_SG_PS_multipleFiles.ga"
     }
   ],
   "tools": [

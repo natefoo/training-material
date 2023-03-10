@@ -101,14 +101,14 @@
   "slides": false,
   "workflows": [
     {
-      "workflow": "Galaxy-Workflow-_Proteome_annotation_.ga",
-      "tests": false,
-      "url": "https://training.galaxyproject.org/training-material/topics/proteomics/tutorials/proteome_annotation/workflows/Galaxy-Workflow-_Proteome_annotation_.ga"
-    },
-    {
       "workflow": "main_workflow.ga",
       "tests": false,
       "url": "https://training.galaxyproject.org/training-material/topics/proteomics/tutorials/proteome_annotation/workflows/main_workflow.ga"
+    },
+    {
+      "workflow": "Galaxy-Workflow-_Proteome_annotation_.ga",
+      "tests": false,
+      "url": "https://training.galaxyproject.org/training-material/topics/proteomics/tutorials/proteome_annotation/workflows/Galaxy-Workflow-_Proteome_annotation_.ga"
     }
   ],
   "tools": [
