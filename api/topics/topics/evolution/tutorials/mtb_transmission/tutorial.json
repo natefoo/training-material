@@ -56,14 +56,14 @@
   "slides": false,
   "workflows": [
     {
-      "workflow": "Galaxy-Workflow-From_BAMs_to_drug_resistance_prediction_with_TB-profiler.ga",
-      "tests": false,
-      "url": "https://training.galaxyproject.org/training-material/topics/evolution/tutorials/mtb_transmission/workflows/Galaxy-Workflow-From_BAMs_to_drug_resistance_prediction_with_TB-profiler.ga"
-    },
-    {
       "workflow": "Galaxy-Workflow-From_Fastqs_to_VCFs_and_BAMs.ga",
       "tests": false,
       "url": "https://training.galaxyproject.org/training-material/topics/evolution/tutorials/mtb_transmission/workflows/Galaxy-Workflow-From_Fastqs_to_VCFs_and_BAMs.ga"
+    },
+    {
+      "workflow": "Galaxy-Workflow-From_BAMs_to_drug_resistance_prediction_with_TB-profiler.ga",
+      "tests": false,
+      "url": "https://training.galaxyproject.org/training-material/topics/evolution/tutorials/mtb_transmission/workflows/Galaxy-Workflow-From_BAMs_to_drug_resistance_prediction_with_TB-profiler.ga"
     },
     {
       "workflow": "main_workflow.ga",

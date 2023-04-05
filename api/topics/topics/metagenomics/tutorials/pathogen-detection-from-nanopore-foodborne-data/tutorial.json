@@ -50,9 +50,9 @@
   "slides": false,
   "workflows": [
     {
-      "workflow": "nanopore_taxonomy_profiling_and_visualization.ga",
+      "workflow": "nanopore_snp_based_pathogenetic_identification.ga",
       "tests": false,
-      "url": "https://training.galaxyproject.org/training-material/topics/metagenomics/tutorials/pathogen-detection-from-nanopore-foodborne-data/workflows/nanopore_taxonomy_profiling_and_visualization.ga"
+      "url": "https://training.galaxyproject.org/training-material/topics/metagenomics/tutorials/pathogen-detection-from-nanopore-foodborne-data/workflows/nanopore_snp_based_pathogenetic_identification.ga"
     },
     {
       "workflow": "Nanopore_Datasets_Gene_based_pathogenic_Identification.ga",
@@ -60,9 +60,9 @@
       "url": "https://training.galaxyproject.org/training-material/topics/metagenomics/tutorials/pathogen-detection-from-nanopore-foodborne-data/workflows/Nanopore_Datasets_Gene_based_pathogenic_Identification.ga"
     },
     {
-      "workflow": "nanopore_snp_based_pathogenetic_identification.ga",
+      "workflow": "Nanopore_Datasets_Pathogen_Tracking_among_all_samples.ga",
       "tests": false,
-      "url": "https://training.galaxyproject.org/training-material/topics/metagenomics/tutorials/pathogen-detection-from-nanopore-foodborne-data/workflows/nanopore_snp_based_pathogenetic_identification.ga"
+      "url": "https://training.galaxyproject.org/training-material/topics/metagenomics/tutorials/pathogen-detection-from-nanopore-foodborne-data/workflows/Nanopore_Datasets_Pathogen_Tracking_among_all_samples.ga"
     },
     {
       "workflow": "nanopore_preprocessing.ga",
@@ -70,9 +70,9 @@
       "url": "https://training.galaxyproject.org/training-material/topics/metagenomics/tutorials/pathogen-detection-from-nanopore-foodborne-data/workflows/nanopore_preprocessing.ga"
     },
     {
-      "workflow": "Nanopore_Datasets_Pathogen_Tracking_among_all_samples.ga",
+      "workflow": "nanopore_taxonomy_profiling_and_visualization.ga",
       "tests": false,
-      "url": "https://training.galaxyproject.org/training-material/topics/metagenomics/tutorials/pathogen-detection-from-nanopore-foodborne-data/workflows/Nanopore_Datasets_Pathogen_Tracking_among_all_samples.ga"
+      "url": "https://training.galaxyproject.org/training-material/topics/metagenomics/tutorials/pathogen-detection-from-nanopore-foodborne-data/workflows/nanopore_taxonomy_profiling_and_visualization.ga"
     }
   ],
   "tools": [
