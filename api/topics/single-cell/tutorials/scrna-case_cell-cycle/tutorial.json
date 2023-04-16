@@ -2,6 +2,8 @@
   "layout": "tutorial_hands_on",
   "title": "Removing the effects of the cell cycle",
   "zenodo_link": "https://zenodo.org/record/7311628/",
+  "subtopic": "tricks",
+  "priority": 2,
   "questions": [
     "How can I reduce the effects of the cell cycle on my scRNA-seq data?"
   ],
@@ -30,6 +32,9 @@
     "authorship": [
       "MarisaJL"
     ],
+    "editing": [
+      "nomadscientist"
+    ],
     "testing": [
       "hrukkudyr"
     ]
@@ -52,7 +57,15 @@
     {
       "workflow": "main_workflow.ga",
       "tests": false,
-      "url": "https://training.galaxyproject.org/training-material/topics/single-cell/tutorials/scrna-case_cell-cycle/workflows/main_workflow.ga"
+      "url": "https://training.galaxyproject.org/training-material/topics/single-cell/tutorials/scrna-case_cell-cycle/workflows/main_workflow.ga",
+      "path": "topics/single-cell/tutorials/scrna-case_cell-cycle/workflows/main_workflow.ga",
+      "wfid": "single-cell-scrna-case_cell-cycle",
+      "wfname": "main_workflow",
+      "trs_endpoint": "https://training.galaxyproject.org/training-material/api/ga4gh/trs/v2/tools/single-cell-scrna-case_cell-cycle/versions/main_workflow",
+      "license": null,
+      "creators": [
+
+      ]
     }
   ],
   "tools": [
@@ -92,6 +105,19 @@
       "page": "https://training.galaxyproject.org/training-material/hall-of-fame/MarisaJL/"
     },
     {
+      "name": "Wendi Bacon",
+      "email": "wendi.bacon@open.ac.uk",
+      "twitter": "WendiBacon1",
+      "gitter": "nomadscientist",
+      "joined": "2020-03",
+      "elixir_node": "uk",
+      "orcid": "0000-0002-8170-8806",
+      "bio": "Lecturer at The Open University",
+      "id": "nomadscientist",
+      "url": "https://training.galaxyproject.org/training-material/api/contributors/nomadscientist.json",
+      "page": "https://training.galaxyproject.org/training-material/hall-of-fame/nomadscientist/"
+    },
+    {
       "name": "Graeme Tyson",
       "email": "grt67@open.ac.uk",
       "orcid": "0000-0002-1748-2806",
@@ -102,7 +128,7 @@
     }
   ],
   "urls": {
-    "hands_on": "https://training.galaxyproject.org/training-material/api/topics//single-cell/tutorials/scrna-case_cell-cycle/tutorial.json",
-    "slides": "https://training.galaxyproject.org/training-material/api/topics//single-cell/tutorials/scrna-case_cell-cycle/tutorial.json"
+    "hands_on": "https://training.galaxyproject.org/training-material/api/topics/single-cell/tutorials/scrna-case_cell-cycle/tutorial.json",
+    "slides": "https://training.galaxyproject.org/training-material/api/topics/single-cell/tutorials/scrna-case_cell-cycle/tutorial.json"
   }
 }

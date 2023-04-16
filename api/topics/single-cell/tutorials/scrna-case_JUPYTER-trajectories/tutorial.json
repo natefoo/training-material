@@ -1,6 +1,6 @@
 {
   "layout": "tutorial_hands_on",
-  "title": "Inferring Trajectories using Python (Jupyter Notebook) in Galaxy",
+  "title": "Inferring Trajectories using Scanpy (Python)",
   "subtopic": "single-cell-CS",
   "priority": 4,
   "zenodo_link": "https://zenodo.org/record/7075718",
@@ -43,19 +43,22 @@
     "10x",
     "paper-replication",
     "interactive-tools",
-    "transcriptomics"
+    "transcriptomics",
+    "jupyter-notebook"
   ],
   "contributions": {
     "authorship": [
       "nomadscientist",
+      "wee-snufkin",
       "mtekman"
     ],
     "editing": [
       "hexylena"
-    ],
-    "testing": [
-      "wee-snufkin"
     ]
+  },
+  "notebook": {
+    "language": "python",
+    "snippet": "topics/single-cell/tutorials/scrna-case_JUPYTER-trajectories/preamble.md"
   },
   "url": "/topics/single-cell/tutorials/scrna-case_JUPYTER-trajectories/tutorial.html",
   "topic_name": "single-cell",
@@ -102,8 +105,7 @@
   "hands_on": true,
   "slides": false,
   "tools": [
-    "interactive_tool_jupyter_notebook",
-    "toolshed.g2.bx.psu.edu/repos/iuc/anndata_manipulate/anndata_manipulate/0.7.5+galaxy1"
+
   ],
   "tours": false,
   "video": false,
@@ -132,6 +134,14 @@
       "page": "https://training.galaxyproject.org/training-material/hall-of-fame/nomadscientist/"
     },
     {
+      "name": "Julia Jakiela",
+      "email": "juliajot36@gmail.com",
+      "joined": "2022-06",
+      "id": "wee-snufkin",
+      "url": "https://training.galaxyproject.org/training-material/api/contributors/wee-snufkin.json",
+      "page": "https://training.galaxyproject.org/training-material/hall-of-fame/wee-snufkin/"
+    },
+    {
       "name": "Mehmet Tekman",
       "email": "mtekman89@gmail.com",
       "joined": "2018-11",
@@ -148,21 +158,20 @@
       "gitter": "hexylena",
       "joined": "2017-09",
       "elixir_node": "nl",
+      "fediverse": "https://galaxians.garden/hexylena",
+      "contact_for_training": false,
+      "location": {
+        "country": "NL",
+        "lat": 51.91,
+        "lon": 4.46
+      },
       "id": "hexylena",
       "url": "https://training.galaxyproject.org/training-material/api/contributors/hexylena.json",
       "page": "https://training.galaxyproject.org/training-material/hall-of-fame/hexylena/"
-    },
-    {
-      "name": "Julia Jakiela",
-      "email": "juliajot36@gmail.com",
-      "joined": "2022-06",
-      "id": "wee-snufkin",
-      "url": "https://training.galaxyproject.org/training-material/api/contributors/wee-snufkin.json",
-      "page": "https://training.galaxyproject.org/training-material/hall-of-fame/wee-snufkin/"
     }
   ],
   "urls": {
-    "hands_on": "https://training.galaxyproject.org/training-material/api/topics//single-cell/tutorials/scrna-case_JUPYTER-trajectories/tutorial.json",
-    "slides": "https://training.galaxyproject.org/training-material/api/topics//single-cell/tutorials/scrna-case_JUPYTER-trajectories/tutorial.json"
+    "hands_on": "https://training.galaxyproject.org/training-material/api/topics/single-cell/tutorials/scrna-case_JUPYTER-trajectories/tutorial.json",
+    "slides": "https://training.galaxyproject.org/training-material/api/topics/single-cell/tutorials/scrna-case_JUPYTER-trajectories/tutorial.json"
   }
 }

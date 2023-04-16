@@ -65,7 +65,15 @@
     {
       "workflow": "Galaxy-Workflow-galaxy-intro-short.ga",
       "tests": false,
-      "url": "https://training.galaxyproject.org/training-material/topics/introduction/tutorials/galaxy-intro-short/workflows/Galaxy-Workflow-galaxy-intro-short.ga"
+      "url": "https://training.galaxyproject.org/training-material/topics/introduction/tutorials/galaxy-intro-short/workflows/Galaxy-Workflow-galaxy-intro-short.ga",
+      "path": "topics/introduction/tutorials/galaxy-intro-short/workflows/Galaxy-Workflow-galaxy-intro-short.ga",
+      "wfid": "introduction-galaxy-intro-short",
+      "wfname": "galaxy-workflowlaxy-intro-short",
+      "trs_endpoint": "https://training.galaxyproject.org/training-material/api/ga4gh/trs/v2/tools/introduction-galaxy-intro-short/versions/galaxy-workflowlaxy-intro-short",
+      "license": null,
+      "creators": [
+
+      ]
     }
   ],
   "tools": [
@@ -81,6 +89,7 @@
     {
       "name": "Anna Syme",
       "joined": "2017-09",
+      "orcid": "0000-0002-9906-0673",
       "id": "annasyme",
       "url": "https://training.galaxyproject.org/training-material/api/contributors/annasyme.json",
       "page": "https://training.galaxyproject.org/training-material/hall-of-fame/annasyme/"
@@ -105,6 +114,13 @@
       "orcid": "0000-0001-9852-1987",
       "joined": "2017-09",
       "elixir_node": "de",
+      "contact_for_training": true,
+      "location": {
+        "country": "FR",
+        "lat": 45.77,
+        "lon": 3.08
+      },
+      "fediverse": "https://piaille.fr/@bebatut",
       "id": "bebatut",
       "url": "https://training.galaxyproject.org/training-material/api/contributors/bebatut.json",
       "page": "https://training.galaxyproject.org/training-material/hall-of-fame/bebatut/"

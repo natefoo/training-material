@@ -20,6 +20,13 @@
       "gitter": "hexylena",
       "joined": "2017-09",
       "elixir_node": "nl",
+      "fediverse": "https://galaxians.garden/hexylena",
+      "contact_for_training": false,
+      "location": {
+        "country": "NL",
+        "lat": 51.91,
+        "lon": 4.46
+      },
       "id": "hexylena",
       "url": "https://training.galaxyproject.org/training-material/api/contributors/hexylena.json",
       "page": "https://training.galaxyproject.org/training-material/hall-of-fame/hexylena/"
@@ -37,12 +44,19 @@
     },
     {
       "name": "Anthony Bretaudeau",
-      "email": "anthony.bretaudeau@inra.fr",
+      "email": "anthony.bretaudeau@inrae.fr",
       "twitter": "abretau",
       "gitter": "abretaud",
       "orcid": "0000-0003-0914-2470",
       "joined": "2017-09",
       "elixir_node": "fr",
+      "contact_for_training": true,
+      "location": {
+        "country": "FR",
+        "lat": 48.11,
+        "lon": -1.64
+      },
+      "fediverse": "https://genomic.social/@abretaud",
       "id": "abretaud",
       "url": "https://training.galaxyproject.org/training-material/api/contributors/abretaud.json",
       "page": "https://training.galaxyproject.org/training-material/hall-of-fame/abretaud/"
@@ -94,6 +108,7 @@
         {
           "name": "Anna Syme",
           "joined": "2017-09",
+          "orcid": "0000-0002-9906-0673",
           "id": "annasyme",
           "url": "https://training.galaxyproject.org/training-material/api/contributors/annasyme.json",
           "page": "https://training.galaxyproject.org/training-material/hall-of-fame/annasyme/"
@@ -202,7 +217,15 @@
         {
           "workflow": "Galaxy-Workflow-Workflow_constructed_from_history__prokka-workflow_.ga",
           "tests": true,
-          "url": "https://training.galaxyproject.org/training-material/topics/genome-annotation/tutorials/annotation-with-prokka/workflows/Galaxy-Workflow-Workflow_constructed_from_history__prokka-workflow_.ga"
+          "url": "https://training.galaxyproject.org/training-material/topics/genome-annotation/tutorials/annotation-with-prokka/workflows/Galaxy-Workflow-Workflow_constructed_from_history__prokka-workflow_.ga",
+          "path": "topics/genome-annotation/tutorials/annotation-with-prokka/workflows/Galaxy-Workflow-Workflow_constructed_from_history__prokka-workflow_.ga",
+          "wfid": "genome-annotation-annotation-with-prokka",
+          "wfname": "galaxy-workflow-workflow_constructed_from_history__prokka-workflow_",
+          "trs_endpoint": "https://training.galaxyproject.org/training-material/api/ga4gh/trs/v2/tools/genome-annotation-annotation-with-prokka/versions/galaxy-workflow-workflow_constructed_from_history__prokka-workflow_",
+          "license": null,
+          "creators": [
+
+          ]
         }
       ],
       "tools": [
@@ -224,8 +247,8 @@
       },
       "type": "tutorial",
       "urls": {
-        "hands_on": "https://training.galaxyproject.org/training-material/api/topics//genome-annotation/tutorials/annotation-with-prokka/tutorial.json",
-        "slides": "https://training.galaxyproject.org/training-material/api/topics//genome-annotation/tutorials/annotation-with-prokka/tutorial.json"
+        "hands_on": "https://training.galaxyproject.org/training-material/api/topics/genome-annotation/tutorials/annotation-with-prokka/tutorial.json",
+        "slides": "https://training.galaxyproject.org/training-material/api/topics/genome-annotation/tutorials/annotation-with-prokka/tutorial.json"
       }
     },
     {
@@ -259,12 +282,19 @@
       "contributors": [
         {
           "name": "Anthony Bretaudeau",
-          "email": "anthony.bretaudeau@inra.fr",
+          "email": "anthony.bretaudeau@inrae.fr",
           "twitter": "abretau",
           "gitter": "abretaud",
           "orcid": "0000-0003-0914-2470",
           "joined": "2017-09",
           "elixir_node": "fr",
+          "contact_for_training": true,
+          "location": {
+            "country": "FR",
+            "lat": 48.11,
+            "lon": -1.64
+          },
+          "fediverse": "https://genomic.social/@abretaud",
           "id": "abretaud",
           "url": "https://training.galaxyproject.org/training-material/api/contributors/abretaud.json",
           "page": "https://training.galaxyproject.org/training-material/hall-of-fame/abretaud/"
@@ -277,6 +307,13 @@
           "gitter": "hexylena",
           "joined": "2017-09",
           "elixir_node": "nl",
+          "fediverse": "https://galaxians.garden/hexylena",
+          "contact_for_training": false,
+          "location": {
+            "country": "NL",
+            "lat": 51.91,
+            "lon": 4.46
+          },
           "id": "hexylena",
           "url": "https://training.galaxyproject.org/training-material/api/contributors/hexylena.json",
           "page": "https://training.galaxyproject.org/training-material/hall-of-fame/hexylena/"
@@ -422,7 +459,15 @@
         {
           "workflow": "main_workflow.ga",
           "tests": false,
-          "url": "https://training.galaxyproject.org/training-material/topics/genome-annotation/tutorials/apollo/workflows/main_workflow.ga"
+          "url": "https://training.galaxyproject.org/training-material/topics/genome-annotation/tutorials/apollo/workflows/main_workflow.ga",
+          "path": "topics/genome-annotation/tutorials/apollo/workflows/main_workflow.ga",
+          "wfid": "genome-annotation-apollo",
+          "wfname": "main_workflow",
+          "trs_endpoint": "https://training.galaxyproject.org/training-material/api/ga4gh/trs/v2/tools/genome-annotation-apollo/versions/main_workflow",
+          "license": null,
+          "creators": [
+
+          ]
         }
       ],
       "tools": [
@@ -445,8 +490,8 @@
       },
       "type": "tutorial",
       "urls": {
-        "hands_on": "https://training.galaxyproject.org/training-material/api/topics//genome-annotation/tutorials/apollo/tutorial.json",
-        "slides": "https://training.galaxyproject.org/training-material/api/topics//genome-annotation/tutorials/apollo/tutorial.json"
+        "hands_on": "https://training.galaxyproject.org/training-material/api/topics/genome-annotation/tutorials/apollo/tutorial.json",
+        "slides": "https://training.galaxyproject.org/training-material/api/topics/genome-annotation/tutorials/apollo/tutorial.json"
       }
     },
     {
@@ -472,12 +517,19 @@
       "contributors": [
         {
           "name": "Anthony Bretaudeau",
-          "email": "anthony.bretaudeau@inra.fr",
+          "email": "anthony.bretaudeau@inrae.fr",
           "twitter": "abretau",
           "gitter": "abretaud",
           "orcid": "0000-0003-0914-2470",
           "joined": "2017-09",
           "elixir_node": "fr",
+          "contact_for_training": true,
+          "location": {
+            "country": "FR",
+            "lat": 48.11,
+            "lon": -1.64
+          },
+          "fediverse": "https://genomic.social/@abretaud",
           "id": "abretaud",
           "url": "https://training.galaxyproject.org/training-material/api/contributors/abretaud.json",
           "page": "https://training.galaxyproject.org/training-material/hall-of-fame/abretaud/"
@@ -605,7 +657,19 @@
         {
           "workflow": "main_workflow.ga",
           "tests": false,
-          "url": "https://training.galaxyproject.org/training-material/topics/genome-annotation/tutorials/repeatmasker/workflows/main_workflow.ga"
+          "url": "https://training.galaxyproject.org/training-material/topics/genome-annotation/tutorials/repeatmasker/workflows/main_workflow.ga",
+          "path": "topics/genome-annotation/tutorials/repeatmasker/workflows/main_workflow.ga",
+          "wfid": "genome-annotation-repeatmasker",
+          "wfname": "main_workflow",
+          "trs_endpoint": "https://training.galaxyproject.org/training-material/api/ga4gh/trs/v2/tools/genome-annotation-repeatmasker/versions/main_workflow",
+          "license": "GPL-3.0-or-later",
+          "creators": [
+            {
+              "class": "Person",
+              "identifier": "https://orcid.org/0000-0003-0914-2470",
+              "name": "Anthony Bretaudeau"
+            }
+          ]
         }
       ],
       "tools": [
@@ -626,8 +690,8 @@
       },
       "type": "tutorial",
       "urls": {
-        "hands_on": "https://training.galaxyproject.org/training-material/api/topics//genome-annotation/tutorials/repeatmasker/tutorial.json",
-        "slides": "https://training.galaxyproject.org/training-material/api/topics//genome-annotation/tutorials/repeatmasker/tutorial.json"
+        "hands_on": "https://training.galaxyproject.org/training-material/api/topics/genome-annotation/tutorials/repeatmasker/tutorial.json",
+        "slides": "https://training.galaxyproject.org/training-material/api/topics/genome-annotation/tutorials/repeatmasker/tutorial.json"
       }
     },
     {
@@ -688,12 +752,28 @@
         {
           "workflow": "GECKO_pairwise_comparison.ga",
           "tests": false,
-          "url": "https://training.galaxyproject.org/training-material/topics/genome-annotation/tutorials/hpc-for-lsgc/workflows/GECKO_pairwise_comparison.ga"
+          "url": "https://training.galaxyproject.org/training-material/topics/genome-annotation/tutorials/hpc-for-lsgc/workflows/GECKO_pairwise_comparison.ga",
+          "path": "topics/genome-annotation/tutorials/hpc-for-lsgc/workflows/GECKO_pairwise_comparison.ga",
+          "wfid": "genome-annotation-hpc-for-lsgc",
+          "wfname": "gecko_pairwise_comparison",
+          "trs_endpoint": "https://training.galaxyproject.org/training-material/api/ga4gh/trs/v2/tools/genome-annotation-hpc-for-lsgc/versions/gecko_pairwise_comparison",
+          "license": null,
+          "creators": [
+
+          ]
         },
         {
           "workflow": "CHROMEISTER_chromosome_comparison.ga",
           "tests": false,
-          "url": "https://training.galaxyproject.org/training-material/topics/genome-annotation/tutorials/hpc-for-lsgc/workflows/CHROMEISTER_chromosome_comparison.ga"
+          "url": "https://training.galaxyproject.org/training-material/topics/genome-annotation/tutorials/hpc-for-lsgc/workflows/CHROMEISTER_chromosome_comparison.ga",
+          "path": "topics/genome-annotation/tutorials/hpc-for-lsgc/workflows/CHROMEISTER_chromosome_comparison.ga",
+          "wfid": "genome-annotation-hpc-for-lsgc",
+          "wfname": "chromeister_chromosome_comparison",
+          "trs_endpoint": "https://training.galaxyproject.org/training-material/api/ga4gh/trs/v2/tools/genome-annotation-hpc-for-lsgc/versions/chromeister_chromosome_comparison",
+          "license": null,
+          "creators": [
+
+          ]
         }
       ],
       "tools": [
@@ -715,8 +795,8 @@
       },
       "type": "tutorial",
       "urls": {
-        "hands_on": "https://training.galaxyproject.org/training-material/api/topics//genome-annotation/tutorials/hpc-for-lsgc/tutorial.json",
-        "slides": "https://training.galaxyproject.org/training-material/api/topics//genome-annotation/tutorials/hpc-for-lsgc/tutorial.json"
+        "hands_on": "https://training.galaxyproject.org/training-material/api/topics/genome-annotation/tutorials/hpc-for-lsgc/tutorial.json",
+        "slides": "https://training.galaxyproject.org/training-material/api/topics/genome-annotation/tutorials/hpc-for-lsgc/tutorial.json"
       }
     },
     {
@@ -731,12 +811,19 @@
       "contributors": [
         {
           "name": "Anthony Bretaudeau",
-          "email": "anthony.bretaudeau@inra.fr",
+          "email": "anthony.bretaudeau@inrae.fr",
           "twitter": "abretau",
           "gitter": "abretaud",
           "orcid": "0000-0003-0914-2470",
           "joined": "2017-09",
           "elixir_node": "fr",
+          "contact_for_training": true,
+          "location": {
+            "country": "FR",
+            "lat": 48.11,
+            "lon": -1.64
+          },
+          "fediverse": "https://genomic.social/@abretaud",
           "id": "abretaud",
           "url": "https://training.galaxyproject.org/training-material/api/contributors/abretaud.json",
           "page": "https://training.galaxyproject.org/training-material/hall-of-fame/abretaud/"
@@ -749,6 +836,13 @@
           "gitter": "hexylena",
           "joined": "2017-09",
           "elixir_node": "nl",
+          "fediverse": "https://galaxians.garden/hexylena",
+          "contact_for_training": false,
+          "location": {
+            "country": "NL",
+            "lat": 51.91,
+            "lon": 4.46
+          },
           "id": "hexylena",
           "url": "https://training.galaxyproject.org/training-material/api/contributors/hexylena.json",
           "page": "https://training.galaxyproject.org/training-material/hall-of-fame/hexylena/"
@@ -785,8 +879,8 @@
       },
       "type": "tutorial",
       "urls": {
-        "hands_on": "https://training.galaxyproject.org/training-material/api/topics//genome-annotation/tutorials/introduction/slides.json",
-        "slides": "https://training.galaxyproject.org/training-material/api/topics//genome-annotation/tutorials/introduction/slides.json"
+        "hands_on": "https://training.galaxyproject.org/training-material/api/topics/genome-annotation/tutorials/introduction/slides.json",
+        "slides": "https://training.galaxyproject.org/training-material/api/topics/genome-annotation/tutorials/introduction/slides.json"
       }
     },
     {
@@ -859,8 +953,8 @@
       },
       "type": "tutorial",
       "urls": {
-        "hands_on": "https://training.galaxyproject.org/training-material/api/topics//genome-annotation/tutorials/genome-annotation/tutorial.json",
-        "slides": "https://training.galaxyproject.org/training-material/api/topics//genome-annotation/tutorials/genome-annotation/tutorial.json"
+        "hands_on": "https://training.galaxyproject.org/training-material/api/topics/genome-annotation/tutorials/genome-annotation/tutorial.json",
+        "slides": "https://training.galaxyproject.org/training-material/api/topics/genome-annotation/tutorials/genome-annotation/tutorial.json"
       }
     },
     {
@@ -966,7 +1060,19 @@
         {
           "workflow": "main_workflow.ga",
           "tests": false,
-          "url": "https://training.galaxyproject.org/training-material/topics/genome-annotation/tutorials/funannotate/workflows/main_workflow.ga"
+          "url": "https://training.galaxyproject.org/training-material/topics/genome-annotation/tutorials/funannotate/workflows/main_workflow.ga",
+          "path": "topics/genome-annotation/tutorials/funannotate/workflows/main_workflow.ga",
+          "wfid": "genome-annotation-funannotate",
+          "wfname": "main_workflow",
+          "trs_endpoint": "https://training.galaxyproject.org/training-material/api/ga4gh/trs/v2/tools/genome-annotation-funannotate/versions/main_workflow",
+          "license": "GPL-3.0-or-later",
+          "creators": [
+            {
+              "class": "Person",
+              "identifier": "https://orcid.org/0000-0003-0914-2470",
+              "name": "Anthony Bretaudeau"
+            }
+          ]
         }
       ],
       "tools": [
@@ -998,12 +1104,19 @@
       "contributors": [
         {
           "name": "Anthony Bretaudeau",
-          "email": "anthony.bretaudeau@inra.fr",
+          "email": "anthony.bretaudeau@inrae.fr",
           "twitter": "abretau",
           "gitter": "abretaud",
           "orcid": "0000-0003-0914-2470",
           "joined": "2017-09",
           "elixir_node": "fr",
+          "contact_for_training": true,
+          "location": {
+            "country": "FR",
+            "lat": 48.11,
+            "lon": -1.64
+          },
+          "fediverse": "https://genomic.social/@abretaud",
           "id": "abretaud",
           "url": "https://training.galaxyproject.org/training-material/api/contributors/abretaud.json",
           "page": "https://training.galaxyproject.org/training-material/hall-of-fame/abretaud/"
@@ -1061,8 +1174,8 @@
         }
       ],
       "urls": {
-        "hands_on": "https://training.galaxyproject.org/training-material/api/topics//genome-annotation/tutorials/funannotate/tutorial.json",
-        "slides": "https://training.galaxyproject.org/training-material/api/topics//genome-annotation/tutorials/funannotate/tutorial.json"
+        "hands_on": "https://training.galaxyproject.org/training-material/api/topics/genome-annotation/tutorials/funannotate/tutorial.json",
+        "slides": "https://training.galaxyproject.org/training-material/api/topics/genome-annotation/tutorials/funannotate/tutorial.json"
       }
     },
     {
@@ -1137,7 +1250,19 @@
         {
           "workflow": "Comparative-gene-analysis.ga",
           "tests": false,
-          "url": "https://training.galaxyproject.org/training-material/topics/genome-annotation/tutorials/gene-centric/workflows/Comparative-gene-analysis.ga"
+          "url": "https://training.galaxyproject.org/training-material/topics/genome-annotation/tutorials/gene-centric/workflows/Comparative-gene-analysis.ga",
+          "path": "topics/genome-annotation/tutorials/gene-centric/workflows/Comparative-gene-analysis.ga",
+          "wfid": "genome-annotation-gene-centric",
+          "wfname": "comparative-gene-analysis",
+          "trs_endpoint": "https://training.galaxyproject.org/training-material/api/ga4gh/trs/v2/tools/genome-annotation-gene-centric/versions/comparative-gene-analysis",
+          "license": null,
+          "creators": [
+            {
+              "class": "Person",
+              "identifier": "0000-0002-5987-8032",
+              "name": "Anton Nekrutenko"
+            }
+          ]
         }
       ],
       "tools": [
@@ -1172,8 +1297,8 @@
       },
       "type": "tutorial",
       "urls": {
-        "hands_on": "https://training.galaxyproject.org/training-material/api/topics//genome-annotation/tutorials/gene-centric/tutorial.json",
-        "slides": "https://training.galaxyproject.org/training-material/api/topics//genome-annotation/tutorials/gene-centric/tutorial.json"
+        "hands_on": "https://training.galaxyproject.org/training-material/api/topics/genome-annotation/tutorials/gene-centric/tutorial.json",
+        "slides": "https://training.galaxyproject.org/training-material/api/topics/genome-annotation/tutorials/gene-centric/tutorial.json"
       }
     },
     {
@@ -1202,12 +1327,19 @@
       "contributors": [
         {
           "name": "Anthony Bretaudeau",
-          "email": "anthony.bretaudeau@inra.fr",
+          "email": "anthony.bretaudeau@inrae.fr",
           "twitter": "abretau",
           "gitter": "abretaud",
           "orcid": "0000-0003-0914-2470",
           "joined": "2017-09",
           "elixir_node": "fr",
+          "contact_for_training": true,
+          "location": {
+            "country": "FR",
+            "lat": 48.11,
+            "lon": -1.64
+          },
+          "fediverse": "https://genomic.social/@abretaud",
           "id": "abretaud",
           "url": "https://training.galaxyproject.org/training-material/api/contributors/abretaud.json",
           "page": "https://training.galaxyproject.org/training-material/hall-of-fame/abretaud/"
@@ -1233,7 +1365,15 @@
         {
           "workflow": "main_workflow.ga",
           "tests": false,
-          "url": "https://training.galaxyproject.org/training-material/topics/genome-annotation/tutorials/annotation-with-maker-short/workflows/main_workflow.ga"
+          "url": "https://training.galaxyproject.org/training-material/topics/genome-annotation/tutorials/annotation-with-maker-short/workflows/main_workflow.ga",
+          "path": "topics/genome-annotation/tutorials/annotation-with-maker-short/workflows/main_workflow.ga",
+          "wfid": "genome-annotation-annotation-with-maker-short",
+          "wfname": "main_workflow",
+          "trs_endpoint": "https://training.galaxyproject.org/training-material/api/ga4gh/trs/v2/tools/genome-annotation-annotation-with-maker-short/versions/main_workflow",
+          "license": null,
+          "creators": [
+
+          ]
         }
       ],
       "tools": [
@@ -1258,8 +1398,8 @@
       },
       "type": "tutorial",
       "urls": {
-        "hands_on": "https://training.galaxyproject.org/training-material/api/topics//genome-annotation/tutorials/annotation-with-maker-short/tutorial.json",
-        "slides": "https://training.galaxyproject.org/training-material/api/topics//genome-annotation/tutorials/annotation-with-maker-short/tutorial.json"
+        "hands_on": "https://training.galaxyproject.org/training-material/api/topics/genome-annotation/tutorials/annotation-with-maker-short/tutorial.json",
+        "slides": "https://training.galaxyproject.org/training-material/api/topics/genome-annotation/tutorials/annotation-with-maker-short/tutorial.json"
       }
     },
     {
@@ -1307,6 +1447,13 @@
           "orcid": "0000-0001-9852-1987",
           "joined": "2017-09",
           "elixir_node": "de",
+          "contact_for_training": true,
+          "location": {
+            "country": "FR",
+            "lat": 45.77,
+            "lon": 3.08
+          },
+          "fediverse": "https://piaille.fr/@bebatut",
           "id": "bebatut",
           "url": "https://training.galaxyproject.org/training-material/api/contributors/bebatut.json",
           "page": "https://training.galaxyproject.org/training-material/hall-of-fame/bebatut/"
@@ -1332,7 +1479,15 @@
         {
           "workflow": "essential-genes-detection-transposon-insertion-sequencing-workflow.ga",
           "tests": true,
-          "url": "https://training.galaxyproject.org/training-material/topics/genome-annotation/tutorials/tnseq/workflows/essential-genes-detection-transposon-insertion-sequencing-workflow.ga"
+          "url": "https://training.galaxyproject.org/training-material/topics/genome-annotation/tutorials/tnseq/workflows/essential-genes-detection-transposon-insertion-sequencing-workflow.ga",
+          "path": "topics/genome-annotation/tutorials/tnseq/workflows/essential-genes-detection-transposon-insertion-sequencing-workflow.ga",
+          "wfid": "genome-annotation-tnseq",
+          "wfname": "essential-genes-detection-transposon-insertion-sequencing-workflow",
+          "trs_endpoint": "https://training.galaxyproject.org/training-material/api/ga4gh/trs/v2/tools/genome-annotation-tnseq/versions/essential-genes-detection-transposon-insertion-sequencing-workflow",
+          "license": null,
+          "creators": [
+
+          ]
         }
       ],
       "tools": [
@@ -1362,8 +1517,8 @@
       },
       "type": "tutorial",
       "urls": {
-        "hands_on": "https://training.galaxyproject.org/training-material/api/topics//genome-annotation/tutorials/tnseq/tutorial.json",
-        "slides": "https://training.galaxyproject.org/training-material/api/topics//genome-annotation/tutorials/tnseq/tutorial.json"
+        "hands_on": "https://training.galaxyproject.org/training-material/api/topics/genome-annotation/tutorials/tnseq/tutorial.json",
+        "slides": "https://training.galaxyproject.org/training-material/api/topics/genome-annotation/tutorials/tnseq/tutorial.json"
       }
     },
     {
@@ -1392,12 +1547,19 @@
       "contributors": [
         {
           "name": "Anthony Bretaudeau",
-          "email": "anthony.bretaudeau@inra.fr",
+          "email": "anthony.bretaudeau@inrae.fr",
           "twitter": "abretau",
           "gitter": "abretaud",
           "orcid": "0000-0003-0914-2470",
           "joined": "2017-09",
           "elixir_node": "fr",
+          "contact_for_training": true,
+          "location": {
+            "country": "FR",
+            "lat": 48.11,
+            "lon": -1.64
+          },
+          "fediverse": "https://genomic.social/@abretaud",
           "id": "abretaud",
           "url": "https://training.galaxyproject.org/training-material/api/contributors/abretaud.json",
           "page": "https://training.galaxyproject.org/training-material/hall-of-fame/abretaud/"
@@ -1423,7 +1585,23 @@
         {
           "workflow": "main_workflow.ga",
           "tests": false,
-          "url": "https://training.galaxyproject.org/training-material/topics/genome-annotation/tutorials/annotation-with-maker/workflows/main_workflow.ga"
+          "url": "https://training.galaxyproject.org/training-material/topics/genome-annotation/tutorials/annotation-with-maker/workflows/main_workflow.ga",
+          "path": "topics/genome-annotation/tutorials/annotation-with-maker/workflows/main_workflow.ga",
+          "wfid": "genome-annotation-annotation-with-maker",
+          "wfname": "main_workflow",
+          "trs_endpoint": "https://training.galaxyproject.org/training-material/api/ga4gh/trs/v2/tools/genome-annotation-annotation-with-maker/versions/main_workflow",
+          "license": "GPL-3.0-or-later",
+          "creators": [
+            {
+              "class": "Person",
+              "identifier": "0000-0003-0914-2470",
+              "name": "Anthony Bretaudeau"
+            },
+            {
+              "class": "Organization",
+              "name": "French National Institute for Agriculture, Food, and Environment (INRAE)"
+            }
+          ]
         }
       ],
       "tools": [
@@ -1450,8 +1628,8 @@
       },
       "type": "tutorial",
       "urls": {
-        "hands_on": "https://training.galaxyproject.org/training-material/api/topics//genome-annotation/tutorials/annotation-with-maker/tutorial.json",
-        "slides": "https://training.galaxyproject.org/training-material/api/topics//genome-annotation/tutorials/annotation-with-maker/tutorial.json"
+        "hands_on": "https://training.galaxyproject.org/training-material/api/topics/genome-annotation/tutorials/annotation-with-maker/tutorial.json",
+        "slides": "https://training.galaxyproject.org/training-material/api/topics/genome-annotation/tutorials/annotation-with-maker/tutorial.json"
       }
     },
     {
@@ -1501,7 +1679,19 @@
         {
           "workflow": "main_workflow.ga",
           "tests": false,
-          "url": "https://training.galaxyproject.org/training-material/topics/genome-annotation/tutorials/functional/workflows/main_workflow.ga"
+          "url": "https://training.galaxyproject.org/training-material/topics/genome-annotation/tutorials/functional/workflows/main_workflow.ga",
+          "path": "topics/genome-annotation/tutorials/functional/workflows/main_workflow.ga",
+          "wfid": "genome-annotation-functional",
+          "wfname": "main_workflow",
+          "trs_endpoint": "https://training.galaxyproject.org/training-material/api/ga4gh/trs/v2/tools/genome-annotation-functional/versions/main_workflow",
+          "license": "GPL-3.0-or-later",
+          "creators": [
+            {
+              "class": "Person",
+              "identifier": "https://orcid.org/0000-0003-0914-2470",
+              "name": "Anthony Bretaudeau"
+            }
+          ]
         }
       ],
       "tools": [
@@ -1525,12 +1715,19 @@
       "contributors": [
         {
           "name": "Anthony Bretaudeau",
-          "email": "anthony.bretaudeau@inra.fr",
+          "email": "anthony.bretaudeau@inrae.fr",
           "twitter": "abretau",
           "gitter": "abretaud",
           "orcid": "0000-0003-0914-2470",
           "joined": "2017-09",
           "elixir_node": "fr",
+          "contact_for_training": true,
+          "location": {
+            "country": "FR",
+            "lat": 48.11,
+            "lon": -1.64
+          },
+          "fediverse": "https://genomic.social/@abretaud",
           "id": "abretaud",
           "url": "https://training.galaxyproject.org/training-material/api/contributors/abretaud.json",
           "page": "https://training.galaxyproject.org/training-material/hall-of-fame/abretaud/"
@@ -1549,8 +1746,8 @@
         }
       ],
       "urls": {
-        "hands_on": "https://training.galaxyproject.org/training-material/api/topics//genome-annotation/tutorials/functional/tutorial.json",
-        "slides": "https://training.galaxyproject.org/training-material/api/topics//genome-annotation/tutorials/functional/tutorial.json"
+        "hands_on": "https://training.galaxyproject.org/training-material/api/topics/genome-annotation/tutorials/functional/tutorial.json",
+        "slides": "https://training.galaxyproject.org/training-material/api/topics/genome-annotation/tutorials/functional/tutorial.json"
       }
     },
     {
@@ -1585,12 +1782,19 @@
       "contributors": [
         {
           "name": "Anthony Bretaudeau",
-          "email": "anthony.bretaudeau@inra.fr",
+          "email": "anthony.bretaudeau@inrae.fr",
           "twitter": "abretau",
           "gitter": "abretaud",
           "orcid": "0000-0003-0914-2470",
           "joined": "2017-09",
           "elixir_node": "fr",
+          "contact_for_training": true,
+          "location": {
+            "country": "FR",
+            "lat": 48.11,
+            "lon": -1.64
+          },
+          "fediverse": "https://genomic.social/@abretaud",
           "id": "abretaud",
           "url": "https://training.galaxyproject.org/training-material/api/contributors/abretaud.json",
           "page": "https://training.galaxyproject.org/training-material/hall-of-fame/abretaud/"
@@ -1661,8 +1865,8 @@
       },
       "type": "tutorial",
       "urls": {
-        "hands_on": "https://training.galaxyproject.org/training-material/api/topics//genome-annotation/tutorials/apollo-euk/tutorial.json",
-        "slides": "https://training.galaxyproject.org/training-material/api/topics//genome-annotation/tutorials/apollo-euk/tutorial.json"
+        "hands_on": "https://training.galaxyproject.org/training-material/api/topics/genome-annotation/tutorials/apollo-euk/tutorial.json",
+        "slides": "https://training.galaxyproject.org/training-material/api/topics/genome-annotation/tutorials/apollo-euk/tutorial.json"
       }
     },
     {
@@ -1735,7 +1939,19 @@
         {
           "workflow": "main_workflow.ga",
           "tests": false,
-          "url": "https://training.galaxyproject.org/training-material/topics/genome-annotation/tutorials/lncrna/workflows/main_workflow.ga"
+          "url": "https://training.galaxyproject.org/training-material/topics/genome-annotation/tutorials/lncrna/workflows/main_workflow.ga",
+          "path": "topics/genome-annotation/tutorials/lncrna/workflows/main_workflow.ga",
+          "wfid": "genome-annotation-lncrna",
+          "wfname": "main_workflow",
+          "trs_endpoint": "https://training.galaxyproject.org/training-material/api/ga4gh/trs/v2/tools/genome-annotation-lncrna/versions/main_workflow",
+          "license": "GPL-3.0-or-later",
+          "creators": [
+            {
+              "class": "Person",
+              "identifier": "https://orcid.org/0000-0001-7379-9173",
+              "name": "Stéphanie Robin"
+            }
+          ]
         }
       ],
       "tools": [
@@ -1772,20 +1988,27 @@
         },
         {
           "name": "Anthony Bretaudeau",
-          "email": "anthony.bretaudeau@inra.fr",
+          "email": "anthony.bretaudeau@inrae.fr",
           "twitter": "abretau",
           "gitter": "abretaud",
           "orcid": "0000-0003-0914-2470",
           "joined": "2017-09",
           "elixir_node": "fr",
+          "contact_for_training": true,
+          "location": {
+            "country": "FR",
+            "lat": 48.11,
+            "lon": -1.64
+          },
+          "fediverse": "https://genomic.social/@abretaud",
           "id": "abretaud",
           "url": "https://training.galaxyproject.org/training-material/api/contributors/abretaud.json",
           "page": "https://training.galaxyproject.org/training-material/hall-of-fame/abretaud/"
         }
       ],
       "urls": {
-        "hands_on": "https://training.galaxyproject.org/training-material/api/topics//genome-annotation/tutorials/lncrna/tutorial.json",
-        "slides": "https://training.galaxyproject.org/training-material/api/topics//genome-annotation/tutorials/lncrna/tutorial.json"
+        "hands_on": "https://training.galaxyproject.org/training-material/api/topics/genome-annotation/tutorials/lncrna/tutorial.json",
+        "slides": "https://training.galaxyproject.org/training-material/api/topics/genome-annotation/tutorials/lncrna/tutorial.json"
       }
     },
     {
@@ -1944,7 +2167,15 @@
         {
           "workflow": "main_workflow.ga",
           "tests": false,
-          "url": "https://training.galaxyproject.org/training-material/topics/genome-annotation/tutorials/crispr-screen/workflows/main_workflow.ga"
+          "url": "https://training.galaxyproject.org/training-material/topics/genome-annotation/tutorials/crispr-screen/workflows/main_workflow.ga",
+          "path": "topics/genome-annotation/tutorials/crispr-screen/workflows/main_workflow.ga",
+          "wfid": "genome-annotation-crispr-screen",
+          "wfname": "main_workflow",
+          "trs_endpoint": "https://training.galaxyproject.org/training-material/api/ga4gh/trs/v2/tools/genome-annotation-crispr-screen/versions/main_workflow",
+          "license": null,
+          "creators": [
+
+          ]
         }
       ],
       "tools": [
@@ -1973,8 +2204,8 @@
       },
       "type": "tutorial",
       "urls": {
-        "hands_on": "https://training.galaxyproject.org/training-material/api/topics//genome-annotation/tutorials/crispr-screen/tutorial.json",
-        "slides": "https://training.galaxyproject.org/training-material/api/topics//genome-annotation/tutorials/crispr-screen/tutorial.json"
+        "hands_on": "https://training.galaxyproject.org/training-material/api/topics/genome-annotation/tutorials/crispr-screen/tutorial.json",
+        "slides": "https://training.galaxyproject.org/training-material/api/topics/genome-annotation/tutorials/crispr-screen/tutorial.json"
       }
     }
   ]

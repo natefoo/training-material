@@ -116,7 +116,15 @@
     {
       "workflow": "CS2_Combining_datasets_after_pre-processing.ga",
       "tests": false,
-      "url": "https://training.galaxyproject.org/training-material/topics/single-cell/tutorials/scrna-case_alevin-combine-datasets/workflows/CS2_Combining_datasets_after_pre-processing.ga"
+      "url": "https://training.galaxyproject.org/training-material/topics/single-cell/tutorials/scrna-case_alevin-combine-datasets/workflows/CS2_Combining_datasets_after_pre-processing.ga",
+      "path": "topics/single-cell/tutorials/scrna-case_alevin-combine-datasets/workflows/CS2_Combining_datasets_after_pre-processing.ga",
+      "wfid": "single-cell-scrna-case_alevin-combine-datasets",
+      "wfname": "cs2_combining_datasets_after_pre-processing",
+      "trs_endpoint": "https://training.galaxyproject.org/training-material/api/ga4gh/trs/v2/tools/single-cell-scrna-case_alevin-combine-datasets/versions/cs2_combining_datasets_after_pre-processing",
+      "license": null,
+      "creators": [
+
+      ]
     }
   ],
   "tools": [
@@ -162,6 +170,13 @@
       "gitter": "hexylena",
       "joined": "2017-09",
       "elixir_node": "nl",
+      "fediverse": "https://galaxians.garden/hexylena",
+      "contact_for_training": false,
+      "location": {
+        "country": "NL",
+        "lat": 51.91,
+        "lon": 4.46
+      },
       "id": "hexylena",
       "url": "https://training.galaxyproject.org/training-material/api/contributors/hexylena.json",
       "page": "https://training.galaxyproject.org/training-material/hall-of-fame/hexylena/"

@@ -22,6 +22,13 @@
         "orcid": "0000-0001-9852-1987",
         "joined": "2017-09",
         "elixir_node": "de",
+        "contact_for_training": true,
+        "location": {
+          "country": "FR",
+          "lat": 45.77,
+          "lon": 3.08
+        },
+        "fediverse": "https://piaille.fr/@bebatut",
         "id": "bebatut",
         "url": "https://training.galaxyproject.org/training-material/api/contributors/bebatut.json",
         "page": "https://training.galaxyproject.org/training-material/hall-of-fame/bebatut/"
@@ -34,6 +41,13 @@
         "gitter": "hexylena",
         "joined": "2017-09",
         "elixir_node": "nl",
+        "fediverse": "https://galaxians.garden/hexylena",
+        "contact_for_training": false,
+        "location": {
+          "country": "NL",
+          "lat": 51.91,
+          "lon": 4.46
+        },
         "id": "hexylena",
         "url": "https://training.galaxyproject.org/training-material/api/contributors/hexylena.json",
         "page": "https://training.galaxyproject.org/training-material/hall-of-fame/hexylena/"
@@ -54,6 +68,13 @@
         "gitter": "hexylena",
         "joined": "2017-09",
         "elixir_node": "nl",
+        "fediverse": "https://galaxians.garden/hexylena",
+        "contact_for_training": false,
+        "location": {
+          "country": "NL",
+          "lat": 51.91,
+          "lon": 4.46
+        },
         "id": "hexylena",
         "url": "https://training.galaxyproject.org/training-material/api/contributors/hexylena.json",
         "page": "https://training.galaxyproject.org/training-material/hall-of-fame/hexylena/"
@@ -69,6 +90,12 @@
         "joined": "2017-09",
         "bio": "Researcher at Erasmus Medical Center",
         "elixir_node": "nl",
+        "contact_for_training": true,
+        "location": {
+          "country": "NL",
+          "lat": 51.912,
+          "lon": 4.462
+        },
         "id": "shiltemann",
         "url": "https://training.galaxyproject.org/training-material/api/contributors/shiltemann.json",
         "page": "https://training.galaxyproject.org/training-material/hall-of-fame/shiltemann/"
@@ -95,6 +122,13 @@
         "orcid": "0000-0001-9852-1987",
         "joined": "2017-09",
         "elixir_node": "de",
+        "contact_for_training": true,
+        "location": {
+          "country": "FR",
+          "lat": 45.77,
+          "lon": 3.08
+        },
+        "fediverse": "https://piaille.fr/@bebatut",
         "id": "bebatut",
         "url": "https://training.galaxyproject.org/training-material/api/contributors/bebatut.json",
         "page": "https://training.galaxyproject.org/training-material/hall-of-fame/bebatut/"
@@ -162,6 +196,13 @@
         "gitter": "hexylena",
         "joined": "2017-09",
         "elixir_node": "nl",
+        "fediverse": "https://galaxians.garden/hexylena",
+        "contact_for_training": false,
+        "location": {
+          "country": "NL",
+          "lat": 51.91,
+          "lon": 4.46
+        },
         "id": "hexylena",
         "url": "https://training.galaxyproject.org/training-material/api/contributors/hexylena.json",
         "page": "https://training.galaxyproject.org/training-material/hall-of-fame/hexylena/"
@@ -179,12 +220,19 @@
       },
       {
         "name": "Anthony Bretaudeau",
-        "email": "anthony.bretaudeau@inra.fr",
+        "email": "anthony.bretaudeau@inrae.fr",
         "twitter": "abretau",
         "gitter": "abretaud",
         "orcid": "0000-0003-0914-2470",
         "joined": "2017-09",
         "elixir_node": "fr",
+        "contact_for_training": true,
+        "location": {
+          "country": "FR",
+          "lat": 48.11,
+          "lon": -1.64
+        },
+        "fediverse": "https://genomic.social/@abretaud",
         "id": "abretaud",
         "url": "https://training.galaxyproject.org/training-material/api/contributors/abretaud.json",
         "page": "https://training.galaxyproject.org/training-material/hall-of-fame/abretaud/"
@@ -236,6 +284,12 @@
         "linkedin": "jennifer.hillman.jackson",
         "orcid": "0000-0003-4012-8116",
         "joined": "2018-06",
+        "contact_for_training": true,
+        "location": {
+          "country": "US",
+          "lat": 36.969918,
+          "lon": -122.0226576
+        },
         "id": "jennaj",
         "url": "https://training.galaxyproject.org/training-material/api/contributors/jennaj.json",
         "page": "https://training.galaxyproject.org/training-material/hall-of-fame/jennaj/"
@@ -248,6 +302,13 @@
         "gitter": "hexylena",
         "joined": "2017-09",
         "elixir_node": "nl",
+        "fediverse": "https://galaxians.garden/hexylena",
+        "contact_for_training": false,
+        "location": {
+          "country": "NL",
+          "lat": 51.91,
+          "lon": 4.46
+        },
         "id": "hexylena",
         "url": "https://training.galaxyproject.org/training-material/api/contributors/hexylena.json",
         "page": "https://training.galaxyproject.org/training-material/hall-of-fame/hexylena/"
@@ -268,6 +329,13 @@
         "gitter": "hexylena",
         "joined": "2017-09",
         "elixir_node": "nl",
+        "fediverse": "https://galaxians.garden/hexylena",
+        "contact_for_training": false,
+        "location": {
+          "country": "NL",
+          "lat": 51.91,
+          "lon": 4.46
+        },
         "id": "hexylena",
         "url": "https://training.galaxyproject.org/training-material/api/contributors/hexylena.json",
         "page": "https://training.galaxyproject.org/training-material/hall-of-fame/hexylena/"
@@ -437,6 +505,12 @@
         "orcid": "0000-0002-1964-4960",
         "joined": "2019-08",
         "elixir_node": "ch",
+        "contact_for_training": true,
+        "location": {
+          "country": "CH",
+          "lat": 46.52,
+          "lon": 6.56
+        },
         "id": "lldelisle",
         "url": "https://training.galaxyproject.org/training-material/api/contributors/lldelisle.json",
         "page": "https://training.galaxyproject.org/training-material/hall-of-fame/lldelisle/"
@@ -483,6 +557,13 @@
         "orcid": "0000-0001-9852-1987",
         "joined": "2017-09",
         "elixir_node": "de",
+        "contact_for_training": true,
+        "location": {
+          "country": "FR",
+          "lat": 45.77,
+          "lon": 3.08
+        },
+        "fediverse": "https://piaille.fr/@bebatut",
         "id": "bebatut",
         "url": "https://training.galaxyproject.org/training-material/api/contributors/bebatut.json",
         "page": "https://training.galaxyproject.org/training-material/hall-of-fame/bebatut/"
@@ -499,6 +580,26 @@
         "id": "bgruening",
         "url": "https://training.galaxyproject.org/training-material/api/contributors/bgruening.json",
         "page": "https://training.galaxyproject.org/training-material/hall-of-fame/bgruening/"
+      }
+    ]
+  },
+  "ai4life": {
+    "name": "ai4life",
+    "title": "Image analysis using Deep Learning",
+    "summary": "Here you can learn all about Image analysis using Deep Learning thanks to AI4Life Training Materials.\n\n<img alt=\"EU Flag\" src=\"/training-material/assets/images/eu.svg\" style=\"width:3em;margin:0\"> AI4Life has received funding from the European Union’s Horizon Europe research and innovation programme under grant agreement number 101057970.\n",
+    "url": "https://training.galaxyproject.org/training-material/api/topics/ai4life.json",
+    "maintainers": [
+      {
+        "name": "Beatriz Serrano-Solano",
+        "email": "beatrizserrano.galaxy@gmail.com",
+        "twitter": "BSerranoSolano",
+        "linkedin": "beatriz-serrano",
+        "gitter": "beatrizserrano",
+        "orcid": "0000-0002-5862-6132",
+        "joined": "2020-07",
+        "id": "beatrizserrano",
+        "url": "https://training.galaxyproject.org/training-material/api/contributors/beatrizserrano.json",
+        "page": "https://training.galaxyproject.org/training-material/hall-of-fame/beatrizserrano/"
       }
     ]
   },
@@ -610,6 +711,13 @@
         "orcid": "0000-0001-9852-1987",
         "joined": "2017-09",
         "elixir_node": "de",
+        "contact_for_training": true,
+        "location": {
+          "country": "FR",
+          "lat": 45.77,
+          "lon": 3.08
+        },
+        "fediverse": "https://piaille.fr/@bebatut",
         "id": "bebatut",
         "url": "https://training.galaxyproject.org/training-material/api/contributors/bebatut.json",
         "page": "https://training.galaxyproject.org/training-material/hall-of-fame/bebatut/"
@@ -625,6 +733,12 @@
         "joined": "2017-09",
         "bio": "Researcher at Erasmus Medical Center",
         "elixir_node": "nl",
+        "contact_for_training": true,
+        "location": {
+          "country": "NL",
+          "lat": 51.912,
+          "lon": 4.462
+        },
         "id": "shiltemann",
         "url": "https://training.galaxyproject.org/training-material/api/contributors/shiltemann.json",
         "page": "https://training.galaxyproject.org/training-material/hall-of-fame/shiltemann/"
@@ -671,6 +785,13 @@
         "orcid": "0000-0001-9852-1987",
         "joined": "2017-09",
         "elixir_node": "de",
+        "contact_for_training": true,
+        "location": {
+          "country": "FR",
+          "lat": 45.77,
+          "lon": 3.08
+        },
+        "fediverse": "https://piaille.fr/@bebatut",
         "id": "bebatut",
         "url": "https://training.galaxyproject.org/training-material/api/contributors/bebatut.json",
         "page": "https://training.galaxyproject.org/training-material/hall-of-fame/bebatut/"
@@ -734,6 +855,13 @@
         "orcid": "0000-0001-9852-1987",
         "joined": "2017-09",
         "elixir_node": "de",
+        "contact_for_training": true,
+        "location": {
+          "country": "FR",
+          "lat": 45.77,
+          "lon": 3.08
+        },
+        "fediverse": "https://piaille.fr/@bebatut",
         "id": "bebatut",
         "url": "https://training.galaxyproject.org/training-material/api/contributors/bebatut.json",
         "page": "https://training.galaxyproject.org/training-material/hall-of-fame/bebatut/"
@@ -766,6 +894,12 @@
         "joined": "2017-09",
         "bio": "Researcher at Erasmus Medical Center",
         "elixir_node": "nl",
+        "contact_for_training": true,
+        "location": {
+          "country": "NL",
+          "lat": 51.912,
+          "lon": 4.462
+        },
         "id": "shiltemann",
         "url": "https://training.galaxyproject.org/training-material/api/contributors/shiltemann.json",
         "page": "https://training.galaxyproject.org/training-material/hall-of-fame/shiltemann/"
@@ -778,6 +912,13 @@
         "gitter": "hexylena",
         "joined": "2017-09",
         "elixir_node": "nl",
+        "fediverse": "https://galaxians.garden/hexylena",
+        "contact_for_training": false,
+        "location": {
+          "country": "NL",
+          "lat": 51.91,
+          "lon": 4.46
+        },
         "id": "hexylena",
         "url": "https://training.galaxyproject.org/training-material/api/contributors/hexylena.json",
         "page": "https://training.galaxyproject.org/training-material/hall-of-fame/hexylena/"
@@ -799,6 +940,12 @@
         "linkedin": "jennifer.hillman.jackson",
         "orcid": "0000-0003-4012-8116",
         "joined": "2018-06",
+        "contact_for_training": true,
+        "location": {
+          "country": "US",
+          "lat": 36.969918,
+          "lon": -122.0226576
+        },
         "id": "jennaj",
         "url": "https://training.galaxyproject.org/training-material/api/contributors/jennaj.json",
         "page": "https://training.galaxyproject.org/training-material/hall-of-fame/jennaj/"
@@ -866,6 +1013,13 @@
         "orcid": "0000-0001-9852-1987",
         "joined": "2017-09",
         "elixir_node": "de",
+        "contact_for_training": true,
+        "location": {
+          "country": "FR",
+          "lat": 45.77,
+          "lon": 3.08
+        },
+        "fediverse": "https://piaille.fr/@bebatut",
         "id": "bebatut",
         "url": "https://training.galaxyproject.org/training-material/api/contributors/bebatut.json",
         "page": "https://training.galaxyproject.org/training-material/hall-of-fame/bebatut/"
@@ -904,6 +1058,13 @@
         "orcid": "0000-0001-9852-1987",
         "joined": "2017-09",
         "elixir_node": "de",
+        "contact_for_training": true,
+        "location": {
+          "country": "FR",
+          "lat": 45.77,
+          "lon": 3.08
+        },
+        "fediverse": "https://piaille.fr/@bebatut",
         "id": "bebatut",
         "url": "https://training.galaxyproject.org/training-material/api/contributors/bebatut.json",
         "page": "https://training.galaxyproject.org/training-material/hall-of-fame/bebatut/"

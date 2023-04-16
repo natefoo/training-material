@@ -50,6 +50,13 @@
       "orcid": "0000-0001-9852-1987",
       "joined": "2017-09",
       "elixir_node": "de",
+      "contact_for_training": true,
+      "location": {
+        "country": "FR",
+        "lat": 45.77,
+        "lon": 3.08
+      },
+      "fediverse": "https://piaille.fr/@bebatut",
       "id": "bebatut",
       "url": "https://training.galaxyproject.org/training-material/api/contributors/bebatut.json",
       "page": "https://training.galaxyproject.org/training-material/hall-of-fame/bebatut/"
@@ -100,6 +107,13 @@
       "gitter": "hexylena",
       "joined": "2017-09",
       "elixir_node": "nl",
+      "fediverse": "https://galaxians.garden/hexylena",
+      "contact_for_training": false,
+      "location": {
+        "country": "NL",
+        "lat": 51.91,
+        "lon": 4.46
+      },
       "id": "hexylena",
       "url": "https://training.galaxyproject.org/training-material/api/contributors/hexylena.json",
       "page": "https://training.galaxyproject.org/training-material/hall-of-fame/hexylena/"
@@ -123,7 +137,15 @@
     {
       "workflow": "Galaxy-Introduction-Peaks2Genes-Part-1-Workflow.ga",
       "tests": true,
-      "url": "https://training.galaxyproject.org/training-material/topics/introduction/tutorials/galaxy-intro-peaks2genes/workflows/Galaxy-Introduction-Peaks2Genes-Part-1-Workflow.ga"
+      "url": "https://training.galaxyproject.org/training-material/topics/introduction/tutorials/galaxy-intro-peaks2genes/workflows/Galaxy-Introduction-Peaks2Genes-Part-1-Workflow.ga",
+      "path": "topics/introduction/tutorials/galaxy-intro-peaks2genes/workflows/Galaxy-Introduction-Peaks2Genes-Part-1-Workflow.ga",
+      "wfid": "introduction-galaxy-intro-peaks2genes",
+      "wfname": "galaxy-introduction-peaks2genes-part-1-workflow",
+      "trs_endpoint": "https://training.galaxyproject.org/training-material/api/ga4gh/trs/v2/tools/introduction-galaxy-intro-peaks2genes/versions/galaxy-introduction-peaks2genes-part-1-workflow",
+      "license": null,
+      "creators": [
+
+      ]
     }
   ],
   "tools": [
