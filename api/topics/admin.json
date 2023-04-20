@@ -1789,7 +1789,9 @@
     {
       "layout": "tutorial_hands_on",
       "redirect_from": [
-        "/topics/admin/tutorials/heterogeneous-compute/tutorial"
+        "/topics/admin/tutorials/heterogeneous-compute/tutorial",
+        "/short/admin/pulsar",
+        "/short/T00017"
       ],
       "title": "Running Jobs on Remote Resources with Pulsar",
       "questions": [
@@ -2354,7 +2356,9 @@
     {
       "layout": "tutorial_hands_on",
       "redirect_from": [
-        "/topics/admin/tutorials/upstream-auth/tutorial"
+        "/topics/admin/tutorials/upstream-auth/tutorial",
+        "/short/admin/external-auth",
+        "/short/T00007"
       ],
       "title": "External Authentication",
       "questions": [
@@ -2465,7 +2469,9 @@
       "subtopic": "core",
       "priority": 1,
       "redirect_from": [
-        "/topics/admin/slides/introduction"
+        "/topics/admin/slides/introduction",
+        "/short/admin/introduction/slides",
+        "/short/S00015"
       ],
       "title": "Galaxy from an administrator's point of view",
       "zenodo_link": "",
@@ -2902,7 +2908,9 @@
       "layout": "tutorial_hands_on",
       "title": "Connecting Galaxy to a compute cluster",
       "redirect_from": [
-        "/topics/admin/tutorials/job-metrics/tutorial"
+        "/topics/admin/tutorials/job-metrics/tutorial",
+        "/short/admin/connect-to-compute-cluster",
+        "/short/T00002"
       ],
       "questions": [
         "How to connect Galaxy to a compute cluster?",
@@ -4787,6 +4795,105 @@
       "urls": {
         "hands_on": "https://training.galaxyproject.org/training-material/api/topics/admin/tutorials/wireguard/tutorial.json",
         "slides": "https://training.galaxyproject.org/training-material/api/topics/admin/tutorials/wireguard/tutorial.json"
+      }
+    },
+    {
+      "layout": "tutorial_hands_on",
+      "title": "Monitoring Galaxy and Pulsar with Sentry",
+      "zenodo_link": "",
+      "questions": null,
+      "objectives": [
+        "Have an understanding of Sentry",
+        "Install Sentry",
+        "Configure Galaxy and Pulsar to send errors to Sentry",
+        "Monitor performance with Sentry"
+      ],
+      "time_estimation": "1h",
+      "key_points": null,
+      "contributions": {
+        "authorship": [
+          "mvdbeek"
+        ],
+        "editing": [
+          "hexylena"
+        ]
+      },
+      "requirements": [
+        {
+          "type": "internal",
+          "topic_name": "admin",
+          "tutorials": [
+            "ansible",
+            "ansible-galaxy",
+            "pulsar"
+          ]
+        }
+      ],
+      "subtopic": "monitoring",
+      "tags": [
+        "ansible",
+        "git-gat"
+      ],
+      "url": "/topics/admin/tutorials/sentry/tutorial.html",
+      "topic_name": "admin",
+      "tutorial_name": "sentry",
+      "dir": "topics/admin/tutorials/sentry",
+      "id": "admin/sentry",
+      "video_library": {
+        "tutorial": null,
+        "slides": null,
+        "demo": null,
+        "both": null,
+        "session": null
+      },
+      "hands_on": true,
+      "slides": false,
+      "tools": [
+
+      ],
+      "tours": false,
+      "video": false,
+      "translations": {
+        "tutorial": [
+
+        ],
+        "slides": [
+
+        ],
+        "video": false
+      },
+      "type": "tutorial",
+      "contributors": [
+        {
+          "name": "Marius van den Beek",
+          "joined": "2018-06",
+          "id": "mvdbeek",
+          "url": "https://training.galaxyproject.org/training-material/api/contributors/mvdbeek.json",
+          "page": "https://training.galaxyproject.org/training-material/hall-of-fame/mvdbeek/"
+        },
+        {
+          "name": "Helena Rasche",
+          "email": "hexylena@galaxians.org",
+          "orcid": "0000-0001-9760-8992",
+          "maintainer_contact": "gitter",
+          "gitter": "hexylena",
+          "joined": "2017-09",
+          "elixir_node": "nl",
+          "fediverse": "https://galaxians.garden/hexylena",
+          "contact_for_training": false,
+          "location": {
+            "country": "NL",
+            "lat": 51.91,
+            "lon": 4.46
+          },
+          "id": "hexylena",
+          "url": "https://training.galaxyproject.org/training-material/api/contributors/hexylena.json",
+          "page": "https://training.galaxyproject.org/training-material/hall-of-fame/hexylena/"
+        }
+      ],
+      "urls": {
+        "hands_on": "https://training.galaxyproject.org/training-material/api/topics/admin/tutorials/sentry/tutorial.json",
+        "slides": "https://training.galaxyproject.org/training-material/api/topics/admin/tutorials/sentry/tutorial.json"
       }
     },
     {
