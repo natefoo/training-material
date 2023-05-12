@@ -46,6 +46,7 @@
     "paper-replication",
     "interactive-tools",
     "transcriptomics",
+    "jupyter-notebook",
     "jupyter-notebook"
   ],
   "contributions": {
