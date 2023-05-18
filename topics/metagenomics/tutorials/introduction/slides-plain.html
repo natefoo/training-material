@@ -8,6 +8,29 @@
         
             <script async defer data-domain="training.galaxyproject.org" src="https://plausible.galaxyproject.eu/js/plausible.js"></script>
 
+<!-- JavaScript Error Monitoring, and performance tracking. -->
+<script
+  src="https://browser.sentry-cdn.com/7.52.1/bundle.tracing.min.js"
+  integrity="sha384-muuFXKS3752PNA4rPm9Uq6BLvOfV4CXyr9MHDBPvozOJJUWLKkogEFWOIRoVps43"
+  crossorigin="anonymous"
+></script>
+<script type="text/javascript">
+Sentry.init({
+  dsn: "https://45e0ec6e4373462b92969505df37cf40@sentry.galaxyproject.org/10",
+  release: "galaxy-training-network@37aabd7fe18d9445ff47887459affaea8dbe8791",
+  integrations: [new Sentry.BrowserTracing(), new Sentry.Replay()],
+  sampleRate: 0.1,
+  tracesSampleRate: 0.1,
+  // Capture Replay for no sessions by default
+  replaysSessionSampleRate: 0.01,
+  // plus for 1% of sessions with an error
+  replaysOnErrorSampleRate: 0.01,
+  // PII OFF
+  sendDefaultPii: false, // Off by default but just in case.
+  environment: "production",
+});
+</script>
+
         
         <link rel="stylesheet" href="/training-material/assets/css/bootstrap.min.css?v=3">
         <link rel="stylesheet" href="/training-material/assets/css/bootstrap-toc.min.css">
@@ -17,13 +40,13 @@
         <link rel="shortcut icon" href="/training-material/favicon.ico" type="image/x-icon">
         <link rel="alternate" type="application/atom+xml" href="/training-material/feed.xml">
         <link rel="canonical" href="https://training.galaxyproject.org/training-material/topics/metagenomics/tutorials/introduction/slides-plain.html">
-        <link rel="license" href="https://creativecommons.org/licenses/by/4.0/">
+	<link rel="license" href="https://spdx.org/licenses/CC-BY-4.0">
 
         <meta name="DC.identifier" content="https://github.com/galaxyproject/training-material">
 <meta name="DC.type" content="text">
 <meta name="DC.title" content="Introduction to metagenomics">
 <meta name="DC.publisher" content="Galaxy Training Network">
-<meta name="DC.date" content="2023-05-18 00:33:02 +0000">
+<meta name="DC.date" content="2023-05-18 14:47:11 +0000">
 <meta name="DC.creator" content="Bérénice Batut">
 <meta name="DC.creator" content="Saskia Hiltemann">
 
@@ -36,7 +59,7 @@
         <meta property="og:title" content="Galaxy Training: Introduction to metagenomics">
         <meta property="og:description" content="Collection of tutorials developed and maintained by the w...">
         
-        <meta property="og:image" content="/training-material/assets/images/GTNLogo1000.png">
+        <meta property="og:image" content="/training-material/assets/images/GTN.png">
 
         
     </head>
@@ -105,8 +128,7 @@
     </a>
     <div class="dropdown-menu dropdown-menu-right">
 
-        
-        <a class="dropdown-item" href="https://github.com/galaxyproject/training-material/edit/main/topics/metagenomics/tutorials/introduction/slides-plain.md" title="Edit on GitHub">
+        <a class="dropdown-item" href="https://github.com/galaxyproject/training-material/edit/main./topics/metagenomics/tutorials/introduction/slides.html" title="Edit on GitHub">
           <i class="fab fa-github" aria-hidden="true"></i><span class="visually-hidden">github</span> Edit on GitHub
         </a>
 
@@ -237,7 +259,7 @@
 <p>]
 .pull-right[</p>
 
-<p>.image-100[ <img src="../../images/human_microbiome.png" alt="image of a human with lines leading from various points on the body to pie charts of bacteria distribution. " loading="lazy" /> ]</p>
+<p>.image-100[ <img src="../../images/human_microbiome.png" alt="image of a human with lines leading from various points on the body to pie charts of bacteria distribution" /> ]</p>
 
 <p>]</p>
 
@@ -260,7 +282,7 @@
   </li>
 </ul>
 
-<p>.image-75[ <img src="../../images/environmentalstudies.png" alt="Rhizodeposition: image of a tree converting sun and co2 into fixed carbon used as food for soil microbes." loading="lazy" /> ]</p>
+<p>.image-75[ <img src="../../images/environmentalstudies.png" alt="Rhizodeposition: image of a tree converting sun and co2 into fixed carbon used as food for soil microbes." /> ]</p>
 
 <hr />
 
@@ -268,7 +290,7 @@
 
 <p>.pull-left[</p>
 
-<p>.image-75[ <img src="../../images/puzzles-shotgun.png" alt="jigsaw puzzle image illustrating shotgun sequencing approach. " loading="lazy" /> ]</p>
+<p>.image-75[ <img src="../../images/puzzles-shotgun.png" alt="jigsaw puzzle image illustrating shotgun sequencing approach" /> ]</p>
 
 <p><strong>Shotgun Sequencing</strong></p>
 <ul>
@@ -281,7 +303,7 @@
 
 <p>.pull-right[</p>
 
-<p>.image-75[ <img src="../../images/puzzles-amplicon.png" alt="jigsaw puzzle image illustrating amplicon sequencing approach. " loading="lazy" /> ]</p>
+<p>.image-75[ <img src="../../images/puzzles-amplicon.png" alt="jigsaw puzzle image illustrating amplicon sequencing approach" /> ]</p>
 
 <p><strong>Amplicon Sequencing</strong></p>
 <ul>
@@ -314,7 +336,7 @@
   <li>Amplify gene of specific taxonomic group, i.e. not host or environment</li>
 </ul>
 
-<p><img src="../../images/16S_gene.png" alt="left is picture of e. coli ribosome with &quot;so much rna&quot; written, right is the RNA structure in a diagram. " loading="lazy" /></p>
+<p><img src="../../images/16S_gene.png" alt="left is picture of e. coli ribosome with &quot;so much rna&quot; written, right is the RNA structure in a diagram" /></p>
 
 <hr />
 
@@ -325,7 +347,7 @@
   <li>With variable regions: distinguish between genus</li>
 </ul>
 
-<p><img src="../../images/16S_variableregions.jpg" alt="line graph showing V regions as peaks along x axis of alignment position, and y index of shannon-index/alignment-index." loading="lazy" /></p>
+<p><img src="../../images/16S_variableregions.jpg" alt="line graph showing V regions as peaks along x axis of alignment position, and y index of shannon-index/alignment-index." /></p>
 
 <p><span>Speaker Notes</span>
 V1, V2 etc are the variable regions</p>
@@ -381,7 +403,7 @@ V1, V2 etc are the variable regions</p>
 
 <h2 id="end-to-end">End-to-End</h2>
 
-<p><img src="../../images/16S_end-to-end.png" alt="graphi with an arrow going from sampling (nose picture) to extraction to amplification to ngs to bioinformatics (computer picture). " loading="lazy" /></p>
+<p><img src="../../images/16S_end-to-end.png" alt="graphi with an arrow going from sampling (nose picture) to extraction to amplification to ngs to bioinformatics (computer picture)" /></p>
 
 <p>Every step in this process can have serious impact on the results</p>
 
@@ -389,7 +411,7 @@ V1, V2 etc are the variable regions</p>
 
 <h2 id="bioinformatics">Bioinformatics</h2>
 
-<p><img src="../../images/so_much_data.png" alt="cartoon titled drowned in NGS data with a man covered in messy data." loading="lazy" /></p>
+<p><img src="../../images/so_much_data.png" alt="cartoon titled drowned in NGS data with a man covered in messy data." /></p>
 
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Roche 454 GS:    ~ 100.000 reads
 Illumina MiSeq:  ~ 25.000.000 reads
@@ -400,7 +422,7 @@ Shotgun:             ~ ? reads
 
 <h2 id="analysis-pipelines">Analysis pipelines</h2>
 
-<p><img src="../../images/metagenomics_pipeline.png" alt="comparison of amplicon and shotgun pipelines. amplicon pipeline goes to community structure viz, shotgun pipeline goes to community structure in addition to functional assignment." loading="lazy" /></p>
+<p><img src="../../images/metagenomics_pipeline.png" alt="comparison of amplicon and shotgun pipelines. amplicon pipeline goes to community structure viz, shotgun pipeline goes to community structure in addition to functional assignment." /></p>
 
 <p>Amplicon analysis variants:</p>
 
@@ -413,7 +435,7 @@ Shotgun:             ~ ? reads
 
 <h2 id="pre-processing">Pre-processing</h2>
 
-<p><img src="../../images/preprocessing.png" alt="fastqc plot with regions labelled good, okay, and bad based on the plot's colour. " loading="lazy" /></p>
+<p><img src="../../images/preprocessing.png" alt="fastqc plot with regions labelled good, okay, and bad based on the plot's colour" /></p>
 
 <ul>
   <li>There are a lot of ways to filter and trim your data</li>
@@ -432,7 +454,7 @@ OTU clustering:</p>
   <li>OTUs depend on the data set: no comparability of data sets</li>
 </ul>
 
-<p>.image-75[ <img src="../../images/otu.png" alt="tree with clusters around the leaves labelled OTUs and 97% identity threshold. " loading="lazy" /> ]</p>
+<p>.image-75[ <img src="../../images/otu.png" alt="tree with clusters around the leaves labelled OTUs and 97% identity threshold" /> ]</p>
 
 <p>]</p>
 
@@ -444,7 +466,7 @@ ASV Denoising:</p>
   <li>Based on an error model and the assumption that sequences containing errors are less likely observed repeatedly</li>
 </ul>
 
-<p>.image-90[ <img src="../../images/clustering.png" alt="DNA sequences with hierarchical clustering shown. " loading="lazy" /> ]</p>
+<p>.image-90[ <img src="../../images/clustering.png" alt="DNA sequences with hierarchical clustering shown" /> ]</p>
 
 <p>]</p>
 
@@ -460,7 +482,7 @@ ASV stands for “Amplicon Sequence Variants”</p>
   <li>Must be removed from your data for better results</li>
 </ul>
 
-<p><img src="../../images/chimeras.png" alt="aborted extension leads to mispriming, which gets extended with the wrong sequence, and results in a chimera. " loading="lazy" /></p>
+<p><img src="../../images/chimeras.png" alt="aborted extension leads to mispriming, which gets extended with the wrong sequence, and results in a chimera" /></p>
 
 <hr />
 
@@ -472,7 +494,7 @@ ASV stands for “Amplicon Sequence Variants”</p>
       <li>
         <p>Amplicon</p>
 
-        <p><img src="../../images/silva-greengenes.png" alt="graphic with two databases green genes (berkely, 2013, 200k entries) and silva (max plank, 2015, 172k entries). " loading="lazy" /></p>
+        <p><img src="../../images/silva-greengenes.png" alt="graphic with two databases green genes (berkely, 2013, 200k entries) and silva (max plank, 2015, 172k entries)" /></p>
       </li>
       <li>
         <p>Shotgun: MetaPhlAn2 database</p>
@@ -516,7 +538,7 @@ ASV stands for “Amplicon Sequence Variants”</p>
 
 <h2 id="results-otu-table">Results: OTU table</h2>
 
-<p><img src="../../images/otutable.png" alt="screenshot of an excel table. " loading="lazy" /></p>
+<p><img src="../../images/otutable.png" alt="screenshot of an excel table" /></p>
 
 <hr />
 
@@ -530,7 +552,7 @@ ASV stands for “Amplicon Sequence Variants”</p>
   </li>
 </ul>
 
-<p><img src="../../images/krona_lacto.png" alt="doughnut plot with bands for each kingdom, down to genus, species. " loading="lazy" /></p>
+<p><img src="../../images/krona_lacto.png" alt="doughnut plot with bands for each kingdom, down to genus, species" /></p>
 
 <hr />
 
@@ -546,7 +568,7 @@ ASV stands for “Amplicon Sequence Variants”</p>
   </li>
 </ul>
 
-<p><img src="../../../../shared/images/phinch_overviewpage.png" alt="screenshot of phinch website showing multiple plot types. " loading="lazy" /></p>
+<p><img src="../../../../shared/images/phinch_overviewpage.png" alt="screenshot of phinch website showing multiple plot types" /></p>
 
 
 	<hr />
@@ -574,23 +596,46 @@ This material is licensed under the <a rel="license" href="https://creativecommo
 
 
         </div>
-        
-            <footer>
-    <div class="container">
-        <br><br>
-        <p>
-            The <a href="https://galaxyproject.org/teach/gtn/">Galaxy Training Network</a>
-            provides researchers with online training materials, connects them with local trainers, and helps promoting open data analysis practices worldwide.
-        </p>
-        <p>
-        The content of the tutorials is licensed under the <a rel="license" href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>. The website and infrastructure is licensed under <a rel="license" href="https://github.com/galaxyproject/training-material/blob/main/LICENSE.md">MIT</a>.
-        </p>
+        <footer>
+	<hr />
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-6" style="text-align: left">
+				<p>
+					The <a href="https://galaxyproject.org/teach/gtn/">Galaxy Training Network</a>
+					provides researchers with online training materials, connects them with local trainers, and helps promoting FAIR and Open Science practices worldwide. All contributions are subject to the <a rel="code-of-conduct" href="https://galaxyproject.org/community/coc/">Galaxy Project Code of Conduct</a>.
+				</p>
+				<p>
+				The GTN infrastructure is licensed under <a rel="license" href="https://github.com/galaxyproject/training-material/blob/main/LICENSE.md">MIT</a>
+				</p>
+				<p>
+				Revision <a href="https://github.com/galaxyproject/training-material/commit/37aabd7fe18d9445ff47887459affaea8dbe8791">37aabd7</a>, built with Jekyll (4.3.2 | production)
+				</p>
+			</div>
+			<div class="col-sm-6" style="text-align: right">
+				
+				<p>
+					
+						Materials licensed under
+					
+					<a rel="license" href="https://spdx.org/licenses/CC-BY-4.0">
+						Creative Commons Attribution 4.0 International License
+					</a>
+				</p>
+				<p>
+					<a href="https://github.com/galaxyproject/training-material/edit/main/./topics/metagenomics/tutorials/introduction/slides.html" title="Edit on GitHub">
+					<i class="fab fa-github" aria-hidden="true"></i><span class="visually-hidden">github</span> Edit on GitHub
+					</a>
+				</p>
+			</div>
+		</div>
+	</div>
+</footer>
 
-        <p>This is revision <a href="https://github.com/galaxyproject/training-material/commit/c7a4c2777051912c2635a198c8a684054d68eead">c7a4c2777051912c2635a198c8a684054d68eead</a>. </p>
+
     </div>
 </footer>
 
-        
         <script src="/training-material/assets/js/jquery.slim.min.js"></script>
         <script src="/training-material/assets/js/popper.min.js"></script>
         <script src="/training-material/assets/js/bootstrap.min.js?v=3"></script>

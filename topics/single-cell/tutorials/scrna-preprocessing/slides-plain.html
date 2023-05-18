@@ -8,6 +8,29 @@
         
             <script async defer data-domain="training.galaxyproject.org" src="https://plausible.galaxyproject.eu/js/plausible.js"></script>
 
+<!-- JavaScript Error Monitoring, and performance tracking. -->
+<script
+  src="https://browser.sentry-cdn.com/7.52.1/bundle.tracing.min.js"
+  integrity="sha384-muuFXKS3752PNA4rPm9Uq6BLvOfV4CXyr9MHDBPvozOJJUWLKkogEFWOIRoVps43"
+  crossorigin="anonymous"
+></script>
+<script type="text/javascript">
+Sentry.init({
+  dsn: "https://45e0ec6e4373462b92969505df37cf40@sentry.galaxyproject.org/10",
+  release: "galaxy-training-network@37aabd7fe18d9445ff47887459affaea8dbe8791",
+  integrations: [new Sentry.BrowserTracing(), new Sentry.Replay()],
+  sampleRate: 0.1,
+  tracesSampleRate: 0.1,
+  // Capture Replay for no sessions by default
+  replaysSessionSampleRate: 0.01,
+  // plus for 1% of sessions with an error
+  replaysOnErrorSampleRate: 0.01,
+  // PII OFF
+  sendDefaultPii: false, // Off by default but just in case.
+  environment: "production",
+});
+</script>
+
         
         <link rel="stylesheet" href="/training-material/assets/css/bootstrap.min.css?v=3">
         <link rel="stylesheet" href="/training-material/assets/css/bootstrap-toc.min.css">
@@ -17,13 +40,13 @@
         <link rel="shortcut icon" href="/training-material/favicon.ico" type="image/x-icon">
         <link rel="alternate" type="application/atom+xml" href="/training-material/feed.xml">
         <link rel="canonical" href="https://training.galaxyproject.org/training-material/topics/single-cell/tutorials/scrna-preprocessing/slides-plain.html">
-        <link rel="license" href="https://creativecommons.org/licenses/by/4.0/">
+	<link rel="license" href="https://spdx.org/licenses/CC-BY-4.0">
 
         <meta name="DC.identifier" content="https://github.com/galaxyproject/training-material">
 <meta name="DC.type" content="text">
 <meta name="DC.title" content="Dealing with Cross-Contamination in Fixed Barcode Protocols">
 <meta name="DC.publisher" content="Galaxy Training Network">
-<meta name="DC.date" content="2023-05-18 00:33:03 +0000">
+<meta name="DC.date" content="2023-05-18 14:47:12 +0000">
 <meta name="DC.creator" content="Mehmet Tekman">
 <meta name="DC.creator" content="Alex Ostrovsky">
 
@@ -36,7 +59,7 @@
         <meta property="og:title" content="Galaxy Training: Dealing with Cross-Contamination in Fixed Barcode Protocols">
         <meta property="og:description" content="Collection of tutorials developed and maintained by the w...">
         
-        <meta property="og:image" content="/training-material/assets/images/GTNLogo1000.png">
+        <meta property="og:image" content="/training-material/assets/images/GTN.png">
 
         
     </head>
@@ -105,8 +128,7 @@
     </a>
     <div class="dropdown-menu dropdown-menu-right">
 
-        
-        <a class="dropdown-item" href="https://github.com/galaxyproject/training-material/edit/main/topics/single-cell/tutorials/scrna-preprocessing/slides-plain.md" title="Edit on GitHub">
+        <a class="dropdown-item" href="https://github.com/galaxyproject/training-material/edit/main./topics/single-cell/tutorials/scrna-preprocessing/slides.html" title="Edit on GitHub">
           <i class="fab fa-github" aria-hidden="true"></i><span class="visually-hidden">github</span> Edit on GitHub
         </a>
 
@@ -268,6 +290,8 @@
                         
                     
                         
+                    
+                        
                             
                             <li> Plates, Batches, and Barcodes:
                             
@@ -397,7 +421,7 @@ GAA GCC GTT CNN GNN TNN
 
 <h2 id="-1">]</h2>
 
-<p>.image-75[<img src="../../images/scrna-pre-processing/scrna-plates-batches-barcodes_slide36.svg" alt="slide36. " loading="lazy" />]</p>
+<p>.image-75[<img src="../../images/scrna-pre-processing/scrna-plates-batches-barcodes_slide36.svg" alt="slide36" />]</p>
 
 <p>.pull-left[</p>
 <ul>
@@ -452,7 +476,7 @@ GAA GCC GTT CNN GNN TNN
   <li>All slots filled</li>
 </ul>
 
-<p>.image-75[<img src="../../images/scrna-pre-processing/scrna-plates-batches-barcodes_slide38.svg" alt="slide38. " loading="lazy" />]</p>
+<p>.image-75[<img src="../../images/scrna-pre-processing/scrna-plates-batches-barcodes_slide38.svg" alt="slide38" />]</p>
 
 <p>–</p>
 <ul>
@@ -486,7 +510,7 @@ GAA GCC GTT CNN GNN TNN
   <li>Only slots in Lane 1 filled</li>
 </ul>
 
-<p>.image-75[<img src="../../images/scrna-pre-processing/scrna-plates-batches-barcodes_slide40.svg" alt="slide40. " loading="lazy" />]</p>
+<p>.image-75[<img src="../../images/scrna-pre-processing/scrna-plates-batches-barcodes_slide40.svg" alt="slide40" />]</p>
 
 <p>–</p>
 <ul>
@@ -516,7 +540,7 @@ GAA GCC GTT CNN GNN TNN
   <li>What would it mean if we sequenced reads with {TTT,TAA,…,TNN} as their Cell Barcodes?</li>
 </ul>
 
-<p>.image-75[<img src="../../images/scrna-pre-processing/scrna-plates-batches-barcodes_slide40.svg" alt="slide40. " loading="lazy" />]</p>
+<p>.image-75[<img src="../../images/scrna-pre-processing/scrna-plates-batches-barcodes_slide40.svg" alt="slide40" />]</p>
 
 <p>–</p>
 <ul>
@@ -552,7 +576,7 @@ GAA GCC GTT CNN GNN TNN
   <li>Alternate barcodes used for each plate</li>
 </ul>
 
-<p>.image-50[<img src="../../images/scrna-pre-processing/scrna-plates-batches-barcodes_slide44.svg" alt="slide44. " loading="lazy" />]</p>
+<p>.image-50[<img src="../../images/scrna-pre-processing/scrna-plates-batches-barcodes_slide44.svg" alt="slide44" />]</p>
 
 <p><small></small></p>
 <ul>
@@ -603,7 +627,7 @@ GAA GCC GTT CNN GNN TNN
   <li>Both batches filled. <em>All barcodes</em> are applied individually to <em>each</em> lane</li>
 </ul>
 
-<p>.image-100[<img src="../../images/scrna-pre-processing/scrna-plates-batches-barcodes_slide46.svg" alt="slide46. " loading="lazy" />]</p>
+<p>.image-100[<img src="../../images/scrna-pre-processing/scrna-plates-batches-barcodes_slide46.svg" alt="slide46" />]</p>
 
 <p>.pull-left[</p>
 
@@ -689,23 +713,46 @@ This material is licensed under the <a rel="license" href="https://creativecommo
 
 
         </div>
-        
-            <footer>
-    <div class="container">
-        <br><br>
-        <p>
-            The <a href="https://galaxyproject.org/teach/gtn/">Galaxy Training Network</a>
-            provides researchers with online training materials, connects them with local trainers, and helps promoting open data analysis practices worldwide.
-        </p>
-        <p>
-        The content of the tutorials is licensed under the <a rel="license" href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>. The website and infrastructure is licensed under <a rel="license" href="https://github.com/galaxyproject/training-material/blob/main/LICENSE.md">MIT</a>.
-        </p>
+        <footer>
+	<hr />
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-6" style="text-align: left">
+				<p>
+					The <a href="https://galaxyproject.org/teach/gtn/">Galaxy Training Network</a>
+					provides researchers with online training materials, connects them with local trainers, and helps promoting FAIR and Open Science practices worldwide. All contributions are subject to the <a rel="code-of-conduct" href="https://galaxyproject.org/community/coc/">Galaxy Project Code of Conduct</a>.
+				</p>
+				<p>
+				The GTN infrastructure is licensed under <a rel="license" href="https://github.com/galaxyproject/training-material/blob/main/LICENSE.md">MIT</a>
+				</p>
+				<p>
+				Revision <a href="https://github.com/galaxyproject/training-material/commit/37aabd7fe18d9445ff47887459affaea8dbe8791">37aabd7</a>, built with Jekyll (4.3.2 | production)
+				</p>
+			</div>
+			<div class="col-sm-6" style="text-align: right">
+				
+				<p>
+					
+						Materials licensed under
+					
+					<a rel="license" href="https://spdx.org/licenses/CC-BY-4.0">
+						Creative Commons Attribution 4.0 International License
+					</a>
+				</p>
+				<p>
+					<a href="https://github.com/galaxyproject/training-material/edit/main/./topics/single-cell/tutorials/scrna-preprocessing/slides.html" title="Edit on GitHub">
+					<i class="fab fa-github" aria-hidden="true"></i><span class="visually-hidden">github</span> Edit on GitHub
+					</a>
+				</p>
+			</div>
+		</div>
+	</div>
+</footer>
 
-        <p>This is revision <a href="https://github.com/galaxyproject/training-material/commit/c7a4c2777051912c2635a198c8a684054d68eead">c7a4c2777051912c2635a198c8a684054d68eead</a>. </p>
+
     </div>
 </footer>
 
-        
         <script src="/training-material/assets/js/jquery.slim.min.js"></script>
         <script src="/training-material/assets/js/popper.min.js"></script>
         <script src="/training-material/assets/js/bootstrap.min.js?v=3"></script>

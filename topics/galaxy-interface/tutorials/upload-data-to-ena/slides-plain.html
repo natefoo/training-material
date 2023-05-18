@@ -8,6 +8,29 @@
         
             <script async defer data-domain="training.galaxyproject.org" src="https://plausible.galaxyproject.eu/js/plausible.js"></script>
 
+<!-- JavaScript Error Monitoring, and performance tracking. -->
+<script
+  src="https://browser.sentry-cdn.com/7.52.1/bundle.tracing.min.js"
+  integrity="sha384-muuFXKS3752PNA4rPm9Uq6BLvOfV4CXyr9MHDBPvozOJJUWLKkogEFWOIRoVps43"
+  crossorigin="anonymous"
+></script>
+<script type="text/javascript">
+Sentry.init({
+  dsn: "https://45e0ec6e4373462b92969505df37cf40@sentry.galaxyproject.org/10",
+  release: "galaxy-training-network@37aabd7fe18d9445ff47887459affaea8dbe8791",
+  integrations: [new Sentry.BrowserTracing(), new Sentry.Replay()],
+  sampleRate: 0.1,
+  tracesSampleRate: 0.1,
+  // Capture Replay for no sessions by default
+  replaysSessionSampleRate: 0.01,
+  // plus for 1% of sessions with an error
+  replaysOnErrorSampleRate: 0.01,
+  // PII OFF
+  sendDefaultPii: false, // Off by default but just in case.
+  environment: "production",
+});
+</script>
+
         
         <link rel="stylesheet" href="/training-material/assets/css/bootstrap.min.css?v=3">
         <link rel="stylesheet" href="/training-material/assets/css/bootstrap-toc.min.css">
@@ -17,13 +40,13 @@
         <link rel="shortcut icon" href="/training-material/favicon.ico" type="image/x-icon">
         <link rel="alternate" type="application/atom+xml" href="/training-material/feed.xml">
         <link rel="canonical" href="https://training.galaxyproject.org/training-material/topics/galaxy-interface/tutorials/upload-data-to-ena/slides-plain.html">
-        <link rel="license" href="https://creativecommons.org/licenses/by/4.0/">
+	<link rel="license" href="https://spdx.org/licenses/CC-BY-4.0">
 
         <meta name="DC.identifier" content="https://github.com/galaxyproject/training-material">
 <meta name="DC.type" content="text">
 <meta name="DC.title" content="Submitting SARS-CoV-2 sequences to ENA">
 <meta name="DC.publisher" content="Galaxy Training Network">
-<meta name="DC.date" content="2023-05-18 00:33:01 +0000">
+<meta name="DC.date" content="2023-05-18 14:47:11 +0000">
 <meta name="DC.creator" content="Miguel Roncoroni">
 
         
@@ -35,7 +58,7 @@
         <meta property="og:title" content="Galaxy Training: Submitting SARS-CoV-2 sequences to ENA">
         <meta property="og:description" content="Collection of tutorials developed and maintained by the w...">
         
-        <meta property="og:image" content="/training-material/assets/images/GTNLogo1000.png">
+        <meta property="og:image" content="/training-material/assets/images/GTN.png">
 
         
     </head>
@@ -104,8 +127,7 @@
     </a>
     <div class="dropdown-menu dropdown-menu-right">
 
-        
-        <a class="dropdown-item" href="https://github.com/galaxyproject/training-material/edit/main/topics/galaxy-interface/tutorials/upload-data-to-ena/slides-plain.md" title="Edit on GitHub">
+        <a class="dropdown-item" href="https://github.com/galaxyproject/training-material/edit/main./topics/galaxy-interface/tutorials/upload-data-to-ena/slides.html" title="Edit on GitHub">
           <i class="fab fa-github" aria-hidden="true"></i><span class="visually-hidden">github</span> Edit on GitHub
         </a>
 
@@ -228,7 +250,7 @@ ENA is:</p>
 ]
 ]
 .pull-right[
-<img src="../../images/upload-data-to-ena/ENA-FAIR.png" alt="ENA-FAIR. " loading="lazy" /></li>
+<img src="../../images/upload-data-to-ena/ENA-FAIR.png" alt="ENA-FAIR" /></li>
 </ul>
 
 <p>The European Nucleotide Archive and INSDC
@@ -244,7 +266,7 @@ Why is raw SARS-CoV-2 sequence data important?</p>
   <li>Enables discovery of minor allelic variants and <a href="https://virological.org/t/global-framework-for-sars-cov-2-data-analysis-application-to-intrahost-variation-part-1/623">intrahost variation</a>
 ]
 .image-40[
-<img src="../../images/upload-data-to-ena/intra-host.png" alt="Intrahost variation. " loading="lazy" />
+<img src="../../images/upload-data-to-ena/intra-host.png" alt="Intrahost variation" />
 ]</li>
 </ul>
 
@@ -258,7 +280,7 @@ Why use Galaxy to submit to ENA?</p>
   <li>simple metadata input via a template spreadsheet or interactively</li>
   <li>no bioinformatics skills needed
 ]
-.image-75[<img src="../../images/upload-data-to-ena/upload-tool.png" alt="upload-tool. " loading="lazy" />
+.image-75[<img src="../../images/upload-data-to-ena/upload-tool.png" alt="upload-tool" />
 ]</li>
 </ul>
 
@@ -266,7 +288,7 @@ Why use Galaxy to submit to ENA?</p>
 
 <h3 id="submission-overview">Submission overview</h3>
 <p>.image-100[
-<img src="../../images/upload-data-to-ena/reads_submission.png" alt="reads-submission. " loading="lazy" />
+<img src="../../images/upload-data-to-ena/reads_submission.png" alt="reads-submission" />
 ]
 —</p>
 
@@ -289,7 +311,7 @@ Data:</p>
   <li><a href="https://www.ebi.ac.uk/ena/submit/sra/#registration">ENA Webin credentials</a> in your Galaxy user information
 ]
 .left[
-<img src="../../images/upload-data-to-ena/ENA-credentials.png" alt="ENA-credentials. " loading="lazy" />
+<img src="../../images/upload-data-to-ena/ENA-credentials.png" alt="ENA-credentials" />
 ]
 —</li>
 </ul>
@@ -301,7 +323,7 @@ For the submission of SARS-CoV-2 reads <a href="https://ena-docs.readthedocs.io/
   <li>study, sample, experiment and run information</li>
   <li>additional information for viral samples (<a href="https://www.ebi.ac.uk/ena/browser/view/ERC000033">viral checklist</a>)
 ]
-<img src="../../images/upload-data-to-ena/metadata_model_reads.png" alt="metadata-model. " loading="lazy" /></li>
+<img src="../../images/upload-data-to-ena/metadata_model_reads.png" alt="metadata-model" /></li>
 </ul>
 
 <hr />
@@ -310,7 +332,7 @@ For the submission of SARS-CoV-2 reads <a href="https://ena-docs.readthedocs.io/
 <p>.left[
 Interactive metadata input in Galaxy:
 ]
-<img src="../../images/upload-data-to-ena/interactive_metadata.png" alt="interactive metadata. " loading="lazy" />
+<img src="../../images/upload-data-to-ena/interactive_metadata.png" alt="interactive metadata" />
 —</p>
 
 <h3 id="metadata-2">Metadata</h3>
@@ -320,7 +342,7 @@ Metadata <a href="https://drive.google.com/file/d/1Gx78GKh58PmRjdmJ05DBbpObAL-3o
   <li>one sheet each for study, sample, experiment and run</li>
   <li>built-in controlled vocabulary
 ]
-<img src="../../images/upload-data-to-ena/metadata_template.png" alt="metadata_template. " loading="lazy" />
+<img src="../../images/upload-data-to-ena/metadata_template.png" alt="metadata_template" />
 —</li>
 </ul>
 
@@ -330,7 +352,7 @@ Metadata <a href="https://drive.google.com/file/d/1Gx78GKh58PmRjdmJ05DBbpObAL-3o
   <li>Different metadata objects are linked using Aliases</li>
   <li>Aliases must be unique
 ]
-<img src="../../images/upload-data-to-ena/metadata_model_reads.png" alt="metadata-model. " loading="lazy" />
+<img src="../../images/upload-data-to-ena/metadata_model_reads.png" alt="metadata-model" />
 —</li>
 </ul>
 
@@ -341,7 +363,7 @@ Aliases link metadata objects:</p>
   <li>Experiments are linked to Study and Samples</li>
   <li>Runs are linked to Experiments
 ]
-<img src="../../images/upload-data-to-ena/study_sample_exp.png" alt="study-sample. " loading="lazy" />
+<img src="../../images/upload-data-to-ena/study_sample_exp.png" alt="study-sample" />
 —</li>
 </ul>
 
@@ -352,7 +374,7 @@ Aliases link metadata objects:</p>
   <li>Experiments are linked to Study and Samples</li>
   <li>Runs are linked to Experiments
 ]
-<img src="../../images/upload-data-to-ena/exp_run.png" alt="exp-run. " loading="lazy" />
+<img src="../../images/upload-data-to-ena/exp_run.png" alt="exp-run" />
 —</li>
 </ul>
 
@@ -362,7 +384,7 @@ Aliases link metadata to data:</p>
 <ul>
   <li>Data (filename.fastq.gz) is linked to Run Alias
 ]
-<img src="../../images/upload-data-to-ena/data_metadata.png" alt="data-metadata. " loading="lazy" />
+<img src="../../images/upload-data-to-ena/data_metadata.png" alt="data-metadata" />
 —</li>
 </ul>
 
@@ -402,23 +424,46 @@ This material is licensed under the <a rel="license" href="https://creativecommo
 
 
         </div>
-        
-            <footer>
-    <div class="container">
-        <br><br>
-        <p>
-            The <a href="https://galaxyproject.org/teach/gtn/">Galaxy Training Network</a>
-            provides researchers with online training materials, connects them with local trainers, and helps promoting open data analysis practices worldwide.
-        </p>
-        <p>
-        The content of the tutorials is licensed under the <a rel="license" href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>. The website and infrastructure is licensed under <a rel="license" href="https://github.com/galaxyproject/training-material/blob/main/LICENSE.md">MIT</a>.
-        </p>
+        <footer>
+	<hr />
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-6" style="text-align: left">
+				<p>
+					The <a href="https://galaxyproject.org/teach/gtn/">Galaxy Training Network</a>
+					provides researchers with online training materials, connects them with local trainers, and helps promoting FAIR and Open Science practices worldwide. All contributions are subject to the <a rel="code-of-conduct" href="https://galaxyproject.org/community/coc/">Galaxy Project Code of Conduct</a>.
+				</p>
+				<p>
+				The GTN infrastructure is licensed under <a rel="license" href="https://github.com/galaxyproject/training-material/blob/main/LICENSE.md">MIT</a>
+				</p>
+				<p>
+				Revision <a href="https://github.com/galaxyproject/training-material/commit/37aabd7fe18d9445ff47887459affaea8dbe8791">37aabd7</a>, built with Jekyll (4.3.2 | production)
+				</p>
+			</div>
+			<div class="col-sm-6" style="text-align: right">
+				
+				<p>
+					
+						Materials licensed under
+					
+					<a rel="license" href="https://spdx.org/licenses/CC-BY-4.0">
+						Creative Commons Attribution 4.0 International License
+					</a>
+				</p>
+				<p>
+					<a href="https://github.com/galaxyproject/training-material/edit/main/./topics/galaxy-interface/tutorials/upload-data-to-ena/slides.html" title="Edit on GitHub">
+					<i class="fab fa-github" aria-hidden="true"></i><span class="visually-hidden">github</span> Edit on GitHub
+					</a>
+				</p>
+			</div>
+		</div>
+	</div>
+</footer>
 
-        <p>This is revision <a href="https://github.com/galaxyproject/training-material/commit/c7a4c2777051912c2635a198c8a684054d68eead">c7a4c2777051912c2635a198c8a684054d68eead</a>. </p>
+
     </div>
 </footer>
 
-        
         <script src="/training-material/assets/js/jquery.slim.min.js"></script>
         <script src="/training-material/assets/js/popper.min.js"></script>
         <script src="/training-material/assets/js/bootstrap.min.js?v=3"></script>

@@ -8,6 +8,29 @@
         
             <script async defer data-domain="training.galaxyproject.org" src="https://plausible.galaxyproject.eu/js/plausible.js"></script>
 
+<!-- JavaScript Error Monitoring, and performance tracking. -->
+<script
+  src="https://browser.sentry-cdn.com/7.52.1/bundle.tracing.min.js"
+  integrity="sha384-muuFXKS3752PNA4rPm9Uq6BLvOfV4CXyr9MHDBPvozOJJUWLKkogEFWOIRoVps43"
+  crossorigin="anonymous"
+></script>
+<script type="text/javascript">
+Sentry.init({
+  dsn: "https://45e0ec6e4373462b92969505df37cf40@sentry.galaxyproject.org/10",
+  release: "galaxy-training-network@37aabd7fe18d9445ff47887459affaea8dbe8791",
+  integrations: [new Sentry.BrowserTracing(), new Sentry.Replay()],
+  sampleRate: 0.1,
+  tracesSampleRate: 0.1,
+  // Capture Replay for no sessions by default
+  replaysSessionSampleRate: 0.01,
+  // plus for 1% of sessions with an error
+  replaysOnErrorSampleRate: 0.01,
+  // PII OFF
+  sendDefaultPii: false, // Off by default but just in case.
+  environment: "production",
+});
+</script>
+
         
         <link rel="stylesheet" href="/training-material/assets/css/bootstrap.min.css?v=3">
         <link rel="stylesheet" href="/training-material/assets/css/bootstrap-toc.min.css">
@@ -17,13 +40,13 @@
         <link rel="shortcut icon" href="/training-material/favicon.ico" type="image/x-icon">
         <link rel="alternate" type="application/atom+xml" href="/training-material/feed.xml">
         <link rel="canonical" href="https://training.galaxyproject.org/training-material/topics/ai4life/tutorials/getting-started/slides-plain.html">
-        <link rel="license" href="https://creativecommons.org/licenses/by/4.0/">
+	<link rel="license" href="https://spdx.org/licenses/CC-BY-4.0">
 
         <meta name="DC.identifier" content="https://github.com/galaxyproject/training-material">
 <meta name="DC.type" content="text">
 <meta name="DC.title" content="BioImage Model Zoo: Advanced models in one-click">
 <meta name="DC.publisher" content="Galaxy Training Network">
-<meta name="DC.date" content="2023-05-18 00:32:59 +0000">
+<meta name="DC.date" content="2023-05-18 14:47:09 +0000">
 <meta name="DC.creator" content="Caterina Fuster-Barceló">
 
         
@@ -35,7 +58,7 @@
         <meta property="og:title" content="Galaxy Training: BioImage Model Zoo: Advanced models in one-click">
         <meta property="og:description" content="Collection of tutorials developed and maintained by the w...">
         
-        <meta property="og:image" content="/training-material/assets/images/GTNLogo1000.png">
+        <meta property="og:image" content="/training-material/assets/images/GTN.png">
 
         
     </head>
@@ -104,8 +127,7 @@
     </a>
     <div class="dropdown-menu dropdown-menu-right">
 
-        
-        <a class="dropdown-item" href="https://github.com/galaxyproject/training-material/edit/main/topics/ai4life/tutorials/getting-started/slides-plain.md" title="Edit on GitHub">
+        <a class="dropdown-item" href="https://github.com/galaxyproject/training-material/edit/main./topics/ai4life/tutorials/getting-started/slides.html" title="Edit on GitHub">
           <i class="fab fa-github" aria-hidden="true"></i><span class="visually-hidden">github</span> Edit on GitHub
         </a>
 
@@ -232,35 +254,36 @@
 
 	<h2 id="bioimage-model-zoo">BioImage Model Zoo</h2>
 
-<p>Integrated with Fiji, ilastik, ImJoy and more
-Try model instantly with BioEngine
-Contribute your models via Github
-Link models to datasets and applications
-<a href="https://bioimage.io/#/">Explore the zoo!</a>
+<ul>
+  <li>Integrated with Fiji, ilastik, ImJoy and more</li>
+  <li>Try model instantly with BioEngine</li>
+  <li>Contribute your models via Github</li>
+  <li>Link models to datasets and applications
+<a href="https://bioimage.io/#/">Explore the zoo!</a></li>
+</ul>
+
+<p><span>Speaker Notes</span>
+The BioImage Model Zoo is integrated with different softwares such as Fiji, ilastik, ImJoy and more. You can try the models instantly with BioEngine and contribute your models via Github. You can also link models to datasets and applications.
 —</p>
 
 <h3 id="introduction">Introduction</h3>
 
+<p>The BioImage Model Zoo is destined for two different end users:</p>
 <ul>
-  <li>Uses the Model Resource Description File Specification as a distribution point for DL models</li>
-  <li>Two different end users:
-    <ul>
-      <li>Developers with trained model</li>
-      <li>Researchers willing to use those trained models</li>
-    </ul>
-  </li>
+  <li>Developers with trained model</li>
+  <li>Researchers willing to use those trained models</li>
 </ul>
 
-<figure id="figure-1"><img src="../../images/bioimage_description.png" alt="Description of the bioimage.io. " width="1537" height="809" loading="lazy" /><figcaption><span class="figcaption-prefix"><strong>Figure 1</strong>:</span> Description of the bioimage.io</figcaption></figure>
+<p><img src="../../images/bioimage_description.png" alt="Description of the bioimage.io" title="Description of the bioimage.io" /></p>
 
 <p><span>Speaker Notes</span>
-The Bioimage Model Zoo is a community-driven AI model repository. The aim is to facilitate the adoption of AI methods among the bioimaging community by providing easy access to pretrained AI models. By establishing a common Model Resource Description File Specification, the model zoo serves as a distribution point for deep learning models trained to perform bioimage analysis tasks.
+The BioImage Model Zoo is a community-driven AI model repository. The aim is to facilitate the adoption of AI methods among the bioimaging community by providing easy access to pretrained AI models. By establishing a common Model Resource Description File Specification, the model zoo serves as a distribution point for deep learning models trained to perform bioimage analysis tasks.
 —</p>
 
 <h3 id="who-is-funding-it">Who is funding it?</h3>
 
-<figure id="figure-2"><img src="../../images/AI4Life-logo_giraffe-solid.png" alt="AI4Life. " width="4572" height="2111" loading="lazy" /><figcaption><span class="figcaption-prefix"><strong>Figure 2</strong>:</span> AI4Life</figcaption></figure>
-<p>AI models and methods 4 the Life Sciences</p>
+<p><img src="../../images/AI4Life-logo_giraffe-solid.png" alt="AI4Life" />
+AI models and methods 4 the Life Sciences</p>
 
 <p><span>Speaker Notes</span>
 Currently, the bioimage io is being funded by the AI4Life project, research services and infrastructure to support life scientists in the adoption of machine learning solutions that improve the utility and interpretability of image data – the key to future biological and biomedical research.
@@ -268,12 +291,12 @@ Currently, the bioimage io is being funded by the AI4Life project, research serv
 
 <h3 id="who-is-currently-contributing">Who is currently contributing?</h3>
 
-<p><img src="../../images/bmz-community-partners.png" alt="bioimage.io Community Partners. " loading="lazy" /></p>
+<p><img src="../../images/bmz-community-partners.png" alt="bioimage.io Community Partners" /></p>
 
 <p>Community partners such as ilastik, ImJoy, Fiji, deepImageJ, ZeroCostDL4Mic, QuPath, Icy and more!</p>
 
 <p><span>Speaker Notes</span>
-Several founding partners including ilastik, ImJoy, Fiji, deepImageJ, ZeroCostDL4Mic, QuPath and Icy are involved in the creation of the model zoo and we welcome more community partners to join the efforts. 
+Several founding partners including ilastik, ImJoy, Fiji, deepImageJ, ZeroCostDL4Mic, QuPath and Icy are involved in the creation of the model zoo and we welcome more community partners to join the efforts.
 —</p>
 
 <h3 id="only-these-ones">Only these ones?</h3>
@@ -286,10 +309,10 @@ The model zoo is open for contributions from the community partners and external
 
 <h2 id="how-does-it-work">How does it work?</h2>
 
-<figure id="figure-3"><img src="../../images/bioimage-io-paper-figure-1.png" alt="Operation of bioimage.io. " width="2500" height="1319" loading="lazy" /><figcaption><span class="figcaption-prefix"><strong>Figure 3</strong>:</span> Operation of bioimage-io and its community partners</figcaption></figure>
+<p><img src="../../images/bioimage-io-paper-figure-1.png" alt="Operation of bioimage.io" title="Operation of bioimage-io and its community partners" /></p>
 
 <p><span>Speaker Notes</span>
-The BioImage Model Zoo is a repository with many trained models ready to use on many different AI-powered bioimage analysis tools. You can either upload your trained model so it is shared among the community or use that model through any of our user-friendly softwares between the community partners. 
+The BioImage Model Zoo is a repository with many trained models ready to use on many different AI-powered bioimage analysis tools. You can either upload your trained model so it is shared among the community or use that model through any of our user-friendly softwares between the community partners.
 All models will appear on their own model card. In each card several information about how to download it, run it, who made it and more can be found.
 Finally, there are many different applications for that models such as segmentation, classification, artificial labeling, denoising, super-resolution and more.
 —</p>
@@ -308,14 +331,6 @@ There are many reasons for which you should be using the bioimage.io to run and 
 
 	<hr />
 
-
-<h2>Key Points</h2>
-
-<ul>
-
-<li>The BioImage Model Zoo is a community-driven AI model repository to facilitate the adoption of AI methods among the bioimage community by providing easy access to pretrained AI models.</li>
-
-</ul>
 
 
 
@@ -341,23 +356,46 @@ This material is licensed under the <a rel="license" href="https://creativecommo
 
 
         </div>
-        
-            <footer>
-    <div class="container">
-        <br><br>
-        <p>
-            The <a href="https://galaxyproject.org/teach/gtn/">Galaxy Training Network</a>
-            provides researchers with online training materials, connects them with local trainers, and helps promoting open data analysis practices worldwide.
-        </p>
-        <p>
-        The content of the tutorials is licensed under the <a rel="license" href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>. The website and infrastructure is licensed under <a rel="license" href="https://github.com/galaxyproject/training-material/blob/main/LICENSE.md">MIT</a>.
-        </p>
+        <footer>
+	<hr />
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-6" style="text-align: left">
+				<p>
+					The <a href="https://galaxyproject.org/teach/gtn/">Galaxy Training Network</a>
+					provides researchers with online training materials, connects them with local trainers, and helps promoting FAIR and Open Science practices worldwide. All contributions are subject to the <a rel="code-of-conduct" href="https://galaxyproject.org/community/coc/">Galaxy Project Code of Conduct</a>.
+				</p>
+				<p>
+				The GTN infrastructure is licensed under <a rel="license" href="https://github.com/galaxyproject/training-material/blob/main/LICENSE.md">MIT</a>
+				</p>
+				<p>
+				Revision <a href="https://github.com/galaxyproject/training-material/commit/37aabd7fe18d9445ff47887459affaea8dbe8791">37aabd7</a>, built with Jekyll (4.3.2 | production)
+				</p>
+			</div>
+			<div class="col-sm-6" style="text-align: right">
+				
+				<p>
+					
+						Materials licensed under
+					
+					<a rel="license" href="https://spdx.org/licenses/CC-BY-4.0">
+						Creative Commons Attribution 4.0 International License
+					</a>
+				</p>
+				<p>
+					<a href="https://github.com/galaxyproject/training-material/edit/main/./topics/ai4life/tutorials/getting-started/slides.html" title="Edit on GitHub">
+					<i class="fab fa-github" aria-hidden="true"></i><span class="visually-hidden">github</span> Edit on GitHub
+					</a>
+				</p>
+			</div>
+		</div>
+	</div>
+</footer>
 
-        <p>This is revision <a href="https://github.com/galaxyproject/training-material/commit/c7a4c2777051912c2635a198c8a684054d68eead">c7a4c2777051912c2635a198c8a684054d68eead</a>. </p>
+
     </div>
 </footer>
 
-        
         <script src="/training-material/assets/js/jquery.slim.min.js"></script>
         <script src="/training-material/assets/js/popper.min.js"></script>
         <script src="/training-material/assets/js/bootstrap.min.js?v=3"></script>

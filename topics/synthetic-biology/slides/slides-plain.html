@@ -8,6 +8,29 @@
         
             <script async defer data-domain="training.galaxyproject.org" src="https://plausible.galaxyproject.eu/js/plausible.js"></script>
 
+<!-- JavaScript Error Monitoring, and performance tracking. -->
+<script
+  src="https://browser.sentry-cdn.com/7.52.1/bundle.tracing.min.js"
+  integrity="sha384-muuFXKS3752PNA4rPm9Uq6BLvOfV4CXyr9MHDBPvozOJJUWLKkogEFWOIRoVps43"
+  crossorigin="anonymous"
+></script>
+<script type="text/javascript">
+Sentry.init({
+  dsn: "https://45e0ec6e4373462b92969505df37cf40@sentry.galaxyproject.org/10",
+  release: "galaxy-training-network@37aabd7fe18d9445ff47887459affaea8dbe8791",
+  integrations: [new Sentry.BrowserTracing(), new Sentry.Replay()],
+  sampleRate: 0.1,
+  tracesSampleRate: 0.1,
+  // Capture Replay for no sessions by default
+  replaysSessionSampleRate: 0.01,
+  // plus for 1% of sessions with an error
+  replaysOnErrorSampleRate: 0.01,
+  // PII OFF
+  sendDefaultPii: false, // Off by default but just in case.
+  environment: "production",
+});
+</script>
+
         
         <link rel="stylesheet" href="/training-material/assets/css/bootstrap.min.css?v=3">
         <link rel="stylesheet" href="/training-material/assets/css/bootstrap-toc.min.css">
@@ -17,13 +40,13 @@
         <link rel="shortcut icon" href="/training-material/favicon.ico" type="image/x-icon">
         <link rel="alternate" type="application/atom+xml" href="/training-material/feed.xml">
         <link rel="canonical" href="https://training.galaxyproject.org/training-material/topics/synthetic-biology/slides/slides-plain.html">
-        <link rel="license" href="https://creativecommons.org/licenses/by/4.0/">
+	<link rel="license" href="https://spdx.org/licenses/CC-BY-4.0">
 
         <meta name="DC.identifier" content="https://github.com/galaxyproject/training-material">
 <meta name="DC.type" content="text">
 <meta name="DC.title" content="Introduction to Synthetic Biology">
 <meta name="DC.publisher" content="Galaxy Training Network">
-<meta name="DC.date" content="2023-05-18 00:33:03 +0000">
+<meta name="DC.date" content="2023-05-18 14:47:13 +0000">
 <meta name="DC.creator" content="Kenza Bazi-Kabbaj">
 <meta name="DC.creator" content="Thomas Duigou">
 <meta name="DC.creator" content="Joan Hérisson">
@@ -40,7 +63,7 @@
         <meta property="og:title" content="Galaxy Training: Introduction to Synthetic Biology">
         <meta property="og:description" content="Collection of tutorials developed and maintained by the w...">
         
-        <meta property="og:image" content="/training-material/assets/images/GTNLogo1000.png">
+        <meta property="og:image" content="/training-material/assets/images/GTN.png">
 
         
     </head>
@@ -109,8 +132,7 @@
     </a>
     <div class="dropdown-menu dropdown-menu-right">
 
-        
-        <a class="dropdown-item" href="https://github.com/galaxyproject/training-material/edit/main/topics/synthetic-biology/slides/slides-plain.md" title="Edit on GitHub">
+        <a class="dropdown-item" href="https://github.com/galaxyproject/training-material/edit/main./topics/synthetic-biology/slides/introduction.html" title="Edit on GitHub">
           <i class="fab fa-github" aria-hidden="true"></i><span class="visually-hidden">github</span> Edit on GitHub
         </a>
 
@@ -225,7 +247,7 @@
 
 <p>.left[Engineers apply the principles of science and mathematics to develop solutions to problems.]</p>
 
-<p>.left.image-40[<img src="../images/design_process.png" alt="Left-aligned image. " loading="lazy" />]</p>
+<p>.left.image-40[<img src="../images/design_process.png" alt="Left-aligned image" />]</p>
 
 <hr />
 
@@ -245,7 +267,7 @@
 
 <h2 id="hierarchy-for-synthetic-biology-inspired-by-computer-engineering">Hierarchy for synthetic biology inspired by computer engineering</h2>
 
-<p>.center[<img src="../images/hierarchy_computer_eng.jpg" alt="Centered image. " loading="lazy" />]</p>
+<p>.center[<img src="../images/hierarchy_computer_eng.jpg" alt="Centered image" />]</p>
 
 <hr />
 
@@ -255,7 +277,7 @@
 
 <p>.left[<strong>Synthetic biology</strong> provides novel strategies to perturb endogenous networks, enabling systems-level data to be obtained under a myriad of otherwise inaccessible cellular states.]</p>
 
-<p>.center[<img src="../images/system_synthetic_biology.jpg" alt="Centered image. " loading="lazy" />]</p>
+<p>.center[<img src="../images/system_synthetic_biology.jpg" alt="Centered image" />]</p>
 
 <hr />
 
@@ -263,7 +285,7 @@
 
 <h2 id="bottom-up-approach">Bottom-up approach</h2>
 
-<p>.center[<img src="../images/bottom-up-approach.png" alt="Centered image. " loading="lazy" />]</p>
+<p>.center[<img src="../images/bottom-up-approach.png" alt="Centered image" />]</p>
 
 <hr />
 
@@ -340,7 +362,7 @@
 
 <p>The <strong>Design-Build-Test-Learn (DBTL)</strong> framework aims to fulfill particular design criteria for a synthetic biology application, which might for example be the production of a specific product at an optimal titer or the detection of a specific clinical biomarker using an engineered gut microbiome.</p>
 
-<p>.center[<img src="../images/DBTL_Cycle.png" alt="Centered image. " loading="lazy" />]</p>
+<p>.center[<img src="../images/DBTL_Cycle.png" alt="Centered image" />]</p>
 
 <hr />
 
@@ -360,7 +382,7 @@
 <p>.left[Synthetic biology tools are essential and widely used in the engineering process and the bioproduction of chemicals.
 Here an overview of the current Synthetic Biology toolbox:]</p>
 
-<p>.center[<img src="../images/synthetic_biology_toolbox.png" alt="Centered image. " loading="lazy" />]</p>
+<p>.center[<img src="../images/synthetic_biology_toolbox.png" alt="Centered image" />]</p>
 
 <hr />
 
@@ -370,7 +392,7 @@ Here an overview of the current Synthetic Biology toolbox:]</p>
 
 <p>.left[Genetic engineering here aims to rewire the bacterial metabolism in order to enable the production of the target compound within a chassis strain. If the strain turns out to be non-genetically editable, compound biosynthesis pathways are transferred in organisms specialized in bio-production, called <strong>chassis</strong>.]</p>
 
-<p>.center.image-50[<img src="../images/bioproduction_drugs_e_coli.png" alt="Centered image. " loading="lazy" />]</p>
+<p>.center.image-50[<img src="../images/bioproduction_drugs_e_coli.png" alt="Centered image" />]</p>
 
 <hr />
 
@@ -380,7 +402,7 @@ Here an overview of the current Synthetic Biology toolbox:]</p>
 .left[“<em>A chassis refers to the organism that serves as a foundation to physically house genetic components and supports them by providing the resources to function, such as transcription and translation machinery</em>”]
 .left[They are required to propagate the genetic information and to express the genes encoded in it.]</p>
 
-<p>.pull-right.image-30[<img src="../images/chassis_target.png" alt="Centered image. " loading="lazy" />]</p>
+<p>.pull-right.image-30[<img src="../images/chassis_target.png" alt="Centered image" />]</p>
 
 <p>.left[Commonly used chassis in synthetic biology:]
 .left[- Prokaryotes: 
@@ -403,7 +425,7 @@ Here an overview of the current Synthetic Biology toolbox:]</p>
 
 <p>.left[The tools and workflows used in these tutorials are currently available in the <a href="https://toolshed.g2.bx.psu.edu/">toolshed</a> in the <em>Synthetic Biology</em> category and on the <a href="https://galaxy-synbiocad.org/">Galaxy SynBioCAD Portal</a>. They cover an end-to-end metabolic pathway design process from the selection of <strong>chassis</strong> to the design of DNA parts to be assembled to build libraries of strains producing desired chemical <strong>targets</strong>.]</p>
 
-<p>.center[<img src="../images/synbiocad_tools.png" alt="Centered image. " loading="lazy" />]</p>
+<p>.center[<img src="../images/synbiocad_tools.png" alt="Centered image" />]</p>
 
 <hr />
 
@@ -445,23 +467,46 @@ This material is licensed under the <a rel="license" href="https://creativecommo
 
 
         </div>
-        
-            <footer>
-    <div class="container">
-        <br><br>
-        <p>
-            The <a href="https://galaxyproject.org/teach/gtn/">Galaxy Training Network</a>
-            provides researchers with online training materials, connects them with local trainers, and helps promoting open data analysis practices worldwide.
-        </p>
-        <p>
-        The content of the tutorials is licensed under the <a rel="license" href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>. The website and infrastructure is licensed under <a rel="license" href="https://github.com/galaxyproject/training-material/blob/main/LICENSE.md">MIT</a>.
-        </p>
+        <footer>
+	<hr />
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-6" style="text-align: left">
+				<p>
+					The <a href="https://galaxyproject.org/teach/gtn/">Galaxy Training Network</a>
+					provides researchers with online training materials, connects them with local trainers, and helps promoting FAIR and Open Science practices worldwide. All contributions are subject to the <a rel="code-of-conduct" href="https://galaxyproject.org/community/coc/">Galaxy Project Code of Conduct</a>.
+				</p>
+				<p>
+				The GTN infrastructure is licensed under <a rel="license" href="https://github.com/galaxyproject/training-material/blob/main/LICENSE.md">MIT</a>
+				</p>
+				<p>
+				Revision <a href="https://github.com/galaxyproject/training-material/commit/37aabd7fe18d9445ff47887459affaea8dbe8791">37aabd7</a>, built with Jekyll (4.3.2 | production)
+				</p>
+			</div>
+			<div class="col-sm-6" style="text-align: right">
+				
+				<p>
+					
+						Materials licensed under
+					
+					<a rel="license" href="https://spdx.org/licenses/CC-BY-4.0">
+						Creative Commons Attribution 4.0 International License
+					</a>
+				</p>
+				<p>
+					<a href="https://github.com/galaxyproject/training-material/edit/main/./topics/synthetic-biology/slides/introduction.html" title="Edit on GitHub">
+					<i class="fab fa-github" aria-hidden="true"></i><span class="visually-hidden">github</span> Edit on GitHub
+					</a>
+				</p>
+			</div>
+		</div>
+	</div>
+</footer>
 
-        <p>This is revision <a href="https://github.com/galaxyproject/training-material/commit/c7a4c2777051912c2635a198c8a684054d68eead">c7a4c2777051912c2635a198c8a684054d68eead</a>. </p>
+
     </div>
 </footer>
 
-        
         <script src="/training-material/assets/js/jquery.slim.min.js"></script>
         <script src="/training-material/assets/js/popper.min.js"></script>
         <script src="/training-material/assets/js/bootstrap.min.js?v=3"></script>

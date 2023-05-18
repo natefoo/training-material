@@ -10,6 +10,29 @@
         
             <script async defer data-domain="training.galaxyproject.org" src="https://plausible.galaxyproject.eu/js/plausible.js"></script>
 
+<!-- JavaScript Error Monitoring, and performance tracking. -->
+<script
+  src="https://browser.sentry-cdn.com/7.52.1/bundle.tracing.min.js"
+  integrity="sha384-muuFXKS3752PNA4rPm9Uq6BLvOfV4CXyr9MHDBPvozOJJUWLKkogEFWOIRoVps43"
+  crossorigin="anonymous"
+></script>
+<script type="text/javascript">
+Sentry.init({
+  dsn: "https://45e0ec6e4373462b92969505df37cf40@sentry.galaxyproject.org/10",
+  release: "galaxy-training-network@37aabd7fe18d9445ff47887459affaea8dbe8791",
+  integrations: [new Sentry.BrowserTracing(), new Sentry.Replay()],
+  sampleRate: 0.1,
+  tracesSampleRate: 0.1,
+  // Capture Replay for no sessions by default
+  replaysSessionSampleRate: 0.01,
+  // plus for 1% of sessions with an error
+  replaysOnErrorSampleRate: 0.01,
+  // PII OFF
+  sendDefaultPii: false, // Off by default but just in case.
+  environment: "production",
+});
+</script>
+
         
         <link rel="stylesheet" href="/training-material/assets/css/main.css?v=2">
         <script src="https://kit.fontawesome.com/67b3f98409.js" crossorigin="anonymous"></script>
@@ -23,7 +46,7 @@
 <meta name="DC.type" content="text">
 <meta name="DC.title" content="Tool development and integration into Galaxy">
 <meta name="DC.publisher" content="Galaxy Training Network">
-<meta name="DC.date" content="2023-04-14 14:21:55 +0000">
+<meta name="DC.date" content="2023-04-21 09:13:05 +0000">
 <meta name="DC.creator" content="Saskia Hiltemann">
 <meta name="DC.creator" content="Bérénice Batut">
 <meta name="DC.creator" content="Anthony Bretaudeau">
@@ -69,7 +92,7 @@
     "name": "Galaxy Training Network",
     "url": "https://galaxyproject.org/teach/gtn/"
   },
-  "dateModified": "2023-04-14 14:21:55 +0000",
+  "dateModified": "2023-04-21 09:13:05 +0000",
   "discussionUrl": "https://gitter.im/Galaxy-Training-Network/Lobby",
   "headline": "Tool development and integration into Galaxy",
   "interactivityType": "mixed",
@@ -95,6 +118,10 @@
     "url": "https://galaxyproject.org/teach/gtn/"
   },
   "identifier": "https://github.com/galaxyproject/training-material",
+  "workTranslation": [
+
+  ],
+  "creativeWorkStatus": "Active",
   "accessMode": [
     "textual",
     "visual"
@@ -122,6 +149,7 @@
   "name": "Slides for 'Tool development and integration into Galaxy' tutorial",
   "url": "https://training.galaxyproject.org/training-material/topics/dev/tutorials/tool-integration/slides.html",
   "timeRequired": "PT6H",
+  "teaches": "Learn what a tool is and its structure\n - Use the Planemo utilities to develop a tool\n - Deal with the dependencies\n - Write functional tests\n - Make a tool ready for publishing in a ToolShed",
   "keywords": "dev",
   "description": "The questions this  addresses are:\n - What is a tool for Galaxy?\n - How to write a best-practice tool?\n - How to deal with the tool environment?\n\n\nThe objectives are:\n - Learn what a tool is and its structure\n - Use the Planemo utilities to develop a tool\n - Deal with the dependencies\n - Write functional tests\n - Make a tool ready for publishing in a ToolShed\n\n",
   "inLanguage": {
@@ -134,8 +162,8 @@
       "@context": "https://schema.org",
       "@type": "Person",
       "http://purl.org/dc/terms/conformsTo": {
-        "@id": "https://bioschemas.org/profiles/Person/0.2-DRAFT-2019_07_19",
-        "@type": "Person"
+        "@id": "https://bioschemas.org/profiles/Person/0.3-DRAFT",
+        "@type": "CreativeWork"
       },
       "url": "https://training.galaxyproject.org/training-material/hall-of-fame/shiltemann/",
       "mainEntityOfPage": "https://training.galaxyproject.org/training-material/hall-of-fame/shiltemann/",
@@ -157,8 +185,8 @@
       "@context": "https://schema.org",
       "@type": "Person",
       "http://purl.org/dc/terms/conformsTo": {
-        "@id": "https://bioschemas.org/profiles/Person/0.2-DRAFT-2019_07_19",
-        "@type": "Person"
+        "@id": "https://bioschemas.org/profiles/Person/0.3-DRAFT",
+        "@type": "CreativeWork"
       },
       "url": "https://training.galaxyproject.org/training-material/hall-of-fame/bebatut/",
       "mainEntityOfPage": "https://training.galaxyproject.org/training-material/hall-of-fame/bebatut/",
@@ -180,8 +208,8 @@
       "@context": "https://schema.org",
       "@type": "Person",
       "http://purl.org/dc/terms/conformsTo": {
-        "@id": "https://bioschemas.org/profiles/Person/0.2-DRAFT-2019_07_19",
-        "@type": "Person"
+        "@id": "https://bioschemas.org/profiles/Person/0.3-DRAFT",
+        "@type": "CreativeWork"
       },
       "url": "https://training.galaxyproject.org/training-material/hall-of-fame/abretaud/",
       "mainEntityOfPage": "https://training.galaxyproject.org/training-material/hall-of-fame/abretaud/",
@@ -203,8 +231,8 @@
       "@context": "https://schema.org",
       "@type": "Person",
       "http://purl.org/dc/terms/conformsTo": {
-        "@id": "https://bioschemas.org/profiles/Person/0.2-DRAFT-2019_07_19",
-        "@type": "Person"
+        "@id": "https://bioschemas.org/profiles/Person/0.3-DRAFT",
+        "@type": "CreativeWork"
       },
       "url": "https://training.galaxyproject.org/training-material/hall-of-fame/jmchilton/",
       "mainEntityOfPage": "https://training.galaxyproject.org/training-material/hall-of-fame/jmchilton/",
@@ -226,8 +254,8 @@
       "@context": "https://schema.org",
       "@type": "Person",
       "http://purl.org/dc/terms/conformsTo": {
-        "@id": "https://bioschemas.org/profiles/Person/0.2-DRAFT-2019_07_19",
-        "@type": "Person"
+        "@id": "https://bioschemas.org/profiles/Person/0.3-DRAFT",
+        "@type": "CreativeWork"
       },
       "url": "https://training.galaxyproject.org/training-material/hall-of-fame/nsoranzo/",
       "mainEntityOfPage": "https://training.galaxyproject.org/training-material/hall-of-fame/nsoranzo/",
@@ -249,8 +277,8 @@
       "@context": "https://schema.org",
       "@type": "Person",
       "http://purl.org/dc/terms/conformsTo": {
-        "@id": "https://bioschemas.org/profiles/Person/0.2-DRAFT-2019_07_19",
-        "@type": "Person"
+        "@id": "https://bioschemas.org/profiles/Person/0.3-DRAFT",
+        "@type": "CreativeWork"
       },
       "url": "https://training.galaxyproject.org/training-material/hall-of-fame/bgruening/",
       "mainEntityOfPage": "https://training.galaxyproject.org/training-material/hall-of-fame/bgruening/",
@@ -272,169 +300,8 @@
       "@context": "https://schema.org",
       "@type": "Person",
       "http://purl.org/dc/terms/conformsTo": {
-        "@id": "https://bioschemas.org/profiles/Person/0.2-DRAFT-2019_07_19",
-        "@type": "Person"
-      },
-      "url": "https://training.galaxyproject.org/training-material/hall-of-fame/lecorguille/",
-      "mainEntityOfPage": "https://training.galaxyproject.org/training-material/hall-of-fame/lecorguille/",
-      "name": "Gildas Le Corguillé",
-      "image": "https://avatars.githubusercontent.com/lecorguille",
-      "description": "A contributor to the GTN project.",
-      "memberOf": [
-        {
-          "@type": "Organization",
-          "email": "galaxytrainingnetwork@gmail.com",
-          "name": "Galaxy Training Network",
-          "url": "https://galaxyproject.org/teach/gtn/"
-        }
-      ]
-    }
-  ],
-  "contributor": [
-    {
-      "@context": "https://schema.org",
-      "@type": "Person",
-      "http://purl.org/dc/terms/conformsTo": {
-        "@id": "https://bioschemas.org/profiles/Person/0.2-DRAFT-2019_07_19",
-        "@type": "Person"
-      },
-      "url": "https://training.galaxyproject.org/training-material/hall-of-fame/shiltemann/",
-      "mainEntityOfPage": "https://training.galaxyproject.org/training-material/hall-of-fame/shiltemann/",
-      "name": "Saskia Hiltemann",
-      "image": "https://avatars.githubusercontent.com/shiltemann",
-      "description": "Researcher at Erasmus Medical Center",
-      "memberOf": [
-        {
-          "@type": "Organization",
-          "email": "galaxytrainingnetwork@gmail.com",
-          "name": "Galaxy Training Network",
-          "url": "https://galaxyproject.org/teach/gtn/"
-        }
-      ],
-      "identifier": "https://orcid.org/0000-0003-3803-468X",
-      "orcid": "https://orcid.org/0000-0003-3803-468X"
-    },
-    {
-      "@context": "https://schema.org",
-      "@type": "Person",
-      "http://purl.org/dc/terms/conformsTo": {
-        "@id": "https://bioschemas.org/profiles/Person/0.2-DRAFT-2019_07_19",
-        "@type": "Person"
-      },
-      "url": "https://training.galaxyproject.org/training-material/hall-of-fame/bebatut/",
-      "mainEntityOfPage": "https://training.galaxyproject.org/training-material/hall-of-fame/bebatut/",
-      "name": "Bérénice Batut",
-      "image": "https://avatars.githubusercontent.com/bebatut",
-      "description": "A contributor to the GTN project.",
-      "memberOf": [
-        {
-          "@type": "Organization",
-          "email": "galaxytrainingnetwork@gmail.com",
-          "name": "Galaxy Training Network",
-          "url": "https://galaxyproject.org/teach/gtn/"
-        }
-      ],
-      "identifier": "https://orcid.org/0000-0001-9852-1987",
-      "orcid": "https://orcid.org/0000-0001-9852-1987"
-    },
-    {
-      "@context": "https://schema.org",
-      "@type": "Person",
-      "http://purl.org/dc/terms/conformsTo": {
-        "@id": "https://bioschemas.org/profiles/Person/0.2-DRAFT-2019_07_19",
-        "@type": "Person"
-      },
-      "url": "https://training.galaxyproject.org/training-material/hall-of-fame/abretaud/",
-      "mainEntityOfPage": "https://training.galaxyproject.org/training-material/hall-of-fame/abretaud/",
-      "name": "Anthony Bretaudeau",
-      "image": "https://avatars.githubusercontent.com/abretaud",
-      "description": "A contributor to the GTN project.",
-      "memberOf": [
-        {
-          "@type": "Organization",
-          "email": "galaxytrainingnetwork@gmail.com",
-          "name": "Galaxy Training Network",
-          "url": "https://galaxyproject.org/teach/gtn/"
-        }
-      ],
-      "identifier": "https://orcid.org/0000-0003-0914-2470",
-      "orcid": "https://orcid.org/0000-0003-0914-2470"
-    },
-    {
-      "@context": "https://schema.org",
-      "@type": "Person",
-      "http://purl.org/dc/terms/conformsTo": {
-        "@id": "https://bioschemas.org/profiles/Person/0.2-DRAFT-2019_07_19",
-        "@type": "Person"
-      },
-      "url": "https://training.galaxyproject.org/training-material/hall-of-fame/jmchilton/",
-      "mainEntityOfPage": "https://training.galaxyproject.org/training-material/hall-of-fame/jmchilton/",
-      "name": "John Chilton",
-      "image": "https://avatars.githubusercontent.com/jmchilton",
-      "description": "A contributor to the GTN project.",
-      "memberOf": [
-        {
-          "@type": "Organization",
-          "email": "galaxytrainingnetwork@gmail.com",
-          "name": "Galaxy Training Network",
-          "url": "https://galaxyproject.org/teach/gtn/"
-        }
-      ],
-      "identifier": "https://orcid.org/0000-0002-6794-0756",
-      "orcid": "https://orcid.org/0000-0002-6794-0756"
-    },
-    {
-      "@context": "https://schema.org",
-      "@type": "Person",
-      "http://purl.org/dc/terms/conformsTo": {
-        "@id": "https://bioschemas.org/profiles/Person/0.2-DRAFT-2019_07_19",
-        "@type": "Person"
-      },
-      "url": "https://training.galaxyproject.org/training-material/hall-of-fame/nsoranzo/",
-      "mainEntityOfPage": "https://training.galaxyproject.org/training-material/hall-of-fame/nsoranzo/",
-      "name": "Nicola Soranzo",
-      "image": "https://avatars.githubusercontent.com/nsoranzo",
-      "description": "A contributor to the GTN project.",
-      "memberOf": [
-        {
-          "@type": "Organization",
-          "email": "galaxytrainingnetwork@gmail.com",
-          "name": "Galaxy Training Network",
-          "url": "https://galaxyproject.org/teach/gtn/"
-        }
-      ],
-      "identifier": "https://orcid.org/0000-0003-3627-5340",
-      "orcid": "https://orcid.org/0000-0003-3627-5340"
-    },
-    {
-      "@context": "https://schema.org",
-      "@type": "Person",
-      "http://purl.org/dc/terms/conformsTo": {
-        "@id": "https://bioschemas.org/profiles/Person/0.2-DRAFT-2019_07_19",
-        "@type": "Person"
-      },
-      "url": "https://training.galaxyproject.org/training-material/hall-of-fame/bgruening/",
-      "mainEntityOfPage": "https://training.galaxyproject.org/training-material/hall-of-fame/bgruening/",
-      "name": "Björn Grüning",
-      "image": "https://avatars.githubusercontent.com/bgruening",
-      "description": "A contributor to the GTN project.",
-      "memberOf": [
-        {
-          "@type": "Organization",
-          "email": "galaxytrainingnetwork@gmail.com",
-          "name": "Galaxy Training Network",
-          "url": "https://galaxyproject.org/teach/gtn/"
-        }
-      ],
-      "identifier": "https://orcid.org/0000-0002-3079-6586",
-      "orcid": "https://orcid.org/0000-0002-3079-6586"
-    },
-    {
-      "@context": "https://schema.org",
-      "@type": "Person",
-      "http://purl.org/dc/terms/conformsTo": {
-        "@id": "https://bioschemas.org/profiles/Person/0.2-DRAFT-2019_07_19",
-        "@type": "Person"
+        "@id": "https://bioschemas.org/profiles/Person/0.3-DRAFT",
+        "@type": "CreativeWork"
       },
       "url": "https://training.galaxyproject.org/training-material/hall-of-fame/lecorguille/",
       "mainEntityOfPage": "https://training.galaxyproject.org/training-material/hall-of-fame/lecorguille/",
@@ -465,7 +332,12 @@
       "termCode": "topic_3372",
       "url": "https://bioportal.bioontology.org/ontologies/EDAM/?p=classes&conceptid=http%3A%2F%2Fedamontology.org%2Ftopic_3372"
     }
-  ]
+  ],
+  "educationalLevel": "Introductory",
+  "mentions": [
+
+  ],
+  "abstract": "# Galaxy tools"
 }
         </script>
     </head>
@@ -587,7 +459,7 @@ Useful when presenting.
 
 ## Tools in the Galaxy UI
 
-![Screenshot of galaxy with the three main panels labelled list of available tools on left, 'wrapper' in center, and history with results as datasets on right](../../images/galaxy_instance_detailed_screenshot.png)
+![Screenshot of galaxy with the three main panels labelled list of available tools on left, &apos;wrapper&apos; in center, and history with results as datasets on right](../../images/galaxy_instance_detailed_screenshot.png)
 
 ---
 
@@ -596,7 +468,7 @@ Useful when presenting.
 ![Screenshot of tool interface in Galaxy for GraPhlAn showing a variety of input types like file selection, select, text, numbers.](../../images/graphlan_screenshot.png)
 
 ```bash
-graphlan.py --format &quot;png&quot; --size 7 input_tree.txt png_image.png
+graphlan.py --format png --size 7 &apos;input_tree.txt&apos; &apos;png_image.png&apos;
 ```
 
 ---
@@ -638,7 +510,7 @@ Link between the Galaxy UI and the underlying tool:
 
 ## Tool execution
 
-![The previous image, but the input parameter named 'mystring' is shown pointing to its place in the command block. Same for the output pointing to the command block. An overlay shows the Job Command Line /bin/echo Hello world you are amazing &gt; a/path.dat](../../images/wrapper_big_picture_2.png)
+![The previous image, but the input parameter named &apos;mystring&apos; is shown pointing to its place in the command block. Same for the output pointing to the command block. An overlay shows the Job Command Line /bin/echo Hello world you are amazing &gt; a/path.dat](../../images/wrapper_big_picture_2.png)
 
 ---
 
@@ -708,7 +580,7 @@ If the script is provided with the tool xml:
     &lt;requirement type=&quot;package&quot; version=&quot;2.7&quot;&gt;python&lt;/requirement&gt;
 &lt;/requirements&gt;
 &lt;command&gt;&lt;![CDATA[
-python '$__tool_directory__/graphlan.py'
+python &apos;$__tool_directory__/graphlan.py&apos;
 --format $format
 ...
 ]]&gt;&lt;/command&gt;
@@ -723,7 +595,9 @@ python '$__tool_directory__/graphlan.py'
 
 ## `inputs` &gt; `param` to `command`
 
-Parameters are directly linked to variables in `&lt;command&gt;`
+Parameters are directly linked to variables in `&lt;command&gt;` by the `name` or `argument` attribute
+
+Parameters can be optional or required.
 
 ```xml
 &lt;command&gt;&lt;![CDATA[
@@ -732,7 +606,7 @@ graphlan.py
 #if str($dpi):
     --dpi $dpi
 #end if
-'$input_tree'
+&apos;$input_tree&apos;
 ...
 ]]&gt;&lt;/command&gt;
 &lt;inputs&gt;
@@ -747,8 +621,9 @@ graphlan.py
 
 ???
 
-- `name` or `argument` identifies a parameter (details of `argument` later)
-- Parameters can have different types (`data`, `data_collection`, `integer`, `float`, `text`, `select`, `boolean`, `color`, `data_column`,...)
+- The `name` or `argument` attribute identifies a parameter (details of `argument` later).
+- Parameters have different types (`data`, `data_collection`, `integer`, `float`, `text`, `select`, `boolean`, `color`, `data_column`,...)
+  and can be optional.
 
 ---
 
@@ -766,17 +641,16 @@ graphlan.py
 
 ## `inputs` &gt; `param` &gt; `integer` | `float`
 
-![Screenshot of the float input, it's just an input field set to 7.](../../images/input_integer.png)
+![Screenshot of an integer input, it&apos;s just an input field set to 7.](../../images/input_integer.png)
 
 ```xml
 &lt;param name=&quot;...&quot; type=&quot;integer&quot; value=&quot;7&quot; label=&quot;...&quot; help=&quot;...&quot;/&gt;
 ```
 
-![Screenshot of the float input again, but this time a slider appears due to addition of min and max](../../images/input_integer_range.png)
+![Screenshot of a float input from the cd_hit tool. This time also a slider appears due to addition of min and max](../../images/input_float_range.png)
 
 ```xml
-&lt;param name=&quot;...&quot; type=&quot;float&quot; min=&quot;0&quot; max=&quot;10&quot; value=&quot;1&quot; label=&quot;...&quot;
-    help=&quot;...&quot;/&gt;
+&lt;param name=&quot;...&quot; type=&quot;float&quot; min=&quot;0.4&quot; max=&quot;1.0&quot; value=&quot;0.9&quot; label=&quot;...&quot; help=&quot;...&quot;/&gt;
 ```
 
 ???
@@ -788,7 +662,7 @@ graphlan.py
 
 ## `inputs` &gt; `param` &gt; `text`
 
-![Screenshot of a textbox](../../images/input_text.png)
+![Screenshot of a textbox from the cd_hit tool.](../../images/input_text.png)
 
 ```xml
 &lt;param name=&quot;...&quot; type=&quot;text&quot; value=&quot;...&quot; label=&quot;...&quot; help=&quot;...&quot;/&gt;
@@ -798,13 +672,11 @@ graphlan.py
 
 ## `inputs` &gt; `param` &gt; `select`
 
-![Screenshot of a select drop down with several image formats.](../../images/input_select.png)
+![Screenshot of a select drop down with several image formats from the bedtools_bedtoigv tool.](../../images/input_select.png)
 
 ```xml
-&lt;param name=&quot;...&quot; type=&quot;select&quot; label=&quot;...&quot; help=&quot;...&quot;&gt;
+&lt;param name=&quot;...&quot; type=&quot;select&quot; label=&quot;...&quot;&gt;
     &lt;option value=&quot;png&quot; selected=&quot;true&quot;&gt;PNG&lt;/option&gt;
-    &lt;option value=&quot;pdf&quot;&gt;PDF&lt;/option&gt;
-    &lt;option value=&quot;ps&quot;&gt;PS&lt;/option&gt;
     &lt;option value=&quot;eps&quot;&gt;EPS&lt;/option&gt;
     &lt;option value=&quot;svg&quot;&gt;SVG&lt;/option&gt;
 &lt;/param&gt;
@@ -845,7 +717,7 @@ If no `option` has `selected=&quot;true&quot;`, the first one is selected by def
 
 ## `inputs` &gt; `param` &gt; `boolean`
 
-![A yes/no box is shown](../../images/input_boolean.png)
+![A yes/no switch from the bg_sortmerna tool.](../../images/input_boolean.png)
 
 ```xml
 &lt;param name=&quot;...&quot; type=&quot;boolean&quot; checked=&quot;false&quot; truevalue=&quot;--log&quot; falsevalue=&quot;&quot;
@@ -858,14 +730,17 @@ class: reduce70
 
 ## `inputs` &gt; `param` &gt; `conditional`
 
-.image-75[ ![Two screenshots are shown side by side. In the left a select box is set to Paired and two file inputs appear below. On the right the same select box is set to single, and only a single file input appears below it.](../../images/input_conditional.png) ]
+.pull-left[![Screenshot of a conditional select box set to Paired, and two file inputs appear below it.](../../images/input_conditional.png)]
+.pull-right[![Screenshot of a conditional select box set to Single, and only a single file input appears below it.](../../images/input_conditional_single.png)]
+
+&lt;br style=&quot;clear:left;&quot;/&gt;
 
 ```xml
 &lt;command&gt;&lt;![CDATA[
-#if $fastq_input.selector == 'paired':
-    '$fastq_input.input1' '$fastq_input.input2'
+#if $fastq_input.selector == &apos;paired&apos;:
+    &apos;$fastq_input.input1&apos; &apos;$fastq_input.input2&apos;
 #else:
-    '$fastq_input.input'
+    &apos;$fastq_input.input&apos;
 #end if
 ]]&gt;&lt;/command&gt;
 &lt;inputs&gt;
@@ -918,13 +793,7 @@ It makes sense to use a `&lt;repeat&gt;` block only if it contains multiple rela
 
 ## `outputs`
 
-Which files the tool will produce as output?
-
-![Screenshot of a galaxy history with three outputs.](../../images/output.png)
-
----
-
-## `outputs`
+.image-25[![Screenshot of a galaxy history with two outputs.](../../images/output.png)]
 
 ```xml
 &lt;outputs&gt;
@@ -1047,8 +916,8 @@ Always quote `text` and `data` parameters and output `data` in `&lt;command&gt;`
 &lt;command&gt;&lt;![CDATA[
 graphlan.py
 ...
-'$input_tree'
-'$png_output_image'
+&apos;$input_tree&apos;
+&apos;$png_output_image&apos;
 ]]&gt;&lt;/command&gt;
 ```
 
@@ -1065,7 +934,7 @@ Use `&amp;&amp;` to concatenate them
 ```xml
 &lt;command&gt;&lt;![CDATA[
 graphlan.py
---format '$format'
+--format &apos;$format&apos;
 &amp;&amp;
 echo &quot;Yeah it worked!&quot;
 ]]&gt;&lt;/command&gt;
@@ -1129,22 +998,22 @@ Creates a skeleton of xml file
 ```bash
 $ mkdir new_tool
 $ cd new_tool
-$ planemo tool_init --id 'some_short_id' --name 'My super tool'
+$ planemo tool_init --id &apos;some_short_id&apos; --name &apos;My super tool&apos;
 ```
 
 Complicated version:
 
 ```bash
-$ planemo tool_init --id 'samtools_sort' --name 'Samtools sort' \
-          --description 'order of storing aligned sequences' \
-          --requirement 'samtools@1.3.1' \
-          --example_command &quot;samtools sort -o '1_sorted.bam' '1.bam'&quot; \
+$ planemo tool_init --id &apos;samtools_sort&apos; --name &apos;Samtools sort&apos; \
+          --description &apos;order of storing aligned sequences&apos; \
+          --requirement &apos;samtools@1.3.1&apos; \
+          --example_command &quot;samtools sort -o &apos;1_sorted.bam&apos; &apos;1.bam&apos;&quot; \
           --example_input 1.bam \
           --example_output 1_sorted.bam \
           --test_case \
-          --version_command 'samtools --version | head -1' \
-          --help_from_command 'samtools sort' \
-          --doi '10.1093/bioinformatics/btp352'
+          --version_command &apos;samtools --version | head -1&apos; \
+          --help_from_command &apos;samtools sort&apos; \
+          --doi &apos;10.1093/bioinformatics/btp352&apos;
 ```
 
 ---
@@ -1208,19 +1077,8 @@ Building Galaxy Tools
 ## Functional tests
 
 - Functional testing is a quality assurance (QA) process.
-- The tests comfort developers and users that the tools can run across different servers/architectures. And that the latest modifications don't break older features.
+- The tests comfort developers and users that the tools can run across different servers/architectures. And that the latest modifications don&apos;t break older features.
 - Tools are tested by feeding them inputs and parameters and verifying the outputs (typically a diff)
-
----
-
-## Good practices
-
-1. Build tests using inputs/parameters/outputs
-2. Run the tests --&gt; Failed --&gt; Coffee
-3. Develop
-4. Run the tests --&gt; Failed --&gt; Coffee
-5. Develop
-6. Run the tests --&gt; Succeed --&gt; Beer
 
 ---
 
@@ -1285,7 +1143,7 @@ graphlan/
 
 - `diff` is the default
 - `ftype` also checks the output datatype
-- With `md5` the test output file doesn't need to be distributed (useful for big output files)
+- With `md5` the test output file doesn&apos;t need to be distributed (useful for big output files)
 - `lines_diff` is useful for tools that output version number, current date, ...
 - `sim_size` is useful for binary files that vary at each execution (e.g. PDF)
 
@@ -1511,7 +1369,7 @@ ncbi_blastn_wrapper.xml
 
 ```xml
 &lt;command&gt;
-blastn -query '$query' @THREADS@ [...]
+blastn -query &apos;$query&apos; @THREADS@ [...]
 &lt;/command&gt;
 ```
 
@@ -1569,18 +1427,18 @@ This means: the 3rd revision of the Galaxy tool for Seqtk 1.2 .
 ```xml
 &lt;command&gt;&lt;![CDATA[
 # Email’s numeric ID (id column of galaxy_user table in the database)
-echo '$__user_id__'
+echo &apos;$__user_id__&apos;
 
 # User’s email address
-echo '$__user_email__'
+echo &apos;$__user_email__&apos;
 
 # The galaxy.app.UniverseApplication instance, gives access to all other configuration file variables.
 # Should be used as a last resort, may go away in future releases.
-echo '$__app__.config.user_library_import_dir'
+echo &apos;$__app__.config.user_library_import_dir&apos;
 
 # Check a dataset type
-#if $input1.is_of_type('gff'):
-    echo 'input1 type is ${input1.datatype}'
+#if $input1.is_of_type(&apos;gff&apos;):
+    echo &apos;input1 type is ${input1.datatype}&apos;
 #end if
 ]]&gt;&lt;/command&gt;
 ```
@@ -1694,8 +1552,8 @@ Single execution:
 ```xml
 &lt;command&gt;&lt;![CDATA[ ...
 #for $input in $inputs
-    --input '$input'
-    --sample_name '$input.element_identifier'
+    --input &apos;$input&apos;
+    --sample_name &apos;$input.element_identifier&apos;
 #end for
 ]]&gt;&lt;/command&gt;
 ```
@@ -1940,80 +1798,6 @@ Applying linter readme... CHECK
 .. INFO: No README found skipping.
 +Linting tool […]/tandem_repeats_finder/tandem_repeats_finder_wrapper.xml
 […]
-```
-
----
-
-.image-25[![Ansible logo](../../../../shared/images/ansible_logo.png)]
-
-.image-50[![Conda logo](../../../../shared/images/conda_logo.png)]
-
-.image-50[![Docker logo](../../../../shared/images/docker_logo.png)]
-
----
-
-## Docker Galaxy Flavors
-
-![Galaxy docker logo, the docker logo with several containers replaced by galaxy logos.](../../images/galaxydocker_logo.png)
-
-.footnote[[Docker Galaxy Stable](https://github.com/bgruening/docker-galaxy-stable)]
-
----
-
-## Docker Galaxy Flavors
-
-Dockerfile
-
-```yaml
-# Galaxy - My own flavour
-# VERSION       0.1
-
-FROM quay.io/bgruening/galaxy:16.07
-
-MAINTAINER Björn A. Grüning, bjoern.gruening@gmail.com
-
-ENV GALAXY_CONFIG_BRAND deepTools
-
-# Adding the tool definitions to the container
-ADD my_tool_list.yml $GALAXY_ROOT/my_tool_list.yml
-
-# Install deepTools
-RUN install-tools $GALAXY_ROOT/my_tool_list.yml
-```
-
----
-
-## Docker Galaxy Flavors
-
-`tool_list.yml`
-
-```yaml
-api_key: admin
-galaxy_instance: http://127.0.0.1:8080/
-tools:
-- name: fastqc
-  owner: devteam
-  tool_panel_section_id: cshl_library_information
-  tool_shed_url: https://toolshed.g2.bx.psu.edu
-  revisions:
-    - '8c650f7f76e9'  # v0.62
-    - 'd2cf2c0c8a11'  # v0.63
-- name: suite_deeptools
-  owner: bgruening
-  tool_panel_section_label: 'deepTools'
-  tool_shed_url: https://toolshed.g2.bx.psu.edu
-  revisions:
-    - '7f5562625ae2'
-```
-
----
-
-## Docker Galaxy Flavors
-
-RUN
-
-```bash
-docker run -d -p 8080:80 galaxy-deeptools
 ```
 
 

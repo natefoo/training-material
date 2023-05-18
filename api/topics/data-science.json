@@ -3,7 +3,9 @@
   "type": "data-science",
   "title": "Foundations of Data Science",
   "summary": "These lessons will help you get your feet in data science and give you tools to help you slice and dice your data into results.",
-  "edam_ontology": "topic_3372",
+  "edam_ontology": [
+    "topic_3372"
+  ],
   "subtopics": [
     {
       "id": "bash",
@@ -42,7 +44,7 @@
       "email": "hexylena@galaxians.org",
       "orcid": "0000-0001-9760-8992",
       "maintainer_contact": "gitter",
-      "gitter": "hexylena",
+      "matrix": "hexylena:matrix.org",
       "joined": "2017-09",
       "elixir_node": "nl",
       "fediverse": "https://galaxians.garden/hexylena",
@@ -62,7 +64,7 @@
       "email": "saskia.hiltemann@gmail.com",
       "twitter": "shiltemann",
       "linkedin": "shiltemann",
-      "gitter": "shiltemann",
+      "matrix": "shiltemann:matrix.org",
       "orcid": "0000-0003-3803-468X",
       "joined": "2017-09",
       "bio": "Researcher at Erasmus Medical Center",
@@ -81,7 +83,7 @@
       "name": "Fotis E. Psomopoulos",
       "email": "fpsom@certh.gr",
       "twitter": "fopsom",
-      "gitter": "fpsom",
+      "matrix": "fpsom:matrix.org",
       "orcid": "0000-0002-0222-4273",
       "linkedin": "fpsom",
       "joined": "2019-03",
@@ -95,7 +97,7 @@
       "email": "berenice.batut@gmail.com",
       "twitter": "bebatut",
       "linkedin": "berenicebatut",
-      "gitter": "bebatut",
+      "matrix": "bebatut:matrix.org",
       "orcid": "0000-0001-9852-1987",
       "joined": "2017-09",
       "elixir_node": "de",
@@ -114,7 +116,7 @@
       "name": "Yvan Le Bras",
       "email": "yvan.le-bras@mnhn.fr",
       "twitter": "Yvan2935",
-      "gitter": "yvanlebras",
+      "matrix": "yvanlebras:matrix.org",
       "orcid": "0000-0002-8504-068X",
       "joined": "2017-09",
       "elixir_node": "fr",
@@ -209,7 +211,7 @@
           "email": "hexylena@galaxians.org",
           "orcid": "0000-0001-9760-8992",
           "maintainer_contact": "gitter",
-          "gitter": "hexylena",
+          "matrix": "hexylena:matrix.org",
           "joined": "2017-09",
           "elixir_node": "nl",
           "fediverse": "https://galaxians.garden/hexylena",
@@ -236,10 +238,11 @@
           "avatar": "https://www.erasmusplus.nl/assets/images/logo.png",
           "github": false,
           "funder": true,
+          "url": "https://training.galaxyproject.org/training-material/api/contributors/erasmusplus.json",
           "funding_id": "2020-1-NL01-KA203-064717",
+          "funding_system": "erasmusplus",
           "funding_statement": "This project (<a href=\"https://ec.europa.eu/programmes/erasmus-plus/projects/eplus-project-details/#project/2020-1-NL01-KA203-064717\"><code class=\"language-plaintext highlighter-rouge\">2020-1-NL01-KA203-064717</code></a>) is funded with the support of the Erasmus+ programme of the European Union. Their funding has supported a large number of tutorials within the GTN across a wide array of topics.\n<img src=\"https://gallantries.github.io/assets/images/logosbeneficaireserasmusright_en.jpg\" alt=\"eu flag with the text: with the support of the erasmus programme of the european union\" />",
           "id": "erasmusplus",
-          "url": "https://training.galaxyproject.org/training-material/api/contributors/erasmusplus.json",
           "page": "https://training.galaxyproject.org/training-material/hall-of-fame/erasmusplus/"
         },
         {
@@ -247,14 +250,13 @@
           "joined": "2020-11",
           "funder": true,
           "funding_statement": "A number of our employees contribute directly to the Galaxy Training Network and seek to make our higher education learning materials more accessible to a wider audience through the GTN platform. <a href=\"https://avans.nl/\">avans.nl</a>",
-          "id": "avans-atgm",
           "url": "https://training.galaxyproject.org/training-material/api/contributors/avans-atgm.json",
+          "id": "avans-atgm",
           "page": "https://training.galaxyproject.org/training-material/hall-of-fame/avans-atgm/"
         }
       ],
       "tags": [
-        "bash",
-        "jupyter-notebook"
+        "bash"
       ],
       "url": "/topics/data-science/tutorials/cli-basics/tutorial.html",
       "topic_name": "data-science",
@@ -270,9 +272,41 @@
       },
       "hands_on": true,
       "slides": false,
+      "api": "https://training.galaxyproject.org/training-material/api/topics/data-science/tutorials/cli-basics/tutorial.json",
       "tools": [
 
       ],
+      "supported_servers": {
+        "exact": [
+
+        ],
+        "inexact": [
+          {
+            "name": "UseGalaxy.eu",
+            "url": "https://usegalaxy.eu",
+            "usegalaxy": true
+          },
+          {
+            "name": "UseGalaxy.org",
+            "url": "https://usegalaxy.org",
+            "usegalaxy": true
+          },
+          {
+            "name": "UseGalaxy.org.au",
+            "url": "https://usegalaxy.org.au",
+            "usegalaxy": true
+          }
+        ]
+      },
+      "admin_install": {
+        "install_tool_dependencies": true,
+        "install_repository_dependencies": true,
+        "install_resolver_dependencies": true,
+        "tools": [
+
+        ]
+      },
+      "admin_install_yaml": "---\ninstall_tool_dependencies: true\ninstall_repository_dependencies: true\ninstall_resolver_dependencies: true\ntools: []\n",
       "tours": false,
       "video": false,
       "translations": {
@@ -332,7 +366,7 @@
           "name": "Fotis E. Psomopoulos",
           "email": "fpsom@certh.gr",
           "twitter": "fopsom",
-          "gitter": "fpsom",
+          "matrix": "fpsom:matrix.org",
           "orcid": "0000-0002-0222-4273",
           "linkedin": "fpsom",
           "joined": "2019-03",
@@ -354,10 +388,11 @@
           "avatar": "https://www.erasmusplus.nl/assets/images/logo.png",
           "github": false,
           "funder": true,
+          "url": "https://training.galaxyproject.org/training-material/api/contributors/erasmusplus.json",
           "funding_id": "2020-1-NL01-KA203-064717",
+          "funding_system": "erasmusplus",
           "funding_statement": "This project (<a href=\"https://ec.europa.eu/programmes/erasmus-plus/projects/eplus-project-details/#project/2020-1-NL01-KA203-064717\"><code class=\"language-plaintext highlighter-rouge\">2020-1-NL01-KA203-064717</code></a>) is funded with the support of the Erasmus+ programme of the European Union. Their funding has supported a large number of tutorials within the GTN across a wide array of topics.\n<img src=\"https://gallantries.github.io/assets/images/logosbeneficaireserasmusright_en.jpg\" alt=\"eu flag with the text: with the support of the erasmus programme of the european union\" />",
           "id": "erasmusplus",
-          "url": "https://training.galaxyproject.org/training-material/api/contributors/erasmusplus.json",
           "page": "https://training.galaxyproject.org/training-material/hall-of-fame/erasmusplus/"
         }
       ],
@@ -366,9 +401,6 @@
         "language": "python",
         "pyolite": true
       },
-      "tags": [
-        "jupyter-notebook"
-      ],
       "url": "/topics/data-science/tutorials/python-basics/tutorial.html",
       "topic_name": "data-science",
       "tutorial_name": "python-basics",
@@ -383,9 +415,41 @@
       },
       "hands_on": true,
       "slides": false,
+      "api": "https://training.galaxyproject.org/training-material/api/topics/data-science/tutorials/python-basics/tutorial.json",
       "tools": [
 
       ],
+      "supported_servers": {
+        "exact": [
+
+        ],
+        "inexact": [
+          {
+            "name": "UseGalaxy.eu",
+            "url": "https://usegalaxy.eu",
+            "usegalaxy": true
+          },
+          {
+            "name": "UseGalaxy.org",
+            "url": "https://usegalaxy.org",
+            "usegalaxy": true
+          },
+          {
+            "name": "UseGalaxy.org.au",
+            "url": "https://usegalaxy.org.au",
+            "usegalaxy": true
+          }
+        ]
+      },
+      "admin_install": {
+        "install_tool_dependencies": true,
+        "install_repository_dependencies": true,
+        "install_resolver_dependencies": true,
+        "tools": [
+
+        ]
+      },
+      "admin_install_yaml": "---\ninstall_tool_dependencies: true\ninstall_repository_dependencies: true\ninstall_resolver_dependencies: true\ntools: []\n",
       "tours": false,
       "video": false,
       "translations": {
@@ -499,7 +563,7 @@
           "email": "hexylena@galaxians.org",
           "orcid": "0000-0001-9760-8992",
           "maintainer_contact": "gitter",
-          "gitter": "hexylena",
+          "matrix": "hexylena:matrix.org",
           "joined": "2017-09",
           "elixir_node": "nl",
           "fediverse": "https://galaxians.garden/hexylena",
@@ -518,8 +582,8 @@
           "joined": "2020-11",
           "funder": true,
           "funding_statement": "A number of our employees contribute directly to the Galaxy Training Network and seek to make our higher education learning materials more accessible to a wider audience through the GTN platform. <a href=\"https://avans.nl/\">avans.nl</a>",
-          "id": "avans-atgm",
           "url": "https://training.galaxyproject.org/training-material/api/contributors/avans-atgm.json",
+          "id": "avans-atgm",
           "page": "https://training.galaxyproject.org/training-material/hall-of-fame/avans-atgm/"
         }
       ],
@@ -531,8 +595,7 @@
         "SQL": "Structured Query Language"
       },
       "tags": [
-        "SQL",
-        "jupyter-notebook"
+        "SQL"
       ],
       "url": "/topics/data-science/tutorials/sql-advanced/tutorial.html",
       "topic_name": "data-science",
@@ -558,9 +621,41 @@
           ]
         }
       ],
+      "api": "https://training.galaxyproject.org/training-material/api/topics/data-science/tutorials/sql-advanced/tutorial.json",
       "tools": [
 
       ],
+      "supported_servers": {
+        "exact": [
+
+        ],
+        "inexact": [
+          {
+            "name": "UseGalaxy.eu",
+            "url": "https://usegalaxy.eu",
+            "usegalaxy": true
+          },
+          {
+            "name": "UseGalaxy.org",
+            "url": "https://usegalaxy.org",
+            "usegalaxy": true
+          },
+          {
+            "name": "UseGalaxy.org.au",
+            "url": "https://usegalaxy.org.au",
+            "usegalaxy": true
+          }
+        ]
+      },
+      "admin_install": {
+        "install_tool_dependencies": true,
+        "install_repository_dependencies": true,
+        "install_resolver_dependencies": true,
+        "tools": [
+
+        ]
+      },
+      "admin_install_yaml": "---\ninstall_tool_dependencies: true\ninstall_repository_dependencies: true\ninstall_resolver_dependencies: true\ntools: []\n",
       "tours": false,
       "video": false,
       "translations": {
@@ -650,9 +745,51 @@
       },
       "hands_on": true,
       "slides": false,
+      "api": "https://training.galaxyproject.org/training-material/api/topics/data-science/tutorials/bash-git/tutorial.json",
       "tools": [
         "interactive_tool_rstudio"
       ],
+      "supported_servers": {
+        "exact": [
+          {
+            "url": "https://test.galaxyproject.org/",
+            "name": "Galaxy Test",
+            "usegalaxy": "false"
+          },
+          {
+            "url": "https://galaxy.genouest.org",
+            "name": "Galaxy@GenOuest",
+            "usegalaxy": "false"
+          },
+          {
+            "url": "https://usegalaxy.eu",
+            "name": "UseGalaxy.eu",
+            "usegalaxy": "true"
+          },
+          {
+            "url": "https://usegalaxy.fr/",
+            "name": "UseGalaxy.fr",
+            "usegalaxy": "true"
+          },
+          {
+            "url": "https://usegalaxy.org",
+            "name": "UseGalaxy.org (Main)",
+            "usegalaxy": "true"
+          }
+        ],
+        "inexact": [
+
+        ]
+      },
+      "admin_install": {
+        "install_tool_dependencies": true,
+        "install_repository_dependencies": true,
+        "install_resolver_dependencies": true,
+        "tools": [
+
+        ]
+      },
+      "admin_install_yaml": "---\ninstall_tool_dependencies: true\ninstall_repository_dependencies: true\ninstall_resolver_dependencies: true\ntools: []\n",
       "tours": false,
       "video": false,
       "translations": {
@@ -679,7 +816,7 @@
           "name": "Fotis E. Psomopoulos",
           "email": "fpsom@certh.gr",
           "twitter": "fopsom",
-          "gitter": "fpsom",
+          "matrix": "fpsom:matrix.org",
           "orcid": "0000-0002-0222-4273",
           "linkedin": "fpsom",
           "joined": "2019-03",
@@ -694,7 +831,7 @@
           "email": "saskia.hiltemann@gmail.com",
           "twitter": "shiltemann",
           "linkedin": "shiltemann",
-          "gitter": "shiltemann",
+          "matrix": "shiltemann:matrix.org",
           "orcid": "0000-0003-3803-468X",
           "joined": "2017-09",
           "bio": "Researcher at Erasmus Medical Center",
@@ -714,7 +851,7 @@
           "email": "hexylena@galaxians.org",
           "orcid": "0000-0001-9760-8992",
           "maintainer_contact": "gitter",
-          "gitter": "hexylena",
+          "matrix": "hexylena:matrix.org",
           "joined": "2017-09",
           "elixir_node": "nl",
           "fediverse": "https://galaxians.garden/hexylena",
@@ -741,10 +878,11 @@
           "avatar": "https://www.erasmusplus.nl/assets/images/logo.png",
           "github": false,
           "funder": true,
+          "url": "https://training.galaxyproject.org/training-material/api/contributors/erasmusplus.json",
           "funding_id": "2020-1-NL01-KA203-064717",
+          "funding_system": "erasmusplus",
           "funding_statement": "This project (<a href=\"https://ec.europa.eu/programmes/erasmus-plus/projects/eplus-project-details/#project/2020-1-NL01-KA203-064717\"><code class=\"language-plaintext highlighter-rouge\">2020-1-NL01-KA203-064717</code></a>) is funded with the support of the Erasmus+ programme of the European Union. Their funding has supported a large number of tutorials within the GTN across a wide array of topics.\n<img src=\"https://gallantries.github.io/assets/images/logosbeneficaireserasmusright_en.jpg\" alt=\"eu flag with the text: with the support of the erasmus programme of the european union\" />",
           "id": "erasmusplus",
-          "url": "https://training.galaxyproject.org/training-material/api/contributors/erasmusplus.json",
           "page": "https://training.galaxyproject.org/training-material/hall-of-fame/erasmusplus/"
         }
       ],
@@ -841,7 +979,7 @@
           "email": "hexylena@galaxians.org",
           "orcid": "0000-0001-9760-8992",
           "maintainer_contact": "gitter",
-          "gitter": "hexylena",
+          "matrix": "hexylena:matrix.org",
           "joined": "2017-09",
           "elixir_node": "nl",
           "fediverse": "https://galaxians.garden/hexylena",
@@ -868,10 +1006,11 @@
           "avatar": "https://www.erasmusplus.nl/assets/images/logo.png",
           "github": false,
           "funder": true,
+          "url": "https://training.galaxyproject.org/training-material/api/contributors/erasmusplus.json",
           "funding_id": "2020-1-NL01-KA203-064717",
+          "funding_system": "erasmusplus",
           "funding_statement": "This project (<a href=\"https://ec.europa.eu/programmes/erasmus-plus/projects/eplus-project-details/#project/2020-1-NL01-KA203-064717\"><code class=\"language-plaintext highlighter-rouge\">2020-1-NL01-KA203-064717</code></a>) is funded with the support of the Erasmus+ programme of the European Union. Their funding has supported a large number of tutorials within the GTN across a wide array of topics.\n<img src=\"https://gallantries.github.io/assets/images/logosbeneficaireserasmusright_en.jpg\" alt=\"eu flag with the text: with the support of the erasmus programme of the european union\" />",
           "id": "erasmusplus",
-          "url": "https://training.galaxyproject.org/training-material/api/contributors/erasmusplus.json",
           "page": "https://training.galaxyproject.org/training-material/hall-of-fame/erasmusplus/"
         },
         {
@@ -879,14 +1018,13 @@
           "joined": "2020-11",
           "funder": true,
           "funding_statement": "A number of our employees contribute directly to the Galaxy Training Network and seek to make our higher education learning materials more accessible to a wider audience through the GTN platform. <a href=\"https://avans.nl/\">avans.nl</a>",
-          "id": "avans-atgm",
           "url": "https://training.galaxyproject.org/training-material/api/contributors/avans-atgm.json",
+          "id": "avans-atgm",
           "page": "https://training.galaxyproject.org/training-material/hall-of-fame/avans-atgm/"
         }
       ],
       "tags": [
-        "bash",
-        "jupyter-notebook"
+        "bash"
       ],
       "url": "/topics/data-science/tutorials/cli-advanced/tutorial.html",
       "topic_name": "data-science",
@@ -902,9 +1040,41 @@
       },
       "hands_on": true,
       "slides": false,
+      "api": "https://training.galaxyproject.org/training-material/api/topics/data-science/tutorials/cli-advanced/tutorial.json",
       "tools": [
 
       ],
+      "supported_servers": {
+        "exact": [
+
+        ],
+        "inexact": [
+          {
+            "name": "UseGalaxy.eu",
+            "url": "https://usegalaxy.eu",
+            "usegalaxy": true
+          },
+          {
+            "name": "UseGalaxy.org",
+            "url": "https://usegalaxy.org",
+            "usegalaxy": true
+          },
+          {
+            "name": "UseGalaxy.org.au",
+            "url": "https://usegalaxy.org.au",
+            "usegalaxy": true
+          }
+        ]
+      },
+      "admin_install": {
+        "install_tool_dependencies": true,
+        "install_repository_dependencies": true,
+        "install_resolver_dependencies": true,
+        "tools": [
+
+        ]
+      },
+      "admin_install_yaml": "---\ninstall_tool_dependencies: true\ninstall_repository_dependencies: true\ninstall_resolver_dependencies: true\ntools: []\n",
       "tours": false,
       "video": false,
       "translations": {
@@ -961,7 +1131,7 @@
           "email": "hexylena@galaxians.org",
           "orcid": "0000-0001-9760-8992",
           "maintainer_contact": "gitter",
-          "gitter": "hexylena",
+          "matrix": "hexylena:matrix.org",
           "joined": "2017-09",
           "elixir_node": "nl",
           "fediverse": "https://galaxians.garden/hexylena",
@@ -988,10 +1158,11 @@
           "avatar": "https://www.erasmusplus.nl/assets/images/logo.png",
           "github": false,
           "funder": true,
+          "url": "https://training.galaxyproject.org/training-material/api/contributors/erasmusplus.json",
           "funding_id": "2020-1-NL01-KA203-064717",
+          "funding_system": "erasmusplus",
           "funding_statement": "This project (<a href=\"https://ec.europa.eu/programmes/erasmus-plus/projects/eplus-project-details/#project/2020-1-NL01-KA203-064717\"><code class=\"language-plaintext highlighter-rouge\">2020-1-NL01-KA203-064717</code></a>) is funded with the support of the Erasmus+ programme of the European Union. Their funding has supported a large number of tutorials within the GTN across a wide array of topics.\n<img src=\"https://gallantries.github.io/assets/images/logosbeneficaireserasmusright_en.jpg\" alt=\"eu flag with the text: with the support of the erasmus programme of the european union\" />",
           "id": "erasmusplus",
-          "url": "https://training.galaxyproject.org/training-material/api/contributors/erasmusplus.json",
           "page": "https://training.galaxyproject.org/training-material/hall-of-fame/erasmusplus/"
         },
         {
@@ -999,15 +1170,14 @@
           "joined": "2020-11",
           "funder": true,
           "funding_statement": "A number of our employees contribute directly to the Galaxy Training Network and seek to make our higher education learning materials more accessible to a wider audience through the GTN platform. <a href=\"https://avans.nl/\">avans.nl</a>",
-          "id": "avans-atgm",
           "url": "https://training.galaxyproject.org/training-material/api/contributors/avans-atgm.json",
+          "id": "avans-atgm",
           "page": "https://training.galaxyproject.org/training-material/hall-of-fame/avans-atgm/"
         }
       ],
       "tags": [
         "game",
-        "SQL",
-        "jupyter-notebook"
+        "SQL"
       ],
       "url": "/topics/data-science/tutorials/sql-game/tutorial.html",
       "topic_name": "data-science",
@@ -1023,9 +1193,41 @@
       },
       "hands_on": true,
       "slides": false,
+      "api": "https://training.galaxyproject.org/training-material/api/topics/data-science/tutorials/sql-game/tutorial.json",
       "tools": [
 
       ],
+      "supported_servers": {
+        "exact": [
+
+        ],
+        "inexact": [
+          {
+            "name": "UseGalaxy.eu",
+            "url": "https://usegalaxy.eu",
+            "usegalaxy": true
+          },
+          {
+            "name": "UseGalaxy.org",
+            "url": "https://usegalaxy.org",
+            "usegalaxy": true
+          },
+          {
+            "name": "UseGalaxy.org.au",
+            "url": "https://usegalaxy.org.au",
+            "usegalaxy": true
+          }
+        ]
+      },
+      "admin_install": {
+        "install_tool_dependencies": true,
+        "install_repository_dependencies": true,
+        "install_resolver_dependencies": true,
+        "tools": [
+
+        ]
+      },
+      "admin_install_yaml": "---\ninstall_tool_dependencies: true\ninstall_repository_dependencies: true\ninstall_resolver_dependencies: true\ntools: []\n",
       "tours": false,
       "video": false,
       "translations": {
@@ -1089,7 +1291,7 @@
           "email": "hexylena@galaxians.org",
           "orcid": "0000-0001-9760-8992",
           "maintainer_contact": "gitter",
-          "gitter": "hexylena",
+          "matrix": "hexylena:matrix.org",
           "joined": "2017-09",
           "elixir_node": "nl",
           "fediverse": "https://galaxians.garden/hexylena",
@@ -1108,8 +1310,8 @@
           "joined": "2020-11",
           "funder": true,
           "funding_statement": "A number of our employees contribute directly to the Galaxy Training Network and seek to make our higher education learning materials more accessible to a wider audience through the GTN platform. <a href=\"https://avans.nl/\">avans.nl</a>",
-          "id": "avans-atgm",
           "url": "https://training.galaxyproject.org/training-material/api/contributors/avans-atgm.json",
+          "id": "avans-atgm",
           "page": "https://training.galaxyproject.org/training-material/hall-of-fame/avans-atgm/"
         }
       ],
@@ -1119,8 +1321,7 @@
       },
       "tags": [
         "SQL",
-        "Python",
-        "jupyter-notebook"
+        "Python"
       ],
       "url": "/topics/data-science/tutorials/sql-python/tutorial.html",
       "topic_name": "data-science",
@@ -1136,9 +1337,41 @@
       },
       "hands_on": true,
       "slides": false,
+      "api": "https://training.galaxyproject.org/training-material/api/topics/data-science/tutorials/sql-python/tutorial.json",
       "tools": [
 
       ],
+      "supported_servers": {
+        "exact": [
+
+        ],
+        "inexact": [
+          {
+            "name": "UseGalaxy.eu",
+            "url": "https://usegalaxy.eu",
+            "usegalaxy": true
+          },
+          {
+            "name": "UseGalaxy.org",
+            "url": "https://usegalaxy.org",
+            "usegalaxy": true
+          },
+          {
+            "name": "UseGalaxy.org.au",
+            "url": "https://usegalaxy.org.au",
+            "usegalaxy": true
+          }
+        ]
+      },
+      "admin_install": {
+        "install_tool_dependencies": true,
+        "install_repository_dependencies": true,
+        "install_resolver_dependencies": true,
+        "tools": [
+
+        ]
+      },
+      "admin_install_yaml": "---\ninstall_tool_dependencies: true\ninstall_repository_dependencies: true\ninstall_resolver_dependencies: true\ntools: []\n",
       "tours": false,
       "video": false,
       "translations": {
@@ -1204,9 +1437,41 @@
       },
       "hands_on": true,
       "slides": false,
+      "api": "https://training.galaxyproject.org/training-material/api/topics/data-science/tutorials/git-cli/tutorial.json",
       "tools": [
 
       ],
+      "supported_servers": {
+        "exact": [
+
+        ],
+        "inexact": [
+          {
+            "name": "UseGalaxy.eu",
+            "url": "https://usegalaxy.eu",
+            "usegalaxy": true
+          },
+          {
+            "name": "UseGalaxy.org",
+            "url": "https://usegalaxy.org",
+            "usegalaxy": true
+          },
+          {
+            "name": "UseGalaxy.org.au",
+            "url": "https://usegalaxy.org.au",
+            "usegalaxy": true
+          }
+        ]
+      },
+      "admin_install": {
+        "install_tool_dependencies": true,
+        "install_repository_dependencies": true,
+        "install_resolver_dependencies": true,
+        "tools": [
+
+        ]
+      },
+      "admin_install_yaml": "---\ninstall_tool_dependencies: true\ninstall_repository_dependencies: true\ninstall_resolver_dependencies: true\ntools: []\n",
       "tours": false,
       "video": false,
       "translations": {
@@ -1225,7 +1490,7 @@
           "email": "hexylena@galaxians.org",
           "orcid": "0000-0001-9760-8992",
           "maintainer_contact": "gitter",
-          "gitter": "hexylena",
+          "matrix": "hexylena:matrix.org",
           "joined": "2017-09",
           "elixir_node": "nl",
           "fediverse": "https://galaxians.garden/hexylena",
@@ -1276,7 +1541,7 @@
           "name": "Fotis E. Psomopoulos",
           "email": "fpsom@certh.gr",
           "twitter": "fopsom",
-          "gitter": "fpsom",
+          "matrix": "fpsom:matrix.org",
           "orcid": "0000-0002-0222-4273",
           "linkedin": "fpsom",
           "joined": "2019-03",
@@ -1291,7 +1556,7 @@
           "email": "saskia.hiltemann@gmail.com",
           "twitter": "shiltemann",
           "linkedin": "shiltemann",
-          "gitter": "shiltemann",
+          "matrix": "shiltemann:matrix.org",
           "orcid": "0000-0003-3803-468X",
           "joined": "2017-09",
           "bio": "Researcher at Erasmus Medical Center",
@@ -1311,7 +1576,7 @@
           "email": "hexylena@galaxians.org",
           "orcid": "0000-0001-9760-8992",
           "maintainer_contact": "gitter",
-          "gitter": "hexylena",
+          "matrix": "hexylena:matrix.org",
           "joined": "2017-09",
           "elixir_node": "nl",
           "fediverse": "https://galaxians.garden/hexylena",
@@ -1347,9 +1612,41 @@
       },
       "hands_on": true,
       "slides": false,
+      "api": "https://training.galaxyproject.org/training-material/api/topics/data-science/tutorials/bash-variant-calling/tutorial.json",
       "tools": [
 
       ],
+      "supported_servers": {
+        "exact": [
+
+        ],
+        "inexact": [
+          {
+            "name": "UseGalaxy.eu",
+            "url": "https://usegalaxy.eu",
+            "usegalaxy": true
+          },
+          {
+            "name": "UseGalaxy.org",
+            "url": "https://usegalaxy.org",
+            "usegalaxy": true
+          },
+          {
+            "name": "UseGalaxy.org.au",
+            "url": "https://usegalaxy.org.au",
+            "usegalaxy": true
+          }
+        ]
+      },
+      "admin_install": {
+        "install_tool_dependencies": true,
+        "install_repository_dependencies": true,
+        "install_resolver_dependencies": true,
+        "tools": [
+
+        ]
+      },
+      "admin_install_yaml": "---\ninstall_tool_dependencies: true\ninstall_repository_dependencies: true\ninstall_resolver_dependencies: true\ntools: []\n",
       "tours": false,
       "video": false,
       "translations": {
@@ -1422,7 +1719,7 @@
           "email": "hexylena@galaxians.org",
           "orcid": "0000-0001-9760-8992",
           "maintainer_contact": "gitter",
-          "gitter": "hexylena",
+          "matrix": "hexylena:matrix.org",
           "joined": "2017-09",
           "elixir_node": "nl",
           "fediverse": "https://galaxians.garden/hexylena",
@@ -1441,8 +1738,8 @@
           "joined": "2020-11",
           "funder": true,
           "funding_statement": "A number of our employees contribute directly to the Galaxy Training Network and seek to make our higher education learning materials more accessible to a wider audience through the GTN platform. <a href=\"https://avans.nl/\">avans.nl</a>",
-          "id": "avans-atgm",
           "url": "https://training.galaxyproject.org/training-material/api/contributors/avans-atgm.json",
+          "id": "avans-atgm",
           "page": "https://training.galaxyproject.org/training-material/hall-of-fame/avans-atgm/"
         }
       ],
@@ -1452,8 +1749,7 @@
       },
       "tags": [
         "SQL",
-        "R",
-        "jupyter-notebook"
+        "R"
       ],
       "url": "/topics/data-science/tutorials/sql-r/tutorial.html",
       "topic_name": "data-science",
@@ -1469,9 +1765,41 @@
       },
       "hands_on": true,
       "slides": false,
+      "api": "https://training.galaxyproject.org/training-material/api/topics/data-science/tutorials/sql-r/tutorial.json",
       "tools": [
 
       ],
+      "supported_servers": {
+        "exact": [
+
+        ],
+        "inexact": [
+          {
+            "name": "UseGalaxy.eu",
+            "url": "https://usegalaxy.eu",
+            "usegalaxy": true
+          },
+          {
+            "name": "UseGalaxy.org",
+            "url": "https://usegalaxy.org",
+            "usegalaxy": true
+          },
+          {
+            "name": "UseGalaxy.org.au",
+            "url": "https://usegalaxy.org.au",
+            "usegalaxy": true
+          }
+        ]
+      },
+      "admin_install": {
+        "install_tool_dependencies": true,
+        "install_repository_dependencies": true,
+        "install_resolver_dependencies": true,
+        "tools": [
+
+        ]
+      },
+      "admin_install_yaml": "---\ninstall_tool_dependencies: true\ninstall_repository_dependencies: true\ninstall_resolver_dependencies: true\ntools: []\n",
       "tours": false,
       "video": false,
       "translations": {
@@ -1560,7 +1888,7 @@
           "email": "hexylena@galaxians.org",
           "orcid": "0000-0001-9760-8992",
           "maintainer_contact": "gitter",
-          "gitter": "hexylena",
+          "matrix": "hexylena:matrix.org",
           "joined": "2017-09",
           "elixir_node": "nl",
           "fediverse": "https://galaxians.garden/hexylena",
@@ -1595,8 +1923,8 @@
           "joined": "2020-11",
           "funder": true,
           "funding_statement": "A number of our employees contribute directly to the Galaxy Training Network and seek to make our higher education learning materials more accessible to a wider audience through the GTN platform. <a href=\"https://avans.nl/\">avans.nl</a>",
-          "id": "avans-atgm",
           "url": "https://training.galaxyproject.org/training-material/api/contributors/avans-atgm.json",
+          "id": "avans-atgm",
           "page": "https://training.galaxyproject.org/training-material/hall-of-fame/avans-atgm/"
         }
       ],
@@ -1608,8 +1936,7 @@
         "SQL": "Structured Query Language"
       },
       "tags": [
-        "SQL",
-        "jupyter-notebook"
+        "SQL"
       ],
       "url": "/topics/data-science/tutorials/sql-basic/tutorial.html",
       "topic_name": "data-science",
@@ -1635,9 +1962,41 @@
           ]
         }
       ],
+      "api": "https://training.galaxyproject.org/training-material/api/topics/data-science/tutorials/sql-basic/tutorial.json",
       "tools": [
 
       ],
+      "supported_servers": {
+        "exact": [
+
+        ],
+        "inexact": [
+          {
+            "name": "UseGalaxy.eu",
+            "url": "https://usegalaxy.eu",
+            "usegalaxy": true
+          },
+          {
+            "name": "UseGalaxy.org",
+            "url": "https://usegalaxy.org",
+            "usegalaxy": true
+          },
+          {
+            "name": "UseGalaxy.org.au",
+            "url": "https://usegalaxy.org.au",
+            "usegalaxy": true
+          }
+        ]
+      },
+      "admin_install": {
+        "install_tool_dependencies": true,
+        "install_repository_dependencies": true,
+        "install_resolver_dependencies": true,
+        "tools": [
+
+        ]
+      },
+      "admin_install_yaml": "---\ninstall_tool_dependencies: true\ninstall_repository_dependencies: true\ninstall_resolver_dependencies: true\ntools: []\n",
       "tours": false,
       "video": false,
       "translations": {
@@ -1699,7 +2058,7 @@
           "email": "hexylena@galaxians.org",
           "orcid": "0000-0001-9760-8992",
           "maintainer_contact": "gitter",
-          "gitter": "hexylena",
+          "matrix": "hexylena:matrix.org",
           "joined": "2017-09",
           "elixir_node": "nl",
           "fediverse": "https://galaxians.garden/hexylena",
@@ -1734,8 +2093,8 @@
           "joined": "2020-11",
           "funder": true,
           "funding_statement": "A number of our employees contribute directly to the Galaxy Training Network and seek to make our higher education learning materials more accessible to a wider audience through the GTN platform. <a href=\"https://avans.nl/\">avans.nl</a>",
-          "id": "avans-atgm",
           "url": "https://training.galaxyproject.org/training-material/api/contributors/avans-atgm.json",
+          "id": "avans-atgm",
           "page": "https://training.galaxyproject.org/training-material/hall-of-fame/avans-atgm/"
         }
       ],
@@ -1757,9 +2116,41 @@
       },
       "hands_on": true,
       "slides": false,
+      "api": "https://training.galaxyproject.org/training-material/api/topics/data-science/tutorials/snakemake/tutorial.json",
       "tools": [
 
       ],
+      "supported_servers": {
+        "exact": [
+
+        ],
+        "inexact": [
+          {
+            "name": "UseGalaxy.eu",
+            "url": "https://usegalaxy.eu",
+            "usegalaxy": true
+          },
+          {
+            "name": "UseGalaxy.org",
+            "url": "https://usegalaxy.org",
+            "usegalaxy": true
+          },
+          {
+            "name": "UseGalaxy.org.au",
+            "url": "https://usegalaxy.org.au",
+            "usegalaxy": true
+          }
+        ]
+      },
+      "admin_install": {
+        "install_tool_dependencies": true,
+        "install_repository_dependencies": true,
+        "install_resolver_dependencies": true,
+        "tools": [
+
+        ]
+      },
+      "admin_install_yaml": "---\ninstall_tool_dependencies: true\ninstall_repository_dependencies: true\ninstall_resolver_dependencies: true\ntools: []\n",
       "tours": false,
       "video": false,
       "translations": {
@@ -1882,9 +2273,51 @@
       },
       "hands_on": true,
       "slides": false,
+      "api": "https://training.galaxyproject.org/training-material/api/topics/data-science/tutorials/r-basics/tutorial.json",
       "tools": [
         "interactive_tool_rstudio"
       ],
+      "supported_servers": {
+        "exact": [
+          {
+            "url": "https://test.galaxyproject.org/",
+            "name": "Galaxy Test",
+            "usegalaxy": "false"
+          },
+          {
+            "url": "https://galaxy.genouest.org",
+            "name": "Galaxy@GenOuest",
+            "usegalaxy": "false"
+          },
+          {
+            "url": "https://usegalaxy.eu",
+            "name": "UseGalaxy.eu",
+            "usegalaxy": "true"
+          },
+          {
+            "url": "https://usegalaxy.fr/",
+            "name": "UseGalaxy.fr",
+            "usegalaxy": "true"
+          },
+          {
+            "url": "https://usegalaxy.org",
+            "name": "UseGalaxy.org (Main)",
+            "usegalaxy": "true"
+          }
+        ],
+        "inexact": [
+
+        ]
+      },
+      "admin_install": {
+        "install_tool_dependencies": true,
+        "install_repository_dependencies": true,
+        "install_resolver_dependencies": true,
+        "tools": [
+
+        ]
+      },
+      "admin_install_yaml": "---\ninstall_tool_dependencies: true\ninstall_repository_dependencies: true\ninstall_resolver_dependencies: true\ntools: []\n",
       "tours": false,
       "video": false,
       "translations": {
@@ -1910,7 +2343,7 @@
           "email": "berenice.batut@gmail.com",
           "twitter": "bebatut",
           "linkedin": "berenicebatut",
-          "gitter": "bebatut",
+          "matrix": "bebatut:matrix.org",
           "orcid": "0000-0001-9852-1987",
           "joined": "2017-09",
           "elixir_node": "de",
@@ -1929,7 +2362,7 @@
           "name": "Fotis E. Psomopoulos",
           "email": "fpsom@certh.gr",
           "twitter": "fopsom",
-          "gitter": "fpsom",
+          "matrix": "fpsom:matrix.org",
           "orcid": "0000-0002-0222-4273",
           "linkedin": "fpsom",
           "joined": "2019-03",
@@ -1954,10 +2387,11 @@
           "avatar": "https://www.erasmusplus.nl/assets/images/logo.png",
           "github": false,
           "funder": true,
+          "url": "https://training.galaxyproject.org/training-material/api/contributors/erasmusplus.json",
           "funding_id": "2020-1-NL01-KA203-064717",
+          "funding_system": "erasmusplus",
           "funding_statement": "This project (<a href=\"https://ec.europa.eu/programmes/erasmus-plus/projects/eplus-project-details/#project/2020-1-NL01-KA203-064717\"><code class=\"language-plaintext highlighter-rouge\">2020-1-NL01-KA203-064717</code></a>) is funded with the support of the Erasmus+ programme of the European Union. Their funding has supported a large number of tutorials within the GTN across a wide array of topics.\n<img src=\"https://gallantries.github.io/assets/images/logosbeneficaireserasmusright_en.jpg\" alt=\"eu flag with the text: with the support of the erasmus programme of the european union\" />",
           "id": "erasmusplus",
-          "url": "https://training.galaxyproject.org/training-material/api/contributors/erasmusplus.json",
           "page": "https://training.galaxyproject.org/training-material/hall-of-fame/erasmusplus/"
         }
       ],
@@ -1996,7 +2430,7 @@
           "email": "hexylena@galaxians.org",
           "orcid": "0000-0001-9760-8992",
           "maintainer_contact": "gitter",
-          "gitter": "hexylena",
+          "matrix": "hexylena:matrix.org",
           "joined": "2017-09",
           "elixir_node": "nl",
           "fediverse": "https://galaxians.garden/hexylena",
@@ -2032,9 +2466,6 @@
         "language": "python",
         "pyolite": true
       },
-      "tags": [
-        "jupyter-notebook"
-      ],
       "url": "/topics/data-science/tutorials/python-math/tutorial.html",
       "topic_name": "data-science",
       "tutorial_name": "python-math",
@@ -2049,9 +2480,41 @@
       },
       "hands_on": true,
       "slides": false,
+      "api": "https://training.galaxyproject.org/training-material/api/topics/data-science/tutorials/python-math/tutorial.json",
       "tools": [
 
       ],
+      "supported_servers": {
+        "exact": [
+
+        ],
+        "inexact": [
+          {
+            "name": "UseGalaxy.eu",
+            "url": "https://usegalaxy.eu",
+            "usegalaxy": true
+          },
+          {
+            "name": "UseGalaxy.org",
+            "url": "https://usegalaxy.org",
+            "usegalaxy": true
+          },
+          {
+            "name": "UseGalaxy.org.au",
+            "url": "https://usegalaxy.org.au",
+            "usegalaxy": true
+          }
+        ]
+      },
+      "admin_install": {
+        "install_tool_dependencies": true,
+        "install_repository_dependencies": true,
+        "install_resolver_dependencies": true,
+        "tools": [
+
+        ]
+      },
+      "admin_install_yaml": "---\ninstall_tool_dependencies: true\ninstall_repository_dependencies: true\ninstall_resolver_dependencies: true\ntools: []\n",
       "tours": false,
       "video": false,
       "translations": {
@@ -2112,7 +2575,7 @@
           "email": "hexylena@galaxians.org",
           "orcid": "0000-0001-9760-8992",
           "maintainer_contact": "gitter",
-          "gitter": "hexylena",
+          "matrix": "hexylena:matrix.org",
           "joined": "2017-09",
           "elixir_node": "nl",
           "fediverse": "https://galaxians.garden/hexylena",
@@ -2132,17 +2595,17 @@
           "avatar": "https://www.erasmusplus.nl/assets/images/logo.png",
           "github": false,
           "funder": true,
+          "url": "https://training.galaxyproject.org/training-material/api/contributors/erasmusplus.json",
           "funding_id": "2020-1-NL01-KA203-064717",
+          "funding_system": "erasmusplus",
           "funding_statement": "This project (<a href=\"https://ec.europa.eu/programmes/erasmus-plus/projects/eplus-project-details/#project/2020-1-NL01-KA203-064717\"><code class=\"language-plaintext highlighter-rouge\">2020-1-NL01-KA203-064717</code></a>) is funded with the support of the Erasmus+ programme of the European Union. Their funding has supported a large number of tutorials within the GTN across a wide array of topics.\n<img src=\"https://gallantries.github.io/assets/images/logosbeneficaireserasmusright_en.jpg\" alt=\"eu flag with the text: with the support of the erasmus programme of the european union\" />",
           "id": "erasmusplus",
-          "url": "https://training.galaxyproject.org/training-material/api/contributors/erasmusplus.json",
           "page": "https://training.galaxyproject.org/training-material/hall-of-fame/erasmusplus/"
         }
       ],
       "tags": [
         "game",
-        "bash",
-        "jupyter-notebook"
+        "bash"
       ],
       "url": "/topics/data-science/tutorials/cli-bashcrawl/tutorial.html",
       "topic_name": "data-science",
@@ -2158,9 +2621,41 @@
       },
       "hands_on": true,
       "slides": false,
+      "api": "https://training.galaxyproject.org/training-material/api/topics/data-science/tutorials/cli-bashcrawl/tutorial.json",
       "tools": [
 
       ],
+      "supported_servers": {
+        "exact": [
+
+        ],
+        "inexact": [
+          {
+            "name": "UseGalaxy.eu",
+            "url": "https://usegalaxy.eu",
+            "usegalaxy": true
+          },
+          {
+            "name": "UseGalaxy.org",
+            "url": "https://usegalaxy.org",
+            "usegalaxy": true
+          },
+          {
+            "name": "UseGalaxy.org.au",
+            "url": "https://usegalaxy.org.au",
+            "usegalaxy": true
+          }
+        ]
+      },
+      "admin_install": {
+        "install_tool_dependencies": true,
+        "install_repository_dependencies": true,
+        "install_resolver_dependencies": true,
+        "tools": [
+
+        ]
+      },
+      "admin_install_yaml": "---\ninstall_tool_dependencies: true\ninstall_repository_dependencies: true\ninstall_resolver_dependencies: true\ntools: []\n",
       "tours": false,
       "video": false,
       "translations": {
@@ -2221,7 +2716,7 @@
           "name": "Fotis E. Psomopoulos",
           "email": "fpsom@certh.gr",
           "twitter": "fopsom",
-          "gitter": "fpsom",
+          "matrix": "fpsom:matrix.org",
           "orcid": "0000-0002-0222-4273",
           "linkedin": "fpsom",
           "joined": "2019-03",
@@ -2243,10 +2738,11 @@
           "avatar": "https://www.erasmusplus.nl/assets/images/logo.png",
           "github": false,
           "funder": true,
+          "url": "https://training.galaxyproject.org/training-material/api/contributors/erasmusplus.json",
           "funding_id": "2020-1-NL01-KA203-064717",
+          "funding_system": "erasmusplus",
           "funding_statement": "This project (<a href=\"https://ec.europa.eu/programmes/erasmus-plus/projects/eplus-project-details/#project/2020-1-NL01-KA203-064717\"><code class=\"language-plaintext highlighter-rouge\">2020-1-NL01-KA203-064717</code></a>) is funded with the support of the Erasmus+ programme of the European Union. Their funding has supported a large number of tutorials within the GTN across a wide array of topics.\n<img src=\"https://gallantries.github.io/assets/images/logosbeneficaireserasmusright_en.jpg\" alt=\"eu flag with the text: with the support of the erasmus programme of the european union\" />",
           "id": "erasmusplus",
-          "url": "https://training.galaxyproject.org/training-material/api/contributors/erasmusplus.json",
           "page": "https://training.galaxyproject.org/training-material/hall-of-fame/erasmusplus/"
         }
       ],
@@ -2255,9 +2751,6 @@
         "language": "python",
         "pyolite": true
       },
-      "tags": [
-        "jupyter-notebook"
-      ],
       "url": "/topics/data-science/tutorials/python-advanced-np-pd/tutorial.html",
       "topic_name": "data-science",
       "tutorial_name": "python-advanced-np-pd",
@@ -2272,9 +2765,41 @@
       },
       "hands_on": true,
       "slides": false,
+      "api": "https://training.galaxyproject.org/training-material/api/topics/data-science/tutorials/python-advanced-np-pd/tutorial.json",
       "tools": [
 
       ],
+      "supported_servers": {
+        "exact": [
+
+        ],
+        "inexact": [
+          {
+            "name": "UseGalaxy.eu",
+            "url": "https://usegalaxy.eu",
+            "usegalaxy": true
+          },
+          {
+            "name": "UseGalaxy.org",
+            "url": "https://usegalaxy.org",
+            "usegalaxy": true
+          },
+          {
+            "name": "UseGalaxy.org.au",
+            "url": "https://usegalaxy.org.au",
+            "usegalaxy": true
+          }
+        ]
+      },
+      "admin_install": {
+        "install_tool_dependencies": true,
+        "install_repository_dependencies": true,
+        "install_resolver_dependencies": true,
+        "tools": [
+
+        ]
+      },
+      "admin_install_yaml": "---\ninstall_tool_dependencies: true\ninstall_repository_dependencies: true\ninstall_resolver_dependencies: true\ntools: []\n",
       "tours": false,
       "video": false,
       "translations": {
@@ -2359,7 +2884,7 @@
           "email": "berenice.batut@gmail.com",
           "twitter": "bebatut",
           "linkedin": "berenicebatut",
-          "gitter": "bebatut",
+          "matrix": "bebatut:matrix.org",
           "orcid": "0000-0001-9852-1987",
           "joined": "2017-09",
           "elixir_node": "de",
@@ -2378,7 +2903,7 @@
           "name": "Fotis E. Psomopoulos",
           "email": "fpsom@certh.gr",
           "twitter": "fopsom",
-          "gitter": "fpsom",
+          "matrix": "fpsom:matrix.org",
           "orcid": "0000-0002-0222-4273",
           "linkedin": "fpsom",
           "joined": "2019-03",
@@ -2403,10 +2928,11 @@
           "avatar": "https://www.erasmusplus.nl/assets/images/logo.png",
           "github": false,
           "funder": true,
+          "url": "https://training.galaxyproject.org/training-material/api/contributors/erasmusplus.json",
           "funding_id": "2020-1-NL01-KA203-064717",
+          "funding_system": "erasmusplus",
           "funding_statement": "This project (<a href=\"https://ec.europa.eu/programmes/erasmus-plus/projects/eplus-project-details/#project/2020-1-NL01-KA203-064717\"><code class=\"language-plaintext highlighter-rouge\">2020-1-NL01-KA203-064717</code></a>) is funded with the support of the Erasmus+ programme of the European Union. Their funding has supported a large number of tutorials within the GTN across a wide array of topics.\n<img src=\"https://gallantries.github.io/assets/images/logosbeneficaireserasmusright_en.jpg\" alt=\"eu flag with the text: with the support of the erasmus programme of the european union\" />",
           "id": "erasmusplus",
-          "url": "https://training.galaxyproject.org/training-material/api/contributors/erasmusplus.json",
           "page": "https://training.galaxyproject.org/training-material/hall-of-fame/erasmusplus/"
         }
       ],
@@ -2458,9 +2984,51 @@
       },
       "hands_on": true,
       "slides": false,
+      "api": "https://training.galaxyproject.org/training-material/api/topics/data-science/tutorials/r-advanced/tutorial.json",
       "tools": [
-
+        "interactive_tool_rstudio"
       ],
+      "supported_servers": {
+        "exact": [
+          {
+            "url": "https://test.galaxyproject.org/",
+            "name": "Galaxy Test",
+            "usegalaxy": "false"
+          },
+          {
+            "url": "https://galaxy.genouest.org",
+            "name": "Galaxy@GenOuest",
+            "usegalaxy": "false"
+          },
+          {
+            "url": "https://usegalaxy.eu",
+            "name": "UseGalaxy.eu",
+            "usegalaxy": "true"
+          },
+          {
+            "url": "https://usegalaxy.fr/",
+            "name": "UseGalaxy.fr",
+            "usegalaxy": "true"
+          },
+          {
+            "url": "https://usegalaxy.org",
+            "name": "UseGalaxy.org (Main)",
+            "usegalaxy": "true"
+          }
+        ],
+        "inexact": [
+
+        ]
+      },
+      "admin_install": {
+        "install_tool_dependencies": true,
+        "install_repository_dependencies": true,
+        "install_resolver_dependencies": true,
+        "tools": [
+
+        ]
+      },
+      "admin_install_yaml": "---\ninstall_tool_dependencies: true\ninstall_repository_dependencies: true\ninstall_resolver_dependencies: true\ntools: []\n",
       "tours": false,
       "video": false,
       "translations": {
@@ -2524,7 +3092,7 @@
           "email": "hexylena@galaxians.org",
           "orcid": "0000-0001-9760-8992",
           "maintainer_contact": "gitter",
-          "gitter": "hexylena",
+          "matrix": "hexylena:matrix.org",
           "joined": "2017-09",
           "elixir_node": "nl",
           "fediverse": "https://galaxians.garden/hexylena",
@@ -2563,9 +3131,6 @@
       "abbreviations": {
         "DRY": "Don't Repeat Yourself"
       },
-      "tags": [
-        "jupyter-notebook"
-      ],
       "url": "/topics/data-science/tutorials/python-functions/tutorial.html",
       "topic_name": "data-science",
       "tutorial_name": "python-functions",
@@ -2580,9 +3145,41 @@
       },
       "hands_on": true,
       "slides": false,
+      "api": "https://training.galaxyproject.org/training-material/api/topics/data-science/tutorials/python-functions/tutorial.json",
       "tools": [
 
       ],
+      "supported_servers": {
+        "exact": [
+
+        ],
+        "inexact": [
+          {
+            "name": "UseGalaxy.eu",
+            "url": "https://usegalaxy.eu",
+            "usegalaxy": true
+          },
+          {
+            "name": "UseGalaxy.org",
+            "url": "https://usegalaxy.org",
+            "usegalaxy": true
+          },
+          {
+            "name": "UseGalaxy.org.au",
+            "url": "https://usegalaxy.org.au",
+            "usegalaxy": true
+          }
+        ]
+      },
+      "admin_install": {
+        "install_tool_dependencies": true,
+        "install_repository_dependencies": true,
+        "install_resolver_dependencies": true,
+        "tools": [
+
+        ]
+      },
+      "admin_install_yaml": "---\ninstall_tool_dependencies: true\ninstall_repository_dependencies: true\ninstall_resolver_dependencies: true\ntools: []\n",
       "tours": false,
       "video": false,
       "translations": {
@@ -2638,7 +3235,7 @@
           "email": "hexylena@galaxians.org",
           "orcid": "0000-0001-9760-8992",
           "maintainer_contact": "gitter",
-          "gitter": "hexylena",
+          "matrix": "hexylena:matrix.org",
           "joined": "2017-09",
           "elixir_node": "nl",
           "fediverse": "https://galaxians.garden/hexylena",
@@ -2658,10 +3255,11 @@
           "avatar": "https://www.erasmusplus.nl/assets/images/logo.png",
           "github": false,
           "funder": true,
+          "url": "https://training.galaxyproject.org/training-material/api/contributors/erasmusplus.json",
           "funding_id": "2020-1-NL01-KA203-064717",
+          "funding_system": "erasmusplus",
           "funding_statement": "This project (<a href=\"https://ec.europa.eu/programmes/erasmus-plus/projects/eplus-project-details/#project/2020-1-NL01-KA203-064717\"><code class=\"language-plaintext highlighter-rouge\">2020-1-NL01-KA203-064717</code></a>) is funded with the support of the Erasmus+ programme of the European Union. Their funding has supported a large number of tutorials within the GTN across a wide array of topics.\n<img src=\"https://gallantries.github.io/assets/images/logosbeneficaireserasmusright_en.jpg\" alt=\"eu flag with the text: with the support of the erasmus programme of the european union\" />",
           "id": "erasmusplus",
-          "url": "https://training.galaxyproject.org/training-material/api/contributors/erasmusplus.json",
           "page": "https://training.galaxyproject.org/training-material/hall-of-fame/erasmusplus/"
         },
         {
@@ -2669,8 +3267,8 @@
           "joined": "2020-11",
           "funder": true,
           "funding_statement": "A number of our employees contribute directly to the Galaxy Training Network and seek to make our higher education learning materials more accessible to a wider audience through the GTN platform. <a href=\"https://avans.nl/\">avans.nl</a>",
-          "id": "avans-atgm",
           "url": "https://training.galaxyproject.org/training-material/api/contributors/avans-atgm.json",
+          "id": "avans-atgm",
           "page": "https://training.galaxyproject.org/training-material/hall-of-fame/avans-atgm/"
         }
       ],
@@ -2680,8 +3278,7 @@
       },
       "priority": 3,
       "tags": [
-        "R",
-        "jupyter-notebook"
+        "R"
       ],
       "license": "MIT",
       "url": "/topics/data-science/tutorials/r-dplyr/tutorial.html",
@@ -2698,9 +3295,41 @@
       },
       "hands_on": true,
       "slides": false,
+      "api": "https://training.galaxyproject.org/training-material/api/topics/data-science/tutorials/r-dplyr/tutorial.json",
       "tools": [
 
       ],
+      "supported_servers": {
+        "exact": [
+
+        ],
+        "inexact": [
+          {
+            "name": "UseGalaxy.eu",
+            "url": "https://usegalaxy.eu",
+            "usegalaxy": true
+          },
+          {
+            "name": "UseGalaxy.org",
+            "url": "https://usegalaxy.org",
+            "usegalaxy": true
+          },
+          {
+            "name": "UseGalaxy.org.au",
+            "url": "https://usegalaxy.org.au",
+            "usegalaxy": true
+          }
+        ]
+      },
+      "admin_install": {
+        "install_tool_dependencies": true,
+        "install_repository_dependencies": true,
+        "install_resolver_dependencies": true,
+        "tools": [
+
+        ]
+      },
+      "admin_install_yaml": "---\ninstall_tool_dependencies: true\ninstall_repository_dependencies: true\ninstall_resolver_dependencies: true\ntools: []\n",
       "tours": false,
       "video": false,
       "translations": {
@@ -2760,7 +3389,7 @@
           "name": "Fotis E. Psomopoulos",
           "email": "fpsom@certh.gr",
           "twitter": "fopsom",
-          "gitter": "fpsom",
+          "matrix": "fpsom:matrix.org",
           "orcid": "0000-0002-0222-4273",
           "linkedin": "fpsom",
           "joined": "2019-03",
@@ -2782,10 +3411,11 @@
           "avatar": "https://www.erasmusplus.nl/assets/images/logo.png",
           "github": false,
           "funder": true,
+          "url": "https://training.galaxyproject.org/training-material/api/contributors/erasmusplus.json",
           "funding_id": "2020-1-NL01-KA203-064717",
+          "funding_system": "erasmusplus",
           "funding_statement": "This project (<a href=\"https://ec.europa.eu/programmes/erasmus-plus/projects/eplus-project-details/#project/2020-1-NL01-KA203-064717\"><code class=\"language-plaintext highlighter-rouge\">2020-1-NL01-KA203-064717</code></a>) is funded with the support of the Erasmus+ programme of the European Union. Their funding has supported a large number of tutorials within the GTN across a wide array of topics.\n<img src=\"https://gallantries.github.io/assets/images/logosbeneficaireserasmusright_en.jpg\" alt=\"eu flag with the text: with the support of the erasmus programme of the european union\" />",
           "id": "erasmusplus",
-          "url": "https://training.galaxyproject.org/training-material/api/contributors/erasmusplus.json",
           "page": "https://training.galaxyproject.org/training-material/hall-of-fame/erasmusplus/"
         }
       ],
@@ -2794,9 +3424,6 @@
         "language": "python",
         "pyolite": true
       },
-      "tags": [
-        "jupyter-notebook"
-      ],
       "url": "/topics/data-science/tutorials/python-plotting/tutorial.html",
       "topic_name": "data-science",
       "tutorial_name": "python-plotting",
@@ -2811,9 +3438,41 @@
       },
       "hands_on": true,
       "slides": false,
+      "api": "https://training.galaxyproject.org/training-material/api/topics/data-science/tutorials/python-plotting/tutorial.json",
       "tools": [
 
       ],
+      "supported_servers": {
+        "exact": [
+
+        ],
+        "inexact": [
+          {
+            "name": "UseGalaxy.eu",
+            "url": "https://usegalaxy.eu",
+            "usegalaxy": true
+          },
+          {
+            "name": "UseGalaxy.org",
+            "url": "https://usegalaxy.org",
+            "usegalaxy": true
+          },
+          {
+            "name": "UseGalaxy.org.au",
+            "url": "https://usegalaxy.org.au",
+            "usegalaxy": true
+          }
+        ]
+      },
+      "admin_install": {
+        "install_tool_dependencies": true,
+        "install_repository_dependencies": true,
+        "install_resolver_dependencies": true,
+        "tools": [
+
+        ]
+      },
+      "admin_install_yaml": "---\ninstall_tool_dependencies: true\ninstall_repository_dependencies: true\ninstall_resolver_dependencies: true\ntools: []\n",
       "tours": false,
       "video": false,
       "translations": {
@@ -2875,7 +3534,7 @@
           "email": "hexylena@galaxians.org",
           "orcid": "0000-0001-9760-8992",
           "maintainer_contact": "gitter",
-          "gitter": "hexylena",
+          "matrix": "hexylena:matrix.org",
           "joined": "2017-09",
           "elixir_node": "nl",
           "fediverse": "https://galaxians.garden/hexylena",
@@ -2911,9 +3570,6 @@
         "language": "python",
         "pyolite": true
       },
-      "tags": [
-        "jupyter-notebook"
-      ],
       "url": "/topics/data-science/tutorials/python-types/tutorial.html",
       "topic_name": "data-science",
       "tutorial_name": "python-types",
@@ -2928,9 +3584,41 @@
       },
       "hands_on": true,
       "slides": false,
+      "api": "https://training.galaxyproject.org/training-material/api/topics/data-science/tutorials/python-types/tutorial.json",
       "tools": [
 
       ],
+      "supported_servers": {
+        "exact": [
+
+        ],
+        "inexact": [
+          {
+            "name": "UseGalaxy.eu",
+            "url": "https://usegalaxy.eu",
+            "usegalaxy": true
+          },
+          {
+            "name": "UseGalaxy.org",
+            "url": "https://usegalaxy.org",
+            "usegalaxy": true
+          },
+          {
+            "name": "UseGalaxy.org.au",
+            "url": "https://usegalaxy.org.au",
+            "usegalaxy": true
+          }
+        ]
+      },
+      "admin_install": {
+        "install_tool_dependencies": true,
+        "install_repository_dependencies": true,
+        "install_resolver_dependencies": true,
+        "tools": [
+
+        ]
+      },
+      "admin_install_yaml": "---\ninstall_tool_dependencies: true\ninstall_repository_dependencies: true\ninstall_resolver_dependencies: true\ntools: []\n",
       "tours": false,
       "video": false,
       "translations": {
@@ -2992,7 +3680,7 @@
           "email": "hexylena@galaxians.org",
           "orcid": "0000-0001-9760-8992",
           "maintainer_contact": "gitter",
-          "gitter": "hexylena",
+          "matrix": "hexylena:matrix.org",
           "joined": "2017-09",
           "elixir_node": "nl",
           "fediverse": "https://galaxians.garden/hexylena",
@@ -3028,9 +3716,6 @@
         "language": "python",
         "pyolite": true
       },
-      "tags": [
-        "jupyter-notebook"
-      ],
       "url": "/topics/data-science/tutorials/python-iterables/tutorial.html",
       "topic_name": "data-science",
       "tutorial_name": "python-iterables",
@@ -3045,9 +3730,41 @@
       },
       "hands_on": true,
       "slides": false,
+      "api": "https://training.galaxyproject.org/training-material/api/topics/data-science/tutorials/python-iterables/tutorial.json",
       "tools": [
 
       ],
+      "supported_servers": {
+        "exact": [
+
+        ],
+        "inexact": [
+          {
+            "name": "UseGalaxy.eu",
+            "url": "https://usegalaxy.eu",
+            "usegalaxy": true
+          },
+          {
+            "name": "UseGalaxy.org",
+            "url": "https://usegalaxy.org",
+            "usegalaxy": true
+          },
+          {
+            "name": "UseGalaxy.org.au",
+            "url": "https://usegalaxy.org.au",
+            "usegalaxy": true
+          }
+        ]
+      },
+      "admin_install": {
+        "install_tool_dependencies": true,
+        "install_repository_dependencies": true,
+        "install_resolver_dependencies": true,
+        "tools": [
+
+        ]
+      },
+      "admin_install_yaml": "---\ninstall_tool_dependencies: true\ninstall_repository_dependencies: true\ninstall_resolver_dependencies: true\ntools: []\n",
       "tours": false,
       "video": false,
       "translations": {
@@ -3107,7 +3824,7 @@
           "email": "hexylena@galaxians.org",
           "orcid": "0000-0001-9760-8992",
           "maintainer_contact": "gitter",
-          "gitter": "hexylena",
+          "matrix": "hexylena:matrix.org",
           "joined": "2017-09",
           "elixir_node": "nl",
           "fediverse": "https://galaxians.garden/hexylena",
@@ -3143,9 +3860,6 @@
         "language": "python",
         "pyolite": true
       },
-      "tags": [
-        "jupyter-notebook"
-      ],
       "url": "/topics/data-science/tutorials/python-flow/tutorial.html",
       "topic_name": "data-science",
       "tutorial_name": "python-flow",
@@ -3160,9 +3874,41 @@
       },
       "hands_on": true,
       "slides": false,
+      "api": "https://training.galaxyproject.org/training-material/api/topics/data-science/tutorials/python-flow/tutorial.json",
       "tools": [
 
       ],
+      "supported_servers": {
+        "exact": [
+
+        ],
+        "inexact": [
+          {
+            "name": "UseGalaxy.eu",
+            "url": "https://usegalaxy.eu",
+            "usegalaxy": true
+          },
+          {
+            "name": "UseGalaxy.org",
+            "url": "https://usegalaxy.org",
+            "usegalaxy": true
+          },
+          {
+            "name": "UseGalaxy.org.au",
+            "url": "https://usegalaxy.org.au",
+            "usegalaxy": true
+          }
+        ]
+      },
+      "admin_install": {
+        "install_tool_dependencies": true,
+        "install_repository_dependencies": true,
+        "install_resolver_dependencies": true,
+        "tools": [
+
+        ]
+      },
+      "admin_install_yaml": "---\ninstall_tool_dependencies: true\ninstall_repository_dependencies: true\ninstall_resolver_dependencies: true\ntools: []\n",
       "tours": false,
       "video": false,
       "translations": {
@@ -3230,7 +3976,7 @@
           "email": "hexylena@galaxians.org",
           "orcid": "0000-0001-9760-8992",
           "maintainer_contact": "gitter",
-          "gitter": "hexylena",
+          "matrix": "hexylena:matrix.org",
           "joined": "2017-09",
           "elixir_node": "nl",
           "fediverse": "https://galaxians.garden/hexylena",
@@ -3266,9 +4012,6 @@
         "language": "python",
         "pyolite": true
       },
-      "tags": [
-        "jupyter-notebook"
-      ],
       "url": "/topics/data-science/tutorials/python-loops/tutorial.html",
       "topic_name": "data-science",
       "tutorial_name": "python-loops",
@@ -3283,9 +4026,41 @@
       },
       "hands_on": true,
       "slides": false,
+      "api": "https://training.galaxyproject.org/training-material/api/topics/data-science/tutorials/python-loops/tutorial.json",
       "tools": [
 
       ],
+      "supported_servers": {
+        "exact": [
+
+        ],
+        "inexact": [
+          {
+            "name": "UseGalaxy.eu",
+            "url": "https://usegalaxy.eu",
+            "usegalaxy": true
+          },
+          {
+            "name": "UseGalaxy.org",
+            "url": "https://usegalaxy.org",
+            "usegalaxy": true
+          },
+          {
+            "name": "UseGalaxy.org.au",
+            "url": "https://usegalaxy.org.au",
+            "usegalaxy": true
+          }
+        ]
+      },
+      "admin_install": {
+        "install_tool_dependencies": true,
+        "install_repository_dependencies": true,
+        "install_resolver_dependencies": true,
+        "tools": [
+
+        ]
+      },
+      "admin_install_yaml": "---\ninstall_tool_dependencies: true\ninstall_repository_dependencies: true\ninstall_resolver_dependencies: true\ntools: []\n",
       "tours": false,
       "video": false,
       "translations": {
@@ -3338,7 +4113,7 @@
           "email": "hexylena@galaxians.org",
           "orcid": "0000-0001-9760-8992",
           "maintainer_contact": "gitter",
-          "gitter": "hexylena",
+          "matrix": "hexylena:matrix.org",
           "joined": "2017-09",
           "elixir_node": "nl",
           "fediverse": "https://galaxians.garden/hexylena",
@@ -3374,9 +4149,6 @@
         "language": "python",
         "pyolite": true
       },
-      "tags": [
-        "jupyter-notebook"
-      ],
       "url": "/topics/data-science/tutorials/python-files/tutorial.html",
       "topic_name": "data-science",
       "tutorial_name": "python-files",
@@ -3391,9 +4163,41 @@
       },
       "hands_on": true,
       "slides": false,
+      "api": "https://training.galaxyproject.org/training-material/api/topics/data-science/tutorials/python-files/tutorial.json",
       "tools": [
 
       ],
+      "supported_servers": {
+        "exact": [
+
+        ],
+        "inexact": [
+          {
+            "name": "UseGalaxy.eu",
+            "url": "https://usegalaxy.eu",
+            "usegalaxy": true
+          },
+          {
+            "name": "UseGalaxy.org",
+            "url": "https://usegalaxy.org",
+            "usegalaxy": true
+          },
+          {
+            "name": "UseGalaxy.org.au",
+            "url": "https://usegalaxy.org.au",
+            "usegalaxy": true
+          }
+        ]
+      },
+      "admin_install": {
+        "install_tool_dependencies": true,
+        "install_repository_dependencies": true,
+        "install_resolver_dependencies": true,
+        "tools": [
+
+        ]
+      },
+      "admin_install_yaml": "---\ninstall_tool_dependencies: true\ninstall_repository_dependencies: true\ninstall_resolver_dependencies: true\ntools: []\n",
       "tours": false,
       "video": false,
       "translations": {
@@ -3444,7 +4248,7 @@
           "email": "hexylena@galaxians.org",
           "orcid": "0000-0001-9760-8992",
           "maintainer_contact": "gitter",
-          "gitter": "hexylena",
+          "matrix": "hexylena:matrix.org",
           "joined": "2017-09",
           "elixir_node": "nl",
           "fediverse": "https://galaxians.garden/hexylena",
@@ -3480,9 +4284,6 @@
         "language": "python",
         "pyolite": true
       },
-      "tags": [
-        "jupyter-notebook"
-      ],
       "url": "/topics/data-science/tutorials/python-exceptions/tutorial.html",
       "topic_name": "data-science",
       "tutorial_name": "python-exceptions",
@@ -3497,9 +4298,41 @@
       },
       "hands_on": true,
       "slides": false,
+      "api": "https://training.galaxyproject.org/training-material/api/topics/data-science/tutorials/python-exceptions/tutorial.json",
       "tools": [
 
       ],
+      "supported_servers": {
+        "exact": [
+
+        ],
+        "inexact": [
+          {
+            "name": "UseGalaxy.eu",
+            "url": "https://usegalaxy.eu",
+            "usegalaxy": true
+          },
+          {
+            "name": "UseGalaxy.org",
+            "url": "https://usegalaxy.org",
+            "usegalaxy": true
+          },
+          {
+            "name": "UseGalaxy.org.au",
+            "url": "https://usegalaxy.org.au",
+            "usegalaxy": true
+          }
+        ]
+      },
+      "admin_install": {
+        "install_tool_dependencies": true,
+        "install_repository_dependencies": true,
+        "install_resolver_dependencies": true,
+        "tools": [
+
+        ]
+      },
+      "admin_install_yaml": "---\ninstall_tool_dependencies: true\ninstall_repository_dependencies: true\ninstall_resolver_dependencies: true\ntools: []\n",
       "tours": false,
       "video": false,
       "translations": {
@@ -3558,7 +4391,7 @@
           "email": "hexylena@galaxians.org",
           "orcid": "0000-0001-9760-8992",
           "maintainer_contact": "gitter",
-          "gitter": "hexylena",
+          "matrix": "hexylena:matrix.org",
           "joined": "2017-09",
           "elixir_node": "nl",
           "fediverse": "https://galaxians.garden/hexylena",
@@ -3597,9 +4430,6 @@
       "abbreviations": {
         "ORF": "Open Reading Frame"
       },
-      "tags": [
-        "jupyter-notebook"
-      ],
       "url": "/topics/data-science/tutorials/python-basics-recap/tutorial.html",
       "topic_name": "data-science",
       "tutorial_name": "python-basics-recap",
@@ -3614,9 +4444,41 @@
       },
       "hands_on": true,
       "slides": false,
+      "api": "https://training.galaxyproject.org/training-material/api/topics/data-science/tutorials/python-basics-recap/tutorial.json",
       "tools": [
 
       ],
+      "supported_servers": {
+        "exact": [
+
+        ],
+        "inexact": [
+          {
+            "name": "UseGalaxy.eu",
+            "url": "https://usegalaxy.eu",
+            "usegalaxy": true
+          },
+          {
+            "name": "UseGalaxy.org",
+            "url": "https://usegalaxy.org",
+            "usegalaxy": true
+          },
+          {
+            "name": "UseGalaxy.org.au",
+            "url": "https://usegalaxy.org.au",
+            "usegalaxy": true
+          }
+        ]
+      },
+      "admin_install": {
+        "install_tool_dependencies": true,
+        "install_repository_dependencies": true,
+        "install_resolver_dependencies": true,
+        "tools": [
+
+        ]
+      },
+      "admin_install_yaml": "---\ninstall_tool_dependencies: true\ninstall_repository_dependencies: true\ninstall_resolver_dependencies: true\ntools: []\n",
       "tours": false,
       "video": false,
       "translations": {
@@ -3674,8 +4536,7 @@
         ]
       },
       "tags": [
-        "conda",
-        "jupyter-notebook"
+        "conda"
       ],
       "priority": 10,
       "notebook": {
@@ -3695,9 +4556,41 @@
       },
       "hands_on": true,
       "slides": false,
+      "api": "https://training.galaxyproject.org/training-material/api/topics/data-science/tutorials/python-conda/tutorial.json",
       "tools": [
 
       ],
+      "supported_servers": {
+        "exact": [
+
+        ],
+        "inexact": [
+          {
+            "name": "UseGalaxy.eu",
+            "url": "https://usegalaxy.eu",
+            "usegalaxy": true
+          },
+          {
+            "name": "UseGalaxy.org",
+            "url": "https://usegalaxy.org",
+            "usegalaxy": true
+          },
+          {
+            "name": "UseGalaxy.org.au",
+            "url": "https://usegalaxy.org.au",
+            "usegalaxy": true
+          }
+        ]
+      },
+      "admin_install": {
+        "install_tool_dependencies": true,
+        "install_repository_dependencies": true,
+        "install_resolver_dependencies": true,
+        "tools": [
+
+        ]
+      },
+      "admin_install_yaml": "---\ninstall_tool_dependencies: true\ninstall_repository_dependencies: true\ninstall_resolver_dependencies: true\ntools: []\n",
       "tours": false,
       "video": false,
       "translations": {
@@ -3723,7 +4616,7 @@
           "email": "hexylena@galaxians.org",
           "orcid": "0000-0001-9760-8992",
           "maintainer_contact": "gitter",
-          "gitter": "hexylena",
+          "matrix": "hexylena:matrix.org",
           "joined": "2017-09",
           "elixir_node": "nl",
           "fediverse": "https://galaxians.garden/hexylena",
@@ -3749,8 +4642,8 @@
           "joined": "2020-11",
           "funder": true,
           "funding_statement": "A number of our employees contribute directly to the Galaxy Training Network and seek to make our higher education learning materials more accessible to a wider audience through the GTN platform. <a href=\"https://avans.nl/\">avans.nl</a>",
-          "id": "avans-atgm",
           "url": "https://training.galaxyproject.org/training-material/api/contributors/avans-atgm.json",
+          "id": "avans-atgm",
           "page": "https://training.galaxyproject.org/training-material/hall-of-fame/avans-atgm/"
         }
       ],
@@ -3802,9 +4695,6 @@
       "notebook": {
         "language": "bash"
       },
-      "tags": [
-        "jupyter-notebook"
-      ],
       "url": "/topics/data-science/tutorials/python-venv/tutorial.html",
       "topic_name": "data-science",
       "tutorial_name": "python-venv",
@@ -3819,9 +4709,41 @@
       },
       "hands_on": true,
       "slides": false,
+      "api": "https://training.galaxyproject.org/training-material/api/topics/data-science/tutorials/python-venv/tutorial.json",
       "tools": [
 
       ],
+      "supported_servers": {
+        "exact": [
+
+        ],
+        "inexact": [
+          {
+            "name": "UseGalaxy.eu",
+            "url": "https://usegalaxy.eu",
+            "usegalaxy": true
+          },
+          {
+            "name": "UseGalaxy.org",
+            "url": "https://usegalaxy.org",
+            "usegalaxy": true
+          },
+          {
+            "name": "UseGalaxy.org.au",
+            "url": "https://usegalaxy.org.au",
+            "usegalaxy": true
+          }
+        ]
+      },
+      "admin_install": {
+        "install_tool_dependencies": true,
+        "install_repository_dependencies": true,
+        "install_resolver_dependencies": true,
+        "tools": [
+
+        ]
+      },
+      "admin_install_yaml": "---\ninstall_tool_dependencies: true\ninstall_repository_dependencies: true\ninstall_resolver_dependencies: true\ntools: []\n",
       "tours": false,
       "video": false,
       "translations": {
@@ -3847,7 +4769,7 @@
           "email": "hexylena@galaxians.org",
           "orcid": "0000-0001-9760-8992",
           "maintainer_contact": "gitter",
-          "gitter": "hexylena",
+          "matrix": "hexylena:matrix.org",
           "joined": "2017-09",
           "elixir_node": "nl",
           "fediverse": "https://galaxians.garden/hexylena",
@@ -3873,8 +4795,8 @@
           "joined": "2020-11",
           "funder": true,
           "funding_statement": "A number of our employees contribute directly to the Galaxy Training Network and seek to make our higher education learning materials more accessible to a wider audience through the GTN platform. <a href=\"https://avans.nl/\">avans.nl</a>",
-          "id": "avans-atgm",
           "url": "https://training.galaxyproject.org/training-material/api/contributors/avans-atgm.json",
+          "id": "avans-atgm",
           "page": "https://training.galaxyproject.org/training-material/hall-of-fame/avans-atgm/"
         }
       ],
@@ -3941,9 +4863,41 @@
       },
       "hands_on": true,
       "slides": false,
+      "api": "https://training.galaxyproject.org/training-material/api/topics/data-science/tutorials/python-argparse/tutorial.json",
       "tools": [
 
       ],
+      "supported_servers": {
+        "exact": [
+
+        ],
+        "inexact": [
+          {
+            "name": "UseGalaxy.eu",
+            "url": "https://usegalaxy.eu",
+            "usegalaxy": true
+          },
+          {
+            "name": "UseGalaxy.org",
+            "url": "https://usegalaxy.org",
+            "usegalaxy": true
+          },
+          {
+            "name": "UseGalaxy.org.au",
+            "url": "https://usegalaxy.org.au",
+            "usegalaxy": true
+          }
+        ]
+      },
+      "admin_install": {
+        "install_tool_dependencies": true,
+        "install_repository_dependencies": true,
+        "install_resolver_dependencies": true,
+        "tools": [
+
+        ]
+      },
+      "admin_install_yaml": "---\ninstall_tool_dependencies: true\ninstall_repository_dependencies: true\ninstall_resolver_dependencies: true\ntools: []\n",
       "tours": false,
       "video": false,
       "translations": {
@@ -3962,7 +4916,7 @@
           "email": "hexylena@galaxians.org",
           "orcid": "0000-0001-9760-8992",
           "maintainer_contact": "gitter",
-          "gitter": "hexylena",
+          "matrix": "hexylena:matrix.org",
           "joined": "2017-09",
           "elixir_node": "nl",
           "fediverse": "https://galaxians.garden/hexylena",
@@ -3997,8 +4951,8 @@
           "joined": "2020-11",
           "funder": true,
           "funding_statement": "A number of our employees contribute directly to the Galaxy Training Network and seek to make our higher education learning materials more accessible to a wider audience through the GTN platform. <a href=\"https://avans.nl/\">avans.nl</a>",
-          "id": "avans-atgm",
           "url": "https://training.galaxyproject.org/training-material/api/contributors/avans-atgm.json",
+          "id": "avans-atgm",
           "page": "https://training.galaxyproject.org/training-material/hall-of-fame/avans-atgm/"
         }
       ],
@@ -4056,9 +5010,6 @@
         "language": "python",
         "pyolite": true
       },
-      "tags": [
-        "jupyter-notebook"
-      ],
       "url": "/topics/data-science/tutorials/python-testing/tutorial.html",
       "topic_name": "data-science",
       "tutorial_name": "python-testing",
@@ -4073,9 +5024,41 @@
       },
       "hands_on": true,
       "slides": false,
+      "api": "https://training.galaxyproject.org/training-material/api/topics/data-science/tutorials/python-testing/tutorial.json",
       "tools": [
 
       ],
+      "supported_servers": {
+        "exact": [
+
+        ],
+        "inexact": [
+          {
+            "name": "UseGalaxy.eu",
+            "url": "https://usegalaxy.eu",
+            "usegalaxy": true
+          },
+          {
+            "name": "UseGalaxy.org",
+            "url": "https://usegalaxy.org",
+            "usegalaxy": true
+          },
+          {
+            "name": "UseGalaxy.org.au",
+            "url": "https://usegalaxy.org.au",
+            "usegalaxy": true
+          }
+        ]
+      },
+      "admin_install": {
+        "install_tool_dependencies": true,
+        "install_repository_dependencies": true,
+        "install_resolver_dependencies": true,
+        "tools": [
+
+        ]
+      },
+      "admin_install_yaml": "---\ninstall_tool_dependencies: true\ninstall_repository_dependencies: true\ninstall_resolver_dependencies: true\ntools: []\n",
       "tours": false,
       "video": false,
       "translations": {
@@ -4101,7 +5084,7 @@
           "email": "hexylena@galaxians.org",
           "orcid": "0000-0001-9760-8992",
           "maintainer_contact": "gitter",
-          "gitter": "hexylena",
+          "matrix": "hexylena:matrix.org",
           "joined": "2017-09",
           "elixir_node": "nl",
           "fediverse": "https://galaxians.garden/hexylena",
@@ -4143,8 +5126,8 @@
           "joined": "2020-11",
           "funder": true,
           "funding_statement": "A number of our employees contribute directly to the Galaxy Training Network and seek to make our higher education learning materials more accessible to a wider audience through the GTN platform. <a href=\"https://avans.nl/\">avans.nl</a>",
-          "id": "avans-atgm",
           "url": "https://training.galaxyproject.org/training-material/api/contributors/avans-atgm.json",
+          "id": "avans-atgm",
           "page": "https://training.galaxyproject.org/training-material/hall-of-fame/avans-atgm/"
         }
       ],
@@ -4197,9 +5180,6 @@
         "language": "python",
         "pyolite": true
       },
-      "tags": [
-        "jupyter-notebook"
-      ],
       "url": "/topics/data-science/tutorials/python-typing/tutorial.html",
       "topic_name": "data-science",
       "tutorial_name": "python-typing",
@@ -4214,9 +5194,41 @@
       },
       "hands_on": true,
       "slides": false,
+      "api": "https://training.galaxyproject.org/training-material/api/topics/data-science/tutorials/python-typing/tutorial.json",
       "tools": [
 
       ],
+      "supported_servers": {
+        "exact": [
+
+        ],
+        "inexact": [
+          {
+            "name": "UseGalaxy.eu",
+            "url": "https://usegalaxy.eu",
+            "usegalaxy": true
+          },
+          {
+            "name": "UseGalaxy.org",
+            "url": "https://usegalaxy.org",
+            "usegalaxy": true
+          },
+          {
+            "name": "UseGalaxy.org.au",
+            "url": "https://usegalaxy.org.au",
+            "usegalaxy": true
+          }
+        ]
+      },
+      "admin_install": {
+        "install_tool_dependencies": true,
+        "install_repository_dependencies": true,
+        "install_resolver_dependencies": true,
+        "tools": [
+
+        ]
+      },
+      "admin_install_yaml": "---\ninstall_tool_dependencies: true\ninstall_repository_dependencies: true\ninstall_resolver_dependencies: true\ntools: []\n",
       "tours": false,
       "video": false,
       "translations": {
@@ -4235,7 +5247,7 @@
           "email": "hexylena@galaxians.org",
           "orcid": "0000-0001-9760-8992",
           "maintainer_contact": "gitter",
-          "gitter": "hexylena",
+          "matrix": "hexylena:matrix.org",
           "joined": "2017-09",
           "elixir_node": "nl",
           "fediverse": "https://galaxians.garden/hexylena",
@@ -4287,8 +5299,8 @@
           "joined": "2020-11",
           "funder": true,
           "funding_statement": "A number of our employees contribute directly to the Galaxy Training Network and seek to make our higher education learning materials more accessible to a wider audience through the GTN platform. <a href=\"https://avans.nl/\">avans.nl</a>",
-          "id": "avans-atgm",
           "url": "https://training.galaxyproject.org/training-material/api/contributors/avans-atgm.json",
+          "id": "avans-atgm",
           "page": "https://training.galaxyproject.org/training-material/hall-of-fame/avans-atgm/"
         }
       ],
@@ -4325,7 +5337,7 @@
           "email": "hexylena@galaxians.org",
           "orcid": "0000-0001-9760-8992",
           "maintainer_contact": "gitter",
-          "gitter": "hexylena",
+          "matrix": "hexylena:matrix.org",
           "joined": "2017-09",
           "elixir_node": "nl",
           "fediverse": "https://galaxians.garden/hexylena",
@@ -4361,9 +5373,6 @@
         "language": "python",
         "pyolite": true
       },
-      "tags": [
-        "jupyter-notebook"
-      ],
       "url": "/topics/data-science/tutorials/python-glob/tutorial.html",
       "topic_name": "data-science",
       "tutorial_name": "python-glob",
@@ -4378,9 +5387,41 @@
       },
       "hands_on": true,
       "slides": false,
+      "api": "https://training.galaxyproject.org/training-material/api/topics/data-science/tutorials/python-glob/tutorial.json",
       "tools": [
 
       ],
+      "supported_servers": {
+        "exact": [
+
+        ],
+        "inexact": [
+          {
+            "name": "UseGalaxy.eu",
+            "url": "https://usegalaxy.eu",
+            "usegalaxy": true
+          },
+          {
+            "name": "UseGalaxy.org",
+            "url": "https://usegalaxy.org",
+            "usegalaxy": true
+          },
+          {
+            "name": "UseGalaxy.org.au",
+            "url": "https://usegalaxy.org.au",
+            "usegalaxy": true
+          }
+        ]
+      },
+      "admin_install": {
+        "install_tool_dependencies": true,
+        "install_repository_dependencies": true,
+        "install_resolver_dependencies": true,
+        "tools": [
+
+        ]
+      },
+      "admin_install_yaml": "---\ninstall_tool_dependencies: true\ninstall_repository_dependencies: true\ninstall_resolver_dependencies: true\ntools: []\n",
       "tours": false,
       "video": false,
       "translations": {
@@ -4431,7 +5472,7 @@
           "email": "hexylena@galaxians.org",
           "orcid": "0000-0001-9760-8992",
           "maintainer_contact": "gitter",
-          "gitter": "hexylena",
+          "matrix": "hexylena:matrix.org",
           "joined": "2017-09",
           "elixir_node": "nl",
           "fediverse": "https://galaxians.garden/hexylena",
@@ -4467,9 +5508,6 @@
         "language": "python",
         "pyolite": true
       },
-      "tags": [
-        "jupyter-notebook"
-      ],
       "url": "/topics/data-science/tutorials/python-subprocess/tutorial.html",
       "topic_name": "data-science",
       "tutorial_name": "python-subprocess",
@@ -4484,9 +5522,41 @@
       },
       "hands_on": true,
       "slides": false,
+      "api": "https://training.galaxyproject.org/training-material/api/topics/data-science/tutorials/python-subprocess/tutorial.json",
       "tools": [
 
       ],
+      "supported_servers": {
+        "exact": [
+
+        ],
+        "inexact": [
+          {
+            "name": "UseGalaxy.eu",
+            "url": "https://usegalaxy.eu",
+            "usegalaxy": true
+          },
+          {
+            "name": "UseGalaxy.org",
+            "url": "https://usegalaxy.org",
+            "usegalaxy": true
+          },
+          {
+            "name": "UseGalaxy.org.au",
+            "url": "https://usegalaxy.org.au",
+            "usegalaxy": true
+          }
+        ]
+      },
+      "admin_install": {
+        "install_tool_dependencies": true,
+        "install_repository_dependencies": true,
+        "install_resolver_dependencies": true,
+        "tools": [
+
+        ]
+      },
+      "admin_install_yaml": "---\ninstall_tool_dependencies: true\ninstall_repository_dependencies: true\ninstall_resolver_dependencies: true\ntools: []\n",
       "tours": false,
       "video": false,
       "translations": {
@@ -4553,9 +5623,6 @@
       "abbreviations": {
         "PEP": "Python Enhancement Proposal"
       },
-      "tags": [
-        "jupyter-notebook"
-      ],
       "url": "/topics/data-science/tutorials/python-linting/tutorial.html",
       "topic_name": "data-science",
       "tutorial_name": "python-linting",
@@ -4570,9 +5637,41 @@
       },
       "hands_on": true,
       "slides": false,
+      "api": "https://training.galaxyproject.org/training-material/api/topics/data-science/tutorials/python-linting/tutorial.json",
       "tools": [
 
       ],
+      "supported_servers": {
+        "exact": [
+
+        ],
+        "inexact": [
+          {
+            "name": "UseGalaxy.eu",
+            "url": "https://usegalaxy.eu",
+            "usegalaxy": true
+          },
+          {
+            "name": "UseGalaxy.org",
+            "url": "https://usegalaxy.org",
+            "usegalaxy": true
+          },
+          {
+            "name": "UseGalaxy.org.au",
+            "url": "https://usegalaxy.org.au",
+            "usegalaxy": true
+          }
+        ]
+      },
+      "admin_install": {
+        "install_tool_dependencies": true,
+        "install_repository_dependencies": true,
+        "install_resolver_dependencies": true,
+        "tools": [
+
+        ]
+      },
+      "admin_install_yaml": "---\ninstall_tool_dependencies: true\ninstall_repository_dependencies: true\ninstall_resolver_dependencies: true\ntools: []\n",
       "tours": false,
       "video": false,
       "translations": {
@@ -4598,7 +5697,7 @@
           "email": "hexylena@galaxians.org",
           "orcid": "0000-0001-9760-8992",
           "maintainer_contact": "gitter",
-          "gitter": "hexylena",
+          "matrix": "hexylena:matrix.org",
           "joined": "2017-09",
           "elixir_node": "nl",
           "fediverse": "https://galaxians.garden/hexylena",
@@ -4624,8 +5723,8 @@
           "joined": "2020-11",
           "funder": true,
           "funding_statement": "A number of our employees contribute directly to the Galaxy Training Network and seek to make our higher education learning materials more accessible to a wider audience through the GTN platform. <a href=\"https://avans.nl/\">avans.nl</a>",
-          "id": "avans-atgm",
           "url": "https://training.galaxyproject.org/training-material/api/contributors/avans-atgm.json",
+          "id": "avans-atgm",
           "page": "https://training.galaxyproject.org/training-material/hall-of-fame/avans-atgm/"
         }
       ],
@@ -4677,9 +5776,6 @@
       "abbreviations": {
         "GIL": "Global Interpreter Lock"
       },
-      "tags": [
-        "jupyter-notebook"
-      ],
       "url": "/topics/data-science/tutorials/python-multiprocessing/tutorial.html",
       "topic_name": "data-science",
       "tutorial_name": "python-multiprocessing",
@@ -4694,9 +5790,41 @@
       },
       "hands_on": true,
       "slides": false,
+      "api": "https://training.galaxyproject.org/training-material/api/topics/data-science/tutorials/python-multiprocessing/tutorial.json",
       "tools": [
 
       ],
+      "supported_servers": {
+        "exact": [
+
+        ],
+        "inexact": [
+          {
+            "name": "UseGalaxy.eu",
+            "url": "https://usegalaxy.eu",
+            "usegalaxy": true
+          },
+          {
+            "name": "UseGalaxy.org",
+            "url": "https://usegalaxy.org",
+            "usegalaxy": true
+          },
+          {
+            "name": "UseGalaxy.org.au",
+            "url": "https://usegalaxy.org.au",
+            "usegalaxy": true
+          }
+        ]
+      },
+      "admin_install": {
+        "install_tool_dependencies": true,
+        "install_repository_dependencies": true,
+        "install_resolver_dependencies": true,
+        "tools": [
+
+        ]
+      },
+      "admin_install_yaml": "---\ninstall_tool_dependencies: true\ninstall_repository_dependencies: true\ninstall_resolver_dependencies: true\ntools: []\n",
       "tours": false,
       "video": false,
       "translations": {
@@ -4715,7 +5843,7 @@
           "email": "hexylena@galaxians.org",
           "orcid": "0000-0001-9760-8992",
           "maintainer_contact": "gitter",
-          "gitter": "hexylena",
+          "matrix": "hexylena:matrix.org",
           "joined": "2017-09",
           "elixir_node": "nl",
           "fediverse": "https://galaxians.garden/hexylena",
@@ -4750,8 +5878,8 @@
           "joined": "2020-11",
           "funder": true,
           "funding_statement": "A number of our employees contribute directly to the Galaxy Training Network and seek to make our higher education learning materials more accessible to a wider audience through the GTN platform. <a href=\"https://avans.nl/\">avans.nl</a>",
-          "id": "avans-atgm",
           "url": "https://training.galaxyproject.org/training-material/api/contributors/avans-atgm.json",
+          "id": "avans-atgm",
           "page": "https://training.galaxyproject.org/training-material/hall-of-fame/avans-atgm/"
         }
       ],

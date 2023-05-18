@@ -8,6 +8,29 @@
         
             <script async defer data-domain="training.galaxyproject.org" src="https://plausible.galaxyproject.eu/js/plausible.js"></script>
 
+<!-- JavaScript Error Monitoring, and performance tracking. -->
+<script
+  src="https://browser.sentry-cdn.com/7.52.1/bundle.tracing.min.js"
+  integrity="sha384-muuFXKS3752PNA4rPm9Uq6BLvOfV4CXyr9MHDBPvozOJJUWLKkogEFWOIRoVps43"
+  crossorigin="anonymous"
+></script>
+<script type="text/javascript">
+Sentry.init({
+  dsn: "https://45e0ec6e4373462b92969505df37cf40@sentry.galaxyproject.org/10",
+  release: "galaxy-training-network@37aabd7fe18d9445ff47887459affaea8dbe8791",
+  integrations: [new Sentry.BrowserTracing(), new Sentry.Replay()],
+  sampleRate: 0.1,
+  tracesSampleRate: 0.1,
+  // Capture Replay for no sessions by default
+  replaysSessionSampleRate: 0.01,
+  // plus for 1% of sessions with an error
+  replaysOnErrorSampleRate: 0.01,
+  // PII OFF
+  sendDefaultPii: false, // Off by default but just in case.
+  environment: "production",
+});
+</script>
+
         
         <link rel="stylesheet" href="/training-material/assets/css/bootstrap.min.css?v=3">
         <link rel="stylesheet" href="/training-material/assets/css/bootstrap-toc.min.css">
@@ -17,13 +40,13 @@
         <link rel="shortcut icon" href="/training-material/favicon.ico" type="image/x-icon">
         <link rel="alternate" type="application/atom+xml" href="/training-material/feed.xml">
         <link rel="canonical" href="https://training.galaxyproject.org/training-material/topics/teaching/tutorials/gtn-for-instructors/slides-plain.html">
-        <link rel="license" href="https://creativecommons.org/licenses/by/4.0/">
+	<link rel="license" href="https://spdx.org/licenses/CC-BY-4.0">
 
         <meta name="DC.identifier" content="https://github.com/galaxyproject/training-material">
 <meta name="DC.type" content="text">
 <meta name="DC.title" content="Overview of the Galaxy Training Material for Instructors">
 <meta name="DC.publisher" content="Galaxy Training Network">
-<meta name="DC.date" content="2023-05-18 00:33:03 +0000">
+<meta name="DC.date" content="2023-05-18 14:47:13 +0000">
 <meta name="DC.creator" content="Helena Rasche">
 
         
@@ -35,7 +58,7 @@
         <meta property="og:title" content="Galaxy Training: Overview of the Galaxy Training Material for Instructors">
         <meta property="og:description" content="Collection of tutorials developed and maintained by the w...">
         
-        <meta property="og:image" content="/training-material/assets/images/GTNLogo1000.png">
+        <meta property="og:image" content="/training-material/assets/images/GTN.png">
 
         
     </head>
@@ -104,8 +127,7 @@
     </a>
     <div class="dropdown-menu dropdown-menu-right">
 
-        
-        <a class="dropdown-item" href="https://github.com/galaxyproject/training-material/edit/main/topics/teaching/tutorials/gtn-for-instructors/slides-plain.md" title="Edit on GitHub">
+        <a class="dropdown-item" href="https://github.com/galaxyproject/training-material/edit/main./topics/teaching/tutorials/gtn-for-instructors/slides.html" title="Edit on GitHub">
           <i class="fab fa-github" aria-hidden="true"></i><span class="visually-hidden">github</span> Edit on GitHub
         </a>
 
@@ -276,7 +298,7 @@
 
 <h3 id="galaxy-training-material">Galaxy Training Material</h3>
 
-<p>.image-75[<img src="/training-material/topics/contributing/images/website_screenshot.png" alt="Screenshot of the website. " loading="lazy" />]</p>
+<p>.image-75[<img src="/training-material/topics/contributing/images/website_screenshot.png" alt="Screenshot of the website" />]</p>
 
 <p>https://training.galaxyproject.org</p>
 
@@ -294,7 +316,7 @@
 
 <h3 id="interactive-learning-via-hands-on-tutorials-built-around-a-research-story">Interactive learning via hands-on tutorials built around a “research story”</h3>
 
-<p><img src="/training-material/topics/contributing/images/interactive_hands_on.png" alt="Screenshot with 2 web-browsers open side-by-side: one pointed at the current tutorial and the other at a Galaxy instance. " loading="lazy" /></p>
+<p><img src="/training-material/topics/contributing/images/interactive_hands_on.png" alt="Screenshot with 2 web-browsers open side-by-side: one pointed at the current tutorial and the other at a Galaxy instance" /></p>
 
 <p>Usable by individual users &amp; instructors</p>
 
@@ -312,7 +334,7 @@
 <h3 id="many-tutorials-large-community">Many Tutorials, Large Community</h3>
 
 <!--SNIPPET-->
-<p><!-- tutorial stats --> &lt;div class="row" style="color: var(--text-color-boxtitle)"&gt; &lt;div class="col-md-4"&gt;  &lt;div class="gtn-card color-agenda"&gt;    &lt;div class="card-title"&gt;33&lt;/div&gt;    &lt;div class="card-text"&gt;Topics&lt;/div&gt;  &lt;/div&gt; &lt;/div&gt; &lt;div class="col-md-4"&gt;  &lt;div class="gtn-card color-tip"&gt;    &lt;div class="card-title"&gt;337&lt;/div&gt;    &lt;div class="card-text"&gt;Tutorials&lt;/div&gt;  &lt;/div&gt; &lt;/div&gt; &lt;div class="col-md-4"&gt;  &lt;div class="gtn-card color-details"&gt;    &lt;div class="card-title"&gt;370&lt;/div&gt;    &lt;div class="card-text"&gt;<abbr title="Frequently Asked Questions">FAQs</abbr>&lt;/div&gt;  &lt;/div&gt; &lt;/div&gt; &lt;div class="col-md-6"&gt;  &lt;div class="gtn-card color-comment"&gt;    &lt;div class="card-title"&gt;291&lt;/div&gt;    &lt;div class="card-text"&gt;Contributors&lt;/div&gt;  &lt;/div&gt; &lt;/div&gt; &lt;div class="col-md-6"&gt;  &lt;div class="gtn-card color-handson"&gt;    &lt;div class="card-title"&gt;7.9&lt;/div&gt;    &lt;div class="card-text"&gt;Years&lt;/div&gt;  &lt;/div&gt; &lt;/div&gt; &lt;/div&gt;</p>
+<p><!-- tutorial stats --> &lt;div class="row" style="color: var(--text-color-boxtitle)"&gt; &lt;div class="col-md-4"&gt;  &lt;div class="gtn-card color-agenda"&gt;    &lt;div class="card-title"&gt;35&lt;/div&gt;    &lt;div class="card-text"&gt;Topics&lt;/div&gt;  &lt;/div&gt; &lt;/div&gt; &lt;div class="col-md-4"&gt;  &lt;div class="gtn-card color-tip"&gt;    &lt;div class="card-title"&gt;349&lt;/div&gt;    &lt;div class="card-text"&gt;Tutorials&lt;/div&gt;  &lt;/div&gt; &lt;/div&gt; &lt;div class="col-md-4"&gt;  &lt;div class="gtn-card color-details"&gt;    &lt;div class="card-title"&gt;378&lt;/div&gt;    &lt;div class="card-text"&gt;<abbr title="Frequently Asked Questions">FAQs</abbr>&lt;/div&gt;  &lt;/div&gt; &lt;/div&gt; &lt;div class="col-md-6"&gt;  &lt;div class="gtn-card color-comment"&gt;    &lt;div class="card-title"&gt;303&lt;/div&gt;    &lt;div class="card-text"&gt;Contributors&lt;/div&gt;  &lt;/div&gt; &lt;/div&gt; &lt;div class="col-md-6"&gt;  &lt;div class="gtn-card color-handson"&gt;    &lt;div class="card-title"&gt;7.9&lt;/div&gt;    &lt;div class="card-text"&gt;Years&lt;/div&gt;  &lt;/div&gt; &lt;/div&gt; &lt;/div&gt; <!--END_SNIPPET--></p>
 
 <p><span>Speaker Notes</span></p>
 
@@ -325,7 +347,7 @@
 
 <h3 id="public-peer-reviewed-community-maintained">Public, Peer-Reviewed, Community Maintained</h3>
 
-<p>.image-75[<img src="/training-material/topics/contributing/images/github_screenshot.png" alt="Screenshot of github repo. " loading="lazy" />]</p>
+<p>.image-75[<img src="/training-material/topics/contributing/images/github_screenshot.png" alt="Screenshot of github repo" />]</p>
 
 <p>https://github.com/galaxyproject/training-material</p>
 
@@ -417,7 +439,7 @@ TIaaS Provides:</p>
 
 <h3 id="the-tiaas-dashboard">The TIaaS Dashboard</h3>
 
-<p><img src="/training-material/topics/teaching/images/tiaas-status.png" alt="screenshot of tiaas dashboard showing a few jobs queued in grey, and a few completed successfully in green. " loading="lazy" /></p>
+<p><img src="/training-material/topics/teaching/images/tiaas-status.png" alt="screenshot of tiaas dashboard showing a few jobs queued in grey, and a few completed successfully in green" /></p>
 
 <p><span>Speaker Notes</span></p>
 
@@ -436,7 +458,7 @@ TIaaS Provides:</p>
 
 <h3 id="the-video-library">The Video Library</h3>
 
-<p><img src="/training-material/topics/contributing/images/video-library.png" alt="video library homepage showing some descriptive text and big buttons leading to video library contents. " loading="lazy" /></p>
+<p><img src="/training-material/topics/contributing/images/video-library.png" alt="video library homepage showing some descriptive text and big buttons leading to video library contents" /></p>
 
 <p><span>Speaker Notes</span></p>
 
@@ -448,7 +470,7 @@ TIaaS Provides:</p>
 
 <hr />
 
-<p><img src="/training-material/topics/contributing/images/video-library-stats.png" alt="video library stats graphic showing 101 hours and 175 videos. " loading="lazy" /></p>
+<p><img src="/training-material/topics/contributing/images/video-library-stats.png" alt="video library stats graphic showing 101 hours and 175 videos" /></p>
 
 <p><span>Speaker Notes</span></p>
 <ul>
@@ -459,7 +481,7 @@ TIaaS Provides:</p>
 
 <p>–</p>
 
-<p><img src="/training-material/topics/contributing/images/video-library-list.png" alt="video library all videos page listing several categories of tutorials with multiple videos covering Assembly, Climate, and Community. " loading="lazy" /></p>
+<p><img src="/training-material/topics/contributing/images/video-library-list.png" alt="video library all videos page listing several categories of tutorials with multiple videos covering Assembly, Climate, and Community" /></p>
 
 <p><span>Speaker Notes</span></p>
 
@@ -475,7 +497,7 @@ TIaaS Provides:</p>
 <h3 id="reusable-videos-with-teaching-resources">Reusable Videos with Teaching Resources</h3>
 
 <p>.pull-left[
-<img src="/training-material/topics/contributing/images/video-library-detail.png" alt="video library detail showing an embedded youtube video, and large metadata box below covering advanced video metadata. " loading="lazy" />
+<img src="/training-material/topics/contributing/images/video-library-detail.png" alt="video library detail showing an embedded youtube video, and large metadata box below covering advanced video metadata" />
 ]</p>
 
 <p>.pull-right[</p>
@@ -660,7 +682,7 @@ TIaaS Provides:</p>
 </ol>
 
 <p>.pull-right[
-<img src="/training-material/topics/contributing/images/jupyter-notebook-tutorial.png" alt="screenshot of a jupyter notebook showing the tutorial contents, including normal question and solution boxes." loading="lazy" />
+<img src="/training-material/topics/contributing/images/jupyter-notebook-tutorial.png" alt="screenshot of a jupyter notebook showing the tutorial contents, including normal question and solution boxes." />
 ]</p>
 
 <p><span>Speaker Notes</span></p>
@@ -682,13 +704,13 @@ TIaaS Provides:</p>
 <p>.pull-left[
 Do your students choose <strong>Path A</strong> (fresh data access)</p>
 
-<p><img src="/training-material/topics/contributing/images/cyoa-a.png" alt="gtn tutorial showing a CYOA box with EGA-Archive selected, and a big heading about getting DAC access. " loading="lazy" />
+<p><img src="/training-material/topics/contributing/images/cyoa-a.png" alt="gtn tutorial showing a CYOA box with EGA-Archive selected, and a big heading about getting DAC access" />
 ]</p>
 
 <p>.pull-right[
 Or <strong>Path B</strong> (archived data copies)</p>
 
-<p><img src="/training-material/topics/contributing/images/cyoa-b.png" alt="same tutorial but with the second option selected, accessing data stored on Zenodo and a hands on box instructing the student to download from URL. " loading="lazy" />
+<p><img src="/training-material/topics/contributing/images/cyoa-b.png" alt="same tutorial but with the second option selected, accessing data stored on Zenodo and a hands on box instructing the student to download from URL" />
 ]</p>
 
 <p><span>Speaker Notes</span></p>
@@ -718,7 +740,7 @@ Or <strong>Path B</strong> (archived data copies)</p>
 </ul>
 
 <p>.pull-left[
-<img src="/training-material/topics/contributing/images/gtn-videos.png" alt="screenshot of the GTN's video player showing a slide about configuration management, with a transcript and recommended other video below. " loading="lazy" />
+<img src="/training-material/topics/contributing/images/gtn-videos.png" alt="screenshot of the GTN's video player showing a slide about configuration management, with a transcript and recommended other video below" />
 <a href="https://training.galaxyproject.org/videos/watch.html?v=introduction/tutorials/galaxy-intro-short/slides"><strong>Demo</strong></a>
 ]</p>
 
@@ -742,7 +764,7 @@ Or <strong>Path B</strong> (archived data copies)</p>
   <li>And aggregate it for tutorial authors to see
 ]
 .pull-right[
-<img src="/training-material/topics/contributing/images/feedback.png" alt="two charts show a growth in responses over time, and a heavily 5-star distributino of ratings of a particular tutorial. Below is a section of detailed feedback listing positive and negative aspects." loading="lazy" />
+<img src="/training-material/topics/contributing/images/feedback.png" alt="two charts show a growth in responses over time, and a heavily 5-star distributino of ratings of a particular tutorial. Below is a section of detailed feedback listing positive and negative aspects." />
 ]</li>
 </ul>
 
@@ -760,7 +782,7 @@ Or <strong>Path B</strong> (archived data copies)</p>
 
 <p>For every training page, the view metrics are public to see how well training is doing</p>
 
-<p><img src="/training-material/topics/contributing/images/plausible.png" alt="plausible interface screenshot showing that we've drilled down into an introduction tutorial that had 7.1k unique visitors over the last 12 months, with 12k total page views. Below is a top sources table, most come from google, and a top pages table which only shows our selected training page." loading="lazy" /></p>
+<p><img src="/training-material/topics/contributing/images/plausible.png" alt="plausible interface screenshot showing that we've drilled down into an introduction tutorial that had 7.1k unique visitors over the last 12 months, with 12k total page views. Below is a top sources table, most come from google, and a top pages table which only shows our selected training page." /></p>
 
 <p><span>Speaker Notes</span></p>
 
@@ -781,7 +803,7 @@ Or <strong>Path B</strong> (archived data copies)</p>
   <li>The GTN has a built-in Kahoot-like quiz interface</li>
 </ul>
 
-<p><img src="/training-material/topics/contributing/images/quiz.png" alt="image of the gtn section on quizzes with a SQL basics recap quiz, offering self study and classroom modes." loading="lazy" /></p>
+<p><img src="/training-material/topics/contributing/images/quiz.png" alt="image of the gtn section on quizzes with a SQL basics recap quiz, offering self study and classroom modes." /></p>
 
 <p><span>Speaker Notes</span></p>
 
@@ -794,7 +816,7 @@ Or <strong>Path B</strong> (archived data copies)</p>
 
 <hr />
 
-<p><img src="/training-material/topics/contributing/images/quiz-view.png" alt="Image of the quiz with the question &quot;What keyword do you use to retrieve data in SQL&quot; and four options in pastel colours." loading="lazy" /></p>
+<p><img src="/training-material/topics/contributing/images/quiz-view.png" alt="Image of the quiz with the question &quot;What keyword do you use to retrieve data in SQL&quot; and four options in pastel colours." /></p>
 
 <p><span>Speaker Notes</span></p>
 
@@ -891,23 +913,46 @@ This material is licensed under the <a rel="license" href="https://creativecommo
 
 
         </div>
-        
-            <footer>
-    <div class="container">
-        <br><br>
-        <p>
-            The <a href="https://galaxyproject.org/teach/gtn/">Galaxy Training Network</a>
-            provides researchers with online training materials, connects them with local trainers, and helps promoting open data analysis practices worldwide.
-        </p>
-        <p>
-        The content of the tutorials is licensed under the <a rel="license" href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>. The website and infrastructure is licensed under <a rel="license" href="https://github.com/galaxyproject/training-material/blob/main/LICENSE.md">MIT</a>.
-        </p>
+        <footer>
+	<hr />
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-6" style="text-align: left">
+				<p>
+					The <a href="https://galaxyproject.org/teach/gtn/">Galaxy Training Network</a>
+					provides researchers with online training materials, connects them with local trainers, and helps promoting FAIR and Open Science practices worldwide. All contributions are subject to the <a rel="code-of-conduct" href="https://galaxyproject.org/community/coc/">Galaxy Project Code of Conduct</a>.
+				</p>
+				<p>
+				The GTN infrastructure is licensed under <a rel="license" href="https://github.com/galaxyproject/training-material/blob/main/LICENSE.md">MIT</a>
+				</p>
+				<p>
+				Revision <a href="https://github.com/galaxyproject/training-material/commit/37aabd7fe18d9445ff47887459affaea8dbe8791">37aabd7</a>, built with Jekyll (4.3.2 | production)
+				</p>
+			</div>
+			<div class="col-sm-6" style="text-align: right">
+				
+				<p>
+					
+						Materials licensed under
+					
+					<a rel="license" href="https://spdx.org/licenses/CC-BY-4.0">
+						Creative Commons Attribution 4.0 International License
+					</a>
+				</p>
+				<p>
+					<a href="https://github.com/galaxyproject/training-material/edit/main/./topics/teaching/tutorials/gtn-for-instructors/slides.html" title="Edit on GitHub">
+					<i class="fab fa-github" aria-hidden="true"></i><span class="visually-hidden">github</span> Edit on GitHub
+					</a>
+				</p>
+			</div>
+		</div>
+	</div>
+</footer>
 
-        <p>This is revision <a href="https://github.com/galaxyproject/training-material/commit/c7a4c2777051912c2635a198c8a684054d68eead">c7a4c2777051912c2635a198c8a684054d68eead</a>. </p>
+
     </div>
 </footer>
 
-        
         <script src="/training-material/assets/js/jquery.slim.min.js"></script>
         <script src="/training-material/assets/js/popper.min.js"></script>
         <script src="/training-material/assets/js/bootstrap.min.js?v=3"></script>

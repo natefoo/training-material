@@ -10,6 +10,29 @@
         
             <script async defer data-domain="training.galaxyproject.org" src="https://plausible.galaxyproject.eu/js/plausible.js"></script>
 
+<!-- JavaScript Error Monitoring, and performance tracking. -->
+<script
+  src="https://browser.sentry-cdn.com/7.52.1/bundle.tracing.min.js"
+  integrity="sha384-muuFXKS3752PNA4rPm9Uq6BLvOfV4CXyr9MHDBPvozOJJUWLKkogEFWOIRoVps43"
+  crossorigin="anonymous"
+></script>
+<script type="text/javascript">
+Sentry.init({
+  dsn: "https://45e0ec6e4373462b92969505df37cf40@sentry.galaxyproject.org/10",
+  release: "galaxy-training-network@37aabd7fe18d9445ff47887459affaea8dbe8791",
+  integrations: [new Sentry.BrowserTracing(), new Sentry.Replay()],
+  sampleRate: 0.1,
+  tracesSampleRate: 0.1,
+  // Capture Replay for no sessions by default
+  replaysSessionSampleRate: 0.01,
+  // plus for 1% of sessions with an error
+  replaysOnErrorSampleRate: 0.01,
+  // PII OFF
+  sendDefaultPii: false, // Off by default but just in case.
+  environment: "production",
+});
+</script>
+
         
         <link rel="stylesheet" href="/training-material/assets/css/main.css?v=2">
         <script src="https://kit.fontawesome.com/67b3f98409.js" crossorigin="anonymous"></script>
@@ -92,6 +115,10 @@
     "url": "https://galaxyproject.org/teach/gtn/"
   },
   "identifier": "https://github.com/galaxyproject/training-material",
+  "workTranslation": [
+
+  ],
+  "creativeWorkStatus": "Active",
   "accessMode": [
     "textual",
     "visual"
@@ -119,6 +146,7 @@
   "name": "Slides for 'Server Maintenance: Cleanup, Backup, and Restoration' tutorial",
   "url": "https://training.galaxyproject.org/training-material/topics/admin/tutorials/backup-cleanup/slides.html",
   "timeRequired": "PT30M",
+  "teaches": "Learn about different maintenance steps\n - Setup postgres backups\n - Setup cleanups\n - Learn what to back up and how to recover",
   "keywords": "admin",
   "description": "The questions this  addresses are:\n - How can I back up my Galaxy?\n - What data should be included?\n - How can I ensure jobs get cleaned up appropriately?\n - How do I maintain a Galaxy server?\n - What happens if I lose everything?\n\n\nThe objectives are:\n - Learn about different maintenance steps\n - Setup postgres backups\n - Setup cleanups\n - Learn what to back up and how to recover\n\n",
   "inLanguage": {
@@ -131,8 +159,8 @@
       "@context": "https://schema.org",
       "@type": "Person",
       "http://purl.org/dc/terms/conformsTo": {
-        "@id": "https://bioschemas.org/profiles/Person/0.2-DRAFT-2019_07_19",
-        "@type": "Person"
+        "@id": "https://bioschemas.org/profiles/Person/0.3-DRAFT",
+        "@type": "CreativeWork"
       },
       "url": "https://training.galaxyproject.org/training-material/hall-of-fame/natefoo/",
       "mainEntityOfPage": "https://training.galaxyproject.org/training-material/hall-of-fame/natefoo/",
@@ -154,8 +182,8 @@
       "@context": "https://schema.org",
       "@type": "Person",
       "http://purl.org/dc/terms/conformsTo": {
-        "@id": "https://bioschemas.org/profiles/Person/0.2-DRAFT-2019_07_19",
-        "@type": "Person"
+        "@id": "https://bioschemas.org/profiles/Person/0.3-DRAFT",
+        "@type": "CreativeWork"
       },
       "url": "https://training.galaxyproject.org/training-material/hall-of-fame/bgruening/",
       "mainEntityOfPage": "https://training.galaxyproject.org/training-material/hall-of-fame/bgruening/",
@@ -177,8 +205,8 @@
       "@context": "https://schema.org",
       "@type": "Person",
       "http://purl.org/dc/terms/conformsTo": {
-        "@id": "https://bioschemas.org/profiles/Person/0.2-DRAFT-2019_07_19",
-        "@type": "Person"
+        "@id": "https://bioschemas.org/profiles/Person/0.3-DRAFT",
+        "@type": "CreativeWork"
       },
       "url": "https://training.galaxyproject.org/training-material/hall-of-fame/slugger70/",
       "mainEntityOfPage": "https://training.galaxyproject.org/training-material/hall-of-fame/slugger70/",
@@ -200,102 +228,8 @@
       "@context": "https://schema.org",
       "@type": "Person",
       "http://purl.org/dc/terms/conformsTo": {
-        "@id": "https://bioschemas.org/profiles/Person/0.2-DRAFT-2019_07_19",
-        "@type": "Person"
-      },
-      "url": "https://training.galaxyproject.org/training-material/hall-of-fame/hexylena/",
-      "mainEntityOfPage": "https://training.galaxyproject.org/training-material/hall-of-fame/hexylena/",
-      "name": "Helena Rasche",
-      "image": "https://avatars.githubusercontent.com/hexylena",
-      "description": "A contributor to the GTN project.",
-      "memberOf": [
-        {
-          "@type": "Organization",
-          "email": "galaxytrainingnetwork@gmail.com",
-          "name": "Galaxy Training Network",
-          "url": "https://galaxyproject.org/teach/gtn/"
-        }
-      ],
-      "identifier": "https://orcid.org/0000-0001-9760-8992",
-      "orcid": "https://orcid.org/0000-0001-9760-8992"
-    }
-  ],
-  "contributor": [
-    {
-      "@context": "https://schema.org",
-      "@type": "Person",
-      "http://purl.org/dc/terms/conformsTo": {
-        "@id": "https://bioschemas.org/profiles/Person/0.2-DRAFT-2019_07_19",
-        "@type": "Person"
-      },
-      "url": "https://training.galaxyproject.org/training-material/hall-of-fame/natefoo/",
-      "mainEntityOfPage": "https://training.galaxyproject.org/training-material/hall-of-fame/natefoo/",
-      "name": "Nate Coraor",
-      "image": "https://avatars.githubusercontent.com/natefoo",
-      "description": "A contributor to the GTN project.",
-      "memberOf": [
-        {
-          "@type": "Organization",
-          "email": "galaxytrainingnetwork@gmail.com",
-          "name": "Galaxy Training Network",
-          "url": "https://galaxyproject.org/teach/gtn/"
-        }
-      ],
-      "identifier": "https://orcid.org/0000-0001-8083-2963",
-      "orcid": "https://orcid.org/0000-0001-8083-2963"
-    },
-    {
-      "@context": "https://schema.org",
-      "@type": "Person",
-      "http://purl.org/dc/terms/conformsTo": {
-        "@id": "https://bioschemas.org/profiles/Person/0.2-DRAFT-2019_07_19",
-        "@type": "Person"
-      },
-      "url": "https://training.galaxyproject.org/training-material/hall-of-fame/bgruening/",
-      "mainEntityOfPage": "https://training.galaxyproject.org/training-material/hall-of-fame/bgruening/",
-      "name": "Björn Grüning",
-      "image": "https://avatars.githubusercontent.com/bgruening",
-      "description": "A contributor to the GTN project.",
-      "memberOf": [
-        {
-          "@type": "Organization",
-          "email": "galaxytrainingnetwork@gmail.com",
-          "name": "Galaxy Training Network",
-          "url": "https://galaxyproject.org/teach/gtn/"
-        }
-      ],
-      "identifier": "https://orcid.org/0000-0002-3079-6586",
-      "orcid": "https://orcid.org/0000-0002-3079-6586"
-    },
-    {
-      "@context": "https://schema.org",
-      "@type": "Person",
-      "http://purl.org/dc/terms/conformsTo": {
-        "@id": "https://bioschemas.org/profiles/Person/0.2-DRAFT-2019_07_19",
-        "@type": "Person"
-      },
-      "url": "https://training.galaxyproject.org/training-material/hall-of-fame/slugger70/",
-      "mainEntityOfPage": "https://training.galaxyproject.org/training-material/hall-of-fame/slugger70/",
-      "name": "Simon Gladman",
-      "image": "https://avatars.githubusercontent.com/slugger70",
-      "description": "A contributor to the GTN project.",
-      "memberOf": [
-        {
-          "@type": "Organization",
-          "email": "galaxytrainingnetwork@gmail.com",
-          "name": "Galaxy Training Network",
-          "url": "https://galaxyproject.org/teach/gtn/"
-        }
-      ],
-      "identifier": "https://orcid.org/0000-0002-6100-4385",
-      "orcid": "https://orcid.org/0000-0002-6100-4385"
-    },
-    {
-      "@context": "https://schema.org",
-      "@type": "Person",
-      "http://purl.org/dc/terms/conformsTo": {
-        "@id": "https://bioschemas.org/profiles/Person/0.2-DRAFT-2019_07_19",
-        "@type": "Person"
+        "@id": "https://bioschemas.org/profiles/Person/0.3-DRAFT",
+        "@type": "CreativeWork"
       },
       "url": "https://training.galaxyproject.org/training-material/hall-of-fame/hexylena/",
       "mainEntityOfPage": "https://training.galaxyproject.org/training-material/hall-of-fame/hexylena/",
@@ -321,7 +255,12 @@
       "description": "Resources related to configuration and maintenance of Galaxy servers",
       "url": "https://training.galaxyproject.org/training-material/topics/admin/"
     }
-  ]
+  ],
+  "educationalLevel": "Introductory",
+  "mentions": [
+
+  ],
+  "abstract": "# Server Maintenance"
 }
         </script>
     </head>
@@ -455,7 +394,7 @@ Useful when presenting.
 
 ## Dataset Cleanup
 
-Can only delete (or purge) dataset when all 'associations' pointing at it have been marked `deleted`.
+Can only delete (or purge) dataset when all &apos;associations&apos; pointing at it have been marked `deleted`.
 
 | method | description |
 | ---- | ---- |
@@ -496,7 +435,7 @@ optional arguments:
                         Galaxy config file (defaults to
                         $GALAXY_ROOT/config/galaxy.yml if that file exists or
                         else to ./config/galaxy.ini if that exists). If this
-                        isn't set on the command line it can be set with the
+                        isn&apos;t set on the command line it can be set with the
                         environment variable GALAXY_CONFIG_FILE.
   -d, --debug           Enable debug logging (SQL queries)
   --dry-run             Dry run (rollback all transactions)
@@ -504,7 +443,7 @@ optional arguments:
   -o DAYS, --older-than DAYS
                         Only perform action(s) on objects that have not been
                         updated since the specified number of days
-  -U, --no-update-time  Don't set update_time on updated objects
+  -U, --no-update-time  Don&apos;t set update_time on updated objects
   -s SEQUENCE, --sequence SEQUENCE
                         DEPRECATED: Comma-separated sequence of actions
   -w WORK_MEM, --work-mem WORK_MEM
@@ -545,7 +484,7 @@ class: reduce70
 | action | description |
 | ---- | ---- |
 | `purge_historyless_hdas` | &lt;ul&gt;&lt;li&gt;Mark purged all HistoryDatasetAssociations whose history_id is null.&lt;/li&gt;&lt;/ul&gt; |
-| `purge_error_hdas` | &lt;ul&gt;&lt;li&gt;Mark purged all HistoryDatasetAssociations whose dataset_id is state = 'error' that are older than the specified number of days.&lt;/li&gt;&lt;/ul&gt; |
+| `purge_error_hdas` | &lt;ul&gt;&lt;li&gt;Mark purged all HistoryDatasetAssociations whose dataset_id is state = &apos;error&apos; that are older than the specified number of days.&lt;/li&gt;&lt;/ul&gt; |
 | `purge_hdas_of_purged_histories` | &lt;ul&gt;&lt;li&gt;Mark purged all HistoryDatasetAssociations in histories that are purged and older than the specified number of days.&lt;/li&gt;&lt;/ul&gt; |
 | `delete_datasets` | &lt;ul&gt;&lt;li&gt;Mark deleted all Datasets whose associations are all marked as deleted (LDDA) or purged (HDA) that are older than the specified number of days.&lt;/li&gt;&lt;li&gt;JobExportHistoryArchives have no deleted column, so the datasets for these will simply be deleted after the specified number of days.&lt;/li&gt;&lt;/ul&gt; |
 | `purge_datasets` | &lt;ul&gt;&lt;li&gt;Mark purged all Datasets marked deleted that are older than the specified number of days.&lt;/li&gt;&lt;/ul&gt; |
@@ -580,7 +519,7 @@ class: reduce70
 ???
 
 - Galaxy generates intermediate data as part of the job execution.
-- These should be automatically cleaned up unless you change the cleanup_job flag in galaxy's configuration.
+- These should be automatically cleaned up unless you change the cleanup_job flag in galaxy&apos;s configuration.
 
 ---
 
@@ -615,8 +554,8 @@ If absolute reproducibility matters:
 ???
 
 - Many parts of Galaxy are convenient to back up since they are straight folder hierarchies.
-- Use your system's recommended way to back up galaxy's database.
-- If you have local modifications to galaxy's code back up those as well.
+- Use your system&apos;s recommended way to back up galaxy&apos;s database.
+- If you have local modifications to galaxy&apos;s code back up those as well.
 
 ---
 class: left
@@ -666,7 +605,7 @@ Then run playbook
 
 - Store configuration management in git
 
-- Back up the parts of Galaxy that can't be recreated
+- Back up the parts of Galaxy that can&apos;t be recreated
 
 
 

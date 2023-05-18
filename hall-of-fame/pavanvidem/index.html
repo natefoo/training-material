@@ -8,6 +8,29 @@
         
             <script async defer data-domain="training.galaxyproject.org" src="https://plausible.galaxyproject.eu/js/plausible.js"></script>
 
+<!-- JavaScript Error Monitoring, and performance tracking. -->
+<script
+  src="https://browser.sentry-cdn.com/7.52.1/bundle.tracing.min.js"
+  integrity="sha384-muuFXKS3752PNA4rPm9Uq6BLvOfV4CXyr9MHDBPvozOJJUWLKkogEFWOIRoVps43"
+  crossorigin="anonymous"
+></script>
+<script type="text/javascript">
+Sentry.init({
+  dsn: "https://45e0ec6e4373462b92969505df37cf40@sentry.galaxyproject.org/10",
+  release: "galaxy-training-network@37aabd7fe18d9445ff47887459affaea8dbe8791",
+  integrations: [new Sentry.BrowserTracing(), new Sentry.Replay()],
+  sampleRate: 0.1,
+  tracesSampleRate: 0.1,
+  // Capture Replay for no sessions by default
+  replaysSessionSampleRate: 0.01,
+  // plus for 1% of sessions with an error
+  replaysOnErrorSampleRate: 0.01,
+  // PII OFF
+  sendDefaultPii: false, // Off by default but just in case.
+  environment: "production",
+});
+</script>
+
         
         <link rel="stylesheet" href="/training-material/assets/css/bootstrap.min.css?v=3">
         <link rel="stylesheet" href="/training-material/assets/css/bootstrap-toc.min.css">
@@ -17,7 +40,7 @@
         <link rel="shortcut icon" href="/training-material/favicon.ico" type="image/x-icon">
         <link rel="alternate" type="application/atom+xml" href="/training-material/feed.xml">
         <link rel="canonical" href="https://training.galaxyproject.org/training-material/hall-of-fame/pavanvidem/">
-        <link rel="license" href="https://creativecommons.org/licenses/by/4.0/">
+	<link rel="license" href="https://spdx.org/licenses/CC-BY-4.0">
 
         <meta name="DC.identifier" content="https://github.com/galaxyproject/training-material">
 <meta name="DC.type" content="text">
@@ -34,7 +57,7 @@
         <meta property="og:title" content="Galaxy Training: GTN Contributor: Pavankumar Videm">
         <meta property="og:description" content="Collection of tutorials developed and maintained by the w...">
         
-        <meta property="og:image" content="/training-material/assets/images/GTNLogo1000.png">
+        <meta property="og:image" content="/training-material/assets/images/GTN.png">
 
         
     </head>
@@ -103,8 +126,7 @@
     </a>
     <div class="dropdown-menu dropdown-menu-right">
 
-        
-        <a class="dropdown-item" href="https://github.com/galaxyproject/training-material/edit/main/hall-of-fame/pavanvidem/" title="Edit on GitHub">
+        <a class="dropdown-item" href="https://github.com/galaxyproject/training-material/edit/mainhall-of-fame/pavanvidem/index.html" title="Edit on GitHub">
           <i class="fab fa-github" aria-hidden="true"></i><span class="visually-hidden">github</span> Edit on GitHub
         </a>
 
@@ -185,8 +207,8 @@
   "@context": "https://schema.org",
   "@type": "Person",
   "http://purl.org/dc/terms/conformsTo": {
-    "@id": "https://bioschemas.org/profiles/Person/0.2-DRAFT-2019_07_19",
-    "@type": "Person"
+    "@id": "https://bioschemas.org/profiles/Person/0.3-DRAFT",
+    "@type": "CreativeWork"
   },
   "url": "https://training.galaxyproject.org/training-material/hall-of-fame/pavanvidem/",
   "mainEntityOfPage": "https://training.galaxyproject.org/training-material/hall-of-fame/pavanvidem/",
@@ -200,7 +222,9 @@
       "name": "Galaxy Training Network",
       "url": "https://galaxyproject.org/teach/gtn/"
     }
-  ]
+  ],
+  "identifier": "https://orcid.org/0000-0002-5192-126X",
+  "orcid": "https://orcid.org/0000-0002-5192-126X"
 }
 </script>
 
@@ -215,11 +239,13 @@
 		<div class="row">
 
 			<div class="col-md-3">
+				<div>
 				
 					<img src="https://avatars.githubusercontent.com/pavanvidem" alt="github avatar" >
 				
+				</div>
 
-                
+				
 
 				
 
@@ -244,6 +270,14 @@
 				
 
 				
+				<div class="contact-items">
+					<a title="ORCID" href="https://orcid.org/0000-0002-5192-126X">
+						<i class="fab fa-orcid" aria-hidden="true"></i><span class="visually-hidden">orcid</span> 0000-0002-5192-126X
+					</a>
+				</div>
+				
+
+				
 
 				<h4>Favourite Topics</h4>
 				<canvas id="myChart" height="300px"></canvas>
@@ -257,6 +291,7 @@
 					Pavankumar Videm
 				</h1>
 				
+				
 
 				<h2>Contributions</h2>
 
@@ -267,6 +302,7 @@
 
                 
                 <br><br>
+		
                 <h3> GitHub Activity</h4>
                 <ul>
                   <li><a href="https://github.com/galaxyproject/training-material/pulls?q=is%3Apr+author%3Apavanvidem"><i class="fab fa-github" aria-hidden="true"></i><span class="visually-hidden">github</span> Pull Requests</a> </li>
@@ -274,6 +310,7 @@
                   <li><a href="https://github.com/galaxyproject/training-material/issues?q=+is%3Aissue+author%3Apavanvidem"><i class="fab fa-github" aria-hidden="true"></i><span class="visually-hidden">github</span> Issues Reported</a></li>
                 </ul>
                 
+		
                 </p>
 
 				
@@ -287,8 +324,25 @@
 							Single Cell
 						</a>
 						/
+						<a href="/training-material//topics/single-cell/tutorials/scatac-preprocessing-tenx/tutorial.html">
+						Pre-processing of 10X Single-Cell ATAC-seq Datasets
+						</a>
+						
+						
+	
+
+
+					</li>
+				
+					<li>
+						
+						
+						<a href="/training-material/topics/single-cell">
+							Single Cell
+						</a>
+						/
 						<a href="/training-material//topics/single-cell/tutorials/scrna-case_monocle3-rstudio/tutorial.html">
-						Trajectory Analysis: Monocle3 in R
+						Inferring Trajectories using Monocle3 (R)
 						</a>
 						
 						
@@ -372,6 +426,23 @@
 							Transcriptomics
 						</a>
 						/
+						<a href="/training-material//topics/transcriptomics/tutorials/differential-isoform-expression/tutorial.html">
+						Genome-wide alternative splicing analysis
+						</a>
+						
+						
+	<abbr title="This person edited the text, either for spelling and grammar, flow, GTN-fit, or other similar editing categories">📝</abbr>
+
+
+					</li>
+				
+					<li>
+						
+						
+						<a href="/training-material/topics/transcriptomics">
+							Transcriptomics
+						</a>
+						/
 						<a href="/training-material//topics/transcriptomics/tutorials/ref-based/tutorial.html">
 						Reference-based RNA-Seq data analysis
 						</a>
@@ -435,20 +506,20 @@
         <div markdown="0">
 
 	<div class="contributors-line">
-		Authors: <a href="/training-material/hall-of-fame/gallardoalba/" class="contributor-badge contributor-gallardoalba"><img src="/training-material/assets/images/orcid.png" alt="orcid logo"/><img src="https://avatars.githubusercontent.com/gallardoalba?s=27" alt="Avatar">Cristóbal Gallardo</a><a href="/training-material/hall-of-fame/pavanvidem/" class="contributor-badge contributor-pavanvidem"><img src="https://avatars.githubusercontent.com/pavanvidem?s=27" alt="Avatar">Pavankumar Videm</a><a href="/training-material/hall-of-fame/beatrizserrano/" class="contributor-badge contributor-beatrizserrano"><img src="/training-material/assets/images/orcid.png" alt="orcid logo"/><img src="https://avatars.githubusercontent.com/beatrizserrano?s=27" alt="Avatar">Beatriz Serrano-Solano</a>
+		Authors: <a href="/training-material/hall-of-fame/gallardoalba/" class="contributor-badge contributor-gallardoalba"><img src="/training-material/assets/images/orcid.png" alt="orcid logo"/><img src="https://avatars.githubusercontent.com/gallardoalba?s=27" alt="Avatar">Cristóbal Gallardo</a><a href="/training-material/hall-of-fame/pavanvidem/" class="contributor-badge contributor-pavanvidem"><img src="/training-material/assets/images/orcid.png" alt="orcid logo"/><img src="https://avatars.githubusercontent.com/pavanvidem?s=27" alt="Avatar">Pavankumar Videm</a><a href="/training-material/hall-of-fame/beatrizserrano/" class="contributor-badge contributor-beatrizserrano"><img src="/training-material/assets/images/orcid.png" alt="orcid logo"/><img src="https://avatars.githubusercontent.com/beatrizserrano?s=27" alt="Avatar">Beatriz Serrano-Solano</a>
 	</div>
 
 </div>
 
 
         
-<span class="label label-default tutorial_tag" style="--color-primary: #ffa91e; --color-darker: #e59600; --color-dimmed: #f39f00;">new tutorial</span>
+<span class="label label-default tutorial_tag" style="--color-primary: #ffd5b3; --color-darker: #ffb561; --color-dimmed: #ffc590;">new tutorial</span>
 
-<span class="label label-default tutorial_tag" style="--color-primary: #cebe00; --color-darker: #b8a900; --color-dimmed: #c3b300;">transcriptomics</span>
+<span class="label label-default tutorial_tag" style="--color-primary: #f3e000; --color-darker: #d8c700; --color-dimmed: #e5d300;">transcriptomics</span>
 
-<span class="label label-default tutorial_tag" style="--color-primary: #60d500; --color-darker: #55bd00; --color-dimmed: #5bc900;">plants</span>
+<span class="label label-default tutorial_tag" style="--color-primary: #72fa00; --color-darker: #65df00; --color-dimmed: #6cec00;">plants</span>
 
-<span class="label label-default tutorial_tag" style="--color-primary: #ff9bdb; --color-darker: #ff75d2; --color-dimmed: #ff89d6;">mirna</span>
+<span class="label label-default tutorial_tag" style="--color-primary: #ffcfec; --color-darker: #ffaadf; --color-dimmed: #ffbde6;">mirna</span>
 
     <hr/>
     <p class="card-text">
@@ -490,6 +561,14 @@ var topics = [
 
 	
 	
+	"Single Cell",
+
+	
+	
+	"Transcriptomics",
+
+	
+	
 	"Transcriptomics",
 
 	
@@ -512,6 +591,10 @@ var topics = [
 ];
 
 var slidesVsTutos = [
+
+	"Tutorials",
+
+	"Tutorials",
 
 	"Tutorials",
 
@@ -608,23 +691,46 @@ var chart2 = new Chart(ctx2, {
 </section>
 
         </div>
-        
-            <footer>
-    <div class="container">
-        <br><br>
-        <p>
-            The <a href="https://galaxyproject.org/teach/gtn/">Galaxy Training Network</a>
-            provides researchers with online training materials, connects them with local trainers, and helps promoting open data analysis practices worldwide.
-        </p>
-        <p>
-        The content of the tutorials is licensed under the <a rel="license" href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>. The website and infrastructure is licensed under <a rel="license" href="https://github.com/galaxyproject/training-material/blob/main/LICENSE.md">MIT</a>.
-        </p>
+        <footer>
+	<hr />
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-6" style="text-align: left">
+				<p>
+					The <a href="https://galaxyproject.org/teach/gtn/">Galaxy Training Network</a>
+					provides researchers with online training materials, connects them with local trainers, and helps promoting FAIR and Open Science practices worldwide. All contributions are subject to the <a rel="code-of-conduct" href="https://galaxyproject.org/community/coc/">Galaxy Project Code of Conduct</a>.
+				</p>
+				<p>
+				The GTN infrastructure is licensed under <a rel="license" href="https://github.com/galaxyproject/training-material/blob/main/LICENSE.md">MIT</a>
+				</p>
+				<p>
+				Revision <a href="https://github.com/galaxyproject/training-material/commit/37aabd7fe18d9445ff47887459affaea8dbe8791">37aabd7</a>, built with Jekyll (4.3.2 | production)
+				</p>
+			</div>
+			<div class="col-sm-6" style="text-align: right">
+				
+				<p>
+					
+						Materials licensed under
+					
+					<a rel="license" href="https://spdx.org/licenses/CC-BY-4.0">
+						Creative Commons Attribution 4.0 International License
+					</a>
+				</p>
+				<p>
+					<a href="https://github.com/galaxyproject/training-material/edit/main/hall-of-fame/pavanvidem/index.html" title="Edit on GitHub">
+					<i class="fab fa-github" aria-hidden="true"></i><span class="visually-hidden">github</span> Edit on GitHub
+					</a>
+				</p>
+			</div>
+		</div>
+	</div>
+</footer>
 
-        <p>This is revision <a href="https://github.com/galaxyproject/training-material/commit/c7a4c2777051912c2635a198c8a684054d68eead">c7a4c2777051912c2635a198c8a684054d68eead</a>. </p>
+
     </div>
 </footer>
 
-        
         <script src="/training-material/assets/js/jquery.slim.min.js"></script>
         <script src="/training-material/assets/js/popper.min.js"></script>
         <script src="/training-material/assets/js/bootstrap.min.js?v=3"></script>

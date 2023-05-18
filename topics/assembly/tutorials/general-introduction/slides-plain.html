@@ -8,6 +8,29 @@
         
             <script async defer data-domain="training.galaxyproject.org" src="https://plausible.galaxyproject.eu/js/plausible.js"></script>
 
+<!-- JavaScript Error Monitoring, and performance tracking. -->
+<script
+  src="https://browser.sentry-cdn.com/7.52.1/bundle.tracing.min.js"
+  integrity="sha384-muuFXKS3752PNA4rPm9Uq6BLvOfV4CXyr9MHDBPvozOJJUWLKkogEFWOIRoVps43"
+  crossorigin="anonymous"
+></script>
+<script type="text/javascript">
+Sentry.init({
+  dsn: "https://45e0ec6e4373462b92969505df37cf40@sentry.galaxyproject.org/10",
+  release: "galaxy-training-network@37aabd7fe18d9445ff47887459affaea8dbe8791",
+  integrations: [new Sentry.BrowserTracing(), new Sentry.Replay()],
+  sampleRate: 0.1,
+  tracesSampleRate: 0.1,
+  // Capture Replay for no sessions by default
+  replaysSessionSampleRate: 0.01,
+  // plus for 1% of sessions with an error
+  replaysOnErrorSampleRate: 0.01,
+  // PII OFF
+  sendDefaultPii: false, // Off by default but just in case.
+  environment: "production",
+});
+</script>
+
         
         <link rel="stylesheet" href="/training-material/assets/css/bootstrap.min.css?v=3">
         <link rel="stylesheet" href="/training-material/assets/css/bootstrap-toc.min.css">
@@ -17,13 +40,13 @@
         <link rel="shortcut icon" href="/training-material/favicon.ico" type="image/x-icon">
         <link rel="alternate" type="application/atom+xml" href="/training-material/feed.xml">
         <link rel="canonical" href="https://training.galaxyproject.org/training-material/topics/assembly/tutorials/general-introduction/slides-plain.html">
-        <link rel="license" href="https://creativecommons.org/licenses/by/4.0/">
+	<link rel="license" href="https://spdx.org/licenses/CC-BY-4.0">
 
         <meta name="DC.identifier" content="https://github.com/galaxyproject/training-material">
 <meta name="DC.type" content="text">
 <meta name="DC.title" content="An Introduction to Genome Assembly">
 <meta name="DC.publisher" content="Galaxy Training Network">
-<meta name="DC.date" content="2023-05-18 00:33:00 +0000">
+<meta name="DC.date" content="2023-05-18 14:47:09 +0000">
 <meta name="DC.creator" content="Simon Gladman">
 
         
@@ -35,7 +58,7 @@
         <meta property="og:title" content="Galaxy Training: An Introduction to Genome Assembly">
         <meta property="og:description" content="Collection of tutorials developed and maintained by the w...">
         
-        <meta property="og:image" content="/training-material/assets/images/GTNLogo1000.png">
+        <meta property="og:image" content="/training-material/assets/images/GTN.png">
 
         
     </head>
@@ -104,8 +127,7 @@
     </a>
     <div class="dropdown-menu dropdown-menu-right">
 
-        
-        <a class="dropdown-item" href="https://github.com/galaxyproject/training-material/edit/main/topics/assembly/tutorials/general-introduction/slides-plain.md" title="Edit on GitHub">
+        <a class="dropdown-item" href="https://github.com/galaxyproject/training-material/edit/main./topics/assembly/tutorials/general-introduction/slides.html" title="Edit on GitHub">
           <i class="fab fa-github" aria-hidden="true"></i><span class="visually-hidden">github</span> Edit on GitHub
         </a>
 
@@ -253,13 +275,13 @@
 
 <p>]</p>
 
-<p>.pull-right[ <img src="../../images/Humpty.jpg" alt="Graphic of a shattered, human-like egg sitting on a wall, dressed in a suit. Several men stand around him attempting to piece back together shattered fragments of the egg." loading="lazy" /> ]</p>
+<p>.pull-right[ <img src="../../images/Humpty.jpg" alt="Graphic of a shattered, human-like egg sitting on a wall, dressed in a suit. Several men stand around him attempting to piece back together shattered fragments of the egg." /> ]</p>
 
 <hr />
 
 <h1 id="another-view"><strong>Another View</strong></h1>
 
-<p><img src="../../images/newspaper.png" alt="A stack of newspapers is labelled genomic DNA. A line labelled points an image of a room full of shredded paper and people inside, labelled reads. Then the line continues to a pile of newspaper clippings reading draft genome sequence, and finally to closed genome sequence with a cartoon of a newspaper." loading="lazy" /></p>
+<p><img src="../../images/newspaper.png" alt="A stack of newspapers is labelled genomic DNA. A line labelled points an image of a room full of shredded paper and people inside, labelled reads. Then the line continues to a pile of newspaper clippings reading draft genome sequence, and finally to closed genome sequence with a cartoon of a newspaper." /></p>
 
 <hr />
 
@@ -269,25 +291,25 @@
 
 <h1 id="a-small-genome"><strong>A small “genome”</strong></h1>
 
-<p><img src="../../images/shakespear1.png" alt="The text &quot;Friends, romans, countrymen, lend me your ears;&quot;. A small drawing of Shakespeare has a speech bubble reading &quot;I'll return them tomorrow&quot;. " loading="lazy" /></p>
+<p><img src="../../images/shakespear1.png" alt="The text &quot;Friends, romans, countrymen, lend me your ears;&quot;. A small drawing of Shakespeare has a speech bubble reading &quot;I'll return them tomorrow&quot;" /></p>
 
 <hr />
 
 <h1 id="shakespearomics"><strong>Shakespearomics</strong></h1>
 
-<p><img src="../../images/shakespear2.png" alt="A set of reads is shown, with various subsets of the sentence like &quot;ds, romans, count&quot; and &quot;friends, rom&quot; and &quot;crymen, lend me&quot;. The c in crymen is highlighted yellow, as it should be trymen (from countrymen.) The drawing of Shakespeare now says &quot;Oops! I dropped them.&quot;. " loading="lazy" /></p>
+<p><img src="../../images/shakespear2.png" alt="A set of reads is shown, with various subsets of the sentence like &quot;ds, romans, count&quot; and &quot;friends, rom&quot; and &quot;crymen, lend me&quot;. The c in crymen is highlighted yellow, as it should be trymen (from countrymen.) The drawing of Shakespeare now says &quot;Oops! I dropped them.&quot;" /></p>
 
 <hr />
 
 <h1 id="shakespearomics-1"><strong>Shakespearomics</strong></h1>
 
-<p><img src="../../images/shakespear3.png" alt="The reads are shown again, now with overlaps below, reconstructing the sentence from the fragments. Shakespeare says I'm good with words. Crymen and &quot;send me your ears&quot; have their first letters highlighted in yellow due to their typos." loading="lazy" /></p>
+<p><img src="../../images/shakespear3.png" alt="The reads are shown again, now with overlaps below, reconstructing the sentence from the fragments. Shakespeare says I'm good with words. Crymen and &quot;send me your ears&quot; have their first letters highlighted in yellow due to their typos." /></p>
 
 <hr />
 
 <h1 id="shakespearomics-2"><strong>Shakespearomics</strong></h1>
 
-<p><img src="../../images/shakespear4.png" alt="Finally a &quot;majority consensus&quot; is shown below the overlaps, in two other reads we saw count and countrymen, in addition to our crymen. So that makes 2/3 that have the correct text, and we go with the majority. The same is done for the other typo. Shakespeare says We have a consensus!" loading="lazy" /></p>
+<p><img src="../../images/shakespear4.png" alt="Finally a &quot;majority consensus&quot; is shown below the overlaps, in two other reads we saw count and countrymen, in addition to our crymen. So that makes 2/3 that have the correct text, and we go with the majority. The same is done for the other typo. Shakespeare says We have a consensus!" /></p>
 
 <hr />
 
@@ -297,7 +319,7 @@
 
 <h1 id="the-awful-truth"><strong>The Awful Truth</strong></h1>
 
-<p><img src="../../images/notsimply.png" alt="A meme image showing boromir from lord of the rings. The text reads: one does not simply assemble a genome." loading="lazy" /></p>
+<p><img src="../../images/notsimply.png" alt="A meme image showing boromir from lord of the rings. The text reads: one does not simply assemble a genome." /></p>
 
 <h2 id="genome-assembly-is-impossible---aprof-mihai-pop">“Genome assembly is impossible.” - A/Prof. Mihai Pop</h2>
 
@@ -329,7 +351,7 @@
   </li>
 </ul>
 
-<p>.pull-right[ <img src="../../images/worlds_hardest.png" alt="A picture of a jigsaw puzzle titled &quot;The world's most difficult&quot; and showing a field of small round candies. It boasts the same artwork on both sides." loading="lazy" /> ]</p>
+<p>.pull-right[ <img src="../../images/worlds_hardest.png" alt="A picture of a jigsaw puzzle titled &quot;The world's most difficult&quot; and showing a field of small round candies. It boasts the same artwork on both sides." /> ]</p>
 
 <hr />
 
@@ -360,17 +382,17 @@
 
 <hr />
 
-<p><img src="../../images/olc_pic.png" alt="Reads are provided to the algorithm, they are in the colours of the rainbow. Next overlaps are identified and the rainbow resolves itself. A subset of that is highlighted and points to reads connected by overlaps with many arrows going between the bluegreen fragments that are highlighted. This goes to the hamiltonian path identified with a re-run arrow between, indicating some mount of backtracking needed to find the best path. Finally the hamiltonian produces a consensus sequence with the correct final ordering." loading="lazy" /></p>
+<p><img src="../../images/olc_pic.png" alt="Reads are provided to the algorithm, they are in the colours of the rainbow. Next overlaps are identified and the rainbow resolves itself. A subset of that is highlighted and points to reads connected by overlaps with many arrows going between the bluegreen fragments that are highlighted. This goes to the hamiltonian path identified with a re-run arrow between, indicating some mount of backtracking needed to find the best path. Finally the hamiltonian produces a consensus sequence with the correct final ordering." /></p>
 
 <hr />
 
 <h1 id="a-more-realistic-graph"><strong>A more realistic graph</strong></h1>
 
-<p><img src="../../images/real_graph.png" alt="A graph showing maybe 500 nodes connected with messy lines, it is intentionally impossible to read and a mess to highlight the scope of the problem." loading="lazy" /></p>
+<p><img src="../../images/real_graph.png" alt="A graph showing maybe 500 nodes connected with messy lines, it is intentionally impossible to read and a mess to highlight the scope of the problem." /></p>
 
 <hr />
 
-<h1 id="image-15-what-ruins-the-graph">.image-15[<img src="../../images/nofun.png" alt="fun with a strike through it." loading="lazy" />] <strong>What ruins the graph?</strong></h1>
+<h1 id="image-15-what-ruins-the-graph">.image-15[<img src="../../images/nofun.png" alt="fun with a strike through it." />] <strong>What ruins the graph?</strong></h1>
 
 <ul>
   <li>Read errors
@@ -418,7 +440,7 @@
 
 <p>.pull-right[</p>
 
-<p><img src="../../images/triplets.png" alt="Three human children wearing similar shirts. One reads I was planned, one I was not, and the third Me neither." loading="lazy" /></p>
+<p><img src="../../images/triplets.png" alt="Three human children wearing similar shirts. One reads I was planned, one I was not, and the third Me neither." /></p>
 
 <p>]</p>
 
@@ -426,11 +448,11 @@
 
 <h1 id="effect-on-assembly"><strong>Effect on Assembly</strong></h1>
 
-<p><img src="../../images/repeat_effect.png" alt="A genome with a repeat in two distinct locations is shown. Arrows point to the repeats being collapsed, and then the in-between bits being cut out of the sequence completely." loading="lazy" /></p>
+<p><img src="../../images/repeat_effect.png" alt="A genome with a repeat in two distinct locations is shown. Arrows point to the repeats being collapsed, and then the in-between bits being cut out of the sequence completely." /></p>
 
 <hr />
 <p>.enlarge120[</p>
-<h1 id="the-law-of-repeats-image-15"><strong>The law of repeats</strong> .image-15[<img src="../../images/repeatafterme.png" alt="A picture of the ocean with text reading repeat after me." loading="lazy" />]</h1>
+<h1 id="the-law-of-repeats-image-15"><strong>The law of repeats</strong> .image-15[<img src="../../images/repeatafterme.png" alt="A picture of the ocean with text reading repeat after me." />]</h1>
 <p>]</p>
 
 <h2 id="it-is-impossible-to-resolve-repeats-of-length-s-unless-you-have-reads-longer-than-s"><strong>It is impossible to resolve repeats of length S unless you have reads longer than S</strong></h2>
@@ -512,7 +534,7 @@
 
 <p>.enlarge120[# <strong>Contigs to Scaffolds</strong>]</p>
 
-<p><img src="../../images/scaffolding.png" alt="A scaffold with gaps as yellow boxes is shown. Above is a set of contigs and paired-end reads shown bridging the gaps." loading="lazy" /></p>
+<p><img src="../../images/scaffolding.png" alt="A scaffold with gaps as yellow boxes is shown. Above is a set of contigs and paired-end reads shown bridging the gaps." /></p>
 
 <hr />
 
@@ -681,23 +703,46 @@ This material is licensed under the <a rel="license" href="https://creativecommo
 
 
         </div>
-        
-            <footer>
-    <div class="container">
-        <br><br>
-        <p>
-            The <a href="https://galaxyproject.org/teach/gtn/">Galaxy Training Network</a>
-            provides researchers with online training materials, connects them with local trainers, and helps promoting open data analysis practices worldwide.
-        </p>
-        <p>
-        The content of the tutorials is licensed under the <a rel="license" href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>. The website and infrastructure is licensed under <a rel="license" href="https://github.com/galaxyproject/training-material/blob/main/LICENSE.md">MIT</a>.
-        </p>
+        <footer>
+	<hr />
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-6" style="text-align: left">
+				<p>
+					The <a href="https://galaxyproject.org/teach/gtn/">Galaxy Training Network</a>
+					provides researchers with online training materials, connects them with local trainers, and helps promoting FAIR and Open Science practices worldwide. All contributions are subject to the <a rel="code-of-conduct" href="https://galaxyproject.org/community/coc/">Galaxy Project Code of Conduct</a>.
+				</p>
+				<p>
+				The GTN infrastructure is licensed under <a rel="license" href="https://github.com/galaxyproject/training-material/blob/main/LICENSE.md">MIT</a>
+				</p>
+				<p>
+				Revision <a href="https://github.com/galaxyproject/training-material/commit/37aabd7fe18d9445ff47887459affaea8dbe8791">37aabd7</a>, built with Jekyll (4.3.2 | production)
+				</p>
+			</div>
+			<div class="col-sm-6" style="text-align: right">
+				
+				<p>
+					
+						Materials licensed under
+					
+					<a rel="license" href="https://spdx.org/licenses/CC-BY-4.0">
+						Creative Commons Attribution 4.0 International License
+					</a>
+				</p>
+				<p>
+					<a href="https://github.com/galaxyproject/training-material/edit/main/./topics/assembly/tutorials/general-introduction/slides.html" title="Edit on GitHub">
+					<i class="fab fa-github" aria-hidden="true"></i><span class="visually-hidden">github</span> Edit on GitHub
+					</a>
+				</p>
+			</div>
+		</div>
+	</div>
+</footer>
 
-        <p>This is revision <a href="https://github.com/galaxyproject/training-material/commit/c7a4c2777051912c2635a198c8a684054d68eead">c7a4c2777051912c2635a198c8a684054d68eead</a>. </p>
+
     </div>
 </footer>
 
-        
         <script src="/training-material/assets/js/jquery.slim.min.js"></script>
         <script src="/training-material/assets/js/popper.min.js"></script>
         <script src="/training-material/assets/js/bootstrap.min.js?v=3"></script>

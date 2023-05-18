@@ -10,6 +10,29 @@
         
             <script async defer data-domain="training.galaxyproject.org" src="https://plausible.galaxyproject.eu/js/plausible.js"></script>
 
+<!-- JavaScript Error Monitoring, and performance tracking. -->
+<script
+  src="https://browser.sentry-cdn.com/7.52.1/bundle.tracing.min.js"
+  integrity="sha384-muuFXKS3752PNA4rPm9Uq6BLvOfV4CXyr9MHDBPvozOJJUWLKkogEFWOIRoVps43"
+  crossorigin="anonymous"
+></script>
+<script type="text/javascript">
+Sentry.init({
+  dsn: "https://45e0ec6e4373462b92969505df37cf40@sentry.galaxyproject.org/10",
+  release: "galaxy-training-network@37aabd7fe18d9445ff47887459affaea8dbe8791",
+  integrations: [new Sentry.BrowserTracing(), new Sentry.Replay()],
+  sampleRate: 0.1,
+  tracesSampleRate: 0.1,
+  // Capture Replay for no sessions by default
+  replaysSessionSampleRate: 0.01,
+  // plus for 1% of sessions with an error
+  replaysOnErrorSampleRate: 0.01,
+  // PII OFF
+  sendDefaultPii: false, // Off by default but just in case.
+  environment: "production",
+});
+</script>
+
         
         <link rel="stylesheet" href="/training-material/assets/css/main.css?v=2">
         <script src="https://kit.fontawesome.com/67b3f98409.js" crossorigin="anonymous"></script>
@@ -90,6 +113,10 @@
     "url": "https://galaxyproject.org/teach/gtn/"
   },
   "identifier": "https://github.com/galaxyproject/training-material",
+  "workTranslation": [
+
+  ],
+  "creativeWorkStatus": "Active",
   "accessMode": [
     "textual",
     "visual"
@@ -169,6 +196,54 @@
       }
     }
   ],
+  "author": [
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "http://purl.org/dc/terms/conformsTo": {
+        "@id": "https://bioschemas.org/profiles/Person/0.3-DRAFT",
+        "@type": "CreativeWork"
+      },
+      "url": "https://training.galaxyproject.org/training-material/hall-of-fame/alexcorm/",
+      "mainEntityOfPage": "https://training.galaxyproject.org/training-material/hall-of-fame/alexcorm/",
+      "name": "Alexandre Cormier",
+      "image": "https://avatars.githubusercontent.com/alexcorm",
+      "description": "A contributor to the GTN project.",
+      "memberOf": [
+        {
+          "@type": "Organization",
+          "email": "galaxytrainingnetwork@gmail.com",
+          "name": "Galaxy Training Network",
+          "url": "https://galaxyproject.org/teach/gtn/"
+        }
+      ],
+      "identifier": "https://orcid.org/0000-0002-7775-8413",
+      "orcid": "https://orcid.org/0000-0002-7775-8413"
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "http://purl.org/dc/terms/conformsTo": {
+        "@id": "https://bioschemas.org/profiles/Person/0.3-DRAFT",
+        "@type": "CreativeWork"
+      },
+      "url": "https://training.galaxyproject.org/training-material/hall-of-fame/lleroi/",
+      "mainEntityOfPage": "https://training.galaxyproject.org/training-material/hall-of-fame/lleroi/",
+      "name": "Laura Leroi",
+      "image": "https://avatars.githubusercontent.com/lleroi",
+      "description": "A contributor to the GTN project.",
+      "memberOf": [
+        {
+          "@type": "Organization",
+          "email": "galaxytrainingnetwork@gmail.com",
+          "name": "Galaxy Training Network",
+          "url": "https://galaxyproject.org/teach/gtn/"
+        }
+      ],
+      "identifier": "https://orcid.org/0000-0003-3748-4179",
+      "orcid": "https://orcid.org/0000-0003-3748-4179"
+    }
+  ],
   "about": [
     {
       "@type": "CreativeWork",
@@ -184,7 +259,11 @@
       "url": "https://bioportal.bioontology.org/ontologies/EDAM/?p=classes&conceptid=http%3A%2F%2Fedamontology.org%2Ftopic_0196"
     }
   ],
-  "educationalLevel": "Beginner"
+  "educationalLevel": "Beginner",
+  "mentions": [
+
+  ],
+  "abstract": "# The truth about bioinformatics"
 }
         </script>
     </head>
@@ -333,7 +412,7 @@ Before diving into this slide deck, we recommend you to have a look at:
 
 ---
 
-# Let's start with some important definitions
+# Let&apos;s start with some important definitions
 
 .image-40[
   ![Importance to speak the same language](../../images/genome_assembly_introduction/bulle-bd.png)
@@ -428,7 +507,7 @@ Before diving into this slide deck, we recommend you to have a look at:
 
 ---
 
-### Build a wide community for the project (*if it's possible*)
+### Build a wide community for the project (*if it&apos;s possible*)
 
 .left[
 The aim of a genome project is to **sequence the entire target genome** for a wide **range of genomics applications**.
@@ -836,7 +915,7 @@ Image licensed CC-BY 4.0 &lt;span class=&quot;citation&quot;&gt;&lt;a href=&quot
 # Bioinformatics data formats
 
 .left[
-**FASTQ**: a text-based format for storing both a biological sequence (usually nucleotide sequence) and its corresponding quality scores (Phred). Both the sequence letter and quality score are each encoded with a single ASCII character for brevity. It's the standard sequencing output for Illumina and MGI sequencers.
+**FASTQ**: a text-based format for storing both a biological sequence (usually nucleotide sequence) and its corresponding quality scores (Phred). Both the sequence letter and quality score are each encoded with a single ASCII character for brevity. It&apos;s the standard sequencing output for Illumina and MGI sequencers.
 ]
 
 .image-100[
@@ -864,7 +943,7 @@ Image licensed CC-BY 4.0 &lt;span class=&quot;citation&quot;&gt;&lt;a href=&quot
 
 **SAM (Sequence Alignment Map)**: a text-based format originally for storing biological sequences aligned to a reference sequence developed by Heng Li and Bob Handsaker et al.
 
-**BAM (Binary Alignment Map)**: the comprehensive raw data of genome sequencing; it consists of the lossless, compressed binary representation of the SAM format. It's the standard sequencing output for PacBio sequencers.
+**BAM (Binary Alignment Map)**: the comprehensive raw data of genome sequencing; it consists of the lossless, compressed binary representation of the SAM format. It&apos;s the standard sequencing output for PacBio sequencers.
 
 **CRAM (Compressed Reference-oriented Alignment Map)**: a compressed columnar file format for storing biological sequences aligned to a reference sequence.
 
