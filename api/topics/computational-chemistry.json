@@ -222,6 +222,11 @@
       "supported_servers": {
         "exact": [
           {
+            "url": "https://test.galaxyproject.org/",
+            "name": "Galaxy Test",
+            "usegalaxy": "false"
+          },
+          {
             "url": "https://usegalaxy.eu",
             "name": "UseGalaxy.eu",
             "usegalaxy": "true"
@@ -233,11 +238,6 @@
           }
         ],
         "inexact": [
-          {
-            "url": "https://test.galaxyproject.org/",
-            "name": "Galaxy Test",
-            "usegalaxy": "false"
-          },
           {
             "url": "https://galaxy.mesocentre.uca.fr",
             "name": "Galaxy@AuBi",
@@ -438,6 +438,11 @@
       "supported_servers": {
         "exact": [
           {
+            "url": "https://test.galaxyproject.org/",
+            "name": "Galaxy Test",
+            "usegalaxy": "false"
+          },
+          {
             "url": "https://usegalaxy.eu",
             "name": "UseGalaxy.eu",
             "usegalaxy": "true"
@@ -454,11 +459,6 @@
           }
         ],
         "inexact": [
-          {
-            "url": "https://test.galaxyproject.org/",
-            "name": "Galaxy Test",
-            "usegalaxy": "false"
-          },
           {
             "url": "https://galaxy.mesocentre.uca.fr",
             "name": "Galaxy@AuBi",

@@ -82,6 +82,11 @@
   "supported_servers": {
     "exact": [
       {
+        "url": "https://test.galaxyproject.org/",
+        "name": "Galaxy Test",
+        "usegalaxy": "false"
+      },
+      {
         "url": "https://usegalaxy.be/",
         "name": "UseGalaxy.be",
         "usegalaxy": "true"
@@ -108,11 +113,6 @@
       }
     ],
     "inexact": [
-      {
-        "url": "https://test.galaxyproject.org/",
-        "name": "Galaxy Test",
-        "usegalaxy": "false"
-      },
       {
         "url": "https://galaxy.genouest.org",
         "name": "Galaxy@GenOuest",
