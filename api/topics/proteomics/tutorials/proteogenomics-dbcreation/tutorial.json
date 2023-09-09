@@ -192,7 +192,11 @@
       }
     ],
     "inexact": [
-
+      {
+        "url": "https://usegalaxy.org.au",
+        "name": "UseGalaxy.org.au",
+        "usegalaxy": "true"
+      }
     ]
   },
   "admin_install": {
