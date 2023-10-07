@@ -149,11 +149,7 @@
       }
     ],
     "inexact": [
-      {
-        "url": "https://test.galaxyproject.org/",
-        "name": "Galaxy Test",
-        "usegalaxy": "false"
-      }
+
     ]
   },
   "admin_install": {
