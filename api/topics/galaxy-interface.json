@@ -344,6 +344,11 @@
             "usegalaxy": "false"
           },
           {
+            "url": "https://galaxy.mesocentre.uca.fr",
+            "name": "Galaxy@AuBi",
+            "usegalaxy": "false"
+          },
+          {
             "url": "https://galaxytrakr.org/",
             "name": "GalaxyTrakr",
             "usegalaxy": "false"
@@ -740,6 +745,11 @@
             "usegalaxy": "false"
           },
           {
+            "url": "https://galaxy.mesocentre.uca.fr",
+            "name": "Galaxy@AuBi",
+            "usegalaxy": "false"
+          },
+          {
             "url": "http://pepsimili.e-nios.com:8080/",
             "name": "PepSimili",
             "usegalaxy": "false"
@@ -1098,6 +1108,11 @@
           }
         ],
         "inexact": [
+          {
+            "url": "https://galaxy.mesocentre.uca.fr",
+            "name": "Galaxy@AuBi",
+            "usegalaxy": "false"
+          },
           {
             "url": "https://usegalaxy.be/",
             "name": "UseGalaxy.be",
