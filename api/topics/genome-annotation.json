@@ -1031,7 +1031,11 @@
           }
         ],
         "inexact": [
-
+          {
+            "url": "https://galaxytrakr.org/",
+            "name": "GalaxyTrakr",
+            "usegalaxy": "false"
+          }
         ]
       },
       "admin_install": {
