@@ -2687,7 +2687,11 @@
           }
         ],
         "inexact": [
-
+          {
+            "url": "https://usegalaxy.fr/",
+            "name": "UseGalaxy.fr",
+            "usegalaxy": "true"
+          }
         ]
       },
       "admin_install": {
@@ -3263,6 +3267,11 @@
           }
         ],
         "inexact": [
+          {
+            "url": "https://usegalaxy.fr/",
+            "name": "UseGalaxy.fr",
+            "usegalaxy": "true"
+          },
           {
             "url": "https://usegalaxy.no/",
             "name": "UseGalaxy.no",
