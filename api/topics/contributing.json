@@ -2619,6 +2619,11 @@
             "usegalaxy": "true"
           },
           {
+            "url": "https://usegalaxy.fr/",
+            "name": "UseGalaxy.fr",
+            "usegalaxy": "true"
+          },
+          {
             "url": "https://usegalaxy.no/",
             "name": "UseGalaxy.no",
             "usegalaxy": "true"
@@ -2644,10 +2649,6 @@
             "url": "https://galaxy.hyphy.org/",
             "name": "HyPhy HIV NGS Tools",
             "usegalaxy": "false"
-          },
-          {
-            "url": "https://galaxy.bio.di.uminho.pt/",
-            "name": "PhagePromotor"
           }
         ]
       },
