@@ -1066,6 +1066,11 @@
         ],
         "inexact": [
           {
+            "url": "https://galaxy.mesocentre.uca.fr",
+            "name": "Galaxy@AuBi",
+            "usegalaxy": "false"
+          },
+          {
             "url": "https://usegalaxy.eu",
             "name": "UseGalaxy.eu",
             "usegalaxy": "true"
@@ -1570,6 +1575,11 @@
           {
             "url": "https://test.galaxyproject.org/",
             "name": "Galaxy Test",
+            "usegalaxy": "false"
+          },
+          {
+            "url": "https://galaxy.mesocentre.uca.fr",
+            "name": "Galaxy@AuBi",
             "usegalaxy": "false"
           },
           {
