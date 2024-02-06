@@ -145,6 +145,11 @@
         "usegalaxy": "true"
       },
       {
+        "url": "https://usegalaxy.fr/",
+        "name": "UseGalaxy.fr",
+        "usegalaxy": "true"
+      },
+      {
         "url": "https://usegalaxy.org",
         "name": "UseGalaxy.org (Main)",
         "usegalaxy": "true"
@@ -154,6 +159,11 @@
       {
         "url": "https://galaxy.mesocentre.uca.fr",
         "name": "Galaxy@AuBi",
+        "usegalaxy": "false"
+      },
+      {
+        "url": "https://mississippi.sorbonne-universite.fr",
+        "name": "MISSISSIPPI",
         "usegalaxy": "false"
       },
       {
