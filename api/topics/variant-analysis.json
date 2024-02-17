@@ -343,11 +343,6 @@
             "usegalaxy": "false"
           },
           {
-            "url": "https://usegalaxy.be/",
-            "name": "UseGalaxy.be",
-            "usegalaxy": "true"
-          },
-          {
             "url": "https://usegalaxy.eu",
             "name": "UseGalaxy.eu",
             "usegalaxy": "true"
@@ -578,11 +573,6 @@
             "usegalaxy": "false"
           },
           {
-            "url": "https://usegalaxy.be/",
-            "name": "UseGalaxy.be",
-            "usegalaxy": "true"
-          },
-          {
             "url": "https://usegalaxy.org",
             "name": "UseGalaxy.org (Main)",
             "usegalaxy": "true"
@@ -777,11 +767,6 @@
             "usegalaxy": "false"
           },
           {
-            "url": "https://usegalaxy.be/",
-            "name": "UseGalaxy.be",
-            "usegalaxy": "true"
-          },
-          {
             "url": "https://usegalaxy.eu",
             "name": "UseGalaxy.eu",
             "usegalaxy": "true"
@@ -930,11 +915,6 @@
             "url": "https://test.galaxyproject.org/",
             "name": "Galaxy Test",
             "usegalaxy": "false"
-          },
-          {
-            "url": "https://usegalaxy.be/",
-            "name": "UseGalaxy.be",
-            "usegalaxy": "true"
           },
           {
             "url": "https://usegalaxy.eu",
@@ -1179,11 +1159,6 @@
             "url": "https://test.galaxyproject.org/",
             "name": "Galaxy Test",
             "usegalaxy": "false"
-          },
-          {
-            "url": "https://usegalaxy.be/",
-            "name": "UseGalaxy.be",
-            "usegalaxy": "true"
           },
           {
             "url": "https://usegalaxy.eu",
@@ -1694,11 +1669,7 @@
       ],
       "supported_servers": {
         "exact": [
-          {
-            "url": "https://usegalaxy.be/",
-            "name": "UseGalaxy.be",
-            "usegalaxy": "true"
-          }
+
         ],
         "inexact": [
           {
@@ -2103,11 +2074,6 @@
             "url": "https://test.galaxyproject.org/",
             "name": "Galaxy Test",
             "usegalaxy": "false"
-          },
-          {
-            "url": "https://usegalaxy.be/",
-            "name": "UseGalaxy.be",
-            "usegalaxy": "true"
           },
           {
             "url": "https://usegalaxy.eu",
@@ -2744,11 +2710,7 @@
           }
         ],
         "inexact": [
-          {
-            "url": "https://usegalaxy.be/",
-            "name": "UseGalaxy.be",
-            "usegalaxy": "true"
-          }
+
         ]
       },
       "admin_install": {
@@ -2975,11 +2937,6 @@
             "url": "https://test.galaxyproject.org/",
             "name": "Galaxy Test",
             "usegalaxy": "false"
-          },
-          {
-            "url": "https://usegalaxy.be/",
-            "name": "UseGalaxy.be",
-            "usegalaxy": "true"
           },
           {
             "url": "https://usegalaxy.eu",
@@ -3237,11 +3194,6 @@
           }
         ],
         "inexact": [
-          {
-            "url": "https://usegalaxy.be/",
-            "name": "UseGalaxy.be",
-            "usegalaxy": "true"
-          },
           {
             "url": "https://usegalaxy.eu",
             "name": "UseGalaxy.eu",
