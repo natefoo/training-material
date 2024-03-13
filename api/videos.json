@@ -38,14 +38,14 @@
                                
                        
                                
+                       
+                               
 			{
 				"id": "introduction/tutorials/options-for-using-galaxy/slides",
 				"topic": "Introduction to Galaxy Analyses",
 				"title": "Options for using Galaxy"
 			},
 								
-                               
-                       
                                
                        
                                
@@ -60,16 +60,31 @@
                                
                        
                                
+                       
+                               
+                       
+                               
+                       
+                               
 			{
-				"id": "admin/tutorials/cvmfs/slides",
+				"id": "admin/tutorials/ansible/slides",
 				"topic": "Galaxy Server administration",
-				"title": "Reference Data with CVMFS"
+				"title": "Ansible"
 			},
 								
                                
                        
                                
                        
+                               
+                       
+                               
+			{
+				"id": "admin/tutorials/ansible-galaxy/slides",
+				"topic": "Galaxy Server administration",
+				"title": "Galaxy Installation with Ansible"
+			},
+								
                                
                        
                                
@@ -79,39 +94,6 @@
 				"title": "Connecting Galaxy to a compute cluster"
 			},
 								
-                               
-                       
-                               
-			{
-				"id": "admin/tutorials/data-library/slides",
-				"topic": "Galaxy Server administration",
-				"title": "Data Libraries"
-			},
-								
-                               
-                       
-                               
-			{
-				"id": "admin/tutorials/interactive-tools/slides",
-				"topic": "Galaxy Server administration",
-				"title": "Galaxy Interactive Tools"
-			},
-								
-                               
-                       
-                               
-                       
-                               
-			{
-				"id": "admin/tutorials/production/slides",
-				"topic": "Galaxy Server administration",
-				"title": "Gearing towards production"
-			},
-								
-                               
-                       
-                               
-                       
                                
                        
                                
@@ -128,6 +110,61 @@
                                
                        
                                
+			{
+				"id": "admin/tutorials/systemd-supervisor/slides",
+				"topic": "Galaxy Server administration",
+				"title": "Controlling Galaxy with systemd or Supervisor"
+			},
+								
+                               
+                       
+                               
+                       
+                               
+                       
+                               
+			{
+				"id": "admin/tutorials/interactive-tools/slides",
+				"topic": "Galaxy Server administration",
+				"title": "Galaxy Interactive Tools"
+			},
+								
+                               
+                       
+                               
+                       
+                               
+                       
+                               
+                       
+                               
+			{
+				"id": "admin/tutorials/backup-cleanup/slides",
+				"topic": "Galaxy Server administration",
+				"title": "Server Maintenance: Cleanup, Backup, and Restoration"
+			},
+								
+                               
+                       
+                               
+			{
+				"id": "admin/tutorials/data-library/slides",
+				"topic": "Galaxy Server administration",
+				"title": "Data Libraries"
+			},
+								
+                               
+                       
+                               
+                       
+                               
+			{
+				"id": "admin/tutorials/production/slides",
+				"topic": "Galaxy Server administration",
+				"title": "Gearing towards production"
+			},
+								
+                               
                        
                                
 			{
@@ -136,6 +173,26 @@
 				"title": "Galactic Database"
 			},
 								
+                               
+                       
+                               
+			{
+				"id": "admin/tutorials/cvmfs/slides",
+				"topic": "Galaxy Server administration",
+				"title": "Reference Data with CVMFS"
+			},
+								
+                               
+                       
+                               
+			{
+				"id": "admin/tutorials/users-groups-quotas/slides",
+				"topic": "Galaxy Server administration",
+				"title": "User, Role, Group, Quota, and Authentication managment"
+			},
+								
+                               
+                       
                                
                        
                                
@@ -156,63 +213,6 @@
                                
                        
                                
-			{
-				"id": "admin/tutorials/users-groups-quotas/slides",
-				"topic": "Galaxy Server administration",
-				"title": "User, Role, Group, Quota, and Authentication managment"
-			},
-								
-                               
-                       
-                               
-                       
-                               
-                       
-                               
-			{
-				"id": "admin/tutorials/systemd-supervisor/slides",
-				"topic": "Galaxy Server administration",
-				"title": "Controlling Galaxy with systemd or Supervisor"
-			},
-								
-                               
-                       
-                               
-			{
-				"id": "admin/tutorials/ansible-galaxy/slides",
-				"topic": "Galaxy Server administration",
-				"title": "Galaxy Installation with Ansible"
-			},
-								
-                               
-                       
-                               
-			{
-				"id": "admin/tutorials/ansible/slides",
-				"topic": "Galaxy Server administration",
-				"title": "Ansible"
-			},
-								
-                               
-                       
-                               
-			{
-				"id": "admin/tutorials/backup-cleanup/slides",
-				"topic": "Galaxy Server administration",
-				"title": "Server Maintenance: Cleanup, Backup, and Restoration"
-			},
-								
-                               
-                       
-                               
-                       
-                               
-                       
-                               
-                       
-                               
-                       
-                               
                        
                                
                        
@@ -251,9 +251,9 @@
                        
                                
 			{
-				"id": "ai4life/tutorials/getting-started/slides",
+				"id": "ai4life/tutorials/contribute-materials/slides",
 				"topic": "Image analysis using Deep Learning",
-				"title": "BioImage Model Zoo: Advanced models in one-click"
+				"title": "Contribute to the BioImage.IO models"
 			},
 								
                                
@@ -269,9 +269,9 @@
                        
                                
 			{
-				"id": "ai4life/tutorials/contribute-materials/slides",
+				"id": "ai4life/tutorials/getting-started/slides",
 				"topic": "Image analysis using Deep Learning",
-				"title": "Contribute to the BioImage.IO models"
+				"title": "BioImage Model Zoo: Advanced models in one-click"
 			},
 								
                                
@@ -328,6 +328,15 @@
                        
                        
                        
+                               
+                       
+                               
+			{
+				"id": "climate/tutorials/fates/slides",
+				"topic": "Climate",
+				"title": "Functionally Assembled Terrestrial Ecosystem Simulator (FATES)"
+			},
+								
                                
                        
                                
@@ -344,15 +353,6 @@
 				"id": "climate/tutorials/pangeo-notebook/slides",
 				"topic": "Climate",
 				"title": "Pangeo Notebook in Galaxy - Introduction to Xarray"
-			},
-								
-                               
-                       
-                               
-			{
-				"id": "climate/tutorials/fates/slides",
-				"topic": "Climate",
-				"title": "Functionally Assembled Terrestrial Ecosystem Simulator (FATES)"
 			},
 								
                                
@@ -401,6 +401,8 @@
                                
                        
                                
+                       
+                               
 			{
 				"id": "contributing/tutorials/create-new-tutorial-slides/slides",
 				"topic": "Contributing to the Galaxy Training Material",
@@ -439,8 +441,6 @@
                        
                                
                        
-                               
-                       
                
 					
                        
@@ -549,31 +549,6 @@
                        
                        
                        
-                               
-                       
-                               
-                       
-                               
-                       
-                               
-                       
-                               
-                       
-                               
-                       
-                               
-                       
-                               
-                       
-                               
-                       
-                               
-			{
-				"id": "dev/tutorials/tool-generators/slides",
-				"topic": "Development in Galaxy",
-				"title": "ToolFactory: Generating Tools From Simple Scripts"
-			},
-								
                                
                        
                                
@@ -604,6 +579,31 @@
                                
                        
                                
+			{
+				"id": "dev/tutorials/tool-generators/slides",
+				"topic": "Development in Galaxy",
+				"title": "ToolFactory: Generating Tools From Simple Scripts"
+			},
+								
+                               
+                       
+                               
+                       
+                               
+                       
+                               
+                       
+                               
+                       
+                               
+                       
+                               
+                       
+                               
+                       
+                               
+                       
+                               
                        
                
 					
@@ -644,6 +644,10 @@
 					
                        
                        
+                       
+                               
+                       
+                               
                        
                                
                        
@@ -658,10 +662,6 @@
 				"title": "ATAC-Seq data analysis"
 			},
 								
-                               
-                       
-                               
-                       
                                
                        
                                
@@ -763,14 +763,14 @@
                                
                        
                                
+                       
+                               
 			{
 				"id": "genome-annotation/tutorials/apollo/slides",
 				"topic": "Genome Annotation",
 				"title": "Refining Genome Annotations with Apollo (prokaryotes)"
 			},
 								
-                               
-                       
                                
                        
                                
@@ -1131,6 +1131,8 @@
                        
                        
                                
+                       
+                               
 			{
 				"id": "teaching/tutorials/gtn-for-instructors/slides",
 				"topic": "Teaching and Hosting Galaxy training",
@@ -1163,17 +1165,21 @@
                        
                                
                        
+               
+					
+                       
+                       
+                       
+               
+					
+                       
+                       
+                       
                                
                        
-               
-					
+                               
                        
-                       
-                       
-               
-					
-                       
-                       
+                               
                        
                                
 			{
@@ -1182,12 +1188,6 @@
 				"title": "Whole transcriptome analysis of Arabidopsis thaliana"
 			},
 								
-                               
-                       
-                               
-                       
-                               
-                       
                                
                        
                                
