@@ -153,6 +153,11 @@
         "url": "https://test.galaxyproject.org/",
         "name": "Galaxy Test",
         "usegalaxy": "false"
+      },
+      {
+        "url": "https://galaxy.metacentrum.cz/",
+        "name": "MetaCentrum",
+        "usegalaxy": "false"
       }
     ]
   },

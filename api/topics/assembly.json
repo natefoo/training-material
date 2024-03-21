@@ -190,6 +190,11 @@
             "usegalaxy": "false"
           },
           {
+            "url": "https://galaxy.metacentrum.cz/",
+            "name": "MetaCentrum",
+            "usegalaxy": "false"
+          },
+          {
             "url": "https://usegalaxy.be/",
             "name": "UseGalaxy.be",
             "usegalaxy": "true"
@@ -435,6 +440,11 @@
           {
             "url": "https://galaxytrakr.org/",
             "name": "GalaxyTrakr",
+            "usegalaxy": "false"
+          },
+          {
+            "url": "https://galaxy.metacentrum.cz/",
+            "name": "MetaCentrum",
             "usegalaxy": "false"
           },
           {
@@ -768,6 +778,11 @@
             "usegalaxy": "false"
           },
           {
+            "url": "https://galaxy.metacentrum.cz/",
+            "name": "MetaCentrum",
+            "usegalaxy": "false"
+          },
+          {
             "url": "https://usegalaxy.be/",
             "name": "UseGalaxy.be",
             "usegalaxy": "true"
@@ -945,6 +960,11 @@
 
         ],
         "inexact": [
+          {
+            "url": "https://galaxy.metacentrum.cz/",
+            "name": "MetaCentrum",
+            "usegalaxy": "false"
+          },
           {
             "url": "https://usegalaxy.eu",
             "name": "UseGalaxy.eu",
@@ -1285,6 +1305,11 @@
             "usegalaxy": "false"
           },
           {
+            "url": "https://galaxy.metacentrum.cz/",
+            "name": "MetaCentrum",
+            "usegalaxy": "false"
+          },
+          {
             "url": "https://usegalaxy.fr/",
             "name": "UseGalaxy.fr",
             "usegalaxy": "true"
@@ -1472,6 +1497,11 @@
           }
         ],
         "inexact": [
+          {
+            "url": "https://galaxy.metacentrum.cz/",
+            "name": "MetaCentrum",
+            "usegalaxy": "false"
+          },
           {
             "url": "https://usegalaxy.fr/",
             "name": "UseGalaxy.fr",
@@ -1797,7 +1827,11 @@
           }
         ],
         "inexact": [
-
+          {
+            "url": "https://galaxy.metacentrum.cz/",
+            "name": "MetaCentrum",
+            "usegalaxy": "false"
+          }
         ]
       },
       "admin_install": {
@@ -2137,6 +2171,11 @@
           {
             "url": "https://test.galaxyproject.org/",
             "name": "Galaxy Test",
+            "usegalaxy": "false"
+          },
+          {
+            "url": "https://galaxy.metacentrum.cz/",
+            "name": "MetaCentrum",
             "usegalaxy": "false"
           }
         ]
@@ -2821,6 +2860,11 @@
             "usegalaxy": "false"
           },
           {
+            "url": "https://galaxy.metacentrum.cz/",
+            "name": "MetaCentrum",
+            "usegalaxy": "false"
+          },
+          {
             "url": "https://usegalaxy.eu",
             "name": "UseGalaxy.eu",
             "usegalaxy": "true"
@@ -3312,6 +3356,11 @@
             "usegalaxy": "false"
           },
           {
+            "url": "https://galaxy.metacentrum.cz/",
+            "name": "MetaCentrum",
+            "usegalaxy": "false"
+          },
+          {
             "url": "https://usegalaxy.fr/",
             "name": "UseGalaxy.fr",
             "usegalaxy": "true"
@@ -3727,7 +3776,11 @@
           }
         ],
         "inexact": [
-
+          {
+            "url": "https://galaxy.metacentrum.cz/",
+            "name": "MetaCentrum",
+            "usegalaxy": "false"
+          }
         ]
       },
       "admin_install": {
@@ -4022,7 +4075,11 @@
           }
         ],
         "inexact": [
-
+          {
+            "url": "https://galaxy.metacentrum.cz/",
+            "name": "MetaCentrum",
+            "usegalaxy": "false"
+          }
         ]
       },
       "admin_install": {
@@ -4233,7 +4290,11 @@
           }
         ],
         "inexact": [
-
+          {
+            "url": "https://galaxy.metacentrum.cz/",
+            "name": "MetaCentrum",
+            "usegalaxy": "false"
+          }
         ]
       },
       "admin_install": {

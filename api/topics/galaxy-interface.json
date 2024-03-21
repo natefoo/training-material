@@ -150,6 +150,11 @@
             "usegalaxy": "false"
           },
           {
+            "url": "https://galaxy.metacentrum.cz/",
+            "name": "MetaCentrum",
+            "usegalaxy": "false"
+          },
+          {
             "url": "https://usegalaxy.be/",
             "name": "UseGalaxy.be",
             "usegalaxy": "true"
@@ -368,6 +373,11 @@
           {
             "url": "https://galaxy.mesocentre.uca.fr",
             "name": "Galaxy@AuBi",
+            "usegalaxy": "false"
+          },
+          {
+            "url": "https://galaxy.metacentrum.cz/",
+            "name": "MetaCentrum",
             "usegalaxy": "false"
           },
           {
@@ -644,6 +654,11 @@
           {
             "url": "https://mississippi.sorbonne-universite.fr",
             "name": "MISSISSIPPI",
+            "usegalaxy": "false"
+          },
+          {
+            "url": "https://galaxy.metacentrum.cz/",
+            "name": "MetaCentrum",
             "usegalaxy": "false"
           },
           {
@@ -1185,6 +1200,11 @@
             "usegalaxy": "false"
           },
           {
+            "url": "https://galaxy.metacentrum.cz/",
+            "name": "MetaCentrum",
+            "usegalaxy": "false"
+          },
+          {
             "url": "https://usegalaxy.be/",
             "name": "UseGalaxy.be",
             "usegalaxy": "true"
@@ -1549,6 +1569,11 @@
           }
         ],
         "inexact": [
+          {
+            "url": "https://galaxy.metacentrum.cz/",
+            "name": "MetaCentrum",
+            "usegalaxy": "false"
+          },
           {
             "url": "https://usegalaxy.eu",
             "name": "UseGalaxy.eu",
@@ -3494,6 +3519,11 @@
           {
             "url": "https://mississippi.sorbonne-universite.fr",
             "name": "MISSISSIPPI",
+            "usegalaxy": "false"
+          },
+          {
+            "url": "https://galaxy.metacentrum.cz/",
+            "name": "MetaCentrum",
             "usegalaxy": "false"
           },
           {

@@ -207,7 +207,11 @@
       }
     ],
     "inexact": [
-
+      {
+        "url": "https://galaxy.metacentrum.cz/",
+        "name": "MetaCentrum",
+        "usegalaxy": "false"
+      }
     ]
   },
   "admin_install": {
